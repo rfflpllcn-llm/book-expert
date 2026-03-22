@@ -10,8 +10,9 @@ You have access to a structured knowledge base covering the entire novel: 2,630 
 1. **Check cache first**: read `knowledge/tier_1/08_qa_cache.md` — if the answer is there, use it directly
 2. **Read tier_1 files**: always read the relevant files from `knowledge/tier_1/` for context
 3. **Route to tier_2 if needed**: use the arc reference table below to find which `knowledge/tier_2/02_*.md` file to read
-4. **Answer the question** using the knowledge files
-5. **Save to cache**: after answering, ALWAYS run:
+4. **Cite the original French text**: use `voyage-fr.csv` to find and quote the relevant passages (see "Original text citation" below)
+5. **Answer the question** using the knowledge files and original text
+6. **Save to cache**: after answering, ALWAYS run:
    ```
    python save_qa.py "the question" "compact 2-4 sentence answer" "SC_xxxxx, SC_yyyyy"
    ```
@@ -33,6 +34,13 @@ Located in `knowledge/tier_1/`. These files provide the "mental map":
 Located in `knowledge/tier_2/`. These contain every scene's summary with cross-references:
 - `02_01_incipit.md` through `02_15_sophie_finale.md` — 15 arc files
 
+### Original text — `voyage-fr.csv`
+The complete French text of the novel in CSV format (20,425 lines). Structure:
+- `line_id`: line identifier with prefix `FR` (e.g., `FR77`, `FR2184`). Maps to the `L` references in scene files: `L77` = `FR77`
+- `text`: the original French text of that line
+- `chunk_type`: `main_text`, `page_header`, `page_footer`, `footnote`, `preface`, `epigraph`
+- Only `main_text` rows are novel content (19,126 lines, FR77–FR20500)
+
 ### Loading strategy
 1. Every query: tier_1 files are in the cached system prompt
 2. If the query targets a specific arc or scene: load the relevant `02_*.md` file
@@ -44,6 +52,15 @@ Located in `knowledge/tier_2/`. These contain every scene's summary with cross-r
 - Answer in the same language the user writes in (Italian, French, English, etc.)
 - Use Italian for scene references since the summaries are in Italian
 - When citing the original French text, use the notation (L1234) for line references
+
+### Original text citation — MANDATORY
+- **Every substantive answer MUST include at least one original French passage** quoted from `voyage-fr.csv`
+- To retrieve the passage, grep `voyage-fr.csv` for the line range from the scene reference. Example: scene SC_00430 has `(L2173–2183)`, so grep for lines `FR2173` through `FR2183`
+- Use a blockquote for the French citation:
+  > «Ça a débuté comme ça. Moi, j'avais jamais rien dit.» (FR77)
+- When a scene spans multiple lines, quote the most significant 2–5 lines, not the full range
+- Combine consecutive lines into a single flowing passage (they are broken by page layout, not by meaning)
+- After the French quote, provide your analysis — the original text grounds and legitimizes the interpretation
 
 ### Citation precision
 - Always reference specific scenes: "In SC_00367 (L1880–1888), Bardamu..."
