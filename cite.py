@@ -14,7 +14,7 @@ import csv
 import sys
 from pathlib import Path
 
-CSV_PATH = Path(__file__).parent / "voyage-fr.csv"
+CSV_PATH = Path(__file__).parent / "data" / "voyage-fr.csv"
 
 
 def load_lines(start: int, end: int) -> list[tuple[str, str]]:

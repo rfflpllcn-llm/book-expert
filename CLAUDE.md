@@ -12,10 +12,22 @@ You have access to a structured knowledge base covering the entire novel: 2,630 
 3. **Route to tier_2 if needed**: use the arc reference table below to find which `knowledge/tier_2/02_*.md` file to read
 4. **Cite the original French text**: use `voyage-fr.csv` to find and quote the relevant passages (see "Original text citation" below)
 5. **Answer the question** using the knowledge files and original text
-6. **Save to cache**: after answering, ALWAYS run:
+6. **Save to cache**: after answering, ALWAYS do two steps:
+
+   **Step A** — Use the **Write** tool to save your COMPLETE answer (exactly as you wrote it above,
+   every paragraph, every citation) to:
    ```
-   python save_qa.py "the question" "compact 2-4 sentence answer" "SC_xxxxx, SC_yyyyy"
+   knowledge/answers/YYYY-MM-DD_<slug>.md
    ```
+   where `<slug>` is a short lowercase hyphenated version of the question.
+
+   **Step B** — Run `save_qa.py` to add the cache entry linking to that file:
+   ```
+   python save_qa.py "the question" "compact 2-4 sentence summary" "SC_xxxxx, SC_yyyyy" --link answers/YYYY-MM-DD_<slug>.md
+   ```
+
+   **IMPORTANT**: Do NOT summarize or shorten the answer in Step A. Write your ENTIRE response
+   (the same text the user sees) into the file. The Write tool handles long text perfectly.
    This step is mandatory — do not skip it.
 
 ## Knowledge architecture
@@ -28,19 +40,24 @@ Located in `knowledge/tier_1/`. These files provide the "mental map":
 - `04_themes.md` — 11 themes with descriptions, distributions, key examples
 - `05_style.md` — Argot, orality, narrative techniques, metaphors
 - `06_context.md` — Céline biography, publication history, literary reception
-- `08_qa_cache.md` — Previously validated Q&A pairs (grows over time)
+- `08_qa_cache.md` — Previously validated Q&A pairs (grows over time, links to full answers)
 
 ### Tier 2 — Loaded on demand (~195K tokens total)
 Located in `knowledge/tier_2/`. These contain every scene's summary with cross-references:
 - `02_01_incipit.md` through `02_15_sophie_finale.md` — 15 arc files
 
-### Original text — `voyage-fr.csv` + `cite.py`
+### Original text — `data/voyage-fr.csv` + `cite.py`
 The complete French text of the novel in CSV format (20,425 lines).
 - `line_id`: prefix `FR` + number (e.g., `FR77`). Maps to `L` references in scene files: `L77` = `FR77`
 - `cite.py`: query tool that extracts a line range and returns a formatted blockquote
   - Usage: `python cite.py <start> <end>` (e.g., `python cite.py 77 80`)
   - Only returns `main_text` rows (novel content), skips headers/footers
-  - Do NOT read or grep `voyage-fr.csv` directly — always use `cite.py`
+  - Do NOT read or grep `data/voyage-fr.csv` directly — always use `cite.py`
+
+### Full answers — `knowledge/answers/`
+Complete answers with citations, saved as individual `.md` files.
+Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
+The agent can load a full answer instead of re-deriving it.
 
 ### Loading strategy
 1. Every query: tier_1 files are in the cached system prompt

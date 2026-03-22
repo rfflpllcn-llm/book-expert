@@ -18,12 +18,7 @@ Claude dovrebbe consultarlo prima di riderivare una risposta dai file di scene.
 
 
 ## Q: Chi è Robinson e qual è il suo ruolo nel romanzo?
-**SC di riferimento**: SC_00293, SC_00330, SC_00331, SC_00338, SC_03455, SC_03460
-**Risposta**: Robinson è il «doppio oscuro» di Bardamu, alter ego che lo precede nel cinismo e nella discesa verso la notte. Riappare ciclicamente in ogni arco (guerra, Africa, Rancy, Henrouille, Toulouse, Vigny): diserta prima di lui, viene accecato dalla bomba Henrouille, e alla fine rifiuta brutalmente l'amore di Madelon come ultima menzogna, venendo ucciso da lei nel taxi. La sua morte chiude il romanzo e rappresenta il limite estremo della lucidità céliniana. ~443 passaggi.
-**Data**: 2026-03-22
-
-
-## Q: Cosa succede nella scena al Stand des Nations?
-**SC di riferimento**: SC_00424, SC_00430, SC_00431, SC_00433, SC_00436, SC_00438, SC_00439, SC_00445, SC_00446
-**Risposta**: Bardamu e Lola trovano una fiera abbandonata nel Bois de Boulogne. Allo Stand des Nations (tiro a segno), Bardamu vede le sagome di zinco e si identifica con i bersagli: i soldati al fronte sono come figure da colpire. La crisi esplode al ristorante Duval dove urla ai clienti di fuggire. Viene arrestato e internato con diagnosi di follia da paura. Scena cardine sul trauma bellico e la lucidità come follia. Lo Stand ricompare nel finale alla Fête des Batignolles (SC_03446).
+**SC di riferimento**: SC_00293, SC_00330, SC_02342, SC_02346, SC_03544, SC_03553, SC_03555
+**Risposta**: Robinson (Léon) è il «doppio oscuro» di Bardamu, con ~443 presenze. Disertore, avventuriero, cieco per un'esplosione, filosofo involontario. Riappare ciclicamente in ogni arco (guerra, Africa, Rancy, Toulouse, Vigny). Il suo rifiuto finale dell'amore (L19961–19984) è il vertice filosofico del romanzo. Muore assassinato da Madelon in un taxi (L20017–20032). Svolge tre funzioni: doppio narrativo, filo conduttore strutturale, portavoce filosofico del nichilismo céliniano.
+**Risposta completa**: answers/2026-03-22_chi-e-robinson.md
 **Data**: 2026-03-22

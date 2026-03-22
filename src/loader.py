@@ -186,15 +186,33 @@ def build_context(query: str) -> tuple[str, str]:
     return system_prompt, dynamic_context
 
 
-def append_to_qa_cache(question: str, answer: str, scene_refs: str = ""):
-    """Append a validated Q&A pair to the cache file."""
+def append_to_qa_cache(question: str, summary: str, scene_refs: str = "",
+                       full_answer: str = ""):
+    """Append a Q&A pair to the cache and optionally save the full answer as .md."""
+    import re
     from datetime import date
+
+    today = date.today().isoformat()
+    answers_dir = BASE_DIR / "answers"
     cache_path = TIER1_DIR / "08_qa_cache.md"
+
+    # Save full answer as .md file if provided
+    answer_file = None
+    if full_answer:
+        answers_dir.mkdir(parents=True, exist_ok=True)
+        slug = re.sub(r'[^a-z0-9]+', '-', question.lower().strip())[:60].strip('-')
+        answer_file = answers_dir / f"{today}_{slug}.md"
+        content = f"# {question}\n\n**Data**: {today}\n**SC di riferimento**: {scene_refs}\n\n{full_answer}\n"
+        answer_file.write_text(content, encoding="utf-8")
+
+    # Append summary to cache
     entry = f"\n\n## Q: {question}\n"
     if scene_refs:
         entry += f"**SC di riferimento**: {scene_refs}\n"
-    entry += f"**Risposta**: {answer}\n"
-    entry += f"**Data**: {date.today().isoformat()}\n"
+    entry += f"**Risposta**: {summary}\n"
+    if answer_file:
+        entry += f"**Risposta completa**: {answer_file.relative_to(BASE_DIR)}\n"
+    entry += f"**Data**: {today}\n"
 
     with open(cache_path, "a", encoding="utf-8") as f:
         f.write(entry)

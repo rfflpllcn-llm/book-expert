@@ -8,12 +8,14 @@ Uses Anthropic API with prompt caching:
 """
 
 import anthropic
+import re
 import sys
 from pathlib import Path
 
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.loader import build_context, route_query, append_to_qa_cache
+from cite import load_lines, format_citation
 
 # ── Configuration ─────────────────────────────────────────
 MODEL = "claude-sonnet-4-20250514"   # or claude-opus-4-6 for deepest analysis
@@ -29,6 +31,38 @@ Rules:
 - Say explicitly when the knowledge base doesn't cover something
 - After answering, suggest which scenes the user might want to explore next
 """
+
+
+# ── Citation post-processing ─────────────────────────────
+# Regex matches patterns like (L2173–2183), (L77-80), (L2173–L2183)
+_CITE_RE = re.compile(r'\(L(\d+)\s*[–\-]\s*L?(\d+)\)')
+
+
+def append_citations(answer: str) -> str:
+    """Parse L-range references from the answer and append French text as a citations section."""
+    matches = _CITE_RE.findall(answer)
+    if not matches:
+        return answer
+
+    # Deduplicate while preserving order
+    seen = set()
+    unique_ranges = []
+    for start_s, end_s in matches:
+        key = (int(start_s), int(end_s))
+        if key not in seen:
+            seen.add(key)
+            unique_ranges.append(key)
+
+    citations = []
+    for start, end in unique_ranges:
+        lines = load_lines(start, end)
+        if lines:
+            citations.append(format_citation(lines))
+
+    if not citations:
+        return answer
+
+    return answer + "\n\n---\n### Citazioni\n\n" + "\n\n".join(citations)
 
 
 def create_client() -> anthropic.Anthropic:
@@ -100,7 +134,7 @@ def ask(client: anthropic.Anthropic, query: str, conversation: list = None) -> s
         if block.type == "text":
             answer += block.text
 
-    return answer
+    return append_citations(answer)
 
 
 def interactive_session():
@@ -164,6 +198,17 @@ def interactive_session():
 
         answer = ask(client, query, conversation)
         print(f"\n{answer}")
+
+        # Auto-save full answer to knowledge/answers/ and summary to cache
+        # Extract first 2-3 sentences as summary (up to 500 chars)
+        sentences = answer.split(". ")
+        summary = ". ".join(sentences[:3])
+        if len(summary) > 500:
+            summary = summary[:497] + "..."
+        if not summary.endswith("."):
+            summary += "."
+        append_to_qa_cache(query, summary, full_answer=answer)
+        print("  [saved] Answer cached")
 
         # Keep conversation history (last 10 turns)
         conversation.append({"role": "user", "content": query})
