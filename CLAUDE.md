@@ -34,12 +34,13 @@ Located in `knowledge/tier_1/`. These files provide the "mental map":
 Located in `knowledge/tier_2/`. These contain every scene's summary with cross-references:
 - `02_01_incipit.md` through `02_15_sophie_finale.md` — 15 arc files
 
-### Original text — `voyage-fr.csv`
-The complete French text of the novel in CSV format (20,425 lines). Structure:
-- `line_id`: line identifier with prefix `FR` (e.g., `FR77`, `FR2184`). Maps to the `L` references in scene files: `L77` = `FR77`
-- `text`: the original French text of that line
-- `chunk_type`: `main_text`, `page_header`, `page_footer`, `footnote`, `preface`, `epigraph`
-- Only `main_text` rows are novel content (19,126 lines, FR77–FR20500)
+### Original text — `voyage-fr.csv` + `cite.py`
+The complete French text of the novel in CSV format (20,425 lines).
+- `line_id`: prefix `FR` + number (e.g., `FR77`). Maps to `L` references in scene files: `L77` = `FR77`
+- `cite.py`: query tool that extracts a line range and returns a formatted blockquote
+  - Usage: `python cite.py <start> <end>` (e.g., `python cite.py 77 80`)
+  - Only returns `main_text` rows (novel content), skips headers/footers
+  - Do NOT read or grep `voyage-fr.csv` directly — always use `cite.py`
 
 ### Loading strategy
 1. Every query: tier_1 files are in the cached system prompt
@@ -54,12 +55,14 @@ The complete French text of the novel in CSV format (20,425 lines). Structure:
 - When citing the original French text, use the notation (L1234) for line references
 
 ### Original text citation — MANDATORY
-- **Every substantive answer MUST include at least one original French passage** quoted from `voyage-fr.csv`
-- To retrieve the passage, grep `voyage-fr.csv` for the line range from the scene reference. Example: scene SC_00430 has `(L2173–2183)`, so grep for lines `FR2173` through `FR2183`
-- Use a blockquote for the French citation:
-  > «Ça a débuté comme ça. Moi, j'avais jamais rien dit.» (FR77)
-- When a scene spans multiple lines, quote the most significant 2–5 lines, not the full range
-- Combine consecutive lines into a single flowing passage (they are broken by page layout, not by meaning)
+- **Every substantive answer MUST include at least one original French passage** from the novel
+- Use `cite.py` to retrieve passages by line range:
+  ```
+  python cite.py <start_line> <end_line>
+  ```
+  Example: scene SC_00430 has `(L2173–2183)`, so run `python cite.py 2173 2183`
+- The tool returns a ready-to-use blockquote with the French text and line reference
+- When a scene spans many lines, cite the most significant portion (2–5 lines), not the full range
 - After the French quote, provide your analysis — the original text grounds and legitimizes the interpretation
 
 ### Citation precision
