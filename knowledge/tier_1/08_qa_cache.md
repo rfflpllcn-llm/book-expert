@@ -36,3 +36,10 @@ Claude dovrebbe consultarlo prima di riderivare una risposta dai file di scene.
 **Risposta**: Le prime parole di Madelon sono in SC_02785 (L15556–15563): «Je remplace seulement Mme Henrouille pendant le déjeuner... L'après-midi, je travaille dans les modes... Rue du Théâtre...» Una battuta domestica e modesta, in contrasto con la violenza del personaggio negli archi finali.
 **Risposta completa**: answers/2026-03-23_prime-parole-madelon.md
 **Data**: 2026-03-23
+
+
+## Q: Quali sono gli approcci sessuali di Bardamu verso Madelon
+**SC di riferimento**: SC_02780, SC_02781, SC_02802, SC_02805, SC_02841, SC_02842, SC_02853, SC_03540
+**Risposta**: Bardamu ha una relazione clandestina con Madelon, fidanzata di Robinson. Il primo approccio avviene nella cripta a Toulouse (SC_02780–02781, L15531–15549): finge di inciampare, la bacia, le accarezza le cosce. Seguono incontri segreti nella camera di lei prima di cena (SC_02841, L15849–15858). Bardamu le dà anche consigli sulle malattie veneree (SC_02853–02855). Madelon lo accusa pubblicamente nel finale: «Ce peloteur!» (SC_03540, L19942–19954).
+**Risposta completa**: answers/2026-03-23_approcci-sessuali-bardamu-madelon.md
+**Data**: 2026-03-23
