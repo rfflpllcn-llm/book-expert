@@ -29,3 +29,10 @@ Claude dovrebbe consultarlo prima di riderivare una risposta dai file di scene.
 **Risposta**: La compagna di Robinson è Madelon, giovane donna possessiva e gelosa (~202 presenze). Lo segue da Toulouse a Vigny. Robinson rifiuta il suo amore con un celebre discorso nichilista (L19961–19984), e lei lo uccide sparandogli nel taxi alla Fête des Batignolles (L20017–20032). Incarna l'amore distruttivo, opposta a Molly.
 **Risposta completa**: answers/2026-03-23_compagna-di-robinson.md
 **Data**: 2026-03-23
+
+
+## Q: Quali sono le prime parole pronunciate da Madelon
+**SC di riferimento**: SC_02785, SC_02787
+**Risposta**: Le prime parole di Madelon sono in SC_02785 (L15556–15563): «Je remplace seulement Mme Henrouille pendant le déjeuner... L'après-midi, je travaille dans les modes... Rue du Théâtre...» Una battuta domestica e modesta, in contrasto con la violenza del personaggio negli archi finali.
+**Risposta completa**: answers/2026-03-23_prime-parole-madelon.md
+**Data**: 2026-03-23
