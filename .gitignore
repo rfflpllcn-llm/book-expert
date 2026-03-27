@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/  — commented out: our lib/ is a tracked source package
 lib64/
 parts/
 sdist/
