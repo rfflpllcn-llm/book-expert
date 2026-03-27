@@ -53,10 +53,11 @@ def test_route_query_line_ref(book_dir):
     assert "02_01_test_arc" in arcs
 
 
-def test_route_query_sc_ref(book_dir):
+def test_route_query_sc_ref_ignored(book_dir):
+    """SC refs are scene IDs, not line numbers — should not route."""
     config = load_book_config(book_dir)
     arcs = route_query("what is SC_00002?", config)
-    assert "02_01_test_arc" in arcs
+    assert arcs == []
 
 
 def test_route_query_no_match(book_dir):

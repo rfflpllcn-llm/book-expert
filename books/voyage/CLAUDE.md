@@ -63,7 +63,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - **Language**: Answer in italiano unless the user writes in another language, in which case match theirs.
 - **Tone**: Use a formal academic tone with precise literary terminology.
 - **Citation density**: Every substantive answer MUST include at least one original passage from the text.
-- **Interpretation stance**: None
+- **Interpretation stance**: Present balanced interpretations without favoring any single critical school.
 - **Answer length**: Provide detailed, thorough answers with full analysis and multiple examples.
 
 ## Behavior rules

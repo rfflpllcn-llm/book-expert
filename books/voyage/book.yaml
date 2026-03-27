@@ -60,6 +60,8 @@ arcs:
     lines: [18800, 20500]
 
 characters:
+  bardamu:
+    arcs: [02_01_incipit, 02_02_guerra_fronte, 02_03_guerra_notte, 02_04_guerra_robinson, 02_05_lola_paris, 02_06_musyne_retrovie, 02_07_bestombes_teatro, 02_08_nave_africa, 02_09_america_newyork, 02_10_detroit_molly, 02_11_rancy_medicina, 02_12_henrouille, 02_13_toulouse, 02_14_vigny_baryton, 02_15_sophie_finale]
   ganate:
     arcs: [02_01_incipit]
   colonnello:

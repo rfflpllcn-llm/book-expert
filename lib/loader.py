@@ -45,14 +45,6 @@ def route_query(query: str, config: dict) -> list[str]:
                     matched_arcs.append(arc_id)
                 break
 
-    # SC_xxxxx references — approximate: SC number maps to line range
-    for sc_num_str in re.findall(r"SC_?(\d{3,5})", query, re.IGNORECASE):
-        sc_line = int(sc_num_str)
-        for arc_id, arc_config in config["arcs"].items():
-            lo, hi = arc_config["lines"]
-            if lo <= sc_line <= hi and arc_id not in matched_arcs:
-                matched_arcs.append(arc_id)
-
     # Line references (L1234)
     for line_str in re.findall(r"L(\d{1,5})", query):
         line_num = int(line_str)

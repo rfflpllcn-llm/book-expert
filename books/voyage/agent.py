@@ -79,7 +79,8 @@ def ask(client: anthropic.Anthropic, query: str, conversation: list = None) -> s
         },
     ]
 
-    messages = conversation or []
+    # Build messages without mutating the conversation list
+    messages = list(conversation or [])
 
     user_content = ""
     if dynamic_context:

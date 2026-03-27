@@ -32,3 +32,10 @@ def test_generate_contains_workflow(book_dir):
     assert "cache" in result.lower()
     assert "tier_1" in result
     assert "tier_2" in result
+
+
+def test_generate_null_stance_renders_correctly(book_dir):
+    """YAML null should render as balanced-instructions text, not 'None'."""
+    result = generate(book_dir)
+    assert "None" not in result
+    assert "balanced" in result.lower()
