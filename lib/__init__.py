@@ -1,0 +1,1 @@
+"""book-expert: shared library for multi-book literary expert agents."""
