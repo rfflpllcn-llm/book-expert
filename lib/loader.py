@@ -138,3 +138,64 @@ def load_tier3(book_dir: Path, arc_ids: list[str], query: str = "") -> str:
                 matched.append(filepath.read_text(encoding="utf-8"))
 
     return "\n\n---\n\n".join(matched)
+
+
+def build_context(query: str, book_dir: Path) -> tuple[str, str]:
+    """
+    Build full context for a query.
+    Returns: (system_prompt_cached, dynamic_context)
+    """
+    config = load_book_config(book_dir)
+    system_prompt = load_tier1(book_dir)
+
+    arc_ids = route_query(query, config)
+    dynamic_parts = []
+
+    # Load matched tier_2 arcs
+    for arc_id in arc_ids:
+        content = load_tier2_file(book_dir, arc_id)
+        if content:
+            dynamic_parts.append(f"<!-- ARC: {arc_id} -->\n{content}")
+
+    # Load tier_3 commentaries if citation_density requires it
+    prefs = config.get("preferences", {})
+    if prefs.get("citation_density") == "heavy_with_commentary":
+        commentary = load_tier3(book_dir, arc_ids, query=query)
+        if commentary:
+            dynamic_parts.append(f"<!-- COMMENTARY -->\n{commentary}")
+
+    dynamic_context = "\n\n---\n\n".join(dynamic_parts) if dynamic_parts else ""
+    return system_prompt, dynamic_context
+
+
+def append_to_qa_cache(book_dir: Path, question: str, summary: str,
+                       scene_refs: str = "", full_answer: str = ""):
+    """Append a Q&A pair to cache and optionally save the full answer."""
+    from datetime import date
+
+    knowledge_dir = book_dir / "knowledge"
+    cache_path = knowledge_dir / "tier_1" / "08_qa_cache.md"
+    answers_dir = knowledge_dir / "answers"
+    today = date.today().isoformat()
+
+    # Save full answer as .md file
+    answer_file = None
+    if full_answer:
+        answers_dir.mkdir(parents=True, exist_ok=True)
+        slug = re.sub(r"[^a-z0-9]+", "-", question.lower().strip())[:60].strip("-")
+        answer_file = answers_dir / f"{today}_{slug}.md"
+        content = f"# {question}\n\n**Data**: {today}\n**SC di riferimento**: {scene_refs}\n\n{full_answer}\n"
+        answer_file.write_text(content, encoding="utf-8")
+
+    # Append summary to cache
+    entry = f"\n\n## Q: {question}\n"
+    if scene_refs:
+        entry += f"**SC di riferimento**: {scene_refs}\n"
+    entry += f"**Risposta**: {summary}\n"
+    if answer_file:
+        rel = answer_file.relative_to(knowledge_dir)
+        entry += f"**Risposta completa**: {rel}\n"
+    entry += f"**Data**: {today}\n"
+
+    with open(cache_path, "a", encoding="utf-8") as f:
+        f.write(entry)

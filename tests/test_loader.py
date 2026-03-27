@@ -1,5 +1,8 @@
 # tests/test_loader.py
-from lib.loader import load_book_config, route_query, load_tier1, load_tier2_file, load_tier3
+from lib.loader import (
+    load_book_config, route_query, load_tier1, load_tier2_file, load_tier3,
+    build_context, append_to_qa_cache,
+)
 
 
 def test_load_book_config_basic(book_dir):
@@ -108,3 +111,42 @@ def test_load_tier3_missing_index(book_dir):
     shutil.rmtree(book_dir / "knowledge" / "tier_3")
     result = load_tier3(book_dir, ["02_01_test_arc"])
     assert result == ""
+
+
+def test_build_context_with_match(book_dir):
+    system, dynamic = build_context("tell me about the beginning", book_dir)
+    assert "Index" in system  # tier_1 loaded
+    assert "Arc 1" in dynamic  # matched tier_2 loaded
+
+
+def test_build_context_no_match(book_dir):
+    system, dynamic = build_context("completely unrelated", book_dir)
+    assert "Index" in system
+    assert dynamic == ""
+
+
+def test_build_context_with_commentary(book_dir):
+    """When citation_density is heavy_with_commentary, tier_3 is included."""
+    # The fixture's per-book prefs set citation_density: heavy_with_commentary
+    system, dynamic = build_context("tell me about the beginning", book_dir)
+    assert "Test Commentary" in dynamic
+
+
+def test_append_to_qa_cache(book_dir):
+    append_to_qa_cache(book_dir, "Test Q?", "Test summary.", "SC_00001", "Full answer.")
+    cache = (book_dir / "knowledge" / "tier_1" / "08_qa_cache.md").read_text()
+    assert "## Q: Test Q?" in cache
+    assert "Test summary." in cache
+    assert "SC_00001" in cache
+    # Full answer file created
+    answers = list((book_dir / "knowledge" / "answers").glob("*.md"))
+    assert len(answers) == 1
+    content = answers[0].read_text()
+    assert "Full answer." in content
+
+
+def test_append_to_qa_cache_links_answer(book_dir):
+    append_to_qa_cache(book_dir, "Q2?", "Summary2.", full_answer="Answer2.")
+    cache = (book_dir / "knowledge" / "tier_1" / "08_qa_cache.md").read_text()
+    assert "**Risposta completa**:" in cache
+    assert "answers/" in cache
