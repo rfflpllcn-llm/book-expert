@@ -1,0 +1,3 @@
+# Per-book overrides (sparse — absent keys inherit from global preferences.yaml)
+# Uncomment to override:
+# citation_density: heavy_with_commentary
