@@ -4,7 +4,12 @@ version = "0.2.0"
 description = "Multi-book literary expert system"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["pyyaml", "anthropic"]
+dependencies = [
+    "pyyaml",
+    "anthropic",
+    "marker-pdf>=1.10.2",
+    "pymupdf>=1.27.2.2",
+]
 
 [project.optional-dependencies]
 dev = ["pytest"]
