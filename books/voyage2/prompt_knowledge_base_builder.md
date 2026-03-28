@@ -272,15 +272,16 @@ Process the files in this order:
 
 ## PLACEHOLDER REFERENCE
 
-| Placeholder | Example (Voyage au bout de la nuit)   | Description                                |
-|-------------|---------------------------------------|--------------------------------------------|
-| `[BOOK TITLE]` | Portnoy's complaint                   | Full title of the novel                    |
-| `[AUTHOR]` | Philip Roth                           | Author name                                |
-| `[YEAR]` | 1969                                  | Publication year                           |
-| `[BOOK_FILENAME]` | portnoy_s_complaint_en-filtered.jsonl | Name of your jsonl file                    |
-| `[N_CHUNKS]` | 207                                   | Total objects in the JSON array            |
-| `[SUMMARY_LANGUAGE]` | English                               | Language of the embedding_summary fields   |
-| `[OUTPUT_LANGUAGE]` | Italian                               | Language for all knowledge base notes      |
+| Placeholder          | Example (Voyage au bout de la nuit)   | Description                              |
+|----------------------|---------------------------------------|------------------------------------------|
+| `[BOOK TITLE]`       | Voyage au bout de la nuit             | Full title of the novel                  |
+| `[AUTHOR]`           | 	Louis-Ferdinand Céline               | Author name                              |
+| `[YEAR]`             | 1932                                  | Publication year                         |
+| `[BOOK_FILENAME]`    | voyage-fr.jsonl | Name of your jsonl file                  |
+| `[CHUNK_FILENAME]`   | extracted_chunks.json | Name of your json extracted chunks file  |
+| `[N_CHUNKS]`         | 3628                                   | Total objects in the JSON array          |
+| `[SUMMARY_LANGUAGE]` | Italian                               | Language of the embedding_summary fields |
+| `[OUTPUT_LANGUAGE]`  | Italian                               | Language for all knowledge base notes    |
 
 ---
 

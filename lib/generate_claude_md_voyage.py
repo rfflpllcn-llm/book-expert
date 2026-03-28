@@ -93,7 +93,7 @@ narrative arcs, detailed character profiles, thematic analysis, and style notes.
    `knowledge/answers/YYYY-MM-DD_<slug>.md`
 
    **Step B** — Run save_qa tool to add the cache entry:
-   `python -m lib.save_qa . "the question" "compact 2-4 sentence summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
+   `python -m lib.save_qa . "the question" "compact 2-4 sentence summary" "SC_xxxxx, SC_yyyyy" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Knowledge architecture
 
@@ -116,9 +116,11 @@ Located in `knowledge/tier_3/`. Secondary/critical sources.
 Read `knowledge/tier_3/_index.md` for routing metadata (which arcs/themes each commentary covers).
 Load a commentary when its arcs or themes match the query.
 
-### Original text — `{src.get('file', 'data/source.jsonl')}`
-The complete original text. Each line has an integer `id` and text.
-- Do NOT read the source file directly — always use the cite tool.
+### Original text — `{src.get('file', 'data/source.csv')}`
+The complete original text in CSV format.
+- Line IDs use prefix `{src.get('line_prefix', 'FR')}` (e.g., `{src.get('line_prefix', 'FR')}77`).
+  Scene files use `L` references: `L77` = `{src.get('line_prefix', 'FR')}77`.
+- Do NOT read the CSV directly — always use the cite tool.
 
 ### Full answers — `knowledge/answers/`
 Complete answers with citations, saved as individual `.md` files.
@@ -128,7 +130,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 
 - **Cite original text**: `python -m lib.cite . <start_line> <end_line>`
   Example: `python -m lib.cite . 77 80`
-- **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
+- **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "SC_refs" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
 
@@ -142,7 +144,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - After the original quote, provide your analysis
 
 ### Citation precision
-- Always reference specific scenes: "In scene 42 ({src.get('line_prefix', 'L')}1880–{src.get('line_prefix', 'L')}1888), ..."
+- Always reference specific scenes: "In SC_00367 (L1880–1888), ..."
 - Cross-reference characters and themes to their dedicated tier_1 files
 
 ### Interpretation

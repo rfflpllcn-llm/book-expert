@@ -144,7 +144,6 @@ Format:
 
 IMPORTANT:
 - Include EVERY scene chunk that falls within the arc's line range.
-- **Maximum 120 scenes per arc file.** If an arc contains more than 120 scenes, split it into sub-arcs (e.g., `02_02a_guerra_fronte_inizio.md`, `02_02b_guerra_fronte_notte.md`) with clear narrative boundaries between them. Update the arc map in `00_index.md` and `01_synopsis.md` accordingly.
 - Each scene entry should be a concise but informative summary (not the raw embedding_summary verbatim — rephrase for clarity and concision).
 - Only tag **Characters** and **Themes** when they are clearly present — omit those lines entirely for scenes where they don't apply.
 - Use a consistent set of theme tags across all files (the same tags used in 04_themes.md).
@@ -272,15 +271,16 @@ Process the files in this order:
 
 ## PLACEHOLDER REFERENCE
 
-| Placeholder | Example (Voyage au bout de la nuit)   | Description                                |
-|-------------|---------------------------------------|--------------------------------------------|
-| `[BOOK TITLE]` | Portnoy's complaint                   | Full title of the novel                    |
-| `[AUTHOR]` | Philip Roth                           | Author name                                |
-| `[YEAR]` | 1969                                  | Publication year                           |
-| `[BOOK_FILENAME]` | portnoy_s_complaint_en-filtered.jsonl | Name of your jsonl file                    |
-| `[N_CHUNKS]` | 207                                   | Total objects in the JSON array            |
+| Placeholder          | Example (Voyage au bout de la nuit)   | Description                                |
+|----------------------|---------------------------------------|--------------------------------------------|
+| `[BOOK TITLE]`       | Portnoy's complaint                   | Full title of the novel                    |
+| `[AUTHOR]`           | Philip Roth                           | Author name                                |
+| `[YEAR]`             | 1969                                  | Publication year                           |
+| `[BOOK_FILENAME]`    | portnoy_s_complaint_en-filtered.jsonl | Name of your jsonl file                    |
+| `[CHUNKS_FILENAME]`  | portnoy_semantic_chunks.json | Name of your json extracted chunks file                    |
+| `[N_CHUNKS]`         | 207                                   | Total objects in the JSON array            |
 | `[SUMMARY_LANGUAGE]` | English                               | Language of the embedding_summary fields   |
-| `[OUTPUT_LANGUAGE]` | Italian                               | Language for all knowledge base notes      |
+| `[OUTPUT_LANGUAGE]`  | Italian                               | Language for all knowledge base notes      |
 
 ---
 

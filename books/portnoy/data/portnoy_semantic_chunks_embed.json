@@ -1,0 +1,1007 @@
+{
+  "metadata": {
+    "source_file": "portnoy_s_complaint_en-filtered.jsonl"
+  },
+  "semantic_chunks": [
+    {
+      "sc_id": "2",
+      "chunk_ids": "2-16",
+      "embedding_summary": "Il narratore racconta che da bambino credeva che le sue maestre di scuola fossero la madre travestita, e correva a casa cercando di sorprenderla durante la trasformazione. La fantasia includeva il timore di scoprirla tra un'incarnazione e l'altra, un peso che considerava insopportabile a cinque anni."
+    },
+    {
+      "sc_id": "3",
+      "chunk_ids": "17-23",
+      "embedding_summary": "La madre chiedeva al narratore di raccontarle la giornata scolastica, e lui obbediva scrupolosamente. La conseguenza della fantasia dell'onnipresenza materna fu che il bambino divenne onesto."
+    },
+    {
+      "sc_id": "4",
+      "chunk_ids": "24-31",
+      "embedding_summary": "La madre esprime giudizi diversi sui due figli: la sorella Hannah è una ragazza diligente ma non geniale, mentre il narratore è considerato un genio, un secondo Albert Einstein."
+    },
+    {
+      "sc_id": "5",
+      "chunk_ids": "32-43",
+      "embedding_summary": "Il padre del narratore soffriva di costipazione cronica e ricorreva a numerosi rimedi, tra cui olio minerale, latte di magnesia, Ex-Lax e foglie di senna. Le prime impressioni del narratore sui genitori sono l'ubiquità della madre e la costipazione del padre."
+    },
+    {
+      "sc_id": "6",
+      "chunk_ids": "44-52",
+      "embedding_summary": "Il narratore da bambino attendeva insieme al padre il miracolo della guarigione dalla costipazione, che non arrivava mai. Il padre commentò che forse la bomba atomica avrebbe risolto il problema; le sue viscere erano bloccate dalla frustrazione, e tra le sue sventure c'era il fatto che il figlio fosse il preferito della moglie."
+    },
+    {
+      "sc_id": "7",
+      "chunk_ids": "53-65",
+      "embedding_summary": "Il padre amava il narratore e vedeva in lui la possibilità di riscatto sociale della famiglia, consigliandogli di sposare una donna ricca. Lavorava instancabilmente ma nessuno gli dava soddisfazione: né la moglie, né i figli, né il marito della sorella, né la compagnia assicurativa protestante per cui lavorava."
+    },
+    {
+      "sc_id": "8",
+      "chunk_ids": "66-78",
+      "embedding_summary": "Il padre presentava al figlio la Boston & Northeastern Life come la più benevola istituzione finanziaria d'America. Davanti al figlio parlava con orgoglio dell'azienda, che gli forniva cancelleria col simbolo del Mayflower e ogni primavera lo mandava con la moglie in un hotel di Atlantic City insieme agli altri agenti che avevano superato le quote di vendita."
+    },
+    {
+      "sc_id": "9",
+      "chunk_ids": "79-91",
+      "embedding_summary": "Il padre credeva appassionatamente nel valore dell'assicurazione sulla vita e usciva dopo cena per convincere i clienti a non lasciar scadere le polizze. Spiegava al figlio la metafora dell'ombrello per i giorni di pioggia, ma questo discorso non era sempre ben accolto dai residenti poveri dei quartieri che gli erano stati assegnati."
+    },
+    {
+      "sc_id": "10",
+      "chunk_ids": "92-99",
+      "embedding_summary": "Nei quartieri poveri il padre veniva deriso e respinto: gli sbattevano la porta in faccia e gli aizzavano i cani contro. Nonostante ciò, nel corso degli anni accumulò dalla compagnia abbastanza targhe, pergamene e medaglie da coprire un'intera parete del corridoio di casa."
+    },
+    {
+      "sc_id": "11",
+      "chunk_ids": "100-109",
+      "embedding_summary": "Il padre sperava che i suoi risultati straordinari gli valessero una promozione a direttore di distretto, ma la compagnia lo teneva fermo nella sua posizione perché nessun altro avrebbe lavorato un territorio così ingrato con tali risultati. Nella storia della Boston & Northeastern non c'era mai stato un dirigente ebreo."
+    },
+    {
+      "sc_id": "12",
+      "chunk_ids": "110-124",
+      "embedding_summary": "Nel corridoio di casa era appesa la fotografia incorniciata di N. Everett Lindabury, presidente della Boston & Northeastern, ricevuta dal padre come premio. Davanti al figlio il padre parlava con rispetto della sede centrale, ma in privato sfogava un odio feroce verso l'élite protestante che lo teneva bloccato, rivolgendo la rabbia soprattutto contro se stesso."
+    },
+    {
+      "sc_id": "13",
+      "chunk_ids": "125-133",
+      "embedding_summary": "Il padre serviva la famiglia con dedizione feroce e autodistruttiva, tipica degli uomini ebrei della sua generazione. Il suo sogno era che il figlio volasse dove lui era stato imprigionato; il narratore, a trentatré anni, prova ancora il desiderio che il padre possa comprendere ciò che lui legge."
+    },
+    {
+      "sc_id": "14",
+      "chunk_ids": "134-144",
+      "embedding_summary": "Durante il primo anno di università il narratore inviò anonimamente al padre un abbonamento alla Partisan Review, ma quando tornò a casa a Natale la rivista non c'era: presumibilmente era stata gettata via senza essere aperta, cosa che il narratore visse con arroganza e dolore."
+    },
+    {
+      "sc_id": "15",
+      "chunk_ids": "145-169",
+      "embedding_summary": "Il narratore ricorda una domenica mattina a otto anni in cui lanciò una palla da baseball al padre. Il padre era stato fuori fin dall'alba a riscuotere i premi assicurativi nel quartiere nero, cercando di intercettare i debitori prima che si ubriacassero o andassero in chiesa, lamentandosi con disprezzo razzista della loro incapacità di comprendere l'importanza dell'assicurazione."
+    },
+    {
+      "sc_id": "16",
+      "chunk_ids": "170-184",
+      "embedding_summary": "Nel campo dietro la scuola il padre impugna la mazza da baseball con le mani invertite, suscitando nel narratore bambino una tristezza improvvisa. Il narratore scopre che il padre non è nemmeno capace di giocare a baseball, e conclude con l'espressione ironica 'Bell'ombrello'."
+    },
+    {
+      "sc_id": "17",
+      "chunk_ids": "185-197",
+      "embedding_summary": "La madre era capace di qualsiasi cosa e probabilmente anche troppo brava, secondo la propria ammissione. Il narratore elenca le sue abilità domestiche: preparava gelatina con pesche sospese, torte al sapore di banana, rafano grattugiato in casa, sorvegliava il macellaio e avvisava le vicine della pioggia con una prontezza straordinaria."
+    },
+    {
+      "sc_id": "18",
+      "chunk_ids": "198-206",
+      "embedding_summary": "La madre controllava ogni aspetto del corpo e dell'igiene del narratore: compiti, calzini, unghie, collo, ogni piega del corpo. Gli versava acqua ossigenata fredda nelle orecchie per rimuovere il cerume, una procedura che richiedeva tempo e impegno ma a cui lei non si sottraeva quando erano in gioco salute e pulizia."
+    },
+    {
+      "sc_id": "19",
+      "chunk_ids": "207-219",
+      "embedding_summary": "La madre accendeva candele per i defunti senza bisogno di annotazioni, era l'unica a pulire le erbacce dalle tombe dei parenti, al primo giorno di primavera trattava tutto il vestiario di lana contro le tarme. Non si vergognava mai della propria casa e accettava le sconfitte a mah-jongg con sportività."
+    },
+    {
+      "sc_id": "20",
+      "chunk_ids": "220-236",
+      "embedding_summary": "La madre cuciva, lavorava a maglia, rammendava e stirava meglio della donna di servizio nera, Dorothy, verso la quale era l'unica ad essere generosa, dandole tonno in scatola di marca per pranzo. Tuttavia, dopo che Dorothy mangiava, la madre lavava le sue posate con acqua bollente, e quando fu quasi scoperta inventò una scusa sul maionese difficile da togliere dall'argenteria."
+    },
+    {
+      "sc_id": "21",
+      "chunk_ids": "237-250",
+      "embedding_summary": "Quando il narratore si comportava male, la madre lo chiudeva fuori dall'appartamento. Lui elenca tutte le sue abitudini perfette: lucidare le scarpe, arrotolare il dentifricio, dire sempre grazie e per favore, apparecchiare la tavola volontariamente, non mischiare mai piatti di carne e di latte. Eppure quasi ogni mese veniva punito con il bando."
+    },
+    {
+      "sc_id": "22",
+      "chunk_ids": "251-264",
+      "embedding_summary": "Il narratore continua a rivendicare la propria perfezione scolastica e domestica: decorava i divisori dei quaderni in scrittura gotica, portava sempre un pettine e un fazzoletto pulito, faceva i compiti con settimane di anticipo. Le maestre erano felici grazie a lui. Nonostante tutto ciò, una volta che chiamò la sorella con un termine volgare gli fu lavata la bocca col sapone, ma il bando restava incomprensibile."
+    },
+    {
+      "sc_id": "23",
+      "chunk_ids": "265-274",
+      "embedding_summary": "Siccome è buona, la madre gli prepara un pranzo al sacco, ma poi lo manda via. Il narratore, con gusto per il melodramma, rifiuta il pranzo e dichiara di non aver bisogno di niente. La madre dice che non lo ama più, che vivrà con il padre e Hannah, e che lui non servirà più."
+    },
+    {
+      "sc_id": "24",
+      "chunk_ids": "275-286",
+      "embedding_summary": "Il narratore esce nel corridoio fingendo indifferenza, fantasticando di vendere giornali scalzo e dormire nei campi. Ma alla vista delle bottiglie del latte vuote accanto allo zerbino, lo travolge la consapevolezza di ciò che ha perso. Grida insulti alla porta, la madre chiude a doppia mandata, e lui crolla sullo zerbino implorando perdono e promettendo perfezione."
+    },
+    {
+      "sc_id": "25",
+      "chunk_ids": "287-305",
+      "embedding_summary": "Il narratore ricorda le sere in cui rifiutava di mangiare. La sorella Hannah conferma che il ricordo è reale. La madre non poteva accettare tale caparbietà e gli poneva domande retoriche su cosa volesse diventare: debole o forte, un successo o un fallimento, un uomo o un topo. Il narratore rispondeva semplicemente che non voleva mangiare."
+    },
+    {
+      "sc_id": "26",
+      "chunk_ids": "306-320",
+      "embedding_summary": "La madre si siede accanto al narratore con un lungo coltello da pane in mano, ripetendo la domanda se voglia essere debole o forte. Il narratore, a sei-sette anni, si chiede terrorizzato perché una madre tiri fuori un coltello contro il proprio figlio e perché sia necessaria una vittoria così totale e annientante, quando il giorno prima lo applaudiva mentre provava la parte di Cristoforo Colombo nella recita scolastica."
+    },
+    {
+      "sc_id": "27",
+      "chunk_ids": "321-332",
+      "embedding_summary": "Il narratore era l'attore protagonista della sua classe e senza di lui gli spettacoli erano scadenti. Si chiede come la madre potesse trascorrere pomeriggi gloriosi in cucina a lucidare l'argento e suggerirgli le battute dalla sceneggiatura, interpretando Isabella la Cattolica, Betsy Ross e la signora Pasteur, per poi la sera puntargli un coltello da pane al cuore perché non voleva mangiare fagiolini e patate. Chiede infine perché il padre non la fermasse."
+    },
+    {
+      "sc_id": "29",
+      "chunk_ids": "334-345",
+      "embedding_summary": "Con l'arrivo dell'adolescenza, il narratore trascorre metà della giornata chiuso in bagno a masturbarsi, eiaculando nel water, nel cesto della biancheria sporca, sullo specchio dell'armadietto dei medicinali e persino su se stesso. Vive nel terrore costante di essere scoperto."
+    },
+    {
+      "sc_id": "30",
+      "chunk_ids": "346-364",
+      "embedding_summary": "Il narratore era completamente incapace di trattenersi: si masturbava nei bagni della scuola durante le lezioni, al cinema il sabato, e usava come oggetti sessuali una mela svuotata durante un picnic familiare, una bottiglia del latte nascosta in cantina e un pezzo di fegato comprato dal macellaio, il tutto mentre fantasticava su un essere femminile immaginario che lo chiamava Big Boy."
+    },
+    {
+      "sc_id": "31",
+      "chunk_ids": "365-375",
+      "embedding_summary": "Alla fine del primo anno di liceo il narratore scoprì un puntino scolorito sul pene, che risultò essere una lentiggine ma che lui credette fosse un cancro causato dalla masturbazione. Piangeva a letto di notte, ma poiché sarebbe morto comunque, continuava a masturbarsi nei calzini che portava a letto per usarli come ricettacolo."
+    },
+    {
+      "sc_id": "32",
+      "chunk_ids": "376-385",
+      "embedding_summary": "Invece di ridurre la frequenza, il narratore stabiliva nuovi record: prima, dopo e durante i pasti. Scappava da tavola fingendo diarrea, si chiudeva in bagno e si metteva sulla testa le mutandine rubate dalla sorella, il cui effetto galvanizzante faceva raggiungere all'eiaculazione altezze sorprendenti fino alla lampadina del soffitto."
+    },
+    {
+      "sc_id": "33",
+      "chunk_ids": "386-401",
+      "embedding_summary": "Il narratore si copre la testa temendo un'esplosione di vetro, poi sale sul termosifone per rimuovere lo sperma dalla lampadina. Cerca meticolosamente tracce ovunque, paragonandosi al Raskolnikov della masturbazione. Torna a tavola dove il padre protesta per la porta del bagno chiusa a chiave, e il narratore reagisce con indignazione fingendo di voler stare in pace."
+    },
+    {
+      "sc_id": "34",
+      "chunk_ids": "402-416",
+      "embedding_summary": "Dopo il dessert il narratore torna in bagno, trova un reggiseno sporco della sorella nel cesto della biancheria e lo appende tra le maniglie della porta e dell'armadio della biancheria. Il padre bussa con un giornale arrotolato chiedendo di usare il bagno perché non evacua da una settimana. Il narratore finge di avere la diarrea e intanto accelera il ritmo della masturbazione."
+    },
+    {
+      "sc_id": "35",
+      "chunk_ids": "417-424",
+      "embedding_summary": "Il reggiseno di Hannah inizia a oscillare e nella fantasia del narratore diventa Lenore Lapidus, la compagna di classe col seno più grande. Proprio nel momento in cui immagina i suoi seni, si accorge che la madre sta scuotendo vigorosamente la maniglia della porta, che per una volta ha dimenticato di chiudere a chiave. Crede di essere stato scoperto."
+    },
+    {
+      "sc_id": "36",
+      "chunk_ids": "425-443",
+      "embedding_summary": "La madre ordina di aprire, ma la porta è chiusa a chiave. Il narratore continua a masturbarsi mentre la madre lo interroga attraverso la porta chiedendo se ha mangiato patatine fritte e se ha dolori. Intanto il padre commenta di non evacuare da una settimana. Il narratore raggiunge il quarto orgasmo della giornata nel reggiseno della sorella diciottenne e si chiede quando comincerà a eiaculare sangue."
+    },
+    {
+      "sc_id": "37",
+      "chunk_ids": "444-451",
+      "embedding_summary": "La madre lo chiama fuori dal bagno e chiede perché ha tirato lo sciacquone quando gli aveva detto di non farlo. Segue un interrogatorio sul contenuto del water. Il narratore protesta perché lei usa la parola infantile 'poopie' con un liceale."
+    },
+    {
+      "sc_id": "38",
+      "chunk_ids": "452-476",
+      "embedding_summary": "La madre accusa il narratore di mangiare patatine fritte con Melvin Weiner dopo la scuola, rivelando che Hannah glielo ha riferito. Il narratore per un istante crede che si riferisca alle mutandine rubate. La madre chiama il padre, che protesta dal bagno di voler essere lasciato in pace. Lei chiede al narratore come pensi che Melvin Weiner si sia procurato la colite e perché quel bambino abbia passato metà della vita in ospedale."
+    },
+    {
+      "sc_id": "39",
+      "chunk_ids": "477-498",
+      "embedding_summary": "Il narratore risponde che Melvin si è ammalato perché mangia porcherie. La madre conferma con veemenza: Melvin fa colazione con una ciambella e un caffè a tredici anni con mezzo stomaco. Il narratore invece è stato cresciuto diversamente, con una madre che non gira per negozi tutto il giorno. Lei gli chiede cosa stia cercando di dimostrare mangiando spazzatura quando potrebbe tornare a casa per un biscotto ai semi di papavero e un bicchiere di latte, e promette di non dirlo al padre se solo lui le dice la verità su cosa altro mangia fuori."
+    },
+    {
+      "sc_id": "40",
+      "chunk_ids": "499-512",
+      "embedding_summary": "La madre chiede se mangia hamburger fuori e se per questo ha tirato lo sciacquone. Il narratore risponde che non guarda nel water. La madre, con gli occhi pieni di lacrime per l'incomprensibilità della situazione, chiede quali cose orribili gli abbiano fatto per meritare questo trattamento. Il narratore riconosce che la domanda le sembra originale e senza risposta, e che il fatto che i genitori si siano sempre sacrificati per lui è proprio la cosa orribile, cosa che però resta al di là della sua comprensione."
+    },
+    {
+      "sc_id": "41",
+      "chunk_ids": "513-536",
+      "embedding_summary": "Il narratore riconosce che sta per arrivare il sussurro della madre: si parlerà del mal di testa del padre e del suo presunto esame per un tumore. La madre riferisce che il dottore ha detto di portarlo per un esame. Il narratore piange, pur sapendo che il test per il tumore viene annunciato da anni, che il mal di testa è causato dalla costipazione, e che il medico aveva in realtà suggerito un clistere. La conoscenza di tutto ciò non rende meno straziante l'immagine del cranio del padre che si spacca per un tumore."
+    },
+    {
+      "sc_id": "42",
+      "chunk_ids": "537-543",
+      "embedding_summary": "La madre lo ha in pugno e lo sa. Il narratore dimentica il proprio cancro nel dolore che prova pensando a quanto della vita sia sempre stato al di là della comprensione del padre: senza denaro, senza istruzione, senza lingua, senza cultura. Le inadeguatezze del padre lo commuovono con la stessa facilità con cui lo fanno arrabbiare."
+    },
+    {
+      "sc_id": "43",
+      "chunk_ids": "544-559",
+      "embedding_summary": "Il padre proponeva al narratore come modello il produttore teatrale Billy Rose, che aveva avuto successo grazie alla stenografia, e lo tormentava perché si iscrivesse al corso di stenografia. Prima ancora aveva insistito per le lezioni di pianoforte, citando la cugina Toby che sapeva suonare qualsiasi canzone e non sarebbe mai rimasta senza compagnia. Offriva qualcosa che avrebbe potuto cambiare la vita del figlio."
+    },
+    {
+      "sc_id": "44",
+      "chunk_ids": "560-575",
+      "embedding_summary": "Il narratore riflette sul fatto che ciò che il padre offriva non era ciò che lui voleva, e viceversa, e chiede al dottore se debba liberarsi dell'odio o dell'amore. Emergono ricordi carichi di nostalgia e gratitudine travolgente, legati al tempo e alla luce del giorno, che lo riportano all'infanzia. Il primo è la madre che gli indica il cielo viola autunnale dalla finestra della cucina: il primo verso di poesia che abbia mai sentito."
+    },
+    {
+      "sc_id": "45",
+      "chunk_ids": "576-600",
+      "embedding_summary": "Serie di ricordi d'infanzia intrisi di nostalgia: un giorno di gennaio con pane e grasso di pollo e la promessa dello stufato d'agnello dopo aver spalato la neve; una domenica sera di ritorno da New York attraverso il George Washington Bridge con la sorella che conta i piloni e il narratore che si addormenta contro la pelliccia della madre; un fine settimana invernale a Lakewood dove il padre lo sveglia all'alba per mostrargli i boschi e camminare attorno a un lago argentato, respirando l'aria di pino."
+    },
+    {
+      "sc_id": "46",
+      "chunk_ids": "601-633",
+      "embedding_summary": "D'estate il padre resta in città mentre la famiglia va al mare per un mese, ma certe sere di afa guida per sessantacinque miglia lungo la Cheesequake Highway per raggiungerli a Bradley Beach. Il narratore descrive il rituale del padre che arriva, si cambia, cammina verso la spiaggia, entra in mare lentamente bagnandosi prima i polsi e le tempie, galleggia sulla schiena e torna a riva nel bagliore degli ultimi raggi di sole. Il narratore osserva seduto sulla ringhiera del lungomare e riconosce che ci sono molti altri ricordi come questo."
+    },
+    {
+      "sc_id": "47",
+      "chunk_ids": "634-656",
+      "embedding_summary": "Il narratore si riprende e torna al conflitto familiare: il padre esce dal bagno massaggiandosi il collo e chiedendo cosa fosse così urgente. La madre dice che la questione è risolta. Il padre chiede deluso cosa abbia fatto il narratore. Segue un dialogo in cui la madre chiede al padre se ha evacuato, lui risponde di no, lei dice che mangia troppo in fretta, lui nega, lei lo accusa di mangiare come un maiale, e poi si lamenta che il narratore rifiuta il cibo che lei prepara e preferisce ammalarsi piuttosto."
+    },
+    {
+      "sc_id": "48",
+      "chunk_ids": "657-679",
+      "embedding_summary": "Il padre chiede di nuovo cosa abbia fatto il narratore, la madre dice di non volerlo turbare e comincia a piangere. Il narratore riflette che anche lei non è la persona più felice del mondo: era stata una ragazza alta e magra, soprannominata Red al liceo. A nove-dieci anni il narratore era ossessionato dall'annuario scolastico della madre, che conteneva una filastrocca su di lei. Lei era stata segretaria dell'allenatore di calcio e gli aveva mostrato il suo corteggiatore dai capelli scuri, capitano della squadra, diventato il più grande produttore di senape di New York, che lei avrebbe potuto sposare al posto del padre."
+    },
+    {
+      "sc_id": "49",
+      "chunk_ids": "680-704",
+      "embedding_summary": "La madre crolla su una sedia piangendo e ripete che il figlio mangia patatine fritte con Melvin Weiner. Chiede al padre di dirgli come andrà a finire: con la diarrea si comincia, ma con uno stomaco sensibile come il suo si finisce con un sacchetto di plastica per evacuare. Il padre, incapace di resistere alle lacrime di una donna, ordina al narratore di non mangiare patatine con Melvin Weiner. La madre aggiunge: né hamburger fuori. Il padre ripete ogni richiesta. Il narratore grida che promette e scappa in bagno a masturbarsi. La madre grida attraverso la porta che questa volta non deve tirare lo sciacquone perché vuole vedere cosa c'è nel water."
+    },
+    {
+      "sc_id": "50",
+      "chunk_ids": "705-729",
+      "embedding_summary": "Il narratore si rivolge al dottore spiegando che il pene era l'unica cosa che potesse davvero considerare sua. Descrive l'isteria della madre durante la stagione della poliomielite: gli controllava gola, collo, temperatura, gli vietava di bere dalle fontanelle, di giocare a baseball, di mangiare hamburger, maionese, fegato tritato e tonno fuori casa, non fidandosi di nessun altro riguardo alla conservazione del cibo, e rifiutandosi di sedersi di fronte alla cucina al ristorante cinese per non vedere cosa vi succedeva."
+    },
+    {
+      "sc_id": "51",
+      "chunk_ids": "730-744",
+      "embedding_summary": "Il narratore chiede se sia un miracolo che sappia ancora camminare, data l'isteria e la superstizione in cui è cresciuto. Proibizioni ovunque, regole kasher incomprensibili che si sommavano alla follia privata dei genitori. Racconta l'aneddoto familiare di quando da piccolo chiese alla madre se credessero nell'inverno. Si chiede cosa gli abbia dato la coscienza per tutta quella masturbazione: il senso di colpa, la paura, il terrore inciso nelle ossa."
+    },
+    {
+      "sc_id": "52",
+      "chunk_ids": "745-761",
+      "embedding_summary": "Il narratore si chiede chi abbia riempito i suoi genitori di un senso così pauroso della vita. Il padre, ora in pensione, ha un solo argomento: la New Jersey Turnpike, che considera un assassinio legalizzato. Tre volte a settimana al telefono supplica il narratore di vendere l'auto, non capisce perché voglia vivere da solo in quella giungla della città, pagare un affitto esagerato per un bilocale, e non tornare nel North Jersey."
+    },
+    {
+      "sc_id": "53",
+      "chunk_ids": "762-786",
+      "embedding_summary": "La madre continua a sussurrare. Il narratore va a cena dai genitori una volta al mese, con enorme sforzo per mantenere questa frequenza. Appena apre la porta, il sussurro inizia: non chiedergli che giornata ha avuto col padre, una telefonata del figlio farebbe la differenza, la prossima settimana è il compleanno del padre che compie sessantasei anni e gli mandi almeno un biglietto. Il narratore definisce i genitori i più grandi produttori e confezionatori di senso di colpa del loro tempo. La madre lo implora di chiamare, visitare, informarli, non partire senza avvisare, e chiede per quanto tempo ancora lo disturberanno."
+    },
+    {
+      "sc_id": "54",
+      "chunk_ids": "787-801",
+      "embedding_summary": "Il narratore si rivolge al dottor Spielvogel dichiarando che la sua vita è una barzelletta ebraica in cui lui è il figlio, ma non è divertente. Chiede chi li abbia resi così morbosi, isterici e deboli, perché i genitori continuino a gridare di stare attento, e perché lui da solo nel suo letto a New York continui a masturbarsi senza speranza. Chiede al dottore come si chiami questa malattia, se sia la sofferenza ebraica ereditata dai pogrom, e implora di essere benedetto con la virilità, il coraggio e l'integrità: basta essere il bravo ragazzo ebreo che in pubblico compiace i genitori e in privato si masturba."
+    },
+    {
+      "sc_id": "56",
+      "chunk_ids": "803-814",
+      "embedding_summary": "Durante il nono anno di vita del narratore, uno dei suoi testicoli cominciò a risalire dallo scroto verso la cavità del corpo, lasciando l'altro esposto ai pericoli di cui la madre lo avvertiva continuamente."
+    },
+    {
+      "sc_id": "57",
+      "chunk_ids": "815-826",
+      "embedding_summary": "Il testicolo sinistro si era stabilito nel canale inguinale. Nelle prime settimane il narratore poteva ancora sentirlo premendo con un dito, ma poi non riusciva più a trovarlo e temeva che potesse uscirgli dalla bocca mentre parlava in classe. A scuola recitava di essere padrone del proprio destino, mentre nel suo corpo era in corso un'insurrezione anarchica."
+    },
+    {
+      "sc_id": "58",
+      "chunk_ids": "827-840",
+      "embedding_summary": "Per sei mesi, fino alla visita medica annuale, il narratore ponderò il mistero, chiedendosi se il testicolo si fosse trasformato in un uovo come quelli che vedeva estrarre dalla madre dal pollo. Temeva di trasformarsi in una ragazza o in un caso da Believe It or Not: un ragazzo di nove anni del New Jersey che poteva avere bambini."
+    },
+    {
+      "sc_id": "59",
+      "chunk_ids": "841-847",
+      "embedding_summary": "Il dottor Izzie esaminò lo scroto e prescrisse iniezioni di ormoni maschili perché un testicolo non era sceso completamente. Il padre chiese allarmato cosa sarebbe successo se le iniezioni non avessero funzionato, e il narratore fu mandato in sala d'attesa. Le iniezioni funzionarono e fu risparmiato dal bisturi."
+    },
+    {
+      "sc_id": "60",
+      "chunk_ids": "848-870",
+      "embedding_summary": "Il narratore descrive il padre come gentile, ansioso, incomprensivo e costipato, condannato a essere ostacolato dall'impero protestante. Il padre non possedeva la sicurezza né l'autorevolezza dei biondi della sua generazione. Esprimeva il suo disprezzo per i cristiani spiegando al figlio che la loro religione si basava sull'adorazione di un ebreo, Gesù Cristo, e che poi avevano perseguitato gli ebrei per duemila anni."
+    },
+    {
+      "sc_id": "61",
+      "chunk_ids": "871-894",
+      "embedding_summary": "Sul fronte domestico il nemico del padre era il figlio adolescente. Ciò che terrorizzava il narratore non era la violenza che temeva dal padre, ma quella che ogni sera a cena desiderava commettere contro di lui per le sue maniere grossolane e per le sue opinioni. Il padre sapeva litigare e insistere, ma non difendersi. La madre avvertiva il narratore che avrebbe causato un infarto al padre. Il narratore sbatteva la porta, si infilava il giubbotto col bavero alzato e correva al flipper."
+    },
+    {
+      "sc_id": "62",
+      "chunk_ids": "895-908",
+      "embedding_summary": "Il narratore lamenta la confusione dei ruoli sessuali in casa: il padre avrebbe dovuto essere autorevole ma si ritirava, la madre avrebbe dovuto essere tenera ma avanzava criticando senza sosta, riempiendo il vuoto patriarcale. Almeno il padre possedeva genitali impressionanti, due grossi testicoli sani e un pene di lunghezza e spessore magistrali, che nessuno poteva togliergli."
+    },
+    {
+      "sc_id": "63",
+      "chunk_ids": "909-934",
+      "embedding_summary": "In casa il narratore vedeva più le zone erogene della madre che l'apparato sessuale del padre. Ricorda due gocce del sangue mestruale di lei sul linoleum della cucina e il sangue che faceva colare dalla carne per renderla kosher. Queste immagini convivono nel suo museo di lamentele insieme alla scatola di Kotex, alle calze di nylon e al coltello da pane. La madre raccontava alle amiche del mah-jongg di dover stare sopra di lui con un coltello per farlo mangiare, e nessuna trovava la cosa eccessiva."
+    },
+    {
+      "sc_id": "64",
+      "chunk_ids": "935-947",
+      "embedding_summary": "Anni dopo la madre lo mandò di corsa in farmacia a comprare una scatola di Kotex, con voce in preda al panico. Il narratore corse e consegnò la scatola attraverso uno spiraglio della porta del bagno. È difficile perdonarla per averlo mandato a undici anni in quella missione: dov'era la sorella? Dov'era la sua scorta d'emergenza? Eppure era così grossolanamente insensibile alla vergogna del figlio e al tempo stesso così sintonizzata sui suoi desideri più profondi."
+    },
+    {
+      "sc_id": "65",
+      "chunk_ids": "948-994",
+      "embedding_summary": "Il narratore descrive un ricordo primaverile a quattro anni: la madre ha finito il bucato, ha cotto una torta marmorizzata, ha pulito tutta la casa fischiettando, e ora si veste nella camera da letto inondata di sole per portarlo in centro. Seduta sul letto in reggiseno e guaina, si infila le calze chiacchierando e chiedendogli chi è il bravo bambino della mamma. Il narratore è estasiato e segue il viaggio lento e delizioso delle calze trasparenti sulle gambe della madre, si avvicina per sentire l'odore del talco sulla gola e ammirare i ganci elastici. Sente anche l'odore del pranzo sulle dita e forse altro. La sorella è a scuola, il padre fuori a lavorare: per lui solo una donna si infila le calze e canta una canzone d'amore."
+    },
+    {
+      "sc_id": "66",
+      "chunk_ids": "995-1017",
+      "embedding_summary": "Solo una settimana prima, al ritorno del narratore dall'Europa, la madre gli prende la mano e gliela mette sui fianchi per mostrargli di non aver preso cinque chili dalla sua nascita. E ancora si tira su le calze davanti al figlio adulto: lui ora distoglie lo sguardo, non solo per la propria salute mentale ma per riguardo verso il padre. La madre lo prende in giro per aver girato lo sguardo, ricordandogli che gli ha pulito il sedere e baciato il culetto per anni."
+    },
+    {
+      "sc_id": "67",
+      "chunk_ids": "1018-1038",
+      "embedding_summary": "Una volta al mese il padre portava il narratore al bagno turco per sciogliere con il vapore, il massaggio e il sonno la piramide di irritazione accumulata nelle settimane di lavoro. Il narratore descrive il dormitorio al piano superiore dove gli uomini giacevano sotto lenzuoli bianchi come cadaveri, e la propria vergogna nel spogliarsi: nonostante si pulisse meticolosamente, trovava sempre una traccia di feci nelle mutande."
+    },
+    {
+      "sc_id": "68",
+      "chunk_ids": "1039-1055",
+      "embedding_summary": "Nel bagno turco il narratore si rende conto che non ci sono donne né gentili, e non c'è nulla di cui preoccuparsi. Segue il padre giù per le scale metalliche verso il purgatorio dove le sofferenze dell'agente assicurativo, padre di famiglia e ebreo verranno cotte a vapore e percosse via dal suo corpo. Attraversano la zona dei massaggi, dove i massaggiatori picchiano e impastano corpi stesi su lastre di marmo, e arrivano alla stanza del vapore."
+    },
+    {
+      "sc_id": "69",
+      "chunk_ids": "1056-1075",
+      "embedding_summary": "La stanza del vapore evocava nel narratore un tempo preistorico, precedente perfino ai cavernicoli, quando gas bianchi vorticanti soffocavano la luce del sole. Lì il narratore perdeva il contatto col bravo bambino che correva a casa col dieci e tornava a un'epoca acquatica primordiale, prima delle famiglie e dei gabinetti. Gli uomini ebrei che si tuffavano sotto la doccia fredda e tornavano per altro vapore sembravano aver viaggiato nel tempo fino a un'epoca in cui esistevano come un branco di animali ebrei il cui unico suono era oy. Padre e compagni di sofferenza parevano essere tornati al loro habitat naturale: un luogo senza gentili e senza donne."
+    },
+    {
+      "sc_id": "70",
+      "chunk_ids": "1076-1099",
+      "embedding_summary": "Il narratore stava sull'attenti tra le gambe del padre mentre veniva insaponato dalla testa ai piedi, e ammirava la sostanzialità dei genitali paterni. Il suo scroto sembrava il viso rugoso di un vecchio, mentre quello del narratore era come un borsellino rosa da bambola. Il pene del padre evocava le manichette antincendio nei corridoi della scuola, mentre la madre chiamava quello del figlio la sua cosina. La madre rimproverava il padre di chiudere la porta del bagno per non dare il cattivo esempio. Il narratore avrebbe voluto trovare ispirazione nella rozzezza del padre, ma anche quella diventava fonte di vergogna."
+    },
+    {
+      "sc_id": "71",
+      "chunk_ids": "1100-1115",
+      "embedding_summary": "Nel negozio di abbigliamento dello zio Nate a Newark, il narratore undicenne vuole un costume da bagno con il sospensorio incorporato ma non osa chiederlo. Lo zio mostra i soliti costumini da bambino. Il narratore insiste e chiede un costume con sospensorio. La madre lo deride chiedendo se sia per la sua cosina."
+    },
+    {
+      "sc_id": "72",
+      "chunk_ids": "1116-1151",
+      "embedding_summary": "L'uomo potente della famiglia era lo zio Hymie, il fratello maggiore del padre, nato in Europa e con accento. Produceva e distribuiva una bevanda gassata chiamata Squeeze. Viveva al secondo piano di una casa bifamiliare in un quartiere ebraico di Newark, al cui primo piano la famiglia del narratore si trasferì nel 1941, quando il padre ottenne il trasferimento all'ufficio della contea di Essex. Il trasferimento da Jersey City fu motivato dall'antisemitismo: il Bund organizzava picnic vicino a casa loro, una svastica fu dipinta sul palazzo e incisa nel banco di una compagna ebrea di Hannah, e Hannah fu inseguita da un gruppo di ragazzi. Lo zio Hymie rise e disse che l'unico posto per un ebreo era tra ebrei. Dopo molte difficoltà, la madre telefonò direttamente alla sede centrale e il trasferimento fu concesso."
+    },
+    {
+      "sc_id": "73",
+      "chunk_ids": "1152-1173",
+      "embedding_summary": "Il cugino Harold, detto Heshie, era basso e robusto e somigliava all'attore John Garfield. La madre del narratore lo adorava e lo faceva arrossire elogiando le sue ciglia scure. Heshie si allenava con pesi York in cantina ed era una star della squadra di atletica, con un record cittadino nel lancio del giavellotto. Una volta sostituì un compagno malato nelle siepi basse e si ruppe il polso nella caduta, evento che mandò la zia Clara, già in piena crisi nervosa, a svenire sul pavimento della cucina. Per il narratore, Heshie era tutto e sognava di far parte anche lui della squadra di atletica."
+    },
+    {
+      "sc_id": "74",
+      "chunk_ids": "1174-1202",
+      "embedding_summary": "Poco prima della chiamata alle armi nel 1943, Heshie si fidanzò con Alice Dembosky, la capomazziera della banda del liceo, una gentile con lunghi capelli biondi. Il talento di Alice era lanciare e riprendere due bastoni d'argento simultaneamente. Il fatto che fosse così palesemente una shikse causò dolore nella famiglia di Heshie e in quella del narratore. Nella comunità c'era un certo orgoglio civico per la presenza di una gentile in un ruolo così visibile nel liceo ebraico, ma anche un certo distacco comico fondato sulla convinzione che quello fosse il tipo di talento che solo un gentile avrebbe pensato di sviluppare."
+    },
+    {
+      "sc_id": "75",
+      "chunk_ids": "1203-1240",
+      "embedding_summary": "L'atteggiamento prevalente verso lo sport, specialmente il football, tra i genitori del quartiere era che fosse roba da gentili. La zia Clara diceva di non aver bisogno di soddisfazioni gentili. Il liceo ebraico era notoriamente scarso nel football, ma la sconfitta non era la catastrofe definitiva. Il narratore cita due cori che il cugino e i suoi amici intonavano: uno celebrava il fatto di non mangiare prosciutto e tenere le matzot negli armadietti, l'altro elencava i pani ebraici. Il messaggio era che gli ebrei erano superiori ai gentili proprio perché non potevano impegnare il cuore in un gioco così brutale."
+    },
+    {
+      "sc_id": "76",
+      "chunk_ids": "1241-1258",
+      "embedding_summary": "Il narratore si interroga sull'odio che gli ebrei riversavano sui gentili e su cosa significasse la storia di Heshie e Alice. Quando tutto il resto fallì, fu chiesto al rabbino Warshaw di unirsi alla famiglia una domenica per esortare Heshie a non rovinare la propria vita. Il rabbino rimase per più di un'ora ma non appena se ne andò, la lite riprese: Heshie corse nel cortile strappandosi i capelli, seguito dallo zio Hymie calvo col pugno in aria come Lenin, e dalla folla di parenti che cercava di impedire ai due di ridursi in polvere."
+    },
+    {
+      "sc_id": "77",
+      "chunk_ids": "1259-1285",
+      "embedding_summary": "Un sabato di maggio, dopo una gara di atletica, Heshie telefonò ad Alice per dirle di essersi classificato terzo nel giavellotto, e lei gli disse che non l'avrebbe più rivisto e riattaccò. A casa lo zio Hymie lo aspettava: ciò che aveva fatto, Heshie lo aveva costretto a farlo. Heshie caricò giù per le scale e in cantina, strappando la porta dal cardine superiore, e cominciò a fracassare bottiglie di Squeeze da una parte all'altra. Lo zio lo inseguì, lo bloccò in un angolo, lo atterrò e lo tenne a terra per quindici minuti finché apparvero le lacrime di resa sulle lunghe ciglia scure di Heshie. Non erano una famiglia che prendeva le defezioni alla leggera."
+    },
+    {
+      "sc_id": "78",
+      "chunk_ids": "1286-1305",
+      "embedding_summary": "Quella mattina lo zio Hymie aveva telefonato ad Alice Dembosky e l'aveva convocata al parco con la scusa di una questione urgente riguardante la salute di Harold. Nel parco le raccontò che il figlio aveva una malattia del sangue incurabile di cui il ragazzo stesso non sapeva nulla, e che i medici gli avevano ordinato di non sposarsi mai. Per addolcire il colpo, le offrì una busta con cento dollari. Alice, spaventata e ingenua, prese i soldi, provando secondo tutti — tranne Heshie e il narratore — che il suo piano era sempre stato di prendere i soldi del padre e rovinare la vita di Heshie."
+    },
+    {
+      "sc_id": "79",
+      "chunk_ids": "1306-1311",
+      "embedding_summary": "Quando Heshie fu ucciso in guerra, l'unica cosa che la gente trovava da dire alla zia Clara e allo zio Hymie per consolarli era che almeno non aveva lasciato loro una moglie shikse e figli gentili. Fine della storia di Heshie."
+    },
+    {
+      "sc_id": "80",
+      "chunk_ids": "1312-1349",
+      "embedding_summary": "Il padre chiede al narratore quattordicenne di cambiare almeno i vestiti per Rosh Hashanah, anche se non vuole entrare in sinagoga. Il narratore dichiara di non avere una religione e di non credere in Dio. Il padre insiste che si tolga i jeans e i mocassini e si vesta come un essere umano. Il narratore ribatte che tutte le religioni sono menzogne. Il padre chiede chi abbia creato il mondo. Il narratore risponde: nessuno. Il padre risponde che è contento di non aver frequentato il liceo se porta a questa brillantezza."
+    },
+    {
+      "sc_id": "81",
+      "chunk_ids": "1350-1385",
+      "embedding_summary": "La sorella Hannah cerca di mediare suggerendo al narratore di cambiare almeno le scarpe, ma lui rifiuta perché se Dio non esiste le scarpe non c'entrano. Il padre dice che una volta all'anno chiede qualcosa al figlio e quello è troppo grande per accontentarlo. Hannah insiste che il fratello lo rispetta e lo ama, ma il padre chiede se rispetti anche il popolo ebraico e poi esplode chiedendo se il figlio conosca il Talmud, la storia, e nota che dopo il bar mitzvah la sua educazione religiosa è finita. Il padre piange: il figlio ha tutti dieci a scuola ma nella vita è ignorante come il giorno in cui è nato. Il narratore risponde che l'ignorante è il padre."
+    },
+    {
+      "sc_id": "82",
+      "chunk_ids": "1386-1415",
+      "embedding_summary": "La sorella afferra la mano del narratore temendo che possa alzarla contro il padre. Hannah grida di stare zitto e di andare in camera. Il padre si trascina al tavolo della cucina piegato in due come se avesse preso una granata nello stomaco. Dice al figlio che può vestirsi di stracci e maledirlo quanto vuole. Di solito la madre piange in cucina, il padre in salotto dietro il giornale, Hannah in bagno e il narratore al flipper. Ma questo Rosh Hashanah è diverso: la madre è in ospedale per un intervento chirurgico e il padre piange in cucina con una furia pietosa. Il narratore sa che il padre ha bisogno del suo affetto ma il suo bisogno è di non darglielo."
+    },
+    {
+      "sc_id": "83",
+      "chunk_ids": "1416-1434",
+      "embedding_summary": "Il narratore riflette che c'è di più del risentimento adolescenziale e della rabbia edipica: c'è la sua integrità. Non farà come Heshie. È convinto che il cugino, terzo miglior lanciatore di giavellotto dello stato, avrebbe potuto facilmente rovesciare lo zio cinquantenne ma si è lasciato vincere di proposito. Si chiede se fosse codardia, paura o saggezza, e intuisce un enigma morale profondo al centro della vicenda che, se lo afferrasse, potrebbe salvare lui e il padre da uno scontro ultimo e inimmaginabile."
+    },
+    {
+      "sc_id": "84",
+      "chunk_ids": "1435-1460",
+      "embedding_summary": "Il narratore sa che deve cedere, soprattutto sapendo ciò che il padre ha passato minuto per minuto mentre i medici stabilivano prima che c'era qualcosa nell'utero della madre, e poi se fosse maligno. La parola cancro non può essere nemmeno pronunciata: la madre stessa la abbreviò in C-A prima di entrare in ospedale. Ci sono le parole fredde degli ospedali — striscio, biopsia — e quelle che il narratore cercava nel dizionario — vulva, vagina, cervice. E c'è la parola che tutti aspettano di sentire, quella che suona come ebraico: benigno. Il narratore prega con tutto il cuore un Dio in cui non crede."
+    },
+    {
+      "sc_id": "85",
+      "chunk_ids": "1461-1504",
+      "embedding_summary": "Era benigno. Il narratore visita la madre in ospedale: c'è un libro di Pearl Buck e un bicchiere di ginger ale mezzo vuoto sul comodino. La madre offre la sua ginger ale al figlio, ma per la prima volta l'idea di bere dal suo bicchiere lo riempie di disgusto. Lei racconta che il rabbino Warshaw è venuto a trovarla per mezz'ora prima dell'operazione. La compagna di stanza dichiara che il rabbino è uno degli uomini più venerati di Newark. Il narratore, battendo il pugno nel guantone da baseball, segnala di voler andare via e dice di avere una partita del campionato. La madre, felice e sollevata di essere viva, lo lascia andare. La signora nella stanza commenta che i ragazzi oggigiorno corrono sempre."
+    },
+    {
+      "sc_id": "86",
+      "chunk_ids": "1505-1524",
+      "embedding_summary": "Il narratore corre via dall'ospedale dopo appena due minuti, nonostante il giorno prima i medici le abbiano rimosso ciò che si era guastato nel suo corpo — svuotandola come lei svuotava il pollo — e lo abbiano gettato nella spazzatura. Dove lui fu concepito e portato in grembo ora non c'è più niente. Si chiede come possa abbandonarla così dopo tutto ciò che gli ha dato. Eppure ora che è stata svuotata non riesce nemmeno a guardarla negli occhi. Descrive i suoi capelli rossi pallidi sparsi sul cuscino, le lentiggini, gli occhi color miele: non avrebbe potuto bere la sua ginger ale."
+    },
+    {
+      "sc_id": "87",
+      "chunk_ids": "1525-1539",
+      "embedding_summary": "Il narratore corse dall'ospedale al campo da gioco fino alla posizione di centro campo, dove giocava per una squadra di softball che indossava giacche blu e oro con la scritta SEABEES, A.C. Il centro campo era come un posto di osservazione dove si vedeva tutto e si capiva cosa succedeva nell'istante stesso in cui accadeva. In centro campo, se riesci a raggiungerla, la palla è tua: quanto diverso da casa, dove nessuno si sarebbe appropriato di ciò che il narratore dichiarava suo."
+    },
+    {
+      "sc_id": "88",
+      "chunk_ids": "1540-1602",
+      "embedding_summary": "Il narratore era troppo ansioso alla battuta per entrare nella squadra del liceo, ma nel campionato di softball del campo da gioco era la stella. Descrive la gioia del fuoricampo, del correre verso la seconda base senza fretta, e delle prese spettacolari in centro campo. Ogni movimento del baseball era inciso nei suoi muscoli: come raccogliere il guantone, come impugnare la mazza, come stare rilassato sotto una palla alta imitando Duke Snider. Si chiede perché non possa vivere tutta la vita con la stessa sicurezza e naturalezza che provava da centro campo per i Seabees: essere un centro campo e nient'altro."
+    },
+    {
+      "sc_id": "89",
+      "chunk_ids": "1603-1649",
+      "embedding_summary": "Il narratore è qualcosa di più di un centro campo: un ebreo. No, un ateo, grida, e non fingerà di essere ciò che non è. Si chiede se tutta l'isterectomia non sia stata drammatizzata in CA solo per spaventarlo e renderlo di nuovo obbediente. Non trova argomenti per l'esistenza di Dio nella visita del rabbino Warshaw alla madre, che descrive come un grasso e pomposo impostore con un complesso di superiorità grottesco, che pronuncia ogni parola in almeno tre sillabe. Il narratore paragona il lavoro del rabbino a quello del padre, e dice che se la madre vuole sentirsi devota dovrebbe inchinarsi al padre che lavora davvero. Dichiara che la religione è l'oppio dei popoli, e se questo lo rende un comunista quattordicenne, ne è orgoglioso."
+    },
+    {
+      "sc_id": "90",
+      "chunk_ids": "1650-1693",
+      "embedding_summary": "Il narratore dichiara di credere nei diritti dell'uomo come sono estesi in Unione Sovietica a tutti indipendentemente dalla razza. Insiste nel mangiare con la donna delle pulizie allo stesso tavolo e lo stesso cibo, non Muenster o tonno servito su un piatto speciale. La madre non capisce: mangiare con la donna nera? Gli sussurra nel corridoio di aspettare che la ragazza finisca. Il narratore minaccia di pugnalare il padre se usa ancora la parola razziale. È stufo della divisione goyische/ebraico e accusa i genitori e tutti i parenti di avere menti ristrette. Chiede che smettano di piangere per lui e piangano per se stessi, e grida che è stanco della saga della sofferenza ebraica e che è anche un essere umano."
+    },
+    {
+      "sc_id": "91",
+      "chunk_ids": "1694-1729",
+      "embedding_summary": "La sorella Hannah dice al narratore che è un ragazzo ebreo più di quanto creda e che sta solo gridando al vento, rendendosi infelice. Hannah ha diciotto anni, frequenta il primo anno al Newark State Teacher's College, va a serate di danze folk e leggerà un libro di James Joyce. Il narratore sa di lei poco oltre alle dimensioni e all'odore dei suoi indumenti intimi. Hannah gli chiede se sa dove sarebbe ora se fosse nato in Europa: morto, gasato, fucilato, incenerito. Avrebbe potuto gridare quanto voleva di non essere ebreo e lo avrebbero comunque portato via. Il narratore protesta che non è di questo che sta parlando. Hannah dice che anche i genitori sarebbero morti. Il narratore la accusa di prendere le loro parti. Lei risponde che non prende le parti di nessuno, che il padre non è così ignorante come pensa. Il narratore chiede se i nazisti scusino anche tutto ciò che fa la madre. Hannah comincia a piangere anche lei, e il narratore si sente un mostro perché lei piange per sei milioni di persone mentre lui piange solo per se stesso. O almeno così pensa."
+    },
+    {
+      "sc_id": "93",
+      "chunk_ids": "1731-1743",
+      "embedding_summary": "A quindici anni il narratore si masturbò sull'autobus 107 da New York. Dopo una giornata perfetta con la sorella e il suo fidanzato Morty Feibish — una doppia partita a Ebbets Field e una cena a base di pesce a Sheepshead Bay — fu messo su un autobus per il New Jersey, dove tirò fuori il pene e cominciò a masturbarsi mentre i passeggeri dormivano, inclusa la ragazza seduta accanto a lui con la gonna scozzese."
+    },
+    {
+      "sc_id": "94",
+      "chunk_ids": "1744-1765",
+      "embedding_summary": "Il narratore riflette che dopo una giornata così appagante avrebbe dovuto essere sazio, ma tirare fuori il membro in quel modo era una follia. Forse fu l'aragosta, il primo tabù alimentare infranto, a dare fiducia al lato dionisiaco e suicida della sua natura: la lezione appresa fu che per infrangere la legge basta farlo. Si chiede se tutte le regole alimentari kasher non servissero a dare ai bambini ebrei pratica nella repressione, perché l'inibizione non cresce sugli alberi."
+    },
+    {
+      "sc_id": "95",
+      "chunk_ids": "1766-1786",
+      "embedding_summary": "Il narratore si chiede perché i due set di piatti, il sapone kosher e il sale, se non per ricordare tre volte al giorno che la vita è fatta di confini e restrizioni, centinaia di migliaia di piccole regole imposte da Dio stesso. O le si obbedisce senza discutere restando nelle Sue grazie, oppure le si trasgredisce in nome del buon senso, con il rischio — come il padre assicura — che a Yom Kippur il proprio nome non compaia nel libro di chi vivrà fino a settembre. A Dio non importa la grandezza della trasgressione: è il semplice fatto della disobbedienza che non può tollerare."
+    },
+    {
+      "sc_id": "96",
+      "chunk_ids": "1787-1820",
+      "embedding_summary": "Il messaggio che il narratore assorbe dalla matzoh brei della Pasqua e dalla bistecca kasher è che la rinuncia è tutto, l'autocontrollo è la chiave della vita umana. Che i gentili affondino i denti in qualsiasi creatura strisciante e grugnente: gli ebrei non contaminano la propria umanità. I gentili mangiano anguille, rane, maiali, granchi, aragoste, avvoltoi, scimmie: una dieta di creature abominevoli adatta a una razza così superficiale da bere, divorziare e picchiare. Vanno nei boschi a uccidere cervi innocenti e tornano con gli animali morti legati ai parafanghi. Prenderanno tutto ciò che vogliono, senza riguardo per i sentimenti altrui."
+    },
+    {
+      "sc_id": "97",
+      "chunk_ids": "1821-1829",
+      "embedding_summary": "Così dicevano le leggi kasher al bambino cresciuto sotto la tutela di Sophie e Jack P., in un quartiere scolastico di Newark dove nella sua intera classe c'erano solo due bambini cristiani che vivevano a margine del vicinato. E chi è il narratore per dire che hanno torto? Perché a quindici anni, dopo aver succhiato una chela di aragosta, nel giro di un'ora il suo pene era fuori e puntato su una shikse sull'autobus, e il suo superiore cervello ebraico poteva essere fatto di matzoh brei."
+    },
+    {
+      "sc_id": "98",
+      "chunk_ids": "1830-1853",
+      "embedding_summary": "Un'aragosta non è mai stata bollita in casa loro; e una shikse non c'è mai entrata. La donna delle pulizie è una shikse, ma non conta perché è nera. Una shikse non è mai entrata perché portata dal narratore, ma ricorda che il padre una volta portò a cena una certa Anne McCaffery, cassiera del suo ufficio: magra, tesa, timida, invecchiata. Il narratore si chiede improvvisamente se il padre avesse una relazione con lei. Ricorda che gli spiegava l'ortografia del suo nome seduta sul divano, e che dentro la camicetta bianca aveva un seno consistente e gambe fantastiche."
+    },
+    {
+      "sc_id": "99",
+      "chunk_ids": "1854-1874",
+      "embedding_summary": "Il padre disse di averla portata a casa per un vero pasto ebraico, perché per settimane la cassiera gentile lo aveva assillato per provarne uno. Alla fine la madre cedette e la invitò. Durante la cena il padre pronunciò la parola 'ebraico' più volte di quante il narratore ne avesse mai sentite in una sera sola, presentando ogni piatto come vero fegato tritato ebraico, vero pane di segale ebraico, vera gelatina kosher, e commentando che niente panna nel caffè dopo la carne."
+    },
+    {
+      "sc_id": "100",
+      "chunk_ids": "1875-1897",
+      "embedding_summary": "Venticinque anni dopo, al narratore viene una domanda: perché il padre portò a casa una shikse? Perché una gentile non poteva vivere senza provare la gelatina ebraica? O perché non poteva più vivere senza confessare alla moglie, così che lei potesse accusarlo, castigarlo e punirlo, purgandolo per sempre dei suoi desideri proibiti? Il narratore riconosce la sindrome del disperato ebreo: essere scoperto e condannato per aver scelto il piacere personale al posto del dovere. Si chiede se la madre abbia capito. Ma poi si dice che deve star inventando: suo padre e una shikse è impensabile, l'immaginazione non arriva a concepirlo."
+    },
+    {
+      "sc_id": "101",
+      "chunk_ids": "1898-1931",
+      "embedding_summary": "Ma allora perché la madre gli grida così? La scena di accusa e lacrime siede nella mente del narratore come un mobile pesante. La sorella Hannah si nasconde dietro la madre piangendo, le lacrime della madre cadono fino al pavimento, e il narratore si rifugia dietro il colpevole stesso. Poi il ricordo si confonde: il padre batte il pugno sul tavolo e nega tutto, ma forse è il narratore a gridare di non averlo fatto. La madre piange perché il padre rifiuta di punire il narratore per ciò che ha fatto. Quando il narratore è cattivo in piccolo, la madre gestisce da sola: lo chiude fuori di casa e lui implora di rientrare. Ma quando è davvero terribile, il padre viene chiamato a somministrare giustizia, perché la madre è troppo sensibile per la punizione corporale."
+    },
+    {
+      "sc_id": "102",
+      "chunk_ids": "1932-1985",
+      "embedding_summary": "Il narratore chiede al dottore di chiarire insieme cosa stia succedendo: un atto terribile è stato commesso da uno dei due membri della famiglia in possesso di un pene. Il padre ha avuto rapporti con la cassiera gentile, o il narratore ha mangiato il budino al cioccolato della sorella? Il narratore confonde la propria memoria con quella del padre. Immagina il padre che confessa e subito dopo lo incita a ribellarsi alla moglie come farebbe un gentile. Intanto la madre prende in braccio Hannah, l'unica di cui si può fidare, e la bacia per tutto il viso triste. Ma Hannah ha dodici anni ed è sovrappeso; il narratore a otto anni è bello e intelligente, e non è colpa sua se è nato così."
+    },
+    {
+      "sc_id": "103",
+      "chunk_ids": "1986-2003",
+      "embedding_summary": "Hannah non sembra ritenere il narratore responsabile di nulla: continua a essere buona col suo fratellino, non lo colpisce e non lo insulta. Lui le prende il budino al cioccolato e lei subisce senza protestare, lo bacia prima di andare a letto, lo accompagna a scuola, e si fa inghiottire dal muro quando lui imita le voci della radio per i genitori raggianti. Quando non viene punito, il narratore viene portato in giro per casa come il Papa per le vie di Roma. Ha una dozzina di ricordi della sorella dall'infanzia: fino all'adolescenza, quando diventa l'unica persona sana nel manicomio, è come se fosse un'ospite occasionale che appare e poi sparisce."
+    },
+    {
+      "sc_id": "104",
+      "chunk_ids": "2004-2031",
+      "embedding_summary": "Perfino al ristorante cinese, dove il Signore ha tolto il divieto del maiale per i figli obbedienti d'Israele, mangiare l'aragosta alla cantonese è fuori questione secondo la madre, portavoce di Dio in materia alimentare. Perché si può mangiare il maiale a Pell Street ma non a casa il narratore non l'ha ancora capito: crede abbia a che fare col fatto che il proprietario cinese non è qualcuno di cui preoccuparsi. Gli unici che gli ebrei non temono sono i cinesi. La madre spiega che non si può mangiare l'aragosta perché potrebbe uccidere: lei stessa la mangiò una volta e quasi morì. In gioventù fu raggirata da un attraente e spregiudicato agente assicurativo irlandese di nome Doyle, che a un banchetto della compagnia ad Atlantic City la convinse che l'aragosta Newburg nel suo piatto era pollo alla king."
+    },
+    {
+      "sc_id": "105",
+      "chunk_ids": "2032-2068",
+      "embedding_summary": "Fu a un banchetto di addio della compagnia ad Atlantic City che Doyle fece credere alla madre che il piatto fosse pollo alla king. Lei sospettava qualcosa, ma brilla per due whiskey sour ignorò il proprio presentimento e si abbandonò allo spirito di avventura. Solo al sorbetto Doyle — che la madre descrive come un secondo Errol Flynn — le rivelò cosa aveva mangiato. Di conseguenza passò tutta la notte a vomitare sopra il water, così violentemente che le dita le si irrigidirono, e il padre dovette chiamare il medico dell'hotel. Il padre dice di non ricordare nulla della storia, e il narratore osserva che forse la vicenda ha più a che fare con l'immaginazione che con la realtà, e più col pericoloso Doyle che con l'aragosta proibita."
+    },
+    {
+      "sc_id": "106",
+      "chunk_ids": "2069-2104",
+      "embedding_summary": "Il monologo della madre va avanti: come altri bambini ascoltano la storia di Scrooge, il narratore viene nutrito con i capitoli della vita pericolosa di lei. Questa è la letteratura della sua infanzia; gli unici libri in casa sono Dragon Seed (l'isterectomia), Argentine Diary e Le memorie di Casanova (l'appendicectomia del padre). Gli altri libri sono scritti da Sophie Portnoy, nella serie Tu mi conosci, provo tutto una volta: lei si vede come una temeraria combinazione di Marie Curie, Anna Karenina e Amelia Earhart. Tra le sue storie: il primo giorno di patente ebbe un incidente e non guidò più; a dieci anni cadde in uno stagno e da allora non entra più in acqua; e l'aragosta, che anche nella sua ubriachezza sapeva non essere pollo, e che da allora non ha più mangiato né vuole che il figlio mangi."
+    },
+    {
+      "sc_id": "107",
+      "chunk_ids": "2105-2135",
+      "embedding_summary": "Il narratore si chiede se non stia semplicemente lamentandosi come un paziente psicoanalitico da manuale. La repulsione sembra senza fondo, ma la coscienza vuole far sapere che all'epoca la sua infanzia non era ciò da cui si sente così estraniato ora. Dove altro avrebbe trovato un pubblico come i genitori per le sue imitazioni? La madre una volta si bagnò i pantaloni dal ridere per la sua imitazione del signor Kitzel. E le passeggiate domenicali col padre nel parco Weequahic che non ha mai dimenticato. E la conversazione ininterrotta con la madre nei cinque anni prima della scuola, quando lei diceva al padre che parlando con Alex stirava un intero pomeriggio senza accorgersi del tempo, e il narratore aveva solo quattro anni."
+    },
+    {
+      "sc_id": "108",
+      "chunk_ids": "2136-2154",
+      "embedding_summary": "Anche le urla, il pianto e il tremore avevano una vivacità e un'eccitazione che li raccomandavano; il fatto che nulla fosse mai semplicemente nulla ma sempre QUALCOSA, che un evento ordinario potesse esplodere senza preavviso in una CRISI TERRIBILE, era per il narratore il modo in cui funzionava la vita. Lo scrittore Markfield ha scritto che fino a quattordici anni credeva che 'aggravation' fosse una parola ebraica; il narratore pensava lo stesso di 'tumult' e 'bedlam', due sostantivi preferiti della madre. Anche 'spatola': quando la maestra gli chiese di identificare l'immagine di una spatola, non riuscì a pensare alla parola in inglese perché la madre la chiamava con una parola diversa."
+    },
+    {
+      "sc_id": "109",
+      "chunk_ids": "2155-2173",
+      "embedding_summary": "Il narratore ricorda che quando vivevano ancora a Jersey City, un quindicenne del loro palazzo di nome Ronald Nimkin, soprannominato dalle donne il secondo José Iturbi, si impiccò al soffione della doccia. Le donne si lamentarono delle sue mani d'oro e del suo talento, e dissero che non si poteva trovare un ragazzo più innamorato della madre. La madre del narratore, al ritorno dall'Europa, lo salutò al telefono chiamandolo il suo amante, col marito in ascolto sull'altra linea. Queste persone portano l'inconscio sulle maniche."
+    },
+    {
+      "sc_id": "110",
+      "chunk_ids": "2174-2202",
+      "embedding_summary": "La signora Nimkin piange nella cucina dei Portnoy chiedendo perché il figlio abbia fatto questo a loro — non cosa loro possano aver fatto a lui. Il narratore si infuria: possono essere così ciechi, equipaggiati di cervello e midollo spinale e quattro aperture, e attraversare la vita senza un indizio sui sentimenti altrui? La signora Nimkin è colpevole di egoismo e stupidità. Poi il narratore si modera: forse lei vuole bene, è in lutto, e non sa cos'altro dire. Si chiede cosa siano dopotutto queste donne ebree che li hanno cresciuti: i loro equivalenti in Calabria stanno nelle chiese come pietre, a Calcutta mendicano o sono attaccate agli aratri. Solo in America si tingono i capelli di platino a sessant'anni e passeggiano per Collins Avenue in Florida con opinioni su tutto."
+    },
+    {
+      "sc_id": "111",
+      "chunk_ids": "2203-2236",
+      "embedding_summary": "Il dettaglio preferito del narratore sul suicidio di Ronald Nimkin: mentre pende dal soffione c'è un biglietto appuntato alla camicia a maniche corte con i risvolti inamidati. Il narratore ricorda Ronald come un adolescente catatonico ed emaciato che nuotava in quelle camicie troppo grandi, con le dita lunghe e bianche che la madre del narratore ripeteva all'infinito essere mani da pianista nato. Pianista: una delle parole che adorano, quasi quanto dottore, specializzazione e soprattutto il suo studio. Segue una parodia dei racconti materni sui successi di figli altrui: il tale è il più grande neurochirurgo dell'emisfero occidentale, possiede case, appartiene a undici sinagoghe, ha portato la famiglia in Europa e in ogni città il sindaco gli ha chiesto di operare un cervello."
+    },
+    {
+      "sc_id": "112",
+      "chunk_ids": "2237-2284",
+      "embedding_summary": "L'implicazione è: quando ti sposerai? A Newark e nei sobborghi tutti si chiedono quando Alexander Portnoy smetterà di essere egoista e darà ai suoi meravigliosi genitori dei nipotini. Il padre chiede ogni volta se c'è una ragazza seria. Mentre tutti gli altri compagni si sono sposati con brave ragazze ebree e hanno messo radici, il narratore a trentatré anni insegue le donne, specialmente shikse. Corre per le strade di Manhattan con gli occhi che gli escono dalle orbite, fantastiche su ogni ragazza nella metropolitana, si maledice per non aver parlato con quella nel l'ascensore e allo stesso tempo si maledice per le volte in cui ha abbordato sconosciute per strada. Non riesce a controllare il fuoco nei pantaloni: la sua condizione sessuale non è cambiata da quando aveva quindici anni."
+    },
+    {
+      "sc_id": "113",
+      "chunk_ids": "2285-2325",
+      "embedding_summary": "Il narratore si chiede se esageri, se questa irrequietezza sessuale sia un'afflizione o un vanto, o un mezzo di evasione. Almeno non è imprigionato in un matrimonio con qualcuno di cui il corpo ha smesso di interessargli. Ma ammette che anche la sua situazione è un po' deprimente. Si chiede se abbia qualcosa, per quanto tempo continuerà a fare esperimenti con le donne, a infilare il membro da un buco all'altro. Poi si chiede perché dovrebbe finire: per compiacere i genitori? Per conformarsi alla norma? Difende la sua condizione di scapolo e la libertà sessuale. L'inconscio, dice Freud, non sa fare altro che desiderare. Elenca le qualità e i difetti sessuali di varie donne. Ha relazioni che durano anche un anno e mezzo, ma alla fine la lussuria svanisce e non riesce a fare il passo verso il matrimonio."
+    },
+    {
+      "sc_id": "114",
+      "chunk_ids": "2326-2368",
+      "embedding_summary": "Il narratore chiede perché dovrebbe sposarsi: c'è forse una legge? Le donne possono minacciare il suicidio, ma lui non firmerà un contratto per dormire con una sola donna per tutta la vita. Se sposasse A, cosa succederebbe quando apparisse B, o C, o D fino alla Z e oltre? Per amore? Ciò che lega le coppie è debolezza, comodità, apatia, senso di colpa, paura e inerzia, non amore. Come potrebbe sposare qualcuno sapendo che in cinque o sei anni sarà per strada a cercare nuove donne mentre la moglie devota soffre? E poi il divorzio, il mantenimento, le visite. Infine, la più recente delusa aspirante sposa — una ragazza alta e strana detta The Monkey, che guadagnava come modella per intimo quanto suo padre illetterato guadagnava in una settimana nelle miniere di carbone della West Virginia — gli urla dal balcone dell'hotel ad Atene di essere un pervertito."
+    },
+    {
+      "sc_id": "115",
+      "chunk_ids": "2369-2399",
+      "embedding_summary": "Questa ragazza, che lo ha frainteso completamente, si chiama The Monkey, un soprannome che deriva da una piccola perversione che praticò poco prima di incontrare il narratore. Era la realizzazione dei suoi sogni adolescenziali più lascivi, ma sposarla è impensabile. Ha una bassissima opinione di sé e contemporaneamente un'opinione ridicolmente alta del narratore, e anche un'opinione molto bassa di lui. Gli grida dal balcone dell'hotel ad Atene di essere un intellettuale e una persona spirituale, che si preoccupa più dei neri di Harlem che di lei che gli pratica sesso orale da un anno. Il narratore, valigie in mano, le dice di saltare se vuole e se ne va. Lei grida che solo per amore di lui ha fatto le cose degradanti che le ha imposto. Il narratore nega che sia vero: è un tentativo di spezzarlo col senso di colpa per ottenere un marito. Lei ha ventinove anni e a settembre ne compirà trenta: ma le aspettative sono sue. The Monkey minaccia di rivelare al mondo le cose sporche che lui le ha fatto fare."
+    },
+    {
+      "sc_id": "116",
+      "chunk_ids": "2400-2422",
+      "embedding_summary": "Il narratore è stato recentemente nominato dal sindaco Vice Commissario per la Commissione sulle Pari Opportunità della Città di New York, ma questo non sembra bastare ai genitori. Quando il suo nome appare sul Times, bombardano i parenti con i ritagli e la madre parla al telefono per giorni. Lo considerano un successo e un genio, ma in qualche modo non del tutto perfetto: rifiuta di essere perfetto."
+    },
+    {
+      "sc_id": "117",
+      "chunk_ids": "2423-2453",
+      "embedding_summary": "I genitori vengono in visita e criticano il tappeto consumato dell'appartamento, temendo che inciampi e si faccia male al ginocchio, quello su cui portò il gesso fino all'anca a quattordici anni. La madre dice che un giorno sarà genitore e capirà. Il narratore osserva che la leggenda incisa su ogni bambino ebreo non è 'In Dio confidiamo' ma 'Un giorno sarai genitore e capirai'."
+    },
+    {
+      "sc_id": "118",
+      "chunk_ids": "2454-2486",
+      "embedding_summary": "Il padre chiede ironicamente se il figlio diventerà genitore prima che lui scenda nella tomba, e lo accusa di preferire rischiare con un tappeto consumato e spaccarsi la testa, vivendo solo senza nessuno che gli porti una zuppa. Il narratore elenca i propri successi — Vice Commissario, primo del suo corso in legge, consulente speciale di una sottocommissione del Congresso a venticinque anni — in una voce stridula e strozzata. Conclude che un uomo ebreo con i genitori vivi è un ragazzino di quindici anni e lo resterà finché non muoiono."
+    },
+    {
+      "sc_id": "119",
+      "chunk_ids": "2487-2518",
+      "embedding_summary": "Sophie gli prende la mano, aspetta che finisca di elencare i suoi successi, e sussurra: per noi sei ancora un bambino. Poi, col famoso sussurro che tutti sentono: digli che ti dispiace, dagli un bacio, un bacio da te cambierebbe il mondo. Il narratore si rivolge al dottore: un uomo ebreo coi genitori vivi è un neonato, un figlio soffocato in una barzelletta ebraica. A trentatré anni comincia a stufare. C'è dolore umano, e questa è la parte che Sam Levenson e Myron Cohen omettono. Aiuto, mio figlio il dottore sta annegando! — sì, ma è il paziente quello che sta annegando, è il narratore. Chiede al dottore di togliergli queste persone dalle spalle."
+    },
+    {
+      "sc_id": "120",
+      "chunk_ids": "2519-2558",
+      "embedding_summary": "L'estate prima della partenza per l'Europa: il narratore porta i genitori a cena in un ristorante francese dove il padre ordina un pezzo di pesce e la madre sussurra al cameriere di cuocere bene il pesce del suo ragazzone. Dopo cena li accompagna verso il taxi. Il padre si lamenta che non li ha visitati da cinque settimane, che vedono la figlia ma il genero lo censura, e che i Portnoy che sognava sono nei testicoli del figlio. Il narratore grida che li sta vedendo in quel momento. La madre interviene dicendo che quando era piccola la sua famiglia la obbligava a fare questo e quello, e che Alexander è un ragazzo grande con diritto di prendere le proprie decisioni. Salgono nel taxi. La madre sussurra al narratore di dare un bacio al padre perché sta andando in Europa."
+    },
+    {
+      "sc_id": "121",
+      "chunk_ids": "2559-2613",
+      "embedding_summary": "Il padre è preso dal panico perché non conosce l'itinerario europeo del figlio. Il narratore sbatte la portiera del taxi e ricorda il padre di tutta la vita: trovato al mattino addormentato sul water, alzatosi alle sei meno un quarto per concedersi un'ora intera nella speranza che gli intestini cedano, per poi realizzare alle sette e mezzo che c'è nel water al massimo un pellet, e doversi preparare di corsa per andare a lavorare tutto intasato. Inghiotte le prugne cotte e i cereali in piedi, si riempie le tasche di frutta secca, e confida al narratore che dovrebbe ficcarsi una granata nel sedere. La madre lo rimprovera dal bagno per il linguaggio. Poi la scena del cappello perso: il padre gira per casa disperato cercando il cappello, e la madre dalla profondità della sua anima onnisciente risponde che l'ha in testa. Lui resta un attimo svuotato di ogni segno di esperienza umana, poi esce di casa nella Kaiser e Superman è andato fino a sera."
+    },
+    {
+      "sc_id": "122",
+      "chunk_ids": "2614-2650",
+      "embedding_summary": "Il narratore racconta di quando il padre lo portò orgogliosamente con sé a comprare una nuova auto Kaiser dopo la guerra. Il venditore cercava di vendere accessori e si rivolgeva al figlio per fare pressione sul padre, che diceva sempre no. Il narratore provò vergogna per l'incapacità del padre di dare alla famiglia le cose belle della vita. Poi riflette che il padre partiva ogni mattina per lavorare la giornata più lunga di qualsiasi agente assicurativo della storia, e si chiede per chi: se per il figlio, allora è troppo tragico. Si rifiuta di essere la ragione della vita del padre. Smettano di trovare incomprensibile che voli in Europa quando il padre ha sessantasei anni e potrebbe morire da un momento all'altro. Il padre crede forse che il narratore abbia il potere di sconfiggere la morte?"
+    },
+    {
+      "sc_id": "123",
+      "chunk_ids": "2651-2677",
+      "embedding_summary": "La verità è che il narratore è ossessionato dalla morte del padre e dai suoi intestini quanto il padre stesso. Ogni telegramma o telefonata notturna gli svuota lo stomaco e dice ad alta voce: è morto. Anche il narratore crede di poter salvare il padre dall'annullamento. Ma dove hanno preso tutti questa idea assurda che lui sia così potente, così prezioso, così necessario alla sopravvivenza di tutti? Il narratore si immagina su una gigantesca nave con altri figli ebrei, stipati nelle cuccette, che gemono attraverso mari pesanti di senso di colpa — chi ha avuto la madre più castrante, chi il padre più ottuso — e grida: questa fottuta nave smetterà mai di oscillare? Quando potranno uscire all'aria aperta e vivere?"
+    },
+    {
+      "sc_id": "124",
+      "chunk_ids": "2678-2706",
+      "embedding_summary": "Il narratore si rivolge al dottor Spielvogel: dare la colpa non allevia nulla, ma cos'avevano questi genitori ebrei che riuscivano a far credere ai figli di essere principi e geni unici da un lato, e merdine egoiste e incompetenti dall'altro? Mentre il taxi si allontana, il padre grida chiedendo dove in Europa. Il narratore, gioiosamente, risponde che non lo sa e che non sapranno il suo indirizzo. Il padre grida dal finestrino del taxi: e se muoio? Le ultime parole che il narratore sente prima di partire per l'Europa con The Monkey, che ha tenuto completamente segreta ai genitori. Non sa se le parole che sente siano quelle pronunciate, né se le senta per compassione o per desiderio anticipato dell'evento."
+    },
+    {
+      "sc_id": "125",
+      "chunk_ids": "2707-2726",
+      "embedding_summary": "Il narratore torna al dettaglio preferito del suicidio di Ronald Nimkin: il biglietto appuntato alla camicia del morto. L'ultimo messaggio alla madre: la signora Blumenthal ha chiamato, per favore porta le regole del mah-jongg alla partita di stasera. Un bravo ragazzo premuroso fino alla fine. Il narratore ricorda se stesso da bambino nascosto sotto il letto rifiutando di chiedere scusa, mentre la madre lo insegue con una scopa. A cinque o sei anni, lei lo minaccia come se il plotone d'esecuzione fosse già fuori."
+    },
+    {
+      "sc_id": "126",
+      "chunk_ids": "2727-2746",
+      "embedding_summary": "Il padre torna a casa dopo una giornata a vendere assicurazioni ai neri e trova una moglie isterica e un figlio metamorfizzato — perché il narratore, l'anima della bontà, le ha dato un calcio negli stinchi e l'ha morsa. La madre gli punta una torcia negli occhi e chiede perché. Il narratore grida dentro di sé: perché non ce la facciamo più, perché le madri ebree sono troppo da sopportare! Ha letto Freud su Leonardo: la fantasia del grande uccello soffocante che batte le ali sulla sua faccia impedendogli di respirare. Ciò che lui, Ronald e Leonardo vogliono è essere lasciati in pace, anche solo per mezz'ora."
+    },
+    {
+      "sc_id": "127",
+      "chunk_ids": "2747-2785",
+      "embedding_summary": "Il padre chiede se vuole essere il tipo di ragazzino che prende a calci la propria madre. Il narratore nota per la prima volta gli avambracci massicci del padre ed è terrorizzato dalla sua rabbia. Il padre ruggisce che un morso umano è peggio di quello di un cane. La sorella Hannah corre in cucina terrorizzata e si rannicchia in posizione fetale tra il frigorifero e la parete. La madre dice che il morso e i calci può sopportarli, ma un figlio che non chiede nemmeno scusa? La madre è al telefono a dire che il suo più grande difetto è essere troppo buona: dà tutto agli altri e viene presa a calci in cambio. Il narratore commenta che essere cattivi è la vera lotta: è ciò che fa uomini dei ragazzi. Ma la sua coscienza ha devastato la sua sessualità, la sua spontaneità, il suo coraggio. È segnato dalla testa ai piedi con le sue repressioni."
+    },
+    {
+      "sc_id": "128",
+      "chunk_ids": "2786-2853",
+      "embedding_summary": "Il narratore è troppo buono anche lui, morale fino a scoppiare, come la madre. Non sa nemmeno fumare, quasi non beve, niente droghe, non gioca a carte, non sa mentire senza sudare. Dice parolacce, ma quello è l'unico successo trasgressivo. Ha rinunciato a The Monkey, la donna di cui ha sempre sognato, per paura. Perché la minima deviazione dalle convenzioni rispettabili gli causa un inferno interiore? Chiede al dottore di rimettere l'Es nell'ebreo. Cosa voleva la madre farne, di lui, uno zombie come Ronald Nimkin? Lo lodava per come tagliava la carne e usava il tovagliolo: un piccolo fruitcake è ciò che vedeva, esattamente il prodotto del programma di addestramento. Il vero mistero non è che non sia morto come Ronald, ma che non sia come i bravi ragazzi ebrei a Fire Island. Il narratore si immagina in una casa al mare con un certo Sheldon. I genitori non sanno nemmeno che esistono donne omosessuali. Se il narratore le ha dato un calcio negli stinchi e morso il polso, la madre dovrebbe contare le sue benedizioni: se avesse tenuto tutto dentro, avrebbe potuto trovare un cadavere adolescente appeso alla cintura del padre. O peggio, trovarsi a pranzo a Fire Island con Sheldon."
+    },
+    {
+      "sc_id": "129",
+      "chunk_ids": "2854-2897",
+      "embedding_summary": "Il narratore torna alla scena sull'autobus: la pantomima per nascondere il membro sotto il giubbotto, il terrore che il conducente polacco potesse accendere le luci e distruggere in un istante quindici anni di quaderni ordinati e buoni voti. Il pene gli parla come un'entità autonoma, ordinandogli di masturbarsi e descrivendogli la ragazza addormentata come una vera shikse con i capelli di lino: la vera McCoy. Il pene sostiene che lei finge di dormire e vuole che lui le faccia tutte le cose sporche. Il narratore cita il proverbio yiddish: quando il pene si alza, il cervello finisce sotto terra. Descrive la tecnica della masturbazione a tre dita che ha inventato per i luoghi pubblici."
+    },
+    {
+      "sc_id": "130",
+      "chunk_ids": "2898-2972",
+      "embedding_summary": "Il narratore racconta la visita al burlesque Empire di Newark: seguendo l'esempio del suo amico Smolka, uscì di casa di domenica mattina con il guantone da baseball e prese l'autobus fino al centro deserto. Fuori dal teatro c'erano uomini che sembravano l'equipaggio di una nave malata di scorbuto. L'organo gli parlava nelle mutande esortandolo a entrare per vedere la vagina di una donna. Il narratore oscillava tra il terrore di malattie, polizia e vergogna pubblica — era presidente del Club Relazioni Internazionali, aveva guidato la classe in uno sciopero contro la D.A.R. per il caso Marian Anderson, aveva stretto la mano al dottor Frank Kingdon — e il desiderio. In sessanta secondi immaginava un'intera vita di degradazione con una delle coriste, Thereal McCoy, che gli faceva ogni cosa immaginabile. Eiaculò nel guantone da baseball: forse il primo a farlo all'Empire. Un uomo a cinquanta posti da lui eiaculava nel proprio cappello. La depressione dopo l'orgasmo era schiacciante."
+    },
+    {
+      "sc_id": "131",
+      "chunk_ids": "2973-3009",
+      "embedding_summary": "Il narratore osserva disgustato l'uomo che eiacula nel cappello che poi dovrà rimettersi in testa. La depressione post-orgasmo è devastante. Poi ricorda improvvisamente come la madre gli insegnò a urinare in piedi: seduta accanto al water, una mano che controllava il rubinetto della vasca per imitare il rumore dell'acqua, l'altra che gli solleticava la parte inferiore del pene. La madre cantava 'fai una bella piscina per la mamma'. Il narratore pensa che in quel momento si stesse forgiando il suo carattere e il suo destino. A tutt'oggi non riesce a urinare in presenza di un altro uomo. E poi confessa infine che a Roma, lui e The Monkey raccolsero una prostituta per strada e la portarono a letto con loro."
+    },
+    {
+      "sc_id": "132",
+      "chunk_ids": "3010-3023",
+      "embedding_summary": "Il narratore non sa cosa lo abbia fermato sull'autobus dal venire sul braccio della shikse addormentata. Poi ricorda il giorno in cui tornò da scuola, trovò la madre fuori casa e nel frigorifero un grosso pezzo di fegato crudo. Ha già confessato il pezzo di fegato comprato dal macellaio e usato dietro il cartellone, ma vuole fare piena confessione: quello non era il suo primo rapporto sessuale. Il primo lo ebbe a casa, col fegato arrotolato attorno al pene nel bagno alle tre e mezzo, e poi lo mangiò alle cinque e mezzo a tavola con tutta la famiglia. Il peggior crimine della sua vita: ha avuto rapporti sessuali con la cena della famiglia."
+    },
+    {
+      "sc_id": "133",
+      "chunk_ids": "3024-3064",
+      "embedding_summary": "A meno che si condivida l'opinione di The Monkey che il crimine peggiore sia stato abbandonarla in Grecia, e il secondo averla condotta nel triangolo a Roma. Secondo lei il narratore è il solo responsabile perché ha la natura più forte e morale: il grande umanitario che le ha dato da leggere U.S.A. di Dos Passos, che l'ha spinta a fare domanda al Hunter College, e che ora la tratta come una prostituta. Nella visione di The Monkey, la missione del narratore era elevarla dagli abissi di frivolezza e lussuria in cui lui stesso ha inutilmente cercato di sprofondare per tutta la vita. Il narratore insiste che lei stessa fantasticava sulla cosa non meno febbricitantemente di lui, che fu lei a parlare in italiano con la prostituta e a negoziare il prezzo, mentre lui sedeva al volante come l'autista di una rapina. Non è la sua vittima."
+    },
+    {
+      "sc_id": "134",
+      "chunk_ids": "3065-3114",
+      "embedding_summary": "La prostituta, Lina, non era brutta: rotonda e grassottella, sui vent'anni, con un gran seno — era quello per cui l'avevano scelta sulla Via Veneto. Si tolse il vestito e sotto portava un corsetto a mezza vedova da cui traboccavano i seni e le cosce. The Monkey uscì dal bagno nella sua sottoveste e il narratore era nudo in fondo al letto. Il fatto che Lina non parlasse inglese intensificava il sadismo trattenuto tra il narratore e The Monkey. Fu The Monkey a mettere in moto la lussuria infilando un dito nella prostituta. Il narratore descrive lo stato frenetico di attività che seguì, finché eiaculò per la terza e ultima volta. Poi andò in bagno e vomitò la cena."
+    },
+    {
+      "sc_id": "135",
+      "chunk_ids": "3115-3165",
+      "embedding_summary": "Quando il narratore uscì dal bagno, The Monkey e Lina dormivano abbracciate. The Monkey cominciò subito a piangere e accusare il narratore di averla condotta nel male. Litigarono: lei aveva iniziato a toccare Lina, ma replica che se fa qualcosa la fa bene, il che non significa che voglia farla. Lo accusò di non aver giocato abbastanza con i seni di Lina e negò di essere lesbica. La sera dopo si eccitarono di nuovo a cena e ripresero Lina per un secondo round. Questa volta il narratore la montò prima ancora che The Monkey uscisse dal bagno. The Monkey non fu contenta e rifiutò di partecipare. Lina si stese accanto al narratore e raccontò la propria vita: il flagello erano gli aborti, aveva un figlio, viveva a Monte Mario. Il narratore le fece spiegare i metodi contraccettivi moderni e le diede le pillole anticoncezionali di The Monkey, cosa che provocò un'altra furiosa lite."
+    },
+    {
+      "sc_id": "136",
+      "chunk_ids": "3166-3225",
+      "embedding_summary": "The Monkey gridò che il narratore era un salvatore: dare le sue pillole a una prostituta! Lui ribatté che non aveva senso farla restare incinta ogni due settimane. Lei rispose che non le importava cosa succedeva alla prostituta, e che il narratore non aveva nemmeno aspettato che uscisse dal bagno. La domenica, nella hall dell'hotel, Lina comparve con il suo bambino vestito elegantemente dopo la chiesa, e propose di andare tutti nel suo appartamento con un suo amico che avrebbe voluto fare sesso con la signorina. Il narratore rifiutò categoricamente. Per tutta la strada verso Villa Adriana, The Monkey pianse: voleva un figlio, una casa, un marito, non era lesbica, non era una prostituta. Lo accusò di ipocrisia ricordando la sera in cui lo aveva accompagnato nel Bronx per una serata sulle pari opportunità in cui parlava spagnolo ai portoricani per difendere i loro diritti. Lui era un falso: grande uomo con i poveri ma faceva dormire le donne con le prostitute. Minacciò di chiamare il sindaco Lindsay e il giornalista Jimmy Breslin. Ad Atene minacciò di saltare dal balcone se non la sposava. Così il narratore se ne andò."
+    },
+    {
+      "sc_id": "137",
+      "chunk_ids": "3226-3264",
+      "embedding_summary": "Le shikse: d'inverno il narratore pattina sul ghiaccio del lago nel parco di Irvington, seguendo le ragazze gentili che vivono a Irvington, la città oltre il confine dal suo quartiere ebraico. Riconosce le case dei gentili dalle tendine con i pizzi che la madre definisce gusto da gentili, e dai panni bianchi con la stella appesa alla finestra per i figli in guerra — stella blu se vivo, oro se morto. La zia Clara è anche lei una Gold Star Mom per Heshie, ma non ha stelle alla finestra: la morte del figlio l'ha ridotta a un caso nevrotico a vita. A Natale il narratore vede gli alberi lampeggianti dietro le tendine dei gentili, le case delineate con le lampadine colorate, i presepi sui prati innevati. Il narratore si chiede come possano credere a queste cose: l'idiozia degli ebrei tutto l'anno, e poi l'idiozia dei gentili nelle feste. Che paese: non c'è da meravigliarsi se sono tutti mezzi matti."
+    },
+    {
+      "sc_id": "138",
+      "chunk_ids": "3265-3317",
+      "embedding_summary": "Ma le shikse sono un'altra cosa: tra l'odore di segatura umida e lana bagnata nello spogliatoio surriscaldato e la vista dei loro capelli biondi freschi e freddi che escono dai berretti, il narratore è in estasi. Pattina dietro un covone di shikse, un mazzetto, una ghirlanda di ragazze gentili. È talmente in soggezione che il suo piccolo membro circonciso è semplicemente avvizzito dalla venerazione o dal terrore. Come fanno a essere così splendide, sane, bionde? Il disprezzo per ciò in cui credono è più che neutralizzato dall'adorazione per il loro aspetto e le loro vite. I loro fratelli maggiori sono i terzini belli e sicuri di sé di Northwestern e Texas Christian. I loro padri sono uomini dai capelli bianchi che non usano doppi negativi. Le loro madri sono signore con bei modi. Queste sono le vere americane: come i personaggi della radio e del cinema che il narratore ascolta e guarda. Questi cristiani biondi sono i legittimi residenti e proprietari di questo posto. Per i nonni l'America era oro nelle strade, per i genitori un pollo in ogni pentola, ma per il narratore — un bambino i cui primi ricordi cinematografici sono Ann Rutherford e Alice Faye — l'America è una shikse accoccolata sotto il suo braccio che sussurra amore amore amore amore amore!"
+    },
+    {
+      "sc_id": "139",
+      "chunk_ids": "3318-3344",
+      "embedding_summary": "Al crepuscolo sul lago gelato del parco, pattinando dietro i paraorecchie rossi e i riccioli gialli di una shikse sconosciuta, il narratore tredicenne impara il significato della parola desiderio. Le segue fino alla pasticceria dove bevono cioccolata calda senza sensi di colpa per aver rovinato l'appetito per cena, poi le segue di nuovo intorno al lago. Alla fine loro tornano alle case dei padri grammaticali e delle madri composte dietro le tendine gentili, e il narratore torna a Newark alla sua vita palpitante dietro le persiane veneziane di alluminio per cui la madre ha risparmiato per anni."
+    },
+    {
+      "sc_id": "140",
+      "chunk_ids": "3345-3368",
+      "embedding_summary": "Le persiane veneziane rappresentano un'ascesa sociale per la madre, che passa le giornate a pulirle e al crepuscolo guarda la neve attraverso le lamelle e comincia a preoccuparsi. In pochi minuti è freneticamente convinta che il padre, quindici minuti in ritardo per cena mentre nevica, sia morto schiantato contro un palo del telegrafo. Con la faccia da un quadro di El Greco, dice ai figli di cominciare a mangiare. Pensa ai figli senza padre e a se stessa senza marito, tutto perché ha dovuto nevicare."
+    },
+    {
+      "sc_id": "141",
+      "chunk_ids": "3369-3391",
+      "embedding_summary": "Intanto il narratore si chiede se con il padre morto dovrà lavorare dopo scuola e rinunciare a pattinare con le shikse prima ancora di aver parlato con una di loro. Ha paura di aprire bocca perché sentiranno l'ebraicità nel suo cognome. Inventa nomi falsi — Al Parsons, Alton Peterson — ma come potrà mentire riguardo al naso, che è improvvisamente cresciuto al punto da avere J-E-W scritto in mezzo alla faccia?"
+    },
+    {
+      "sc_id": "142",
+      "chunk_ids": "3392-3418",
+      "embedding_summary": "Il narratore traccia il profilo del proprio naso su un foglio di carta intestata del padre: è terribile. In cima punta verso il cielo e a metà comincia a piegarsi verso la bocca. Si guarda allo specchio spingendo le narici verso l'alto, ma di fronte sembra Bugs Bunny. Taglia pezzi di cartone e li attacca con lo scotch ai lati del naso per ripristinare la curva dell'infanzia. La crescita del naso sembra datare esattamente dal momento in cui scoprì le shikse al parco — come se il suo stesso osso nasale avesse deciso di agire come agente dei genitori, come Pinocchio. La madre dice che il naso gli dà carattere e di lasciarlo stare."
+    },
+    {
+      "sc_id": "143",
+      "chunk_ids": "3419-3458",
+      "embedding_summary": "Ma chi vuole il carattere? Il narratore vuole Thereal McCoy: nel suo parka blu e i paraorecchie rossi, Miss America su lame, con il vischio e il pudding di prugne, la casa con la ringhiera e la scala, i genitori tranquilli, e il fratello Billy che non ha paura di niente. Si rannicchierà accanto a lui sul divano nel suo maglione d'angora e lo bacerà alla porta, e il suo naso e il suo nome non conteranno più nulla. Il narratore vuole Jane Powell, Debbie Reynolds — è l'Eddie Fisher che c'è in tutti gli ebrei scuri che bramano le bionde esotiche chiamate shikse. Ma ciò che non sa ancora è che per ogni Eddie c'è una Debbie che brama un Eddie, una Marilyn Monroe che brama il suo Arthur Miller. Chi avrebbe mai creduto che Elizabeth Taylor avesse il debole per lo zio Hymie? Il segreto per conquistare una shikse non era fingere di essere un gentile, ma essere se stessi."
+    },
+    {
+      "sc_id": "144",
+      "chunk_ids": "3459-3495",
+      "embedding_summary": "Anche solo il nome di The Monkey gli provoca un'erezione, ma sa che non dovrebbe mai più vederla: è pazza, ossessionata dal sesso, guai puri. Ma per lei lui doveva essere il cavaliere in armatura scintillante, il salvatore ebreo che non beve né gioca d'azzardo, garantito per darle figli da crescere e Kafka da leggere: un Messia domestico. Il passato del narratore era l'opposto di quello di The Monkey, cresciuta nel gelo di una città mineraria della West Virginia, proprietà di un padre quasi un mulo e figlia di una madre montanara analfabeta senza un molare in bocca."
+    },
+    {
+      "sc_id": "145",
+      "chunk_ids": "3496-3534",
+      "embedding_summary": "Una storia di The Monkey: a undici anni sfuggì al padre per andare a una lezione di balletto da un certo Mr. Maurice; il padre la inseguì picchiandola con una cintura alle caviglie fino a casa e la chiuse in un armadio con i piedi legati. Quando arrivò a New York a diciotto anni non aveva quasi denti posteriori, tutti estratti da un dentista locale. Si era già sposata e divorziata: il marito era un industriale francese cinquantenne che si masturbava nel letto coniugale davanti a una rivista erotica invece di avere rapporti con lei, ma che le aveva pagato cinquemila dollari di lavori dentali a Londra e centinaia di migliaia di dollari in gioielli, il che la fece sentire leale per un certo tempo. Alla fine fuggì quando lui cominciò a organizzare orge in cui una donna defecava su un tavolino di vetro mentre lui si masturbava sotto."
+    },
+    {
+      "sc_id": "146",
+      "chunk_ids": "3535-3572",
+      "embedding_summary": "Dopo il ritorno a New York, a ventiquattro-venticinque anni The Monkey tentò il suicidio tagliandosi i polsi a causa del trattamento di un fidanzato in un locale alla moda. Così trovò la strada verso il dottor Morris Frankel, che il narratore chiama Harpo perché non parla mai. Per cinque anni si è agitata sul suo divano chiedendo perché si innamora sempre di bastardi e non di uomini. Il narratore fu per lei una svolta. Lo incontrò a mezzanotte all'angolo tra Lexington e la Cinquantaduesima: slanciata, con capelli scuri e abbondanti, lineamenti minuti con un'espressione petulante, e un sedere assolutamente fantastico."
+    },
+    {
+      "sc_id": "147",
+      "chunk_ids": "3573-3631",
+      "embedding_summary": "Il narratore la abbordò per strada offrendole prima un drink, poi con una proposta esplicita. Lei rispose: meglio così. Andarono a casa di lei, si spogliò e disse: vai avanti. Seguì una lunga conversazione sulle perversioni: lei raccontò di una coppia di amici che aveva fatto sesso sul tappeto della sua camera mentre lei guardava con la febbre a 102, e che loro volevano che mangiasse una banana mentre guardava. Poi confessò di aver mentito: gli amici non l'avevano chiesto, era stata lei a volerlo. Da qui il soprannome The Monkey."
+    },
+    {
+      "sc_id": "148",
+      "chunk_ids": "3632-3704",
+      "embedding_summary": "La risata di The Monkey non mise il narratore a suo agio: temeva che un uomo nero saltasse fuori dall'armadio col coltello, o che lei diventasse isterica. Si chiese se fosse una prostituta, una maniaca, complice di uno spacciatore portoricano. Lei esplose in lacrime quando il narratore le chiese se facesse così sempre, poi confessò la bugia sulla banana. Perché mentì? Probabilmente per segnalare, semicosciamente, che era capitata su una persona di tipo superiore: nonostante tutto ciò che era successo tra loro, non voleva che lui la pensasse dedita interamente all'eccesso sessuale. Un'occhiata a lui bastò perché immaginasse tutta la vita che poteva essere la sua: basta playboy narcisisti, basta dirigenti pubblicitari sposati — finalmente l'uomo dei sogni, un ebreo buono con moglie e figli, che prima le pratica sesso orale e poi subito dopo le consiglia libri, le spiega come vivere e come votare. Un uomo ebreo che si occupava dei poveri e appariva in televisione educativa!"
+    },
+    {
+      "sc_id": "149",
+      "chunk_ids": "3705-3753",
+      "embedding_summary": "Cosa successe al parco di Irvington: un sabato pomeriggio tardi il narratore si trovò quasi solo sul lago con una quattordicenne dai tratti di Margaret O'Brien e la disponibilità di Peggy Ann Garner. La ragazza aveva finito i suoi otto e andava verso lo spogliatoio, e il narratore non aveva fatto nulla per tutto l'inverno. Si lanciò all'inseguimento: avrebbe detto di chiamarsi Alton Peterson, un nome totalmente gentile scelto dall'elenco telefonico di Montclair, che aveva praticato a scrivere tutto l'inverno su fogli poi bruciati. Ma così preoccupato dal nome falso e da cosa dire riguardo al naso, raggiunse il bordo del lago troppo presto con la punta del pattino, fu proiettato in avanti e si scheggiò un dente e si fratturò la tibia. Sei settimane col gesso dalla caviglia all'anca: la malattia di Osgood-Schlatter. Il padre gli gridava di piegare la gamba per non restare storpio a vita. Per aver pattinato dietro alle shikse sotto falso nome, sarebbe stato storpio per sempre."
+    },
+    {
+      "sc_id": "150",
+      "chunk_ids": "3754-3819",
+      "embedding_summary": "Bubbles Girardi, una diciottenne espulsa dal liceo di Hillside, trovata dal compagno Smolka nella piscina dell'Olympic Park. Il narratore non ci andrebbe mai in quella piscina: incubatrice di polio e malattie della pelle. Ma è lì che si trovano le ragazze che fanno sesso. Smolka li porta a casa di Bubbles, dove lei stira in sottoveste in cucina. Il fratello è a boxare a Hoboken, il padre guida per la mafia di notte, la madre è morta. Il narratore è terrorizzato: il preservativo che porta in tasca da mesi sarà marcito, il fratello potrebbe tornare, il padre gangster potrebbe arrivare prima, Bubbles potrebbe avere la sifilide. Fantastica che il suo pene caschi sul pavimento davanti alla madre che grida e chiama il padre dal bagno."
+    },
+    {
+      "sc_id": "151",
+      "chunk_ids": "3820-3892",
+      "embedding_summary": "Sopra il lavandino dei Girardi c'è un'immagine di Gesù Cristo in una vestaglia rosa: disgustoso. Il narratore disprezza gli ebrei per la ristrettezza mentale ma i gentili per la volgarità e la stupidità delle loro credenze. Però la vera ragione per cui dovrebbe visitare i Girardi è evangelizzare per Henry Wallace e Glen Taylor: i Girardi sono il popolo per i cui diritti lui e il futuro cognato Morty discutono ogni domenica con i loro genitori e zii ignoranti. Il narratore ha scritto un radiodramma ispirato a Norman Corwin intitolato Let Freedom Ring!, un dramma morale i cui personaggi si chiamano Pregiudizio e Tolleranza. Il sabato mattina presto, esce con Morty nel camion a consegnare casse di Squeeze nelle campagne del New Jersey. All'alba in un diner, mentre legge il suo dramma a Morty, si sente rinascere: libero, pulito, forte, americano. Giura di dedicare la vita a raddrizzare i torti, all'elevazione degli oppressi e alla liberazione degli ingiustamente imprigionati."
+    },
+    {
+      "sc_id": "152",
+      "chunk_ids": "3893-3951",
+      "embedding_summary": "Il narratore è gelato dalla paura: della ragazza e della sifilide, del padre e dei suoi amici, del fratello e dei suoi pugni, e della staccionata di ferro sotto la finestra della cucina su cui potrebbe restare infilzato. Vede la foto del giornale col titolo: il figlio dell'agente assicurativo si getta nel vuoto. Mandel suda e puzza; è un ragazzo ebreo come il narratore ma con la pettinatura a coda d'anatra, le basette, i vestiti da spaccone, un QI da genio che però preferisce rubare auto e fumare. Partecipa alle gare di masturbazione collettiva a casa Smolka. L'unica spiegazione del narratore è che il padre di Mandel è morto quando aveva dieci anni. E Smolka? Sua madre lavora: non ha tempo di perquisire i cassetti del figlio. Gli Smolka non sono ricchi come i Portnoy, e in questo sta la differenza: una madre che lavora e niente persiane veneziane spiegano tutto. Ma il narratore ammette che ascoltare la radio e sentire l'odore della zuppa di pomodoro a pranzo d'inverno sono piaceri insostituibili, come il pigiama pulito e stirato."
+    },
+    {
+      "sc_id": "153",
+      "chunk_ids": "3952-4024",
+      "embedding_summary": "La primavera precedente il narratore incontrò Mandel a Worth Street: vendeva protesi e supporti ortopedici, era sposato con figli e aveva una villetta a Maplewood. Mandel, che si era fatto cambiare il nome in Ba-ba-lu, era vivo e borghese: incredibile, dato che non faceva i compiti, fumava e beveva birra. Smolka a quanto pare era diventato professore a Princeton. Il narratore non riesce a crederci: dovrebbero essere in prigione o nella fogna. Ba-ba-lu raccontò che Bubbles Girardi era stata assassinata in un bar. Il narratore trova che la carriera di Bubbles ha senso almeno come causa ed effetto: se sei abbastanza cattiva ti fanno saltare la testa. Mandel e Smolka vivi e borghesi? Dovrebbero essere morti! Non facevano i compiti!"
+    },
+    {
+      "sc_id": "154",
+      "chunk_ids": "4025-4088",
+      "embedding_summary": "Smolka torna in cucina e dice che Bubbles non vuole farlo. Mandel protesta furiosamente: si è masturbato per una settimana in attesa. Il narratore vuole andarsene, ma dopo una seconda trattativa Bubbles accetta di masturbare uno solo, coi pantaloni addosso. Vincono a testa o croce: il narratore. Bubbles pesa centosettanta libbre e le sta crescendo un baffo. Non vuole toccare i testicoli né essere toccata. Il narratore non riesce ad avere l'erezione: nell'aula scolastica deve pensare a ospedali e incidenti per farla passare, e ora non c'è. Quando finalmente è pronto, Bubbles lo masturba con una mano come una macchina, contando fino a cinquanta. Il narratore si rende conto che ciò che ha sognato fin da quando aveva tredici anni — non una mela, non una bottiglia, ma una ragazza vera — sta accadendo così. Si dice: fingerò che sia la mia mano. E comincia a funzionare, ma Bubbles arriva a cinquanta e si ferma."
+    },
+    {
+      "sc_id": "155",
+      "chunk_ids": "4089-4150",
+      "embedding_summary": "Il narratore finge di masturbarsi da solo e comincia a funzionare, ma Bubbles si ferma a cinquanta. Lui implora ancora uno, due colpi, ma lei rifiuta: ha già stirato due ore. Il narratore afferra il membro e con un solo colpo magistrale eiacula — dritto nel suo stesso occhio. Bubbles grida che ha sporcato il divano, le pareti, il centrino, e lo chiama kike e sheeny. Il narratore protesta che ha lo sperma nell'occhio, corre in cucina dove Smolka e Mandel rotolano dalle risate, e infila la testa sotto il rubinetto. Sopra il lavandino, Gesù continua a salire nella vestaglia rosa: il narratore lo ritiene il responsabile ultimo di tutto questo dolore. Teme di diventare cieco e immagina la scena con i genitori quando tornerà a casa con il cane guida. Come si spiega la cecità? Frequentando ragazze cristiane."
+    },
+    {
+      "sc_id": "156",
+      "chunk_ids": "4151-4194",
+      "embedding_summary": "Il giorno dopo Mandel racconta che mezz'ora dopo la partenza frenetica del narratore, Bubbles era in ginocchio a praticargli sesso orale, e poi avevano avuto rapporti completi due volte, senza preservativo. Il narratore protesta che lei era antisemita. Mandel non sa cosa significhi e non gli importa. Il narratore è disperato: perché solo lui testa i preservativi in cantina? Perché solo lui vive nel terrore della sifilide? Perché è tornato a casa col suo occhietto sanguinante, dalla mamma, al biscotto e al latte, al suo letto pulito, quando mezz'ora dopo Bubbles era in ginocchio? E poi chiede a Mandel ogni singolo dettaglio di ciò che è successo: i seni, i capezzoli, le cosce, i peli pubici, se lei si è inginocchiata davvero, come ha fatto con i denti, se ha ingoiato, chi l'ha messo dentro, come si viene — perché deve saperlo prima di impazzire."
+    },
+    {
+      "sc_id": "158",
+      "chunk_ids": "4197-4210",
+      "embedding_summary": "Il narratore descrive l'effetto sproporzionato che la calligrafia di The Monkey aveva sul suo equilibrio psichico: lettere da bambina di otto anni, nulla in maiuscolo o con punteggiatura, stampate a mano, con errori di ortografia continui. La parola 'dear' scritta con tre lettere — d-i-r — la sera della cena a Gracie Mansion. Si chiede cosa ci faccia con una donna di quasi trent'anni che pensa che 'dear' si scriva con tre lettere."
+    },
+    {
+      "sc_id": "159",
+      "chunk_ids": "4211-4245",
+      "embedding_summary": "Dopo due mesi dal primo incontro, le stesse correnti di sentimento trascinano il narratore: desiderio delirante da un lato e qualcosa vicino al disprezzo dall'altro. Pochi giorni prima c'era stato il fine settimana in Vermont in cui la paura e la diffidenza erano state soppiantate da un'ondata di tenerezza. Sotto l'influenza del saggio di Freud sulla degradazione nella vita erotica, il narratore legge che per un atteggiamento pienamente normale nell'amore è necessario che le correnti del sentimento tenero e di quello sensuale siano unite: 'dove amano non desiderano, e dove desiderano non possono amare'. Si chiede se i suoi sentimenti sensuali siano fissati alle fantasie incestuose, e se l'ossessione per le shikse si spieghi con la condizione che l'oggetto sessuale debba essere degradato."
+    },
+    {
+      "sc_id": "160",
+      "chunk_ids": "4246-4284",
+      "embedding_summary": "Ma come spiegare il fine settimana in Vermont? La diga della barriera dell'incesto era crollata: il sentimento sensuale si mescolava alla tenerezza più pura e profonda, sia per lui che per lei. O era solo l'effetto dell'autunno, delle foglie colorate, del fuoco nella sala da pranzo della locanda? Guidarono per lo più, guardarono le valli e le montagne. Il narratore noleggiò una decappottabile per la prima volta nella vita — il figlio di un agente assicurativo sa che in una decappottabile basta un dosso e si vola fuori dall'auto col cranio in avanti. I genitori prima di mandarlo al college gli avevano fatto promettere di non viaggiare mai in una decappottabile: è una prugna e non vogliono che cada dall'albero prima di maturare."
+    },
+    {
+      "sc_id": "161",
+      "chunk_ids": "4285-4332",
+      "embedding_summary": "Il narratore elenca le raccomandazioni dei genitori prima del college: non viaggiare in decappottabile; cerca Howard Sugarman, il nipote di Sylvia, presidente dell'Hillel; ricordati del cugino Heshie e della tortura che si inflisse con quella ragazza, non svendere te stesso, non buttare via un futuro brillante per una nullità. A sedici anni è un bambino e non conosce l'odio nel mondo. Le shikse sono un'altra razza di esseri umani e lo faranno a pezzi: cerca Howard all'Hillel, non correre dietro a una bionda perché ti prenderà tutto e ti lascerà a sanguinare nel fosso. Poi il narratore ricorda la barzelletta di Milty che telefona dal Giappone per dire che ha sposato una ragazza giapponese, e la madre che risponde che appena attacca si ucciderà. Il narratore commenta: bravo Milty innocente, lascia che la shikse faccia il lavoro sporco per te."
+    },
+    {
+      "sc_id": "162",
+      "chunk_ids": "4333-4361",
+      "embedding_summary": "Alla locanda a Dorset il narratore registra la stanza a nome di Arnold e signora Mandel. The Monkey gira per la hall esaminando i souvenir del Vermont e chiede di comprare sciroppo d'acero per la mamma Mandel. La notte è speciale non per le acrobazie sessuali wagneriane a cui il narratore si stava abituando, ma per il flusso nuovo di sentimenti: lei grida di non saziarsene e di sentirsi pazza e al tempo stesso tenera. Il sabato guidarono fino al lago Champlain; ebbero un rapporto in un campo al mattino, e nel pomeriggio lei gli chiese di fermarsi su una strada sterrata perché voleva praticargli sesso orale, e con il tetto abbassato. Il narratore cerca di comunicare che cominciarono a sentire qualcosa: sentimento, e senza diminuzione dell'appetito sessuale."
+    },
+    {
+      "sc_id": "163",
+      "chunk_ids": "4362-4441",
+      "embedding_summary": "Il narratore le recita Leda e il cigno di Yeats. Lei chiede spiegazioni su Agamennone, e il narratore le spiega Zeus, Clitemnestra, Elena, Paride, Troia. Lei chiede di risentirla tutta, ma lentamente. La poesia le piace: le ha fatto bagnare la vagina, segno che l'ha compresa col corpo. Il narratore si rende conto che lei sembra una bambina intelligente, non stupida affatto, una ragazza davvero speciale. Poi lei afferra il naso del narratore e grida: il becco indifferente! Ho capito ancora della poesia! Il narratore esclama che è una ragazza meravigliosa. Lei è senza fiato: davvero? Si, e ora posso fare l'amore con te? Lei risponde: scegli un buco, qualsiasi buco, sono tua."
+    },
+    {
+      "sc_id": "164",
+      "chunk_ids": "4442-4478",
+      "embedding_summary": "Idilliaco. Nella stanza a Woodstock, mentre il narratore si rade, lei fa il bagno. Che forza ha in quel corpo sottile: le acrobazie gloriose appesa al suo membro! Si scopre che è anche un essere umano, qualcuno che può essere amato. Ma dal narratore? Perché no? Lei suggerisce di cenare molto, bere vino e mousse al cioccolato, e poi andare a letto senza fare l'amore. Nel buio lei finge di risparmiarsi per il marito. Nel mezzo della notte il narratore la tira verso di sé: lei afferra il naso e grida 'il becco indifferente!' e capisce di aver compreso ancora della poesia."
+    },
+    {
+      "sc_id": "165",
+      "chunk_ids": "4479-4551",
+      "embedding_summary": "Dopo colazione passeggiano a Woodstock. The Monkey dice che crede di non odiarlo più. Tornando in auto, lei accende la radio con musica rock poi la spegne e sogna ad alta voce: non sarebbe bello vivere in campagna con qualcuno che ti piace davvero, alzarsi con l'energia e dormire stanchi, avere responsabilità senza rendersene conto, non pensare a se stessi per settimane intere, essere adulti? Il narratore le fa un complimento su come in tre giorni non abbia fatto la parte della stupida, ma lei si offende: non sono parti, sono io! Litigano. Al Howard Johnson's lei grida che vuole vivere in Vermont con lui e essere un'adulta, la signora di qualcuno che può ammirare. Piange: penso di amarti, Alex, ma a che mi serve? Il narratore si chiede non se la ama, ma se dovrebbe amarla. Al ristorante le propone di venire alla cena del sindaco. Lei propone una relazione esclusiva in cui telefona spesso dall'ufficio per dire ti amo."
+    },
+    {
+      "sc_id": "166",
+      "chunk_ids": "4552-4608",
+      "embedding_summary": "Il narratore si esorta ad amarla: la fantasia che diventa realtà! Erotica, sfrenata, splendida! Dove camminano insieme la gente li fissa. Al ristorante qualcuno la scambia per un'attrice. Vanità? Perché no! Ma c'è la dignità da considerare: questa ragazza una volta si è fatta pagare per il sesso. A Las Vegas, dopo il divorzio, un uomo le offrì trecento dollari e lei li prese per vedere cosa si provava. Il narratore non le crede del tutto: potrebbe aver lavorato come prostituta d'alto bordo. Prenderla per sé significherebbe rivelare al quartiere la verità sulla sua mente sporca. Immagina di finire incatenato a un gabinetto all'inferno, dove il rabbino Warshaw in veste di Diavolo lo rimprovera per aver sprecato il suo QI di 158 per una donna con le gambe lunghe: il Commissario della Figa, tutto vanità!"
+    },
+    {
+      "sc_id": "167",
+      "chunk_ids": "4609-4688",
+      "embedding_summary": "Il narratore immagina il rabbino Warshaw come il Diavolo all'inferno che lo rimprovera: lo stesso rabbino che al bar mitzvah elencava le sue virtù — figlio devoto, studente d'onore, QI di 158, entrato al liceo a dodici anni — ora lo attacca per aver sprecato tutto con la mentalità di un magnaccia. Si scambiano accuse: il narratore difende la sua carriera alla ACLU, la sua nomina a Vice Commissario, il rapporto sulle discriminazioni nell'edilizia. Ma il rabbino ribatte: Commissario della Figa! Opportunista! L'umanità sofferente non ti interessa niente! La tua ragazza sbarazzina era solo una piuma nel tuo membro! Amore? Scritto l-u-s-t! Il tuo cuore è un frigorifero vuoto! E i soldi del padre mandati all'Antioch College! Giustizia poetica: incatenato al cesso a masturbarti per l'eternità!"
+    },
+    {
+      "sc_id": "168",
+      "chunk_ids": "4689-4715",
+      "embedding_summary": "Il narratore arriva in smoking mentre The Monkey è ancora sotto la doccia. La porta è stata lasciata aperta e questo lo irrita: chiunque potrebbe entrare. Lei risponde candidamente che tutti i suoi soldi sono in banca. Il narratore nota un biglietto sul tavolino per la donna delle pulizie, scritto con l'ortografia di The Monkey: 'dir willa polish the flor by bathrum pleze & don't furget the insies of windose mary jane r'. Lo rilegge tre volte: ogni lettura rivela nuove sottigliezze e annuncia tribolazioni. La z tra le due e di pleze, il furget di una prostituta, il mangling di dear in tre lettere minuscole — tutto patetico e senza speranza. Questa donna è ineducabile. Che rapporto innaturale."
+    },
+    {
+      "sc_id": "169",
+      "chunk_ids": "4716-4745",
+      "embedding_summary": "Le telefonate: lei lo aveva avvertito con garbo, ma faceva sul serio. Al terzo squillo della giornata, il narratore è nel suo ufficio con i genitori indigenti di un bambino psicotico che secondo loro viene fatto morire di fame in un ospedale per discriminazione. Il narratore deve spiegare loro che il bambino si rifiuta di ingoiare il cibo — e pensa tra sé che lo ingoierebbe se avesse sua madre. I genitori rifiutano di andarsene senza vedere il sindaco. Il padre minaccia di farlo licenziare e gli legge dal manuale bilingue della commissione — che il narratore ha scritto — mentre il portoricano gli grida in spagnolo, la madre agita un coltello nel ricordo dell'infanzia, e la segretaria annuncia che Miss Reed vuole parlargli per la terza volta."
+    },
+    {
+      "sc_id": "170",
+      "chunk_ids": "4746-4788",
+      "embedding_summary": "Cos'altro c'è di sbagliato in lei: muove le labbra quando legge. E i libri che il narratore le porta, li mette nella borsa non per leggerli ma per impressionare i fotografi e i passanti col suo carattere versatile. Il giorno dopo il ritorno dal Vermont, il narratore le comprò Let Us Now Praise Famous Men di Agee con le foto di Walker Evans, per parlarle delle sue origini. Con che serietà compilava la lista di letture! Dopo Agee, Dynamite! di Adamic, la sua copia sottolineata del college. Poi U.S.A. di Dos Passos, The Souls of Black Folk di Du Bois, The Grapes of Wrath, An American Tragedy, Poor White di Sherwood Anderson, Notes of a Native Son di Baldwin. Il nome del corso: 'Minoranze umiliate, un'introduzione' del Professor Portnoy. Lo scopo: salvare la stupida shikse, liberarla dell'ignoranza della sua razza, insegnarle la compassione. La coppia perfetta: lei rimette l'Es nell'ebreo, lui rimette il lamento nel gentile."
+    },
+    {
+      "sc_id": "171",
+      "chunk_ids": "4789-4837",
+      "embedding_summary": "Il narratore è in smoking col biglietto dir willa che gli brucia in mano quando The Monkey esce dalla doccia nel vestito comprato per l'occasione: un abito all'uncinetto in filo metallico dorato che le arriva a malapena al sedere, sopra un body color pelle, con una parrucca a riccioli neri alla Orfanella Annie. Il narratore pensa che sembri una spogliarellista e non ha letto nemmeno due pagine del libro di Agee in una settimana. Nel taxi lei percepisce la sua ostilità e lui alla fine le dice di non parlare di vagine a Mary Lindsay e di non afferrare il membro del sindaco. Lei esplode, il tassista li insulta, e finiscono su una panchina nel parco Carl Schurz di fronte a Gracie Mansion, dove il narratore guarda gli altri invitati arrivare mentre le accarezza il braccio e si scusa."
+    },
+    {
+      "sc_id": "172",
+      "chunk_ids": "4838-4882",
+      "embedding_summary": "The Monkey piange e accusa il narratore di tormentarla continuamente con lo sguardo: appena apre la porta la sera, quegli occhi neri ebraici stanno già elencando tutto ciò che non va in lei. Non è stupida solo perché non ha frequentato Harvard. Non è nemmeno una prostituta: a diciotto anni era sposata con uno degli uomini più ricchi di Francia, era stata invitata a cena da Aly Khan! Il narratore avrebbe voluto dire che forse non era una storia d'amore e dovrebbero separarsi, ma tace per paura che lei si suicidi. Lei gli si getta al collo e dichiara di adorarlo: ha un grande cervello e un grande membro e lo ama. Poi su una panchina a duecento piedi dalla residenza del sindaco, gli pratica sesso orale, vincendo la sua resistenza per la presenza dei poliziotti in borghese. A cena il narratore la sente dire al sindaco che fa la modella di giorno e frequenta corsi al Hunter College di sera. Il giorno dopo andò effettivamente al Hunter e gli mostrò il modulo di iscrizione, che però non compilò mai — tranne l'età: 29."
+    },
+    {
+      "sc_id": "173",
+      "chunk_ids": "4883-4895",
+      "embedding_summary": "Una fantasia di The Monkey risalente agli anni del liceo a Moundsville, la reverie in cui viveva mentre gli altri imparavano a leggere e scrivere: attorno a un grande tavolo da conferenza siedono rigidamente sull'attenti tutti i ragazzi della West Virginia che fanno domanda per West Point. Sotto il tavolo, nuda, carponi, c'è la goffa adolescente analfabeta Mary Jane Reed. Un colonnello col frustino gira e rigira intorno al tavolo scrutando i volti dei giovani, mentre Mary Jane procede a praticare sesso orale a ciascun candidato. Il ragazzo selezionato sarà quello che riesce a mantenere il portamento militare più dignitoso."
+    },
+    {
+      "sc_id": "174",
+      "chunk_ids": "4896-4938",
+      "embedding_summary": "Dieci mesi. Incredibile. Non un giorno, forse non un'ora, passò senza che il narratore si chiedesse perché continuare con questa donna brutalizzata, grossolana, tormentata, senza identità. L'elenco era inesauribile. Le predicava continuamente: quando lei gli comprò mocassini italiani per il compleanno, le fece una ramanzina sullo sfoggiare le sue parti intime al commesso del negozio ogni volta che si alzava o sedeva. Ma anche mentre la accusava si diceva: se vuoi una signora invece di una svergognata, trovatene una. Perché questa città è piena di ragazze diverse da Mary Jane Reed: promettenti, sane, istruite, con gatti che si chiamano Spinoza e Clytemnestra, assistenti sociali e insegnanti, ragazze di cui non si vergognava. E nemmeno loro funzionarono."
+    },
+    {
+      "sc_id": "175",
+      "chunk_ids": "4939-4991",
+      "embedding_summary": "Kay Campbell, la fidanzata del narratore ad Antioch: artless, dolce, senza traccia di morbosità o egoismo. Soprannominata The Pumpkin per il colorito e la taglia del sedere. Dirigeva la rivista letteraria, aveva vinto tutti i premi in letteratura inglese, aveva manifestato con lui davanti al barbiere che rifiutava i neri. Una ragazza robusta, geniale, generosa, con un viso da bambola, capelli gialli, senza seni, e gambe da operaio. Non alzava mai la voce in una discussione: autorità senza irascibilità, virtù senza autocongratulazione, sicurezza senza arroganza. Il narratore si chiede perché l'abbia lasciata andare."
+    },
+    {
+      "sc_id": "176",
+      "chunk_ids": "4992-5020",
+      "embedding_summary": "Quando andarono per la contea di Greene a suonare campanelli per Stevenson al secondo anno, di fronte alla grettezza repubblicana più terribile, The Pumpkin non fu mai altro che una signora. Il narratore era un barbaro: finiva sempre sudato e rabbioso, insultando gli avversari e chiamando Eisenhower un illetterato. The Pumpkin invece prestava attenzione così gentile al punto di vista opposto e poi correggeva gli errori con solennità e buon umore, senza un briciolo di sarcasmo. Una delle grandi shikse. Il narratore avrebbe potuto imparare qualcosa passando la vita con una persona simile — se fosse capace di imparare, e se potesse liberarsi dall'ossessione sessuale, dalla fantasia e dalla vendetta."
+    },
+    {
+      "sc_id": "177",
+      "chunk_ids": "5021-5051",
+      "embedding_summary": "Nel 1950, a diciassette anni, il narratore compie l'atto più apertamente sfidante della sua vita: invece di tornare a casa per le prime vacanze dal college, viaggia in treno fino all'Iowa per passare il Ringraziamento con The Pumpkin e i suoi genitori. La casa bianca coi battenti e l'altalena sul portico scatena emozioni enormi. Alla stazione del treno The Pumpkin lo presenta come un ospite del fine settimana e un amico di scuola. Il narratore dice grazie a qualunque cosa gli venga detta o a qualunque oggetto incontri — anche ai mobili e ai tovaglioli."
+    },
+    {
+      "sc_id": "178",
+      "chunk_ids": "5052-5112",
+      "embedding_summary": "Il narratore scopre l'espressione buongiorno, che a casa non aveva mai avuto utilità: nella sua famiglia era conosciuto come il Musone. Ma nell'Iowa si trasforma in un geyser di buongiorno. Il signor Campbell dice di aver dormito come un tronco, e per la prima volta nella vita il narratore sperimenta la piena forza di una similitudine. L'inglese è una forma di comunicazione! Le parole non sono solo bombe e proiettili ma piccoli doni contenenti significati! Poi c'è il nome della strada dove vive la famiglia Campbell: Elm. Olmo! Le strade prendono il nome dagli alberi! A casa del narratore nessuno sa che tipo di albero cresca davanti al palazzo — l'unica informazione botanica viene dalla madre: se spari i semini con una cannuccia puoi cavare un occhio a qualcuno."
+    },
+    {
+      "sc_id": "179",
+      "chunk_ids": "5113-5152",
+      "embedding_summary": "Un fine settimana memorabile, equivalente nella storia umana al passaggio dell'intera età della pietra. Ogni volta che il signor Campbell chiamava la moglie Mary, la temperatura del narratore saliva: mangiava dai piatti toccati dalle mani di una donna chiamata Mary. Pregava che non ci fossero immagini di Gesù Cristo in casa Campbell, né croci, né antisemiti tra gli zii e le zie al pranzo del Ringraziamento. Alla stazione il padre di Kay gli dice come stai, e il narratore risponde grazie. Dovrebbe dire subito di essere ebreo? Dovrebbe parlare yiddish? Sale in macchina con Kay e il cane, a cui lei parla come fosse umano — una vera gentile. Ma non può sfuggire al suo destino: la cartilagine di un uomo è il suo destino."
+    },
+    {
+      "sc_id": "180",
+      "chunk_ids": "5153-5208",
+      "embedding_summary": "Appena entra in casa il narratore comincia a fiutare di nascosto: che odore avrà il cristianesimo? Purè di patate? Un vestito vecchio? La prima mattina butta via mezzo pollice di dentifricio piuttosto che usare lo spazzolino che i genitori Campbell potrebbero aver toccato. Si chiede se debba mettere un foglio di carta igienica sulla tavoletta — e quando si siede è calda! A diciassette anni strofina il sedere col nemico! Sul water è assediato da dubbio e nostalgia: quando il padre va a comprare il sidro vero di mele non sarà con lui; Hannah e Morty andranno alla partita Weequahic-Hillside senza di lui. Ha tradito la famiglia: anche se la loro tavola del Ringraziamento non assomiglia a un quadro di Norman Rockwell, si divertono anche loro! Telefona ai genitori per dire che va in Iowa da un ragazzo di nome Campbell: il padre dice 'ma il sidro', e il narratore piange."
+    },
+    {
+      "sc_id": "181",
+      "chunk_ids": "5209-5261",
+      "embedding_summary": "La madre al telefono sospetta che il narratore faccia l'autostop in una decappottabile. Sedici anni sono passati da quella telefonata, e il narratore sta ancora telefonando ai genitori per dire che non torna a casa, ancora combattendo contro la famiglia. A che è servito saltare due anni di elementari e prendere un tale vantaggio sugli altri, se il risultato è finire così indietro? Il suo precoce talento è leggendario, ma privatamente non ha nulla da mostrare: niente figli, niente moglie. Metà della gara è finita e sta ancora alla partenza. Il narratore elenca i soprannomi familiari: il Musone, il Lunatico, il Ragazzino Sempre-Ragione-Mai-Torto, il Brontolone dei Sette Nani, il Ragazzino Capriccio Rides Again."
+    },
+    {
+      "sc_id": "182",
+      "chunk_ids": "5262-5307",
+      "embedding_summary": "Verso la fine del terzo anno Kay saltò un ciclo e cominciarono a pianificare il matrimonio con una certa gioiosa prontezza: sarebbero stati baby-sitter residenti per una coppia di professori, avrebbero mangiato spaghetti e indossato vestiti vecchi. Il narratore disse: e tu ti convertirai, no? Intendeva la domanda come ironica, ma Kay la prese sul serio: perché dovrei fare una cosa del genere? Il narratore fu incendiato di rabbia dalla risposta, anche se né a lui né a lei importava qualcosa della religione e il loro filosofo preferito era Bertrand Russell. Nelle settimane successive al falso allarme, Kay divenne per lui noiosa a letto e nella conversazione. Le disse che non voleva più vederla; lei pianse miseramente, e il narratore fu stupito di scoprire che era lei ad amarlo, non il contrario."
+    },
+    {
+      "sc_id": "183",
+      "chunk_ids": "5308-5332",
+      "embedding_summary": "A vent'anni il narratore respinse la sua amante — il primo brivido incontaminato di sadismo con una donna — e tornò nel New Jersey gongolante della propria forza. Un altro cuore gentile spezzato fu quello di The Pilgrim, Sarah Abbott Maulsby: New Canaan, Foxcroft, Vassar, con un palomino scuderizzato a Poughkeepsie. Ventidenne, receptionist nell'ufficio del senatore del Connecticut. Il narratore lavorava nello staff della sottocommissione sullo scandalo dei quiz televisivi: frode commerciale su scala nazionale, e poi il bonus di Charles Van Doren smascherato come imbroglione — l'ur-WASP che risulta essere un truffatore. A Washington, un felice ebreuccio, una sua piccola banda Stern, che demoliva l'onore di Charlie mentre diventava l'amante della bella aristocratica i cui antenati arrivarono nel Seicento. Fenomeno noto come odiare il gentile e mangiarsene uno."
+    },
+    {
+      "sc_id": "184",
+      "chunk_ids": "5333-5377",
+      "embedding_summary": "Perché non sposò quella ragazza bellissima e adorante? La ricorda nella galleria con un tailleur blu con bottoni d'oro mentre guardava il suo primo controinterrogatorio pubblico. C'era il gergo da collegiale insopportabile: barf per vomito, divine. Poi i soprannomi delle amiche: Poody, Pip, Pebble, Shrimp — come se fosse andata a Vassar con i nipoti di Paperino. Ma anche il suo gergo causava dolore a lei: la prima volta che disse fuck davanti a lei e a Pebble, un'espressione di agonia le attraversò il viso. A letto niente di fantasioso: lui assaltava e lei si arrendeva. Il loro unico piacere periferico era lo specchio a figura intera sul retro della porta del bagno. Il narratore descrive ciò che vedeva nello specchio come un incontro tra lo Shnoz da Newark e la raffinatezza repubblicana del New England."
+    },
+    {
+      "sc_id": "185",
+      "chunk_ids": "5378-5419",
+      "embedding_summary": "Il narratore ammette che non mette il membro tanto nelle ragazze quanto nei loro retroterra — come se attraverso il sesso potesse scoprire l'America, o conquistarla. Il suo destino manifesto è sedurre una ragazza da ciascuno dei quarantotto stati. È un figlio degli anni Quaranta, della radio e della Seconda Guerra Mondiale. Conosce a memoria gli inni militari di ogni ramo delle forze armate. Ricorda le esercitazioni antiaree a scuola, Corregidor, la bandiera su Iwo Jima. Quattro anni a odiare Tojo, Hitler e Mussolini e ad amare questa repubblica. Ora vuole ciò che gli spetta: il suo GI Bill, il vero sedere americano. Giura fedeltà alle vagine degli Stati Uniti d'America — Davenport, Iowa! New Canaan, Connecticut! Moundsville, West Virginia! Dolce terra di code shikse, di te io canto!"
+    },
+    {
+      "sc_id": "186",
+      "chunk_ids": "5420-5472",
+      "embedding_summary": "Generazioni di Maulsby e Abbott sepolte nei cimiteri di Newburyport e Salem. La madre di Sarah rabbrividiva al nome di Eleanor Roosevelt; Sarah stessa era stata tenuta sulle ginocchia di Wendell Willkie a Hobe Sound nel 1942, mentre il padre del narratore pregava per Roosevelt alle feste comandate. Il fratello Paunch, laureato a Yale, aveva un posto alla Borsa e giocava a polo la domenica. Sapeva andare in barca, mangiare il dolce con forchetta e cucchiaio. Un ritaglio di giornale dal suo album: la debuttante che va a caccia di quaglie e ama andare a cavallo e pescare nella casa estiva di famiglia. Ciò che Sally non poteva fare era il sesso orale con il narratore. Si rifiutava per ragioni che non specificava. Il narratore credeva di essere vittima di discriminazione: suo padre non poteva essere promosso alla Boston & Northeastern per la stessa ragione per cui Sally non si abbassava a farlo."
+    },
+    {
+      "sc_id": "187",
+      "chunk_ids": "5473-5523",
+      "embedding_summary": "Per tre mesi il narratore fece pressione sulla nuca di Sally, incontrando una resistenza sorprendente. Poi una sera lo invitò a sentire il Quartetto di Budapest che suonava Mozart alla Library of Congress; durante il Quintetto per clarinetto gli prese la mano, e a letto disse: lo farò. Sparì sotto le coperte e gli tenne il membro in bocca per sessanta secondi, come un termometro. Poi tirò su la testa piangendo: l'ho fatto. Il narratore le chiese se fosse tutto qui, e lei, boccheggiando, chiese: di più? Il narratore cercò di insegnarle a respirare col naso, suggerì di fingere di nuotare. Ci provò ma emerse soffocando e piangendo. Il narratore la prese in braccio, la cullò, per la prima volta le disse ti amo, ma gli era perfettamente chiaro che non avrebbe mai potuto amarla: intollerante dei suoi difetti, geloso dei suoi successi, risentito della sua famiglia. Sally Maulsby fu solo qualcosa di bello che un figlio fece per il suo papà: una piccola vendetta su Lindabury per tutte quelle notti e domeniche che Jack Portnoy passò a riscuotere nel quartiere nero. Un piccolo bonus estratto dalla Boston & Northeastern per tutti quegli anni di servizio e sfruttamento."
+    },
+    {
+      "sc_id": "189",
+      "chunk_ids": "5525-5590",
+      "embedding_summary": "Le domeniche mattina nella bella stagione, venti uomini del quartiere giocano a softball: il macellaio, il suo gemello idraulico, il fruttivendolo, il padrone del benzinaio, tutti tra i trenta e i cinquanta. L'arbitro è il vecchio dentista, Dr. Wolfenberg, con le sue scarpe bicolori e il cappello Panama. Biderman, il Russo Pazzo, proprietario della pasticceria e agenzia clandestina di scommesse, ha un lancio laterale con esitazione e prende in giro il dentista cieco. Dal campo esterno arriva l'invettiva ininterrotta di Allie Sokolow, il principe del mercato ortofrutticolo. Il narratore bambino siede sulle tribune di legno annusando il guantone e ridendo a crepapelle. Non riesce a immaginare di vivere in nessun altro posto. Lo sfottò, le battute, il fare il pagliaccio — eppure sotto sotto fanno sul serio, perdere e vincere non è uno scherzo, eppure lo è. Unione perfetta di pagliaccio e competitore. Come amerà crescere e diventare un uomo ebreo!"
+    },
+    {
+      "sc_id": "190",
+      "chunk_ids": "5591-5624",
+      "embedding_summary": "Il narratore ricorda tutto questo mentre il capitano Meyerson fa l'ultimo giro sopra l'aeroporto di Tel Aviv. Potrebbe sparire, cambiare nome e non farsi più sentire. Guarda per la prima volta dall'alto il continente asiatico, la Terra d'Israele dove il popolo ebraico nacque, ed è infilzato da un ricordo delle partite di softball della domenica mattina a Newark. La coppia anziana accanto a lui, i Solomon di Cincinnati, e i loro nuovi amici, i Perl di Mount Vernon, si commuovono nel vedere un giovane avvocato ebreo piangere atterrando su una pista ebraica. Ma ciò che ha prodotto le lacrime non è la prima visione della patria nazionale, è la voce del suo sé bambino di nove anni che grida nella cucina: vado al campo, mamma, a guardare gli uomini! Ed è la frase 'guardare gli uomini' a distruggerlo mentre toccano terra in Eretz Yisrael."
+    },
+    {
+      "sc_id": "191",
+      "chunk_ids": "5625-5660",
+      "embedding_summary": "Perché il narratore bambino ama quegli uomini e vuole diventare uno di loro: tornare a casa per il pranzo della domenica all'una, i calzini puzzolenti dopo ventuno inning, il braccio che pulsa dai bei tiri bassi, i capelli in disordine, le viscere doloranti dalle risate — un robusto uomo ebreo gloriosamente stremato. Tornare a casa dalla moglie e dai figli, lì nel quartiere Weequahic. Farsi la doccia, infilarsi bei pantaloni e una camicia pulita, ammirare i bicipiti, mentre i figli sfogliano i giornali della domenica sul tappeto e la signora Alexander Portnoy apparecchia per i genitori in visita. Un futuro semplice e appagante: softball la mattina, la famiglia il pomeriggio, e la sera i programmi radio con i figli — Jack Benny, Fred Allen, Phil Harris — e così di generazione in generazione. Poi chiudere le porte, spegnere le luci, baciare la buonanotte ai figli, e la mattina via al tribunale della contea di Essex a cercare giustizia per i poveri e gli oppressi."
+    },
+    {
+      "sc_id": "192",
+      "chunk_ids": "5661-5703",
+      "embedding_summary": "La classe dell'ottavo anno visita il tribunale per osservare l'architettura. Nel suo album di autografi il narratore scrive: motto preferito, non calpestare il debole; professione preferita, avvocato; eroe preferito, Tom Paine e Abraham Lincoln. La statua di Lincoln davanti al tribunale sembra sapere quanto soffre; Washington lo lascia freddo, è così ovviamente un gentile. Ma Lincoln! Potrebbe piangere: com'era sfinito, come lavorò per gli oppressi — e così farà il narratore! Un bravo ragazzino ebreo? Il più bravo che sia mai vissuto! Fantasie dolci e messianiche: gratitudine verso i genitori, lealtà alla tribù, devozione alla causa della giustizia! Cosa c'era di sbagliato nel crederci? Cosa è successo al buon senso che aveva a nove, dieci, undici anni? Come è diventato tale nemico di se stesso? E così solo! Ma l'aereo lo porta via dalla tormentatrice, e si chiede cosa sia stato dei suoi propositi: casa non ne ha, famiglia nemmeno. Invece di rimboccare le coperte ai figli, ha portato a letto contemporaneamente una prostituta italiana e una modella americana squilibrata. E non è nemmeno la sua idea di divertimento! Quello che vuole è stare a casa ad ascoltare Jack Benny coi figli! È sicuro di aver contratto una malattia venerea da Lina: a Tel Aviv andrà dal dottore come prima cosa."
+    },
+    {
+      "sc_id": "193",
+      "chunk_ids": "5704-5745",
+      "embedding_summary": "E la ragazza morta all'hotel? Perché The Monkey avrà compiuto il gesto ormai: si sarà gettata dal balcone in mutandine, o affogata in mare nel suo bikini minuscolo, o avrà preso la cicuta all'ombra dell'Acropoli in abito da sera Balenciaga. Dovrebbe tornare indietro! Avrebbe dovuto telefonare ad Harpo! Ma no, il terrore vero è un altro: forse non si suiciderà ma telefonerà al sindaco Lindsay! A Jimmy Breslin! Alle agenzie di stampa! Il padre del narratore che compra il Newark News dopo cena e finalmente vede la parola SCANDALO stampata sopra la foto del suo adorato figlio! O il corrispondente della CBS ad Atene che intervista The Monkey dal letto d'ospedale: Portnoy, esatto, mi ha fatto dormire con una prostituta! Grazie a Dio la deficiente non sa scrivere, sarà tutto greco per quei greci. Il narratore fugge — e da cosa? Da qualcuno che lo voleva santo! Non se ne è ancora sentita l'ultima da Mary Jane Reed."
+    },
+    {
+      "sc_id": "194",
+      "chunk_ids": "5746-5768",
+      "embedding_summary": "Sotto di lui, il Mar Egeo: il mare di The Pumpkin! La sua poetica ragazza americana! Oh, Pumpkin, ridillo: perché dovrei fare una cosa del genere? Qualcuno che sapeva chi era, psicologicamente così intatta da non aver bisogno di essere salvata o redenta da lui! La poesia che gli leggeva ad Antioch, l'educazione letteraria — e perché l'ha lasciata andare? Perché non voleva essere ebrea? La nota eterna di tristezza, il flusso torbido della miseria umana — ma questa è miseria umana? Pensava sarebbe stata più elevata! Sofferenza dignitosa, significativa, qualcosa sulla linea di Abraham Lincoln! Tragedia, non farsa! Invece si è ritrovato a cercare di liberare dalla schiavitù nient'altro che il proprio membro. Liberate il mio membro! Ecco lo slogan di Portnoy: la storia della sua vita riassunta in quattro parole eroiche e sporche. La sua politica è scesa interamente al suo membro. Il fenomeno da baraccone che è: amante di nessuno e niente, non amato e incapace d'amare, e sull'orlo di diventare il Profumo di John Lindsay."
+    },
+    {
+      "sc_id": "195",
+      "chunk_ids": "5769-5802",
+      "embedding_summary": "Tel Aviv, Giaffa, Gerusalemme, Beer Sheva, il Mar Morto, Sedom, Ein Gedi, poi a nord Cesarea, Haifa, Akko, Tiberiade, Safed, l'alta Galilea — e sempre è più onirico che reale. Per dare un senso all'impulso che lo aveva fatto salire sull'aereo El Al, per trasformarsi da fuggiasco confuso in un uomo padrone della propria volontà, si mise a viaggiare per il paese come se il viaggio fosse stato intrapreso deliberatamente. Avrebbe avuto un'esperienza educativa: studiò mappe a letto, comprò testi di storia e archeologia, affittò guide e automobili. Visitò tombe, sinagoghe, fortezze, moschee, i kibbutz verdi, le desolazioni aride, i posti di frontiera — salì persino un tratto di Masada sotto il pieno fuoco d'artiglieria del sole. E tutto ciò che vedeva poteva assimilarlo e capirlo: era storia, natura, arte. Persino il Negev, quell'allucinazione, la visse come reale. Ciò che era incredibile e strano, più nuovo del Mar Morto o del deserto di Tsin dove raccolse una pietra come quella con cui Zippora circoncise il figlio di Mosè, era un fatto semplice ma del tutto implausibile: è in un paese ebraico. In questo paese tutti sono ebrei."
+    },
+    {
+      "sc_id": "196",
+      "chunk_ids": "5803-5852",
+      "embedding_summary": "Il sogno del narratore comincia appena sbarca: è in un aeroporto dove tutti sono ebrei — passeggeri, hostess, bigliettai, tassisti, piloti. Le scritte sui muri sono ebraiche — graffiti ebraici! La bandiera è ebraica. Le facce sono quelle di Chancellor Avenue, dei vicini, degli zii, degli insegnanti. I volti dell'Europa orientale, ma a un tiro di sasso dall'Africa! Gli uomini in pantaloni corti ricordano i capisquadra dei campeggi estivi ebraici — ma questo non è un campeggio, è casa. Qui sono loro i WASP! I caffè all'aperto sono pieni di ebrei, gli autobus pieni di ebrei, anche l'autista e i poliziotti. All'hotel il portiere parla inglese come Ronald Colman, eppure è ebreo anche lui. Poi di notte, sulla passeggiata deserta, cinque giovani ebrei gli chiedono l'ora in un modo che sembra un'aggressione. Come può essere? Se sono tutti ebrei, quale motivo avrebbero di fargli del male? Nella stanza esamina il pene sotto la lampada: nessun segno di malattia, ma non è rassicurato."
+    },
+    {
+      "sc_id": "197",
+      "chunk_ids": "5853-5890",
+      "embedding_summary": "Al mattino la spiaggia è già brulicante di gente alle sette, e il narratore si aspettava un'atmosfera sabbatale di pietà e solennità. Ma la folla di ebrei è allegra. Esamina di nuovo il membro nella forte luce del mattino ed è sopraffatto dall'apprensione nel constatare che sembra in perfetta salute. Scende a giocare nel mare pieno di ebrei felici: membra ebraiche nell'acqua ebraica, bambini ebrei che ridono come se il posto fosse loro — e lo è! Sabbia ebraica, gelato ebraico da un venditore ebreo. Alex nel Paese delle Meraviglie. Nel pomeriggio fa amicizia con una giovane donna dagli occhi verdi e la pelle dorata, tenente nell'esercito ebraico. Lei lo porta in un bar nel porto frequentato da scaricatori di porto ebrei. La sua figura piccola e voluttuosa è eccitante, ma che donnina determinata, senza umorismo e sicura di sé! Gli chiede cosa preferisce, trattori, bulldozer o carri armati. Lui ride. La invita in hotel: lottano, si baciano, cominciano a spogliarsi — e lui perde immediatamente l'erezione. Lei dice: vedi, non ti piaccio per niente. Lui balbetta di potere avere una malattia e non sarebbe giusto. Lei si riveste furiosa e se ne va."
+    },
+    {
+      "sc_id": "198",
+      "chunk_ids": "5891-5915",
+      "embedding_summary": "Sogni? Se solo lo fossero! Ma il narratore non ha bisogno di sogni, per questo non ne fa quasi: ha questa vita al loro posto. Tutto gli succede in piena luce del giorno: il melodrammatico, lo sproporzionato, le coincidenze da sogno, i simboli, le situazioni terribilmente ridicole, le banalità minacciosamente appropriate. Chi altro ha avuto una madre che lo minacciava davvero col coltello? Chi altro ha avuto un testicolo che non scendeva, e che dovette essere persuaso e drogato per farlo scendere nello scroto come un uomo? Chi altro si è rotto una gamba inseguendo le shikse? O è venuto nel proprio occhio la prima volta? O ha trovato una vera scimmia viva per le strade di New York? La cosa-sogno succede: non riusciva ad avere l'erezione nello Stato di Israele! Come simbolismo non c'è male! Impotente nella Terra Promessa!"
+    },
+    {
+      "sc_id": "199",
+      "chunk_ids": "5916-5975",
+      "embedding_summary": "E poi ancora, e peggio: la caduta finale e l'umiliazione — Naomi, The Jewish Pumpkin, l'eroina, quella ragazza robusta, rossa, lentigginosa e ideologica! La raccolse mentre faceva l'autostop verso Haifa da un kibbutz vicino al confine libanese. Ventun anni, quasi un metro e ottanta, i genitori sionisti da Filadelfia emigrati in Palestina prima della guerra. Dopo il servizio militare aveva scelto di unirsi a una comune di giovani israeliani nati lì che sgombravano massi di roccia vulcanica da un insediamento desolato sulle montagne al confine con la Siria: lavoro duro, condizioni primitive, il pericolo di infiltratori siriani di notte. E le piaceva. Una Pumpkin ebrea! Il narratore ha una seconda occasione. La associa immediatamente alla sua Pumpkin perduta, ma fisicamente è sua madre: colorito, taglia, e un temperamento da perenne cercatrice di difetti. I capelli in due lunghe trecce come una bambina — un trucco onirico per impedirgli di ricordare la foto della madre al liceo. Appena in macchina cominciarono a parlare seriamente dell'umanità: società giusta, lotta comune, libertà individuale. Ma com'era naturale il suo idealismo! Il tipo di ragazza giusto: innocente, di buon cuore, formosa, semplice e non nevrotica. Il narratore non vuole più star del cinema e mannequin e prostitute: vuole semplicità, salute, lei! Racconta della discussione nel kibbutz dei genitori sugli orologi di proprietà privata, risolta facendoli ruotare ogni tre mesi."
+    },
+    {
+      "sc_id": "200",
+      "chunk_ids": "5976-6045",
+      "embedding_summary": "Durante la giornata, a cena e poi sulla passeggiata romantica di Akko, il narratore le raccontò la propria vita. La invitò all'hotel per un drink. Voleva baciarla ma pensò alla malattia venerea. In camera Naomi gli tenne una lezione: la società americana incoraggia le relazioni ingiuste tra gli uomini, rivalità, competizione, invidia, tutto ciò che è maligno nel carattere umano. Lo chiamò lacchè della borghesia: pensa di servire la giustizia ma è solo un dipendente che rende legittimo un sistema intrinsecamente sfruttatore. E le udienze sui quiz? Non avevano scalfito il sistema. Lui è corrotto dal sistema quanto Van Doren. Il narratore le disse che la amava, lei lo guardò con sospetto, lui disse di volerla sposare. Lei saltò in piedi e chiese se fosse uno scherzo. Lui le chiese di essere la madre dei suoi figli. Lei disse che aveva bevuto troppa birra e che se ne sarebbe andata. Lui le bloccò la porta, supplicandola di non andare a dormire su una spiaggia umida quando c'era quel grande letto comodo per due."
+    },
+    {
+      "sc_id": "201",
+      "chunk_ids": "6046-6088",
+      "embedding_summary": "Naomi rifiutò con disgusto il rapporto sessuale con lui. Una breve lotta: il narratore le si lanciò addosso e lei gli diede una testata sotto il mento — l'aveva imparato nell'esercito. Gli disse senza un briciolo di carità che c'era qualcosa di molto sbagliato in lui: l'uomo più infelice che avesse mai conosciuto, come un bambino. Il modo in cui disapprovava la propria vita! Ogni cosa che diceva era in qualche modo distorta per risultare divertente: ironia e autocommiserazione tutto il giorno. Lui disse che l'autocommiserazione è una forma classica di umorismo ebraico. Lei esplose: non umorismo ebraico, umorismo del ghetto! All'alba il narratore aveva capito di essere l'epitome di ciò che è più vergognoso nella cultura della Diaspora: secoli di esilio avevano prodotto uomini sgradevoli, spaventati, difensivi, svirilizzati e corrotti dalla vita nel mondo gentile. Erano ebrei della Diaspora come lui che andarono a milioni alle camere a gas senza mai alzare un dito contro i persecutori. Quando finì il narratore disse: magnifico, adesso scopiamo. Lei: sei disgustoso!"
+    },
+    {
+      "sc_id": "202",
+      "chunk_ids": "6089-6156",
+      "embedding_summary": "Il narratore le gridò di andare a fare la santa sulle montagne. Lei, prendendo lo zaino, lo chiamò ebreo che odia se stesso. Lui: forse è il tipo migliore. Lei: codardo! Lui: maschiaccio! Lei: shlemiel! E fece per la porta. Il narratore la placcò a terra con un tuffo volante: le mostrerà chi è uno shlemiel! E se ha una malattia venerea? Benissimo! Che la porti nel sangue fino alla montagna, che si diffonda tra tutti quei bravi ragazzi e ragazze ebrei! Questo è com'è nella Diaspora, santi bambini: tentazione e disgrazia! Corruzione e automockery! Cerca di forzarla giù, le dice di aprire le cosce, sta per avvelenare i suoi organi riproduttivi, sta per cambiare il futuro della razza! Ma naturalmente non riesce. Le lecca le orecchie, le morde le trecce attorcigliate, e poi si rotola via sconfitto contro il muro. Non riesce ad avere un'erezione in questo posto. Il narratore si chiede: può essere così semplicistico? Solo perché ha i capelli rossi e le lentiggini come la madre, l'inconscio la identifica con lei? Questo è il culmine del dramma edipico? Altra farsa! L'Edipo Re è una tragedia famosa, non un'altra barzelletta! Grazie a Dio per i pesi di Heshie: dopo la morte del cugino erano diventati del narratore. Li portava in giardino a quattordici e quindici anni sollevandoli sotto lo sguardo disapprovante della madre dalla finestra."
+    },
+    {
+      "sc_id": "203",
+      "chunk_ids": "6157-6221",
+      "embedding_summary": "Ma naturalmente non riuscì. Anche quando la resistenza di Naomi potrebbe aver cominciato a cedere, si rotolò via sconfitto contro il muro: non riesce ad avere un'erezione in questo posto. Lei si alzò in piedi sopra di lui. Pensò che gli avrebbe piantato il sandalo sul petto o preso a calci. Si ricordò di quando da scolaretto incollava i rinforzi nel quaderno. Come si è arrivati a questo? Impotente in Israele, cantò sulla melodia di Lullaby in Birdland. Un'altra barzelletta? chiese lei. E un'altra e un'altra. Poi disse una cosa gentile: dovresti tornare a casa. Il narratore: al contrario, dovrei restare, comprare un paio di quei pantaloncini cachi, diventare un uomo! Lei: fa' come vuoi, io me ne vado. Lui cominciava quasi a volerle bene. Lei gli chiese perché dovesse usare quella parola oscena in continuazione; in montagna i ragazzi non la dicono così. Il narratore rispose che non sono ricchi di rabbia come lui. E si lanciò sulla sua gamba. Perché mai abbastanza! Ma avere cosa? Lei gridò no! Lui la supplicò, trascinato dalla sua gamba potente attraverso il pavimento, di lasciargli almeno praticarle sesso orale. Lei gridò: porco! E tirò un calcio, in pieno, con quella gamba da pioniera, appena sotto il cuore. Forse la soluzione più saggia è vivere a quattro zampe, strisciare attraverso la vita banchettando, e lasciare la correzione dei torti e la paternità delle famiglie alle creature in posizione eretta."
+    },
+    {
+      "sc_id": "204",
+      "chunk_ids": "6222-6293",
+      "embedding_summary": "La testa gli gira, i succhi più vili salgono in gola. Il cuore! E in Israele! Dove altri ebrei trovano rifugio e pace, Portnoy perisce! E tutto ciò che voleva era dare un po' di piacere e farsene un po'. Perché non può avere piacere senza la punizione che segue come un vagone di coda? Ed è di nuovo infilzato sul passato: la porta sbatte, Naomi se ne è andata — la sua salvezza! — e lui piagnucola sul pavimento coi ricordi! I ravanelli del suo orto di guerra! La carta stagnola che raccoglieva! I modellini di aerei! Come può succedere questo al bravo ragazzino che era? La vendetta di The Monkey, naturalmente: un tribunale immaginario lo condanna all'impotenza per aver degradato l'umanità di Mary Jane Reed per due notti a Roma. Perché la più piccola cosa che fa per piacere è immediatamente illecita, mentre il resto del mondo rotola ridendo nel fango? Si vorrebbe mettere a urlare. Un urlo puro, senza più parole."
+    },
+    {
+      "sc_id": "205",
+      "chunk_ids": "6294-6297",
+      "embedding_summary": "Il lungo urlo finale del narratore: un'unica estenuante emissione di suono — aaaaaaaaaaaahhhh!!! — senza parole, puro, disperato, che esaurisce tutto ciò che le parole non riescono più a contenere."
+    },
+    {
+      "sc_id": "207",
+      "chunk_ids": "6299-6299",
+      "embedding_summary": "La battuta finale: il dottor Spielvogel parla per la prima e unica volta nel romanzo. Dopo l'intero monologo del narratore, il dottore dice: allora, adesso forse possiamo cominciare. Sì?"
+    }
+  ]
+}
