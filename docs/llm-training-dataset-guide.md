@@ -74,90 +74,173 @@ This produces the 7 tier_1 files + all tier_2 arc files:
 
 Use the prompt in `prompt_book_yaml_generator.md`. This produces the routing config that maps arcs to keywords, line ranges, and characters.
 
-### Phase 3: Generate training data
+### Phase 3: Generate training data (chat fine-tuning format)
 
-At this point you have a complete knowledge base. Now convert it into training formats.
+At this point you have a complete knowledge base. The goal is to produce JSONL where each line is a conversation in **messages format**:
 
-#### Strategy A: Use Claude Code as a Q&A generator
+```json
+{"messages": [
+  {"role": "system", "content": "..."},
+  {"role": "user", "content": "..."},
+  {"role": "assistant", "content": "..."}
+]}
+```
 
-This is the highest-quality approach. Set up the book workspace fully:
+#### The generation tool: `lib/generate_training_data.py`
+
+A ready-made script that reads all your book-expert artifacts and produces a chat fine-tuning dataset:
+
+```bash
+python -m lib.generate_training_data books/<slug> --output dataset.jsonl
+```
+
+It parses your knowledge base and generates **8 categories** of training examples:
+
+| # | Category | Source artifact | What it generates |
+|---|----------|----------------|-------------------|
+| 1 | Scene summary | `tier_2/02_*.md` | "What happens in SC_00042?" → scene summary + characters + themes |
+| 2 | Passage analysis | `tier_2/*.md` + source JSONL | Raw passage as input → analytical response with SC_ID + line refs |
+| 3 | Character profile | `tier_1/03_characters.md` | "Who is X?" → role, traits, arc, relationships |
+| 4 | Theme analysis | `tier_1/04_themes.md` | "How does theme X manifest?" → description + arc distribution + examples |
+| 5 | Arc summary | `tier_1/01_synopsis.md` | "What happens in section Y?" → plot summary for that arc |
+| 6 | Style & technique | `tier_1/05_style.md` | "How does the author use Z?" → technique analysis with SC examples |
+| 7 | Cross-arc comparison | `tier_1/01_synopsis.md` | "How does arc A contrast with arc B?" → paired summaries |
+| 8 | Multi-turn conversation | all of the above | 2-turn dialogue: character intro → specific scene follow-up |
+
+**Example output** (from Portnoy's Complaint, 502 examples generated):
+
+```json
+{"messages": [
+  {"role": "system", "content": "You are a literary expert on Philip Roth's *Portnoy's Complaint* (1969). You have deep knowledge of the novel's plot, characters, themes, narrative techniques, and historical context. Answer with specific scene references (SC_IDs) and line numbers when relevant. Be precise and analytical."},
+  {"role": "user", "content": "What happens in SC_00097 (lines 1821–1829)?"},
+  {"role": "assistant", "content": "Così dicevano le leggi kasher al bambino cresciuto sotto la tutela di Sophie e Jack P., in un quartiere scolastico di Newark dove nella sua intera classe c'erano solo due bambini cristiani..."}
+]}
+```
+
+```json
+{"messages": [
+  {"role": "system", "content": "..."},
+  {"role": "user", "content": "Tell me about The Monkey in *Portnoy's Complaint*."},
+  {"role": "assistant", "content": "Modella e amante principale del narratore nella vita adulta. Key traits: Bellissima, sessualmente sfrenata, semianalfabeta..."},
+  {"role": "user", "content": "Can you show me a specific scene where The Monkey is important?"},
+  {"role": "assistant", "content": "In SC_00114 (L2326–L2368): Il narratore chiede perché dovrebbe sposarsi..."}
+]}
+```
+
+#### How the tool maps artifacts → training examples
+
+**Tier 2 arc files** are the richest source. Each file has this structure:
+
+```markdown
+### SC_00002 (L2–L16)
+Il narratore racconta che da bambino credeva che le sue maestre...
+
+**Personaggi**: Sophie Portnoy (la madre)
+**Temi**: Complesso edipico e rapporto madre-figlio, Nostalgia e infanzia perduta
+```
+
+The parser extracts `sc_id`, `line_start`, `line_end`, `summary`, `characters`, `themes` from each scene block. This produces two examples per scene:
+- **Scene summary**: question about the SC_ID → summary + metadata
+- **Passage analysis**: raw source text lines as input → grounded analytical response
+
+**Tier 1 files** produce structured examples:
+- `03_characters.md` → one profile Q&A + one relationship Q&A per character
+- `04_themes.md` → one detailed + one concise Q&A per theme
+- `01_synopsis.md` → one Q&A per arc
+- `05_style.md` → one per subsection (voice, language, structure, techniques, metaphors)
+
+**Cross-arc + multi-turn** examples are synthesized by combining data across files.
+
+#### Augmenting with Claude Code sessions (Strategy A+B hybrid)
+
+The tool gives you a solid base (~500 examples for a 6000-line novel). To reach the 1000–2000 range recommended for fine-tuning, augment with Claude Code:
 
 ```bash
 python -m lib.generate_claude_md books/$SLUG
 cd books/$SLUG
 ```
 
-Then use Claude Code sessions to systematically generate Q&A pairs:
+Then in a Claude Code session:
 
 ```
-# In a Claude Code session inside books/$SLUG/:
-
-For each arc in book.yaml, generate 10-15 questions covering:
-- Plot events ("What happens when X?")
-- Character analysis ("How does character Y change in this section?")
-- Thematic interpretation ("What role does theme Z play here?")
-- Style/technique ("What narrative techniques are used in SC_00150?")
-- Textual evidence ("Which passage best illustrates X?")
-- Comparative ("How does this scene contrast with SC_00200?")
-
-Answer each question using the full knowledge base + source text citations.
+For each arc in book.yaml, generate 5 hard questions that require
+cross-referencing multiple arcs or combining character + theme analysis.
+Answer each using the full knowledge base with citations.
+Save each answer with /cache.
 ```
 
-Every Q&A pair generated this way is grounded in the actual text with scene IDs and line references. The agent caches answers in `knowledge/answers/` and `tier_1/08_qa_cache.md`, so you accumulate a growing dataset.
-
-#### Strategy B: Direct conversion of knowledge files
-
-Transform the existing knowledge artifacts into instruction-completion pairs programmatically:
-
-**From tier_2 arc files (scene summaries → Q&A):**
+The agent stores every answer in `knowledge/answers/` and indexes it in `08_qa_cache.md`. After the session, convert those cached answers into additional training examples:
 
 ```python
-# Pseudo-code: parse tier_2 markdown into training pairs
-for scene in parse_scenes("knowledge/tier_2/02_01_*.md"):
-    # Scene summary → completion pair
-    pairs.append({
-        "instruction": f"Summarize what happens in lines {scene.lines} of [Book Title].",
-        "completion": scene.summary
-    })
-    # Character extraction
-    pairs.append({
-        "instruction": f"Which characters appear in {scene.sc_id}?",
-        "completion": f"Characters: {scene.characters}. Themes: {scene.themes}."
-    })
+# Convert cached answers to messages format
+import json, re
+from pathlib import Path
+
+answers_dir = Path("books/<slug>/knowledge/answers")
+cfg = {"title": "...", "author": "...", "year": "..."}
+system = f"You are a literary expert on {cfg['author']}'s *{cfg['title']}* ({cfg['year']})..."
+
+for md_file in sorted(answers_dir.glob("*.md")):
+    content = md_file.read_text()
+    # Extract question from filename or first heading
+    question = md_file.stem.split("_", 1)[-1].replace("-", " ")
+    print(json.dumps({
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": question},
+            {"role": "assistant", "content": content},
+        ]
+    }, ensure_ascii=False))
 ```
 
-**From extracted_chunks.json (embeddings + summaries):**
+#### Dataset quality controls
+
+Before training, validate your dataset:
+
+1. **Length filtering** — remove examples where the assistant response is < 50 chars (too thin) or > 4000 chars (may dilute signal)
+2. **Deduplication** — the tool uses random question variants but check for near-duplicate answers
+3. **Language consistency** — if your knowledge base mixes languages (e.g., Italian analysis of English text), decide whether to keep or filter
+4. **Citation grounding** — every assistant response should contain at least one SC_ID or line reference; discard ungrounded examples
 
 ```python
-# Each chunk already has an embedding_summary
-for chunk in extracted_chunks:
-    # The source text lines for this chunk
-    text = get_lines(chunk["chunk_ids"])
-    pairs.append({
-        "instruction": "Analyze this passage from [Book Title].",
-        "input": text,
-        "completion": chunk["embedding_summary"]
-    })
+# Quick validation
+import json
+with open("dataset.jsonl") as f:
+    examples = [json.loads(line) for line in f]
+
+valid = []
+for ex in examples:
+    assistant = ex["messages"][-1]["content"]
+    if len(assistant) < 50:
+        continue  # too short
+    if len(assistant) > 4000:
+        assistant = assistant[:4000]  # truncate
+        ex["messages"][-1]["content"] = assistant
+    valid.append(ex)
+
+print(f"Kept {len(valid)}/{len(examples)} examples")
 ```
 
-**From tier_1 files (structured reference → instruction pairs):**
+### Phase 4: Format for your training framework
 
-- `01_synopsis.md` → "Summarize the plot of [Book]" / "What happens in arc X?"
-- `03_characters.md` → "Describe character X" / "What is X's relationship with Y?"
-- `04_themes.md` → "What are the major themes?" / "How does theme X manifest?"
-- `05_style.md` → "Describe the narrative style" / "What techniques does the author use?"
+The tool outputs OpenAI messages format by default. Convert to other formats as needed:
 
-#### Strategy C: Hybrid — bootstrap with B, refine with A
+**Anthropic fine-tuning format:**
 
-1. Run Strategy B to generate a base dataset (500–1000 pairs from knowledge files)
-2. Use Strategy A (Claude Code sessions) to generate harder, more nuanced questions that require cross-referencing multiple arcs
-3. Use the Q&A cache (`08_qa_cache.md` + `answers/`) as additional high-quality pairs
+```python
+# Convert messages → Anthropic format
+for ex in dataset:
+    msgs = ex["messages"]
+    anthropic_ex = {
+        "system": msgs[0]["content"],
+        "messages": [
+            {"role": m["role"], "content": m["content"]}
+            for m in msgs[1:]
+        ]
+    }
+```
 
-### Phase 4: Format for training
-
-Convert your pairs into the format your training framework expects:
-
-**For instruction fine-tuning (Alpaca/ShareGPT format):**
+**Alpaca/instruction format** (for frameworks like Axolotl):
 
 ```json
 {
@@ -167,31 +250,26 @@ Convert your pairs into the format your training framework expects:
 }
 ```
 
-**For chat fine-tuning (messages format):**
+**Continued pretraining** (raw text interleaved with analysis):
 
-```json
-{
-  "messages": [
-    {"role": "system", "content": "You are an expert on [Book Title] by [Author]."},
-    {"role": "user", "content": "Analyze Emma's behavior at the ball."},
-    {"role": "assistant", "content": "At the Vaubyessard ball (Arc 02_02, SC_00150–SC_00165)..."}
-  ]
-}
-```
-
-**For continued pretraining (raw text):**
-
-Use the source text JSONL directly, optionally interleaved with knowledge base content to teach the model both the text and analytical frameworks.
+Use the source text JSONL directly, optionally interleaved with knowledge base content to teach the model both the text and analytical frameworks simultaneously.
 
 ## Dataset composition recommendations
 
-| Category | Source | % of dataset | Purpose |
-|----------|--------|-------------|---------|
-| Raw text passages | `data/*.jsonl` | 15-20% | Teach the model the actual text |
-| Scene summaries | `tier_2/*.md` | 20-25% | Teach analytical comprehension |
-| Character/theme analysis | `tier_1/03,04,05` | 10-15% | High-level literary understanding |
-| Generated Q&A pairs | Claude Code sessions | 30-40% | Instruction following |
-| Cross-arc comparisons | Claude Code sessions | 10-15% | Complex reasoning |
+For a book with ~200 scenes and 10+ characters:
+
+| Category | Source | # examples | Purpose |
+|----------|--------|-----------|---------|
+| Scene summaries | `tier_2/*.md` → tool | ~200 | Core comprehension |
+| Passage analysis | `tier_2` + source text → tool | ~200 | Text → analysis mapping |
+| Character profiles | `tier_1/03_characters.md` → tool | ~20–30 | Character knowledge |
+| Theme analysis | `tier_1/04_themes.md` → tool | ~20–30 | Thematic reasoning |
+| Arc summaries | `tier_1/01_synopsis.md` → tool | ~15–20 | Plot-level understanding |
+| Style questions | `tier_1/05_style.md` → tool | ~10–15 | Craft analysis |
+| Cross-arc comparisons | tool | ~15–20 | Complex reasoning |
+| Multi-turn dialogues | tool | ~5–10 | Conversational flow |
+| Claude Code Q&A | `answers/*.md` | ~100–300 | Hard, nuanced questions |
+| **Total** | | **~600–900** | |
 
 ## Key artifacts for training
 
