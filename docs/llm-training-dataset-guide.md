@@ -86,74 +86,88 @@ At this point you have a complete knowledge base. The goal is to produce JSONL w
 ]}
 ```
 
-#### The generation tool: `lib/generate_training_data.py`
+There are two tools: a **rule-based** baseline (free, fast, ~500 examples) and an **LLM-based** generator (higher quality, natural questions, synthesized answers).
 
-A ready-made script that reads all your book-expert artifacts and produces a chat fine-tuning dataset:
+#### Tool 1 (baseline): `lib/generate_training_data.py`
+
+Deterministic, no API calls. Parses knowledge artifacts and produces templated Q&A:
 
 ```bash
-python -m lib.generate_training_data books/<slug> --output dataset.jsonl
+python -m lib.generate_training_data books/<slug> --output baseline.jsonl
 ```
 
-It parses your knowledge base and generates **8 categories** of training examples:
+Useful for: validating your pipeline end-to-end, getting a quick dataset to test training infrastructure, and establishing a floor for comparison. Produces ~500 examples with fixed question templates like "What happens in SC_00042?" → copy-pasted scene summary.
 
-| # | Category | Source artifact | What it generates |
-|---|----------|----------------|-------------------|
-| 1 | Scene summary | `tier_2/02_*.md` | "What happens in SC_00042?" → scene summary + characters + themes |
-| 2 | Passage analysis | `tier_2/*.md` + source JSONL | Raw passage as input → analytical response with SC_ID + line refs |
-| 3 | Character profile | `tier_1/03_characters.md` | "Who is X?" → role, traits, arc, relationships |
-| 4 | Theme analysis | `tier_1/04_themes.md` | "How does theme X manifest?" → description + arc distribution + examples |
-| 5 | Arc summary | `tier_1/01_synopsis.md` | "What happens in section Y?" → plot summary for that arc |
-| 6 | Style & technique | `tier_1/05_style.md` | "How does the author use Z?" → technique analysis with SC examples |
-| 7 | Cross-arc comparison | `tier_1/01_synopsis.md` | "How does arc A contrast with arc B?" → paired summaries |
-| 8 | Multi-turn conversation | all of the above | 2-turn dialogue: character intro → specific scene follow-up |
+**Limitation**: questions are formulaic, answers are stitched-together fields rather than synthesized analysis, and multi-turn conversations are trivial.
 
-**Example output** (from Portnoy's Complaint, 502 examples generated):
+#### Tool 2 (recommended): `lib/generate_training_data_llm.py`
 
-```json
-{"messages": [
-  {"role": "system", "content": "You are a literary expert on Philip Roth's *Portnoy's Complaint* (1969). You have deep knowledge of the novel's plot, characters, themes, narrative techniques, and historical context. Answer with specific scene references (SC_IDs) and line numbers when relevant. Be precise and analytical."},
-  {"role": "user", "content": "What happens in SC_00097 (lines 1821–1829)?"},
-  {"role": "assistant", "content": "Così dicevano le leggi kasher al bambino cresciuto sotto la tutela di Sophie e Jack P., in un quartiere scolastico di Newark dove nella sua intera classe c'erano solo due bambini cristiani..."}
-]}
+Uses an LLM to generate diverse, natural Q&A pairs grounded in your knowledge artifacts:
+
+```bash
+# Synchronous (immediate, good for small books)
+python -m lib.generate_training_data_llm books/<slug> -o dataset.jsonl
+
+# Batch mode (~50% cost savings, good for large books)
+python -m lib.generate_training_data_llm books/<slug> -o dataset.jsonl --mode batch
+
+# With a different provider/model
+python -m lib.generate_training_data_llm books/<slug> -o dataset.jsonl --provider openai
 ```
 
-```json
-{"messages": [
-  {"role": "system", "content": "..."},
-  {"role": "user", "content": "Tell me about The Monkey in *Portnoy's Complaint*."},
-  {"role": "assistant", "content": "Modella e amante principale del narratore nella vita adulta. Key traits: Bellissima, sessualmente sfrenata, semianalfabeta..."},
-  {"role": "user", "content": "Can you show me a specific scene where The Monkey is important?"},
-  {"role": "assistant", "content": "In SC_00114 (L2326–L2368): Il narratore chiede perché dovrebbe sposarsi..."}
-]}
-```
+**How it works**: the tool parses all knowledge artifacts using the same parsers as the rule-based tool, then builds **generation prompts** — one per task — that feed the parsed context to an LLM and ask it to produce diverse Q&A pairs.
 
-#### How the tool maps artifacts → training examples
+For a book like Portnoy's Complaint (200 scenes, 12 characters, 14 themes, 20 arcs), it creates **24 prompts**:
 
-**Tier 2 arc files** are the richest source. Each file has this structure:
+| Prompt type | Count | What the LLM generates |
+|-------------|-------|----------------------|
+| Scene-level (one per arc) | 20 | Per-scene questions + character-in-scene + theme connections + passage analysis + multi-turn |
+| Character-focused | 1 | Identity, relationships, evolution, comparisons, multi-turn |
+| Theme-focused | 1 | Overview, theme-in-scene, intersections, interpretive, multi-turn |
+| Style & technique | 1 | Technique ID, language register, metaphors, structure, multi-turn |
+| Cross-arc & whole-book | 1 | Plot progression, turning points, foreshadowing, arc contrasts, multi-turn |
 
-```markdown
-### SC_00002 (L2–L16)
-Il narratore racconta che da bambino credeva che le sue maestre...
+Each prompt includes the actual knowledge base content (scene summaries, source text excerpts, character profiles, etc.) so the LLM generates grounded answers with real SC_IDs and line references.
 
-**Personaggi**: Sophie Portnoy (la madre)
-**Temi**: Complesso edipico e rapporto madre-figlio, Nostalgia e infanzia perduta
-```
+**What makes LLM-generated examples better:**
 
-The parser extracts `sc_id`, `line_start`, `line_end`, `summary`, `characters`, `themes` from each scene block. This produces two examples per scene:
-- **Scene summary**: question about the SC_ID → summary + metadata
-- **Passage analysis**: raw source text lines as input → grounded analytical response
+1. **Natural question variety** — instead of "What happens in SC_00097?", the LLM generates questions like "Why does Portnoy feel guilt about the lobster incident?" or "How does Sophie's knife scene foreshadow Alex's later impotence?"
 
-**Tier 1 files** produce structured examples:
-- `03_characters.md` → one profile Q&A + one relationship Q&A per character
-- `04_themes.md` → one detailed + one concise Q&A per theme
-- `01_synopsis.md` → one Q&A per arc
-- `05_style.md` → one per subsection (voice, language, structure, techniques, metaphors)
+2. **Synthesized answers** — the LLM weaves together summary + thematic interpretation + textual evidence + cross-references into coherent analytical responses, which is exactly the behavior you want the fine-tuned model to learn
 
-**Cross-arc + multi-turn** examples are synthesized by combining data across files.
+3. **Real multi-turn conversations** — 2-3 turn dialogues where follow-up questions drill deeper, the user pushes back, asks for evidence, or shifts angle
 
-#### Augmenting with Claude Code sessions (Strategy A+B hybrid)
+4. **Cross-referencing** — the LLM connects scenes across arcs, links characters to themes, and identifies patterns that the rule-based tool cannot
 
-The tool gives you a solid base (~500 examples for a 6000-line novel). To reach the 1000–2000 range recommended for fine-tuning, augment with Claude Code:
+**Example prompt** (scene-level, for one arc):
+
+The tool sends the LLM all scenes from an arc with their summaries, characters, themes, and source text. Then asks for:
+- 1 scene-specific question per scene
+- Character-in-scene questions for scenes with named characters
+- 2-3 theme questions connecting scenes in the arc
+- 2-3 passage analysis examples (raw text → analytical commentary)
+- 1-2 multi-turn conversations
+
+The LLM returns a JSON array of conversation objects, which the tool validates and injects with the system prompt.
+
+**Built-in validation**: the tool automatically filters examples where:
+- Assistant responses are < 50 characters (too thin)
+- Assistant responses are > 4000 characters (truncated)
+- Messages are missing user or assistant roles
+- JSON parsing failed
+
+#### Combining both tools
+
+The recommended workflow:
+
+1. Run the rule-based tool first to validate your knowledge base is correctly structured
+2. Run the LLM tool to generate the actual training dataset
+3. Concatenate both outputs and deduplicate
+4. Optionally augment with Claude Code sessions for the hardest questions (see below)
+
+#### Augmenting with Claude Code sessions
+
+For the most nuanced questions — those requiring deep cross-arc reasoning or interpretive debate — use interactive Claude Code sessions:
 
 ```bash
 python -m lib.generate_claude_md books/$SLUG
@@ -169,11 +183,11 @@ Answer each using the full knowledge base with citations.
 Save each answer with /cache.
 ```
 
-The agent stores every answer in `knowledge/answers/` and indexes it in `08_qa_cache.md`. After the session, convert those cached answers into additional training examples:
+The agent stores every answer in `knowledge/answers/` and indexes it in `08_qa_cache.md`. Convert cached answers into additional training examples:
 
 ```python
 # Convert cached answers to messages format
-import json, re
+import json
 from pathlib import Path
 
 answers_dir = Path("books/<slug>/knowledge/answers")
@@ -182,7 +196,6 @@ system = f"You are a literary expert on {cfg['author']}'s *{cfg['title']}* ({cfg
 
 for md_file in sorted(answers_dir.glob("*.md")):
     content = md_file.read_text()
-    # Extract question from filename or first heading
     question = md_file.stem.split("_", 1)[-1].replace("-", " ")
     print(json.dumps({
         "messages": [
@@ -191,34 +204,6 @@ for md_file in sorted(answers_dir.glob("*.md")):
             {"role": "assistant", "content": content},
         ]
     }, ensure_ascii=False))
-```
-
-#### Dataset quality controls
-
-Before training, validate your dataset:
-
-1. **Length filtering** — remove examples where the assistant response is < 50 chars (too thin) or > 4000 chars (may dilute signal)
-2. **Deduplication** — the tool uses random question variants but check for near-duplicate answers
-3. **Language consistency** — if your knowledge base mixes languages (e.g., Italian analysis of English text), decide whether to keep or filter
-4. **Citation grounding** — every assistant response should contain at least one SC_ID or line reference; discard ungrounded examples
-
-```python
-# Quick validation
-import json
-with open("dataset.jsonl") as f:
-    examples = [json.loads(line) for line in f]
-
-valid = []
-for ex in examples:
-    assistant = ex["messages"][-1]["content"]
-    if len(assistant) < 50:
-        continue  # too short
-    if len(assistant) > 4000:
-        assistant = assistant[:4000]  # truncate
-        ex["messages"][-1]["content"] = assistant
-    valid.append(ex)
-
-print(f"Kept {len(valid)}/{len(examples)} examples")
 ```
 
 ### Phase 4: Format for your training framework
@@ -260,16 +245,14 @@ For a book with ~200 scenes and 10+ characters:
 
 | Category | Source | # examples | Purpose |
 |----------|--------|-----------|---------|
-| Scene summaries | `tier_2/*.md` → tool | ~200 | Core comprehension |
-| Passage analysis | `tier_2` + source text → tool | ~200 | Text → analysis mapping |
-| Character profiles | `tier_1/03_characters.md` → tool | ~20–30 | Character knowledge |
-| Theme analysis | `tier_1/04_themes.md` → tool | ~20–30 | Thematic reasoning |
-| Arc summaries | `tier_1/01_synopsis.md` → tool | ~15–20 | Plot-level understanding |
-| Style questions | `tier_1/05_style.md` → tool | ~10–15 | Craft analysis |
-| Cross-arc comparisons | tool | ~15–20 | Complex reasoning |
-| Multi-turn dialogues | tool | ~5–10 | Conversational flow |
-| Claude Code Q&A | `answers/*.md` | ~100–300 | Hard, nuanced questions |
-| **Total** | | **~600–900** | |
+| Scene-level Q&A (all types) | LLM tool → 20 arc prompts | ~300–500 | Core: plot, characters-in-scene, themes, passage analysis |
+| Character-focused | LLM tool → 1 prompt | ~30–50 | Identity, evolution, relationships, comparisons |
+| Theme-focused | LLM tool → 1 prompt | ~30–50 | Theme analysis, intersections, interpretation |
+| Style & technique | LLM tool → 1 prompt | ~10–15 | Narrative craft, metaphor, structure |
+| Cross-arc & whole-book | LLM tool → 1 prompt | ~15–20 | Synthesis, foreshadowing, arc contrasts |
+| Rule-based baseline | `generate_training_data.py` | ~500 | Factual grounding, coverage guarantee |
+| Claude Code Q&A | `answers/*.md` | ~100–300 | Hardest, most nuanced questions |
+| **Total** | | **~1000–1500** | |
 
 ## Key artifacts for training
 
