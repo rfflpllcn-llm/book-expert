@@ -61,6 +61,26 @@ def generate(book_dir: Path) -> str:
     src = config.get("source_text", {})
     prefs_section = _render_preferences(prefs)
     cite_density = prefs.get("citation_density", "always")
+    translations = config.get("translations", {})
+
+    # Build bilingual tools documentation
+    bilingual_tools = ""
+    if translations:
+        langs = ", ".join(translations.keys())
+        bilingual_tools = (
+            f"\n- **Cite with translation**: `python -m lib.cite . <start_line> <end_line> --lang <{langs}>`"
+            f"\n  Example: `python -m lib.cite . 77 80 --lang it`"
+            f"\n  Shows the original text followed by the aligned translation."
+        )
+
+    bilingual_note = ""
+    if translations:
+        bilingual_note = (
+            "\n\n### Bilingual citation\n"
+            "- When the user asks about a translation, or when comparing original and translation, "
+            "use `--lang` to show both versions side-by-side.\n"
+            "- The alignment is approximate (sentence-level); minor boundary mismatches are normal.\n"
+        )
 
     # Commentary instruction varies by citation_density
     commentary_instruction = ""
@@ -127,7 +147,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 ## Tools
 
 - **Cite original text**: `python -m lib.cite . <start_line> <end_line>`
-  Example: `python -m lib.cite . 77 80`
+  Example: `python -m lib.cite . 77 80`{bilingual_tools}
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
@@ -153,7 +173,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 ### Q&A cache — IMPORTANT
 - **Before answering**: check `knowledge/tier_1/08_qa_cache.md`
 - **After every substantive answer**: save to cache (see workflow step 7)
-- Keep cached summaries compact (2-4 sentences)
+- Keep cached summaries compact (2-4 sentences){bilingual_note}
 
 ## Dynamic routing
 

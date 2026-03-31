@@ -39,3 +39,16 @@ def test_generate_null_stance_renders_correctly(book_dir):
     result = generate(book_dir)
     assert "None" not in result
     assert "balanced" in result.lower()
+
+
+def test_generate_bilingual_tools(bilingual_book_dir):
+    """When translations exist, CLAUDE.md should document the --lang flag."""
+    result = generate(bilingual_book_dir)
+    assert "--lang it" in result
+    assert "translation" in result.lower() or "bilingual" in result.lower()
+
+
+def test_generate_no_bilingual_without_translations(book_dir):
+    """Books without translations should NOT mention --lang."""
+    result = generate(book_dir)
+    assert "--lang" not in result
