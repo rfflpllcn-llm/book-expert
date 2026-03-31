@@ -63,22 +63,26 @@ def generate(book_dir: Path) -> str:
     cite_density = prefs.get("citation_density", "always")
     translations = config.get("translations", {})
 
-    # Build bilingual tools documentation
-    bilingual_tools = ""
+    # Build cite tool documentation
     if translations:
-        langs = ", ".join(translations.keys())
-        bilingual_tools = (
-            f"\n- **Cite with translation**: `python -m lib.cite . <start_line> <end_line> --lang <{langs}>`"
-            f"\n  Example: `python -m lib.cite . 77 80 --lang it`"
-            f"\n  Shows the original text followed by the aligned translation."
+        lang_code = next(iter(translations))
+        cite_tool_doc = (
+            f"- **Cite text (bilingual)**: `python -m lib.cite . <start_line> <end_line> --lang {lang_code}`\n"
+            f"  Example: `python -m lib.cite . 77 80 --lang {lang_code}`\n"
+            f"  Always use `--lang {lang_code}`. The tool gracefully handles missing translations."
+        )
+    else:
+        cite_tool_doc = (
+            "- **Cite original text**: `python -m lib.cite . <start_line> <end_line>`\n"
+            "  Example: `python -m lib.cite . 77 80`"
         )
 
     bilingual_note = ""
     if translations:
+        lang_code = next(iter(translations))
         bilingual_note = (
-            "\n\n### Bilingual citation\n"
-            "- When the user asks about a translation, or when comparing original and translation, "
-            "use `--lang` to show both versions side-by-side.\n"
+            "\n\n### Bilingual citation — MANDATORY\n"
+            f"- ALWAYS use `--lang {lang_code}` when citing, so both original and translation are shown.\n"
             "- The alignment is approximate (sentence-level); minor boundary mismatches are normal.\n"
         )
 
@@ -146,8 +150,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 
 ## Tools
 
-- **Cite original text**: `python -m lib.cite . <start_line> <end_line>`
-  Example: `python -m lib.cite . 77 80`{bilingual_tools}
+{cite_tool_doc}
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
