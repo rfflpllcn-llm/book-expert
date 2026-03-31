@@ -9,10 +9,15 @@ dependencies = [
     "anthropic",
     "marker-pdf>=1.10.2",
     "pymupdf>=1.27.2.2",
+    "sentence-transformers",
+    "faiss-cpu",
+    "sentence-splitter",
+    "numba",
+    "langdetect",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
 [tool.setuptools.packages.find]
-include = ["lib*"]
+include = ["lib*", "bertalign*"]
