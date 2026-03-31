@@ -10,6 +10,15 @@ source_text:
   line_column: id
   text_column: t
 
+translations:
+  it:
+    file: data/voyage-it.jsonl
+    format: jsonl
+    line_prefix: IT
+    line_column: id
+    text_column: t
+    alignment: data/alignment-fr-it.jsonl
+
 chunks:
   file: data/extracted_chunks.json
   format: json

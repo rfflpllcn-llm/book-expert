@@ -54,6 +54,9 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 
 - **Cite original text**: `python -m lib.cite . <start_line> <end_line>`
   Example: `python -m lib.cite . 77 80`
+- **Cite with translation**: `python -m lib.cite . <start_line> <end_line> --lang <it>`
+  Example: `python -m lib.cite . 77 80 --lang it`
+  Shows the original text followed by the aligned translation.
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
@@ -84,6 +87,11 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - **Before answering**: check `knowledge/tier_1/08_qa_cache.md`
 - **After every substantive answer**: save to cache (see workflow step 7)
 - Keep cached summaries compact (2-4 sentences)
+
+### Bilingual citation
+- When the user asks about a translation, or when comparing original and translation, use `--lang` to show both versions side-by-side.
+- The alignment is approximate (sentence-level); minor boundary mismatches are normal.
+
 
 ## Dynamic routing
 
