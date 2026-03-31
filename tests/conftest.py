@@ -65,6 +65,32 @@ def book_dir(tmp_path):
         "6,1,FR6,2,3,1,A header line.,hash6,page_header\n"
     )
 
+    # JSONL source variant (for bilingual book tests)
+    (data_dir / "source.jsonl").write_text(
+        '{"id": "1", "t": "First line of the test book."}\n'
+        '{"id": "2", "t": "Second line continues here."}\n'
+        '{"id": "3", "t": "Third line wraps up."}\n'
+        '{"id": "4", "t": "Fourth line starts section two."}\n'
+        '{"id": "5", "t": "Fifth and final line."}\n'
+    )
+
+    # Italian translation
+    (data_dir / "translation-it.jsonl").write_text(
+        '{"id": 1, "t": "Prima riga del libro di prova."}\n'
+        '{"id": 2, "t": "La seconda riga continua qui."}\n'
+        '{"id": 3, "t": "La terza riga conclude."}\n'
+        '{"id": 4, "t": "La quarta riga inizia la sezione due."}\n'
+        '{"id": 5, "t": "Quinta e ultima riga."}\n'
+    )
+
+    # Alignment file: FR1+FR2 -> IT1, FR3 -> IT2+IT3, FR4 -> IT4, FR5 -> IT5
+    (data_dir / "alignment-fr-it.jsonl").write_text(
+        '{"src_lines": ["1", "2"], "tgt_lines": [1], "type": "2-1"}\n'
+        '{"src_lines": ["3"], "tgt_lines": [2, 3], "type": "1-2"}\n'
+        '{"src_lines": ["4"], "tgt_lines": [4], "type": "1-1"}\n'
+        '{"src_lines": ["5"], "tgt_lines": [5], "type": "1-1"}\n'
+    )
+
     # knowledge/tier_1
     t1 = bd / "knowledge" / "tier_1"
     t1.mkdir(parents=True)
@@ -96,3 +122,46 @@ def book_dir(tmp_path):
     (bd / "knowledge" / "answers").mkdir()
 
     return bd
+
+
+@pytest.fixture
+def bilingual_book_dir(book_dir):
+    """Extend book_dir with JSONL source + Italian translation + alignment."""
+    # Rewrite book.yaml to use JSONL source and add translations
+    (book_dir / "book.yaml").write_text(
+        "title: Test Book\n"
+        "author: Test Author\n"
+        "year: 2000\n"
+        "language: fr\n"
+        "\n"
+        "source_text:\n"
+        "  file: data/source.jsonl\n"
+        "  format: jsonl\n"
+        "  line_prefix: FR\n"
+        "  line_column: id\n"
+        "  text_column: t\n"
+        "\n"
+        "translations:\n"
+        "  it:\n"
+        "    file: data/translation-it.jsonl\n"
+        "    format: jsonl\n"
+        "    line_prefix: IT\n"
+        "    line_column: id\n"
+        "    text_column: t\n"
+        "    alignment: data/alignment-fr-it.jsonl\n"
+        "\n"
+        "arcs:\n"
+        "  02_01_test_arc:\n"
+        "    keywords: [test, beginning, hero]\n"
+        "    lines: [1, 3]\n"
+        "  02_02_test_arc_two:\n"
+        "    keywords: [second, ending]\n"
+        "    lines: [4, 5]\n"
+        "\n"
+        "characters:\n"
+        "  hero:\n"
+        "    arcs: [02_01_test_arc, 02_02_test_arc_two]\n"
+        "  sidekick:\n"
+        "    arcs: [02_02_test_arc_two]\n"
+    )
+    return book_dir

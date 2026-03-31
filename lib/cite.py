@@ -69,23 +69,124 @@ def _load_lines_jsonl(
     return results
 
 
+def load_alignment(book_dir: Path, lang: str) -> list[dict]:
+    """Load alignment beads from the translations config for *lang*."""
+    config = load_book_config(book_dir)
+    trans = config["translations"][lang]
+    align_path = book_dir / trans["alignment"]
+    beads = []
+    with open(align_path, encoding="utf-8") as f:
+        for line in f:
+            beads.append(json.loads(line))
+    return beads
+
+
+def find_aligned_line_ids(
+    beads: list[dict], src_start: int, src_end: int
+) -> list:
+    """Return sorted target line IDs aligned to source lines in [src_start, src_end].
+
+    Source line IDs in beads may be str or int; compared as str against the
+    requested range (which is always built from ints).
+    """
+    requested = {str(n) for n in range(src_start, src_end + 1)}
+    target_ids = []
+    for bead in beads:
+        src_ids = {str(x) for x in bead["src_lines"]}
+        if src_ids & requested:
+            target_ids.extend(bead["tgt_lines"])
+    return sorted(set(target_ids))
+
+
+def load_translation_lines(
+    book_dir: Path, lang: str, src_start: int, src_end: int
+) -> list[tuple[str, str]]:
+    """Load translated lines aligned to source lines [src_start, src_end]."""
+    config = load_book_config(book_dir)
+    trans = config["translations"][lang]
+
+    beads = load_alignment(book_dir, lang)
+    target_ids = find_aligned_line_ids(beads, src_start, src_end)
+    if not target_ids:
+        return []
+
+    # Load target lines by scanning the translation file
+    prefix = trans["line_prefix"]
+    line_col = trans["line_column"]
+    text_col = trans["text_column"]
+    target_set = set(target_ids)
+
+    results = []
+    tgt_path = book_dir / trans["file"]
+    with open(tgt_path, encoding="utf-8") as f:
+        for line in f:
+            row = json.loads(line)
+            if row[line_col] in target_set:
+                results.append((f"{prefix}{row[line_col]}", row[text_col]))
+    # Sort by the numeric part of the ID
+    results.sort(key=lambda r: int(r[0].lstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ")))
+    return results
+
+
 def format_citation(lines: list[tuple[str, str]]) -> str:
-    """Join lines into a blockquote with line range reference."""
+    """Join lines into a blockquote with line range reference.
+
+    Detects gaps in numeric IDs and formats as separate ranges
+    joined by ' + ' (e.g. "IT1–IT2 + IT5").
+    """
     if not lines:
         return "(no main_text lines found in this range)"
-    first_id = lines[0][0]
-    last_id = lines[-1][0]
     text = " ".join(t for _, t in lines)
-    ref = first_id if first_id == last_id else f"{first_id}–{last_id}"
+
+    # Build contiguous groups of IDs
+    ids = [lid for lid, _ in lines]
+    groups = _group_contiguous_ids(ids)
+    ref = " + ".join(_format_range(g) for g in groups)
     return f"> «{text}» ({ref})"
 
 
+def _extract_numeric(line_id: str) -> int:
+    """Extract the numeric suffix from a line ID like 'FR77' or 'IT3'."""
+    return int("".join(c for c in line_id if c.isdigit()))
+
+
+def _group_contiguous_ids(ids: list[str]) -> list[list[str]]:
+    """Group line IDs into contiguous runs based on numeric part."""
+    if not ids:
+        return []
+    groups = [[ids[0]]]
+    for i in range(1, len(ids)):
+        if _extract_numeric(ids[i]) == _extract_numeric(ids[i - 1]) + 1:
+            groups[-1].append(ids[i])
+        else:
+            groups.append([ids[i]])
+    return groups
+
+
+def _format_range(group: list[str]) -> str:
+    """Format a contiguous group as 'FR1' or 'FR1–FR3'."""
+    if len(group) == 1:
+        return group[0]
+    return f"{group[0]}–{group[-1]}"
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print(f"Usage: python -m lib.cite <book_dir> <start_line> <end_line>")
-        print(f"Example: python -m lib.cite . 77 80")
+    if len(sys.argv) < 4:
+        print("Usage: python -m lib.cite <book_dir> <start_line> <end_line> [--lang LANG]")
+        print("Example: python -m lib.cite . 77 80")
+        print("Example: python -m lib.cite . 77 80 --lang it")
         sys.exit(1)
     book_dir = Path(sys.argv[1])
     start, end = int(sys.argv[2]), int(sys.argv[3])
+
+    lang = None
+    if "--lang" in sys.argv:
+        lang_idx = sys.argv.index("--lang") + 1
+        lang = sys.argv[lang_idx]
+
     lines = load_lines(book_dir, start, end)
     print(format_citation(lines))
+
+    if lang:
+        tl = load_translation_lines(book_dir, lang, start, end)
+        print(format_citation(tl))
