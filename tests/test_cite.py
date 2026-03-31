@@ -36,7 +36,7 @@ def test_format_citation_single():
 
 def test_format_citation_empty():
     result = format_citation([])
-    assert "no main_text" in result
+    assert "no lines found" in result
 
 
 def test_load_alignment(bilingual_book_dir):

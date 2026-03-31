@@ -64,14 +64,13 @@ def run_alignment(
     percent: float = 0.15,
 ) -> None:
     """Run full alignment pipeline: load → bertalign → write."""
-    from bertalign import Bertalign
-
     src_ids, src_texts = load_jsonl(src_path)
     tgt_ids, tgt_texts = load_jsonl(tgt_path)
 
     # Pre-flight: empty texts would silently break index mapping even with
     # the is_split patch, since bertalign embeds each line and empty strings
-    # produce degenerate embeddings.
+    # produce degenerate embeddings. Runs before bertalign import to avoid
+    # eager LaBSE model init on invalid input.
     empty_src = [i for i, t in enumerate(src_texts) if not t.strip()]
     empty_tgt = [i for i, t in enumerate(tgt_texts) if not t.strip()]
     if empty_src or empty_tgt:
@@ -80,6 +79,8 @@ def run_alignment(
             f"src has {len(empty_src)} empty lines (first: {empty_src[:5]}), "
             f"tgt has {len(empty_tgt)} empty lines (first: {empty_tgt[:5]})"
         )
+
+    from bertalign import Bertalign
 
     src_blob = "\n".join(src_texts)
     tgt_blob = "\n".join(tgt_texts)

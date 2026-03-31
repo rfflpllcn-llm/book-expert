@@ -135,7 +135,7 @@ def format_citation(lines: list[tuple[str, str]]) -> str:
     joined by ' + ' (e.g. "IT1–IT2 + IT5").
     """
     if not lines:
-        return "(no main_text lines found in this range)"
+        return "(no lines found in this range)"
     text = " ".join(t for _, t in lines)
 
     # Build contiguous groups of IDs
@@ -182,11 +182,21 @@ if __name__ == "__main__":
     lang = None
     if "--lang" in sys.argv:
         lang_idx = sys.argv.index("--lang") + 1
+        if lang_idx >= len(sys.argv):
+            print("Error: --lang requires a language code (e.g. --lang it)")
+            sys.exit(1)
         lang = sys.argv[lang_idx]
 
     lines = load_lines(book_dir, start, end)
     print(format_citation(lines))
 
     if lang:
+        config = load_book_config(book_dir)
+        if "translations" not in config or lang not in config.get("translations", {}):
+            print(f"Error: no '{lang}' translation configured in {book_dir}/book.yaml")
+            sys.exit(1)
         tl = load_translation_lines(book_dir, lang, start, end)
-        print(format_citation(tl))
+        if tl:
+            print(format_citation(tl))
+        else:
+            print(f"(no aligned {lang.upper()} translation for FR{start}–FR{end})")
