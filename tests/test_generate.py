@@ -18,7 +18,17 @@ def test_generate_contains_tools(book_dir):
 def test_generate_contains_dynamic_routing(book_dir):
     result = generate(book_dir)
     assert "book.yaml" in result
-    assert "tier_3/_index.md" in result
+    assert "_index.yaml" in result
+
+
+def test_generate_contains_cite_essay_tool(book_dir):
+    """When _index.yaml has entries, cite_essay tool is documented."""
+    import yaml as _yaml
+    index_path = book_dir / "knowledge" / "tier_3" / "_index.yaml"
+    data = _yaml.safe_load(index_path.read_text())
+    assert data.get("essays"), "fixture should have essays"
+    result = generate(book_dir)
+    assert "cite_essay" in result
 
 
 def test_generate_contains_preferences(book_dir):

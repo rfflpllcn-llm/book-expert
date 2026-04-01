@@ -106,17 +106,34 @@ def book_dir(tmp_path):
     # knowledge/tier_3
     t3 = bd / "knowledge" / "tier_3"
     t3.mkdir()
-    (t3 / "_index.md").write_text(
-        "# Commentaries — Index\n\n"
-        "## test_commentary\n"
-        "- **Author**: Test Critic\n"
-        "- **Work**: Test Study (2000)\n"
-        "- **Covers**: style, themes\n"
-        "- **Arcs**: 02_01_test_arc\n"
-        "- **Themes**: test theme, darkness\n"
-        "- **Stance**: structuralist\n"
+    import yaml as _yaml
+    _yaml.safe_dump(
+        {"essays": {
+            "test_commentary": {
+                "author": "Test Critic",
+                "work": "Test Study",
+                "year": 2000,
+                "summary": "A structuralist analysis of style and themes in the test book.",
+                "stance": "structuralist",
+                "arcs": ["02_01_test_arc"],
+                "themes": ["test theme", "darkness"],
+                "characters": ["Céline"],
+                "sections": [
+                    {
+                        "id": 1,
+                        "title": "Chapter on Style",
+                        "summary": "Analyzes core stylistic techniques.",
+                        "start_id": "1",
+                        "end_id": "100",
+                        "arcs": ["02_01_test_arc"],
+                    },
+                ],
+            },
+        }},
+        (t3 / "_index.yaml").open("w"),
+        allow_unicode=True,
+        sort_keys=False,
     )
-    (t3 / "test_commentary.md").write_text("# Test Commentary\n\nSome critical analysis.\n")
 
     # knowledge/answers
     (bd / "knowledge" / "answers").mkdir()

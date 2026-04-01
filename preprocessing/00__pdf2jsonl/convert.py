@@ -81,4 +81,9 @@ def extract_lines_to_jsonl(pdf_path, lang=None):
 
 
 if __name__ == "__main__":
-    extract_lines_to_jsonl("portnoy_s_complaint_en.pdf", lang="en")
+    import argparse
+    parser = argparse.ArgumentParser(description="Extract text lines from PDF to JSONL")
+    parser.add_argument("pdf_path", help="Path to the PDF file")
+    parser.add_argument("--lang", default=None, help="Language code (e.g., fr, en)")
+    args = parser.parse_args()
+    extract_lines_to_jsonl(args.pdf_path, lang=args.lang)

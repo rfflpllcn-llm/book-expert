@@ -86,15 +86,36 @@ def generate(book_dir: Path) -> str:
             "- The alignment is approximate (sentence-level); minor boundary mismatches are normal.\n"
         )
 
-    # Commentary instruction varies by citation_density
-    commentary_instruction = ""
-    if cite_density == "heavy_with_commentary":
+    # Commentary / essay instruction varies by citation_density
+    # Check if _index.yaml has essay entries
+    tier3_index = book_dir / "knowledge" / "tier_3" / "_index.yaml"
+    has_essays = False
+    if tier3_index.exists():
+        import yaml as _y
+        _data = _y.safe_load(tier3_index.read_text(encoding="utf-8")) or {}
+        has_essays = bool(_data.get("essays"))
+
+    if has_essays:
+        cite_essay_doc = (
+            "- **Cite essay**: `python -m lib.cite_essay . <slug> <arc_id>`\n"
+            "  Loads the analytical summary for a specific arc of a critical essay.\n"
+            "  Use `--toc` to see all arcs: `python -m lib.cite_essay . <slug> --toc`\n"
+            "  Use `--raw <start> <end>` for exact quotes: `python -m lib.cite_essay . <slug> 100 200 --raw`"
+        )
+    else:
+        cite_essay_doc = ""
+
+    if has_essays and cite_density == "heavy_with_commentary":
         commentary_instruction = (
-            "5. **Check commentaries**: read `knowledge/tier_3/_index.md` and load matching critical sources\n"
+            "5. **Consult critical essays**: review essay summaries in tier_3, call `cite_essay` for relevant arcs\n"
+        )
+    elif has_essays:
+        commentary_instruction = (
+            "5. **Check commentaries** (if user asks about criticism): review essay summaries in tier_3, call `cite_essay` for relevant arcs\n"
         )
     else:
         commentary_instruction = (
-            "5. **Check commentaries** (if user asks about criticism): read `knowledge/tier_3/_index.md`\n"
+            "5. **Check commentaries** (if user asks about criticism): read `knowledge/tier_3/_index.yaml`\n"
         )
 
     return f"""# {config['title']} — Expert Agent
@@ -135,10 +156,9 @@ Located in `knowledge/tier_1/`:
 Located in `knowledge/tier_2/`. Arc files containing scene summaries.
 Route queries using arc keywords and line ranges defined in `book.yaml`.
 
-### Tier 3 — Critical commentaries
-Located in `knowledge/tier_3/`. Secondary/critical sources.
-Read `knowledge/tier_3/_index.md` for routing metadata (which arcs/themes each commentary covers).
-Load a commentary when its arcs or themes match the query.
+### Tier 3 — Critical essays
+Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
+Essay summaries are loaded automatically. Use `cite_essay` to retrieve detailed analysis.
 
 ### Original text — `{src.get('file', 'data/source.jsonl')}`
 The complete original text. Each line has an integer `id` and text.
@@ -151,6 +171,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 ## Tools
 
 {cite_tool_doc}
+{cite_essay_doc}
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
@@ -184,8 +205,8 @@ Read `book.yaml` at query time for:
 - **Arc routing**: `arcs` section maps arc IDs to keywords and line ranges
 - **Character routing**: `characters` section maps names to their arcs
 
-Read `knowledge/tier_3/_index.md` for:
-- **Commentary routing**: which arcs/themes each commentary covers
+Read `knowledge/tier_3/_index.yaml` for:
+- **Essay routing**: essay summaries with chapter-level descriptions
 
 ## Commands
 

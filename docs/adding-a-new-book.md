@@ -158,36 +158,20 @@ One file per narrative arc, named to match the `arcs` keys in `book.yaml`:
 
 Each file contains detailed scene-by-scene summaries with scene IDs (`SC_xxxxx`) and line references (`L123–L456`).
 
-#### Tier 3 — `knowledge/tier_3/` (optional)
+#### Tier 3 — `knowledge/tier_3/` (critical essays)
 
-For critical/secondary sources. Create `_index.md` with routing metadata:
+Essay routing metadata is stored in `_index.yaml`. This file is generated automatically
+by `python -m lib.aggregate_essay_index <book_dir>` from per-essay YAML descriptors
+in `data/essays/<slug>/<slug>.yaml`.
 
-```markdown
-# Commentaries — Index
+Each essay goes through the same preprocessing pipeline as the book (stages 0-4)
+and produces its own knowledge base in `data/essays/<slug>/`.
 
-## auerbach_mimesis
-- **Author**: Erich Auerbach
-- **Work**: Mimesis (1946)
-- **Covers**: realism, style indirect libre
-- **Arcs**: 02_01_tostes, 02_03_yonville
-- **Themes**: realism, narrative voice, bourgeoisie
-- **Stance**: historical
-
-## starobinski_echelle
-- **Author**: Jean Starobinski
-- **Work**: L'Échelle des températures (1971)
-- **Covers**: desire, temperature metaphors
-- **Arcs**: all
-- **Themes**: desire, metaphor, irony
-- **Stance**: structuralist
-```
-
-Then create a matching `.md` file for each entry (e.g., `auerbach_mimesis.md`).
-
-Commentaries are loaded when:
-- Their `Arcs` overlap with the arcs matched by the query
-- Their `Themes` keywords appear in the query text
-- The book's `citation_density` is set to `heavy_with_commentary`
+To add a critical essay:
+1. Place the PDF in `data/essays/<slug>/<slug>.pdf`
+2. Run the preprocessing pipeline (stages 0-4) to generate JSONL, sections, chunks, tier_1, tier_2, and YAML
+3. Run `python -m lib.aggregate_essay_index .` to update `_index.yaml`
+4. Run `python -m lib.generate_claude_md .` to update CLAUDE.md with `cite_essay` tool
 
 ### 6. Generate `CLAUDE.md`
 

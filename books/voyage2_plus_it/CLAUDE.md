@@ -11,7 +11,7 @@ narrative arcs, detailed character profiles, thematic analysis, and style notes.
 2. **Read tier_1 files**: always read the relevant files from `knowledge/tier_1/` for context
 3. **Route to tier_2 if needed**: read `book.yaml` for arc keywords and line ranges, then load the matching `knowledge/tier_2/02_*.md` file
 4. **Cite the original text**: use cite tool to find and quote relevant passages (see "Tools" below)
-5. **Check commentaries** (if user asks about criticism): read `knowledge/tier_3/_index.md`
+5. **Check commentaries** (if user asks about criticism): review essay summaries in tier_3, call `cite_essay` for relevant arcs
 6. **Answer the question** using the knowledge files, original text, and any commentaries
 7. **Save to cache**: after answering, ALWAYS do two steps:
 
@@ -37,10 +37,9 @@ Located in `knowledge/tier_1/`:
 Located in `knowledge/tier_2/`. Arc files containing scene summaries.
 Route queries using arc keywords and line ranges defined in `book.yaml`.
 
-### Tier 3 — Critical commentaries
-Located in `knowledge/tier_3/`. Secondary/critical sources.
-Read `knowledge/tier_3/_index.md` for routing metadata (which arcs/themes each commentary covers).
-Load a commentary when its arcs or themes match the query.
+### Tier 3 — Critical essays
+Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
+Essay summaries are loaded automatically. Use `cite_essay` to retrieve detailed analysis.
 
 ### Original text — `data/voyage-fr.jsonl`
 The complete original text. Each line has an integer `id` and text.
@@ -55,6 +54,10 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - **Cite text (bilingual)**: `python -m lib.cite . <start_line> <end_line> --lang it`
   Example: `python -m lib.cite . 77 80 --lang it`
   Always use `--lang it`. The tool gracefully handles missing translations.
+- **Cite essay**: `python -m lib.cite_essay . <slug> <arc_id>`
+  Loads the analytical summary for a specific arc of a critical essay.
+  Use `--toc` to see all arcs: `python -m lib.cite_essay . <slug> --toc`
+  Use `--raw <start> <end>` for exact quotes: `python -m lib.cite_essay . <slug> 100 200 --raw`
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
@@ -97,8 +100,8 @@ Read `book.yaml` at query time for:
 - **Arc routing**: `arcs` section maps arc IDs to keywords and line ranges
 - **Character routing**: `characters` section maps names to their arcs
 
-Read `knowledge/tier_3/_index.md` for:
-- **Commentary routing**: which arcs/themes each commentary covers
+Read `knowledge/tier_3/_index.yaml` for:
+- **Essay routing**: essay summaries with chapter-level descriptions
 
 ## Commands
 

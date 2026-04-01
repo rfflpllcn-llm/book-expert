@@ -81,55 +81,40 @@ def load_tier2_file(book_dir: Path, arc_id: str) -> str:
     return ""
 
 
-def _parse_tier3_index(index_text: str) -> list[dict]:
-    """Parse tier_3/_index.md into list of {slug, arcs, themes}."""
-    entries = []
-    current = None
-    for line in index_text.split("\n"):
-        if line.startswith("## "):
-            if current:
-                entries.append(current)
-            current = {"slug": line[3:].strip(), "arcs": [], "themes": []}
-        elif current:
-            if line.startswith("- **Arcs**:"):
-                val = line.split(":", 1)[1].strip()
-                if val.lower().startswith("all"):
-                    current["arcs"] = ["__all__"]
-                else:
-                    current["arcs"] = [a.strip() for a in val.split(",")]
-            elif line.startswith("- **Themes**:"):
-                val = line.split(":", 1)[1].strip()
-                current["themes"] = [t.strip().lower() for t in val.split(",")]
-    if current:
-        entries.append(current)
-    return entries
-
-
-def load_tier3(book_dir: Path, arc_ids: list[str], query: str = "") -> str:
-    """Load commentaries matching arc_ids or query theme keywords."""
-    index_path = book_dir / "knowledge" / "tier_3" / "_index.md"
+def _load_tier3_index(book_dir: Path) -> dict:
+    """Load tier_3/_index.yaml. Returns the parsed dict or empty."""
+    index_path = book_dir / "knowledge" / "tier_3" / "_index.yaml"
     if not index_path.exists():
+        return {}
+    return yaml.safe_load(index_path.read_text(encoding="utf-8")) or {}
+
+
+def load_tier3(book_dir: Path, **_kwargs) -> str:
+    """Load essay summaries from _index.yaml for system prompt injection.
+
+    Returns formatted chapter-level summaries for all essays.
+    Ignores arc_ids/query — the LLM does its own routing.
+    """
+    data = _load_tier3_index(book_dir)
+    essays = data.get("essays", {})
+    if not essays:
         return ""
 
-    entries = _parse_tier3_index(index_path.read_text(encoding="utf-8"))
-    tier3_dir = index_path.parent
-    query_lower = query.lower()
-    matched = []
+    parts = []
+    for slug, info in essays.items():
+        lines = [
+            f"## {info.get('author', 'Unknown')} — *{info.get('work', slug)}* ({info.get('year', '?')})",
+            f"**Stance**: {info.get('stance', 'N/A')}",
+            "",
+            info.get("summary", ""),
+            "",
+            "**Sections:**",
+        ]
+        for sec in info.get("sections", []):
+            lines.append(f"- **{sec.get('title', 'Untitled')}**: {sec.get('summary', '')}")
+        parts.append("\n".join(lines))
 
-    for entry in entries:
-        # Arc match: entry covers one of the requested arcs, or covers "all"
-        arc_match = "__all__" in entry["arcs"] or bool(
-            set(entry["arcs"]) & set(arc_ids)
-        )
-        # Theme match: any entry theme keyword appears in query
-        theme_match = any(t in query_lower for t in entry["themes"]) if query_lower else False
-
-        if arc_match or theme_match:
-            filepath = tier3_dir / f"{entry['slug']}.md"
-            if filepath.exists():
-                matched.append(filepath.read_text(encoding="utf-8"))
-
-    return "\n\n---\n\n".join(matched)
+    return "\n\n---\n\n".join(parts)
 
 
 def build_context(query: str, book_dir: Path) -> tuple[str, str]:
@@ -149,12 +134,10 @@ def build_context(query: str, book_dir: Path) -> tuple[str, str]:
         if content:
             dynamic_parts.append(f"<!-- ARC: {arc_id} -->\n{content}")
 
-    # Load tier_3 commentaries if citation_density requires it
-    prefs = config.get("preferences", {})
-    if prefs.get("citation_density") == "heavy_with_commentary":
-        commentary = load_tier3(book_dir, arc_ids, query=query)
-        if commentary:
-            dynamic_parts.append(f"<!-- COMMENTARY -->\n{commentary}")
+    # Load tier_3 essay summaries (always — small fixed cost, LLM routes)
+    commentary = load_tier3(book_dir)
+    if commentary:
+        dynamic_parts.append(f"<!-- ESSAYS -->\n{commentary}")
 
     dynamic_context = "\n\n---\n\n".join(dynamic_parts) if dynamic_parts else ""
     return system_prompt, dynamic_context

@@ -91,26 +91,17 @@ def test_load_tier2_file_missing(book_dir):
 
 
 def test_load_tier3_arc_match(book_dir):
-    result = load_tier3(book_dir, ["02_01_test_arc"])
-    assert "Test Commentary" in result
-    assert "critical analysis" in result
-
-
-def test_load_tier3_no_match(book_dir):
-    result = load_tier3(book_dir, ["02_99_nonexistent"])
-    assert result == ""
-
-
-def test_load_tier3_theme_match(book_dir):
-    result = load_tier3(book_dir, [], query="darkness in the novel")
-    assert "Test Commentary" in result
+    result = load_tier3(book_dir)
+    assert "Test Critic" in result
+    assert "Test Study" in result
+    assert "Chapter on Style" in result
 
 
 def test_load_tier3_missing_index(book_dir):
     """Gracefully handle missing tier_3."""
     import shutil
     shutil.rmtree(book_dir / "knowledge" / "tier_3")
-    result = load_tier3(book_dir, ["02_01_test_arc"])
+    result = load_tier3(book_dir)
     assert result == ""
 
 
@@ -121,16 +112,19 @@ def test_build_context_with_match(book_dir):
 
 
 def test_build_context_no_match(book_dir):
+    """No arc match, but essay summaries are still included."""
     system, dynamic = build_context("completely unrelated", book_dir)
     assert "Index" in system
-    assert dynamic == ""
+    # No tier_2 arcs matched, but essays are always present
+    assert "ARC:" not in dynamic
+    assert "Test Critic" in dynamic
 
 
 def test_build_context_with_commentary(book_dir):
-    """When citation_density is heavy_with_commentary, tier_3 is included."""
-    # The fixture's per-book prefs set citation_density: heavy_with_commentary
+    """Essay summaries are always included in dynamic context."""
     system, dynamic = build_context("tell me about the beginning", book_dir)
-    assert "Test Commentary" in dynamic
+    assert "Test Critic" in dynamic
+    assert "Test Study" in dynamic
 
 
 def test_append_to_qa_cache(book_dir):
