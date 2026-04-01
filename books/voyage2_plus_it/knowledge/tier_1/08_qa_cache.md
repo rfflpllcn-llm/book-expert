@@ -21,3 +21,10 @@ Claude dovrebbe consultarlo prima di ri-derivare una risposta dai file delle sce
 **Risposta**: Rancy (righe 9651–12034) è il cuore nero del Voyage: Bardamu si installa come medico nella banlieue miserabile, scopre l'impossibilità di farsi pagare dai poveri, si affeziona al piccolo Bébert che morirà di tifo, e si invischia nel dramma della famiglia Henrouille. Robinson riappare come un incubo. L'arco segna il passaggio dal picaresco all'immobilità.
 **Risposta completa**: answers/2026-03-28_bardamu-a-rancy.md
 **Data**: 2026-03-28
+
+
+## Q: Analyze arc 3: Parigi, Lola, Musyne e la convalescenza
+**SC di riferimento**: 347, 352, 436, 485, 500, 600
+**Risposta**: Arc 3 (lines 1674–3137, 200 scenes) covers Bardamu's convalescence in Paris through two failed love affairs: Lola, the American nurse who rejects his pacifism, and Musyne, the violinist who abandons him for wealthy Argentines. Key episodes include Bardamu's psychiatric breakdown at Saint-Cloud, the cowardice debate with Lola, Princhard's monologue on the 'gratuitous soldier,' and the revelation of 'two humanities' — rich and poor. The arc establishes patriotic hypocrisy, the economics of love, and class as destiny.
+**Risposta completa**: answers/2026-04-01_analisi-arco-3-parigi-lola-musyne.md
+**Data**: 2026-04-01
