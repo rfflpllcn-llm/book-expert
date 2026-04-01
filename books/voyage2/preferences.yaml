@@ -1,0 +1,22 @@
+# Per-book overrides (sparse — absent keys inherit from global preferences.yaml)
+# Uncomment to override:
+
+language: english
+
+# tone: academic_formal
+# tone: conversational
+tone: inspired_professor
+
+citation_density: always
+# citation_density: on_request
+# citation_density: heavy_with_commentary
+
+interpretation_stance: null
+# interpretation_stance: psychoanalytic
+# interpretation_stance: marxist
+# interpretation_stance: structuralist
+# interpretation_stance: historical
+
+# answer_length: detailed
+# answer_length: concise
+answer_length: moderate

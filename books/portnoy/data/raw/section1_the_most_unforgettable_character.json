@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "source_file": "portnoy_s_complaint_en-filtered.jsonl"
+  },
+  "semantic_chunks": [
+    {
+      "sc_id": "1",
+      "chunk_type": "page_header",
+      "chunk_ids": ["1"]
+    },
+    {
+      "sc_id": "2",
+      "chunk_type": "main_text",
+      "chunk_ids": ["2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"],
+      "embedding_summary": "Il narratore racconta che da bambino credeva che le sue maestre di scuola fossero la madre travestita, e correva a casa cercando di sorprenderla durante la trasformazione. La fantasia includeva il timore di scoprirla tra un'incarnazione e l'altra, un peso che considerava insopportabile a cinque anni.",
+      "paraphrase": "La madre era così radicata nella coscienza del narratore che durante il primo anno di scuola egli credeva che ogni insegnante fosse lei sotto mentite spoglie. Tornando a casa di corsa, la trovava sempre già in cucina a preparare latte e biscotti, il che rafforzava la sua ammirazione per i poteri di lei. Il bambino sapeva che il padre e la sorella ignoravano la vera natura della madre, e temeva le conseguenze di scoprirla nel passaggio da un'identità all'altra."
+    },
+    {
+      "sc_id": "3",
+      "chunk_type": "main_text",
+      "chunk_ids": ["17","18","19","20","21","22","23"],
+      "embedding_summary": "La madre chiedeva al narratore di raccontarle la giornata scolastica, e lui obbediva scrupolosamente. La conseguenza della fantasia dell'onnipresenza materna fu che il bambino divenne onesto.",
+      "paraphrase": "Quando la madre gli chiedeva di raccontare la giornata all'asilo, il narratore riferiva tutto con precisione. Non comprendeva appieno il significato dell'ubiquità materna, ma capiva che serviva a verificare il suo comportamento in sua assenza. Il risultato di questa fantasia, che durò fino alla prima elementare, fu che il narratore, non avendo alternative, divenne una persona onesta."
+    },
+    {
+      "sc_id": "4",
+      "chunk_type": "main_text",
+      "chunk_ids": ["24","25","26","27","28","29","30","31"],
+      "embedding_summary": "La madre esprime giudizi diversi sui due figli: la sorella Hannah è una ragazza diligente ma non geniale, mentre il narratore è considerato un genio, un secondo Albert Einstein.",
+      "paraphrase": "Il narratore era anche brillante. Della sorella maggiore Hannah, pallida e sovrappeso, la madre diceva, in sua presenza, che non era un genio ma che si impegnava al massimo delle sue capacità. Del narratore invece, che aveva ereditato il naso lungo e la bocca eloquente della madre, lei dichiarava con malcelato orgoglio che prendeva il massimo dei voti senza nemmeno aprire un libro, definendolo un secondo Albert Einstein."
+    },
+    {
+      "sc_id": "5",
+      "chunk_type": "main_text",
+      "chunk_ids": ["32","33","34","35","36","37","38","39","40","41","42","43"],
+      "embedding_summary": "Il padre del narratore soffriva di costipazione cronica e ricorreva a numerosi rimedi, tra cui olio minerale, latte di magnesia, Ex-Lax e foglie di senna. Le prime impressioni del narratore sui genitori sono l'ubiquità della madre e la costipazione del padre.",
+      "paraphrase": "Il padre reagiva a tutto ciò bevendo non whisky ma olio minerale e latte di magnesia, masticando Ex-Lax e consumando grandi quantità di frutta secca e crusca. Soffriva terribilmente di costipazione. Le prime impressioni del narratore sui genitori erano l'onnipresenza della madre e la costipazione del padre: lei che volava dentro dalla finestra, lui che leggeva il giornale con una supposta inserita. Il padre preparava un decotto di foglie di senna essiccate, mescolando il liquido maleodorante e filtrandolo, con un'espressione di stanchezza e sofferenza sul viso."
+    },
+    {
+      "sc_id": "6",
+      "chunk_type": "main_text",
+      "chunk_ids": ["44","45","46","47","48","49","50","51","52"],
+      "embedding_summary": "Il narratore da bambino attendeva insieme al padre il miracolo della guarigione dalla costipazione, che non arrivava mai. Il padre commentò che forse la bomba atomica avrebbe risolto il problema; le sue viscere erano bloccate dalla frustrazione, e tra le sue sventure c'era il fatto che il figlio fosse il preferito della moglie.",
+      "paraphrase": "Dopo aver bevuto il decotto, il padre restava immobile sopra il bicchiere vuoto, come in ascolto di un tuono lontano, attendendo il miracolo. Il narratore da bambino sedeva talvolta in cucina ad aspettare con lui, ma la liberazione completa non giungeva mai. Quando alla radio annunciarono l'esplosione della prima bomba atomica, il padre disse che forse quella avrebbe funzionato. Ogni rimedio era vano: le sue viscere erano strette dalla morsa dell'indignazione e della frustrazione. Tra le sue disgrazie c'era anche il fatto di essere il marito della donna che preferiva il figlio."
+    },
+    {
+      "sc_id": "7",
+      "chunk_type": "main_text",
+      "chunk_ids": ["53","54","55","56","57","58","59","60","61","62","63","64","65"],
+      "embedding_summary": "Il padre amava il narratore e vedeva in lui la possibilità di riscatto sociale della famiglia, consigliandogli di sposare una donna ricca. Lavorava instancabilmente ma nessuno gli dava soddisfazione: né la moglie, né i figli, né il marito della sorella, né la compagnia assicurativa protestante per cui lavorava.",
+      "paraphrase": "Per rendere le cose più difficili, il padre amava il narratore. Anche lui vedeva nel figlio l'opportunità della famiglia di essere rispettata, anche se quando il bambino era piccolo ne parlava soprattutto in termini di denaro, consigliandogli di non essere sciocco come il padre e di sposare una donna ricca anziché una bella. Lavorava come un cane per un futuro che non gli era destinato. Nessuno gli restituiva quanto meritava: né la moglie, né il figlio, né la sorella il cui marito era ancora considerato dal padre un comunista, nonostante fosse diventato socio di un'azienda di bibite e proprietario di casa a West Orange. Tantomeno la grande compagnia assicurativa protestante che lo sfruttava al massimo."
+    },
+    {
+      "sc_id": "8",
+      "chunk_type": "main_text",
+      "chunk_ids": ["66","67","68","69","70","71","72","73","74","75","76","77","78"],
+      "embedding_summary": "Il padre presentava al figlio la Boston & Northeastern Life come la più benevola istituzione finanziaria d'America. Davanti al figlio parlava con orgoglio dell'azienda, che gli forniva cancelleria col simbolo del Mayflower e ogni primavera lo mandava con la moglie in un hotel di Atlantic City insieme agli altri agenti che avevano superato le quote di vendita.",
+      "paraphrase": "Il padre definì la Boston & Northeastern Life come l'istituzione finanziaria più benevola d'America, quando portò il figlio a vedere la sua piccola area di scrivania nei vasti uffici della compagnia. Davanti al figlio parlava con orgoglio dell'azienda: durante la Depressione gli avevano pagato uno stipendio, gli davano carta intestata col suo nome sotto l'immagine del Mayflower, e ogni primavera, nella pienezza della loro benevolenza, mandavano lui e la moglie per un fine settimana gratuito in un hotel elegante di Atlantic City, insieme a tutti gli altri agenti degli stati medio-atlantici che avevano superato le aspettative annuali di vendita, per essere poi intimiditi dal portiere, dal cameriere e dal fattorino."
+    },
+    {
+      "sc_id": "9",
+      "chunk_type": "main_text",
+      "chunk_ids": ["79","80","81","82","83","84","85","86","87","88","89","90","91"],
+      "embedding_summary": "Il padre credeva appassionatamente nel valore dell'assicurazione sulla vita e usciva dopo cena per convincere i clienti a non lasciar scadere le polizze. Spiegava al figlio la metafora dell'ombrello per i giorni di pioggia, ma questo discorso non era sempre ben accolto dai residenti poveri dei quartieri che gli erano stati assegnati.",
+      "paraphrase": "Il padre credeva con passione in ciò che vendeva, e questa era un'ulteriore fonte di angoscia e dispendio di energie. Quando dopo cena indossava cappotto e cappello per uscire di nuovo a lavorare, non salvava solo la propria anima, ma anche quella di qualche poveretto sul punto di lasciar scadere la polizza assicurativa, mettendo a rischio la sicurezza della propria famiglia. Spiegava al figlio che un uomo deve avere un ombrello per i giorni di pioggia e che non si lasciano moglie e figli sotto la pioggia senza protezione. Anche se per il bambino di cinque-sei anni queste parole avevano un senso perfetto e commovente, non sempre venivano accolte altrettanto bene dai polacchi, dagli irlandesi violenti e dai neri analfabeti che vivevano nei quartieri poveri assegnatigli dalla compagnia."
+    },
+    {
+      "sc_id": "10",
+      "chunk_type": "main_text",
+      "chunk_ids": ["92","93","94","95","96","97","98","99"],
+      "embedding_summary": "Nei quartieri poveri il padre veniva deriso e respinto: gli sbattevano la porta in faccia e gli aizzavano i cani contro. Nonostante ciò, nel corso degli anni accumulò dalla compagnia abbastanza targhe, pergamene e medaglie da coprire un'intera parete del corridoio di casa.",
+      "paraphrase": "Nei bassifondi ridevano di lui e non lo ascoltavano. Sentendolo bussare, lanciavano bottiglie vuote contro la porta gridando che non c'era nessuno in casa. Gli aizzavano i cani addosso. Ciononostante, negli anni riuscì ad accumulare dalla compagnia abbastanza targhe, pergamene e medaglie per le sue capacità di vendita da riempire un'intera parete del lungo corridoio senza finestre dove venivano conservati i piatti della Pasqua ebraica e i tappeti orientali avvolti nella carta catramata per l'estate."
+    },
+    {
+      "sc_id": "11",
+      "chunk_type": "main_text",
+      "chunk_ids": ["100","101","102","103","104","105","106","107","108","109"],
+      "embedding_summary": "Il padre sperava che i suoi risultati straordinari gli valessero una promozione a direttore di distretto, ma la compagnia lo teneva fermo nella sua posizione perché nessun altro avrebbe lavorato un territorio così ingrato con tali risultati. Nella storia della Boston & Northeastern non c'era mai stato un dirigente ebreo.",
+      "paraphrase": "Se riusciva a cavare sangue da una pietra, la compagnia non lo avrebbe forse ricompensato con un miracolo? Il presidente nella sede centrale non avrebbe potuto scoprire i suoi successi e trasformarlo da semplice agente a cinquemila dollari l'anno in direttore distrettuale a quindicimila? Ma dove lo avevano messo, lì lo tenevano. Chi altri avrebbe lavorato un territorio così sterile con risultati così incredibili? Inoltre, non c'era mai stato un dirigente ebreo nell'intera storia della Boston & Northeastern, e il padre, con la sua istruzione di terza media, non era esattamente adatto a essere il Jackie Robinson del settore assicurativo."
+    },
+    {
+      "sc_id": "12",
+      "chunk_type": "main_text",
+      "chunk_ids": ["110","111","112","113","114","115","116","117","118","119","120","121","122","123","124"],
+      "embedding_summary": "Nel corridoio di casa era appesa la fotografia incorniciata di N. Everett Lindabury, presidente della Boston & Northeastern, ricevuta dal padre come premio. Davanti al figlio il padre parlava con rispetto della sede centrale, ma in privato sfogava un odio feroce verso l'élite protestante che lo teneva bloccato, rivolgendo la rabbia soprattutto contro se stesso.",
+      "paraphrase": "La fotografia di N. Everett Lindabury, presidente della Boston & Northeastern, era appesa nel corridoio di casa, ricevuta dal padre dopo aver venduto il primo milione di dollari in polizze. Davanti al figlio, il padre parlava della sede centrale e del signor Lindabury con una reverenza simile a quella per Roosevelt alla Casa Bianca. Ma nel frattempo odiava profondamente le loro viscere, specialmente quelle di Lindabury con i suoi capelli biondi e il suo accento raffinato del New England, i figli a Harvard e le figlie nei collegi femminili, tutta quella gente del Massachusetts a caccia della volpe e a giocare a polo. Questa élite gli impediva di essere un eroe agli occhi della moglie e dei figli. La rabbia non aveva sfogo se non contro se stesso: si chiedeva perché non riuscisse a evacuare l'intestino, perché avesse mal di testa, dove fossero i suoi occhiali e chi avesse preso il suo cappello."
+    },
+    {
+      "sc_id": "13",
+      "chunk_type": "main_text",
+      "chunk_ids": ["125","126","127","128","129","130","131","132","133"],
+      "embedding_summary": "Il padre serviva la famiglia con dedizione feroce e autodistruttiva, tipica degli uomini ebrei della sua generazione. Il suo sogno era che il figlio volasse dove lui era stato imprigionato; il narratore, a trentatré anni, prova ancora il desiderio che il padre possa comprendere ciò che lui legge.",
+      "paraphrase": "In quel modo feroce e autodistruttivo con cui tanti uomini ebrei della sua generazione servirono le proprie famiglie, il padre servì la moglie, la figlia Hannah e soprattutto il narratore. Dove lui era stato imprigionato, il figlio avrebbe volato: questo era il suo sogno. Quello del narratore ne era il corollario: nella propria liberazione ci sarebbe stata anche quella del padre, dall'ignoranza, dallo sfruttamento, dall'anonimato. Ancora a trentatré anni i loro destini restano intrecciati nell'immaginazione del narratore, che troppo spesso, leggendo un passo che lo colpisce per logica o saggezza, pensa involontariamente: se solo lui potesse leggerlo e capirlo."
+    },
+    {
+      "sc_id": "14",
+      "chunk_type": "main_text",
+      "chunk_ids": ["134","135","136","137","138","139","140","141","142","143","144"],
+      "embedding_summary": "Durante il primo anno di università il narratore inviò anonimamente al padre un abbonamento alla Partisan Review, ma quando tornò a casa a Natale la rivista non c'era: presumibilmente era stata gettata via senza essere aperta, cosa che il narratore visse con arroganza e dolore.",
+      "paraphrase": "Ancora pieno di speranza a trentatré anni, e ancora di più durante il primo anno di università, quando sembrava che fosse questione di vita o di morte far capire il padre, il narratore strappò il modulo di abbonamento da una rivista intellettuale appena scoperta nella biblioteca del college, compilò il nome del padre e l'indirizzo di casa, e spedì un abbonamento regalo anonimo. Ma quando tornò a casa a Natale, cupo e pronto a giudicare, la Partisan Review non si trovava da nessuna parte. C'erano Collier's, Hygeia, Look, ma non la Partisan Review. Il narratore pensò con arroganza e strazio che fosse stata buttata via senza essere aperta, considerata posta spazzatura da quello che definiva uno sciocco, un idiota, un padre filisteo."
+    },
+    {
+      "sc_id": "15",
+      "chunk_type": "main_text",
+      "chunk_ids": ["145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169"],
+      "embedding_summary": "Il narratore ricorda una domenica mattina a otto anni in cui lanciò una palla da baseball al padre. Il padre era stato fuori fin dall'alba a riscuotere i premi assicurativi nel quartiere nero, cercando di intercettare i debitori prima che si ubriacassero o andassero in chiesa, lamentandosi con disprezzo razzista della loro incapacità di comprendere l'importanza dell'assicurazione.",
+      "paraphrase": "Per risalire ancora più indietro in questa storia di disillusioni, il narratore ricorda una domenica mattina in cui, a otto anni, con i regali di compleanno appena ricevuti — guantone, palla dura e mazza regolamentare troppo pesante per lui — lanciò una palla al padre. Questi era fuori dall'alba con cappello, cappotto, cravattino e scarpe nere, con il grosso libro nero delle riscossioni sotto il braccio. Scendeva nel quartiere nero ogni domenica mattina perché era il momento migliore per intercettare quelli che non volevano pagare i dieci o quindici centesimi del premio settimanale. Si appostava dove i mariti sedevano al sole, cercando di estrarre qualche moneta prima che si ubriacassero col vino Morgan Davis; sbucava dai vicoli per intercettare le donne delle pulizie tra casa e chiesa. I bambini scappavano gridando che arrivava l'uomo delle assicurazioni, e il padre, con disgusto, si chiedeva che speranza ci fosse per quella gente di migliorare la propria condizione, se non erano nemmeno capaci di capire l'importanza dell'assicurazione sulla vita."
+    },
+    {
+      "sc_id": "16",
+      "chunk_type": "main_text",
+      "chunk_ids": ["170","171","172","173","174","175","176","177","178","179","180","181","182","183","184"],
+      "embedding_summary": "Nel campo dietro la scuola il padre impugna la mazza da baseball con le mani invertite, suscitando nel narratore bambino una tristezza improvvisa. Il narratore scopre che il padre non è nemmeno capace di giocare a baseball, e conclude con l'espressione ironica 'Bell'ombrello'.",
+      "paraphrase": "Si trovano nel grande campo sterrato dietro la scuola. Il padre posa il libro delle riscossioni e si posiziona al piatto col cappotto e il fedora marrone. Porta occhiali con montatura d'acciaio quadrata, e i suoi capelli — che ora il narratore porta uguali — sono un cespuglio selvaggio del colore e della consistenza della lana d'acciaio; i denti, che di notte stanno in un bicchiere in bagno sorridendo al water, ora sorridono al figlio amato. Il padre afferra la mazza nuova a metà e, con stupore del narratore, con la mano sinistra dove dovrebbe stare la destra. Il bambino è colto da una tristezza improvvisa: vorrebbe dirgli che le mani sono invertite ma teme di piangere, o di far piangere lui. Il padre gli grida di lanciare la palla, e il narratore scopre così che, oltre a tutto il resto che sta cominciando a sospettare del padre, questi non è nemmeno un campione di baseball. Bell'ombrello."
+    },
+    {
+      "sc_id": "17",
+      "chunk_type": "main_text",
+      "chunk_ids": ["185","186","187","188","189","190","191","192","193","194","195","196","197"],
+      "embedding_summary": "La madre era capace di qualsiasi cosa e probabilmente anche troppo brava, secondo la propria ammissione. Il narratore elenca le sue abilità domestiche: preparava gelatina con pesche sospese, torte al sapore di banana, rafano grattugiato in casa, sorvegliava il macellaio e avvisava le vicine della pioggia con una prontezza straordinaria.",
+      "paraphrase": "Era la madre quella che sapeva fare tutto, e lei stessa doveva ammettere che forse era persino troppo brava. Un bambino con l'intelligenza e lo spirito di osservazione del narratore non poteva dubitarne. Sapeva preparare la gelatina con le pesche a fette sospese al suo interno, in sfida alla legge di gravità. Sapeva fare una torta che aveva il sapore della banana. Piangendo e soffrendo, grattugiava il rafano da sola piuttosto che comprare la porcheria in bottiglia al negozio. Sorvegliava il macellaio come un falco per assicurarsi che passasse la carne nel tritacarne kosher. Telefonava a tutte le donne del palazzo che stendevano i panni — un giorno chiamò persino la divorziata non ebrea dell'ultimo piano — per avvisarle di ritirare il bucato perché una goccia di pioggia era caduta sul vetro della finestra. Che radar, quella donna, e tutto questo prima dell'invenzione del radar."
+    },
+    {
+      "sc_id": "18",
+      "chunk_type": "main_text",
+      "chunk_ids": ["198","199","200","201","202","203","204","205","206"],
+      "embedding_summary": "La madre controllava ogni aspetto del corpo e dell'igiene del narratore: compiti, calzini, unghie, collo, ogni piega del corpo. Gli versava acqua ossigenata fredda nelle orecchie per rimuovere il cerume, una procedura che richiedeva tempo e impegno ma a cui lei non si sottraeva quando erano in gioco salute e pulizia.",
+      "paraphrase": "L'energia e la meticolosità di quella donna erano straordinarie. Controllava le somme dei compiti per trovare errori, i calzini per trovare buchi, le unghie, il collo, ogni cucitura e piega del corpo del figlio. Gli versava persino acqua ossigenata fredda nelle orecchie, che frizzava e scoppiettava come ginger ale, portando in superficie i depositi nascosti di cerume giallo che apparentemente potevano mettere a rischio l'udito. Una procedura medica del genere, per quanto discutibile, richiedeva tempo e impegno, ma quando si trattava di salute e pulizia, di germi e secrezioni corporee, la madre non si risparmiava e non sacrificava gli altri."
+    },
+    {
+      "sc_id": "19",
+      "chunk_type": "main_text",
+      "chunk_ids": ["207","208","209","210","211","212","213","214","215","216","217","218","219"],
+      "embedding_summary": "La madre accendeva candele per i defunti senza bisogno di annotazioni, era l'unica a pulire le erbacce dalle tombe dei parenti, al primo giorno di primavera trattava tutto il vestiario di lana contro le tarme. Non si vergognava mai della propria casa e accettava le sconfitte a mah-jongg con sportività.",
+      "paraphrase": "La madre accendeva candele per i defunti — mentre gli altri dimenticavano, lei ricordava sempre, senza nemmeno bisogno di un appunto sul calendario. La devozione le scorreva nel sangue. Sosteneva di essere l'unica che al cimitero aveva il buon senso e la decenza di togliere le erbacce dalle tombe dei parenti. Al primo giorno di primavera aveva già trattato contro le tarme ogni capo di lana, arrotolato e legato i tappeti e trascinatili nel ripostiglio dei trofei del padre. Non si vergognava mai della propria casa: un estraneo poteva entrare e aprire qualsiasi armadio o cassetto. Si poteva persino mangiare dal pavimento del bagno. Quando perdeva a mah-jongg, lo prendeva con sportività, a differenza di altre di cui non avrebbe fatto il nome, nemmeno quello di Tilly Hochman."
+    },
+    {
+      "sc_id": "20",
+      "chunk_type": "main_text",
+      "chunk_ids": ["220","221","222","223","224","225","226","227","228","229","230","231","232","233","234","235","236"],
+      "embedding_summary": "La madre cuciva, lavorava a maglia, rammendava e stirava meglio della donna di servizio nera, Dorothy, verso la quale era l'unica ad essere generosa, dandole tonno in scatola di marca per pranzo. Tuttavia, dopo che Dorothy mangiava, la madre lavava le sue posate con acqua bollente, e quando fu quasi scoperta inventò una scusa sul maionese difficile da togliere dall'argenteria.",
+      "paraphrase": "La madre cuciva, lavorava a maglia, rammendava e stirava meglio persino della donna delle pulizie nera, Dorothy, verso la quale, tra tutte le amiche che ne sfruttavano i servizi, solo lei era buona. Era l'unica a darle per pranzo un'intera scatoletta di tonno di marca, non roba scadente. Non riusciva a essere tirchia, a differenza di Esther Wasserberg che lasciava venticinque centesimi in monetine per casa e controllava che ci fossero tutti al ritorno. Forse era troppo buona, sussurrava al figlio, mentre intanto passava acqua bollente sul piatto da cui la donna delle pulizie aveva appena pranzato da sola, come una lebbrosa. Una volta Dorothy tornò in cucina mentre la madre stava ancora sciacquando con acqua bollente le posate passate tra le labbra della domestica. La madre, con prontezza di lingua, disse che la maionese era difficile da togliere dall'argenteria, e così, come raccontò poi al figlio, riuscì a non ferire i sentimenti della donna."
+    },
+    {
+      "sc_id": "21",
+      "chunk_type": "main_text",
+      "chunk_ids": ["237","238","239","240","241","242","243","244","245","246","247","248","249","250"],
+      "embedding_summary": "Quando il narratore si comportava male, la madre lo chiudeva fuori dall'appartamento. Lui elenca tutte le sue abitudini perfette: lucidare le scarpe, arrotolare il dentifricio, dire sempre grazie e per favore, apparecchiare la tavola volontariamente, non mischiare mai piatti di carne e di latte. Eppure quasi ogni mese veniva punito con il bando.",
+      "paraphrase": "Quando il narratore si comportava male veniva chiuso fuori dall'appartamento, e restava a bussare alla porta finché non giurava di cambiare. Ma cosa aveva fatto? Si lucidava le scarpe ogni sera su un foglio di giornale, richiudeva sempre il barattolo del lucido e rimetteva tutto a posto. Arrotolava il tubetto del dentifricio dal fondo, si lavava i denti con movimenti circolari, diceva grazie, prego, mi scusi e posso. Quando Hannah era malata o fuori a raccogliere fondi per il Fondo Nazionale Ebraico, apparecchiava la tavola spontaneamente, ricordandosi sempre la posizione corretta di coltello, cucchiaio, forchetta e tovagliolo. Non avrebbe mai mangiato latticini da un piatto per la carne. Eppure c'era un periodo in cui quasi ogni mese faceva qualcosa di così imperdonabile da ricevere l'ordine di fare le valigie e andarsene."
+    },
+    {
+      "sc_id": "22",
+      "chunk_type": "main_text",
+      "chunk_ids": ["251","252","253","254","255","256","257","258","259","260","261","262","263","264"],
+      "embedding_summary": "Il narratore continua a rivendicare la propria perfezione scolastica e domestica: decorava i divisori dei quaderni in scrittura gotica, portava sempre un pettine e un fazzoletto pulito, faceva i compiti con settimane di anticipo. Le maestre erano felici grazie a lui. Nonostante tutto ciò, una volta che chiamò la sorella con un termine volgare gli fu lavata la bocca col sapone, ma il bando restava incomprensibile.",
+      "paraphrase": "Ma cosa poteva essere? Era lui, il bambino che passava intere sere prima dell'inizio della scuola a scrivere in bella calligrafia gotica i nomi delle materie sui divisori colorati, che fissava pazientemente i rinforzi ai fogli a tre buchi. Portava un pettine e un fazzoletto pulito, le calze non gli cadevano mai sulle scarpe, i compiti erano completati con settimane di anticipo. Era il bambino più intelligente e ordinato nella storia della sua scuola. Le maestre tornavano a casa felici dai mariti grazie a lui. Allora cosa aveva fatto? Quando una volta aveva chiamato la sorella con un'espressione volgare, la bocca gli era stata immediatamente lavata con sapone da bucato marrone: questo lo capiva. Ma il bando era incomprensibile."
+    },
+    {
+      "sc_id": "23",
+      "chunk_type": "main_text",
+      "chunk_ids": ["265","266","267","268","269","270","271","272","273","274"],
+      "embedding_summary": "Siccome è buona, la madre gli prepara un pranzo al sacco, ma poi lo manda via. Il narratore, con gusto per il melodramma, rifiuta il pranzo e dichiara di non aver bisogno di niente. La madre dice che non lo ama più, che vivrà con il padre e Hannah, e che lui non servirà più.",
+      "paraphrase": "Poiché era buona, la madre gli avrebbe preparato un pranzo da portare via, ma poi doveva andarsene e quel che gli sarebbe successo non era affar suo. Il narratore, che aveva anche lui il gusto per il melodramma — non era in quella famiglia per niente — rispondeva di non volere il pranzo, di non aver bisogno di niente. La madre allora dichiarava di non amarlo più, che un bambino che si comportava così non meritava amore. Avrebbe vissuto lì da sola con il padre e Hannah. Hannah avrebbe preparato le tessere del mah-jongg per le signore il martedì sera. Di lui non avrebbero più avuto bisogno."
+    },
+    {
+      "sc_id": "24",
+      "chunk_type": "main_text",
+      "chunk_ids": ["275","276","277","278","279","280","281","282","283","284","285","286"],
+      "embedding_summary": "Il narratore esce nel corridoio fingendo indifferenza, fantasticando di vendere giornali scalzo e dormire nei campi. Ma alla vista delle bottiglie del latte vuote accanto allo zerbino, lo travolge la consapevolezza di ciò che ha perso. Grida insulti alla porta, la madre chiude a doppia mandata, e lui crolla sullo zerbino implorando perdono e promettendo perfezione.",
+      "paraphrase": "Chi se ne importa, dice il narratore, e esce nel lungo corridoio buio. Venderà giornali per strada a piedi nudi, viaggerà sui treni merci e dormirà nei campi. Ma basta vedere le bottiglie del latte vuote accanto allo zerbino di benvenuto perché l'immensità di tutto ciò che ha perso gli crolli addosso. Grida che la odia e che fa schifo, tirando un calcio con la galoscia alla porta. Di fronte a questa volgarità che rimbomba nei corridoi del palazzo dove lei gareggia con altre venti donne ebree per il titolo di santa patrona dell'abnegazione, la madre non ha altra scelta che chiudere la porta con la doppia mandata. A quel punto il narratore comincia a martellare per essere riammesso, si lascia cadere sullo zerbino implorando perdono per il suo peccato — quale peccato, poi? — e promettendo perfezione per il resto della vita, che a quell'età crede sarà eterna."
+    },
+    {
+      "sc_id": "25",
+      "chunk_type": "main_text",
+      "chunk_ids": ["287","288","289","290","291","292","293","294","295","296","297","298","299","300","301","302","303","304","305"],
+      "embedding_summary": "Il narratore ricorda le sere in cui rifiutava di mangiare. La sorella Hannah conferma che il ricordo è reale. La madre non poteva accettare tale caparbietà e gli poneva domande retoriche su cosa volesse diventare: debole o forte, un successo o un fallimento, un uomo o un topo. Il narratore rispondeva semplicemente che non voleva mangiare.",
+      "paraphrase": "Poi c'erano le sere in cui il narratore rifiutava di mangiare. La sorella Hannah, più grande di quattro anni, gli conferma che il ricordo è reale: lui si rifiutava e la madre non riusciva a sottomettersi a tale ostinazione e idiozia. Non poteva farlo, per il bene del figlio. Gli chiedeva solo di fare qualcosa per il suo stesso bene, e lui diceva di no? Non gli avrebbe dato il cibo dalla propria bocca, non lo sapeva ormai? Ma il narratore non voleva il cibo dalla bocca di lei, e nemmeno quello dal proprio piatto: questo era il punto. Un bambino con il suo potenziale, i suoi successi, il suo futuro, tutti i doni che Dio gli aveva elargito — bellezza e intelligenza — poteva forse pensare di lasciarsi morire di fame senza motivo? Voleva che la gente lo guardasse dall'alto in basso tutta la vita come un ragazzino scheletrico, o che guardasse in su verso un uomo? Voleva essere spinto in giro e preso in giro, pelle e ossa che chiunque poteva buttare giù con uno starnuto, o voleva essere rispettato? Cosa voleva diventare: debole o forte, un successo o un fallimento, un uomo o un topo? Rispondeva semplicemente: non voglio mangiare."
+    },
+    {
+      "sc_id": "26",
+      "chunk_type": "main_text",
+      "chunk_ids": ["306","307","308","309","310","311","312","313","314","315","316","317","318","319","320"],
+      "embedding_summary": "La madre si siede accanto al narratore con un lungo coltello da pane in mano, ripetendo la domanda se voglia essere debole o forte. Il narratore, a sei-sette anni, si chiede terrorizzato perché una madre tiri fuori un coltello contro il proprio figlio e perché sia necessaria una vittoria così totale e annientante, quando il giorno prima lo applaudiva mentre provava la parte di Cristoforo Colombo nella recita scolastica.",
+      "paraphrase": "Allora la madre si siede su una sedia accanto a lui con un lungo coltello da pane in mano, di acciaio inossidabile con piccoli denti seghettati, e gli chiede di nuovo: debole o forte, uomo o topo? Il narratore si rivolge al dottore chiedendo perché una madre tiri fuori un coltello contro il proprio figlio. A sei o sette anni non aveva modo di sapere se l'avrebbe davvero usato. Cosa doveva fare, provare a chiamarle il bluff a sette anni? Non aveva strategie complesse e probabilmente non pesava nemmeno trenta chili. Se qualcuno gli agitava un coltello davanti, credeva che ci fosse l'intenzione di fargli del male. Ma perché? Cosa poteva starle passando per la testa? Quanto poteva essere folle? Se lo avesse lasciato vincere, cosa avrebbe perso? Perché un coltello, perché la minaccia di morte, perché era necessaria una vittoria così totale e annientante, quando solo il giorno prima aveva posato il ferro da stiro sulla tavola e lo aveva applaudito mentre correva per la cucina provando la parte di Cristoforo Colombo nella recita scolastica di terza elementare."
+    },
+    {
+      "sc_id": "27",
+      "chunk_type": "main_text",
+      "chunk_ids": ["321","322","323","324","325","326","327","328","329","330","331","332"],
+      "embedding_summary": "Il narratore era l'attore protagonista della sua classe e senza di lui gli spettacoli erano scadenti. Si chiede come la madre potesse trascorrere pomeriggi gloriosi in cucina a lucidare l'argento e suggerirgli le battute dalla sceneggiatura, interpretando Isabella la Cattolica, Betsy Ross e la signora Pasteur, per poi la sera puntargli un coltello da pane al cuore perché non voleva mangiare fagiolini e patate. Chiede infine perché il padre non la fermasse.",
+      "paraphrase": "Il narratore era l'attore protagonista della sua classe: senza di lui non si poteva mettere in scena uno spettacolo. Una volta ci provarono, quando aveva la bronchite, ma la maestra confidò poi alla madre che era stato decisamente di seconda categoria. Come poteva la madre trascorrere pomeriggi così splendidi in quella cucina, lucidando l'argento, tritando il fegato, infilando un nuovo elastico nella cintura delle sue mutandine, e nel frattempo suggerendogli le battute dal copione ciclostilato, interpretando la regina Isabella per il suo Colombo, Betsy Ross per il suo Washington, la signora Pasteur per il suo Louis — come poteva innalzarsi con lui sulla cresta del suo genio durante quelle ore pomeridiane dorate dopo la scuola, e poi la sera, perché non voleva mangiare dei fagiolini e una patata al forno, puntargli un coltello da pane al cuore? E perché il padre non la fermava?"
+    }
+  ]
+}

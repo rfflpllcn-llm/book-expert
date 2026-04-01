@@ -1,0 +1,114 @@
+title: Portnoy's Complaint
+author: Philip Roth
+year: 1969
+language: en
+
+source_text:
+  file: data/portnoy_s_complaint_en-filtered.jsonl
+  format: jsonl
+  line_prefix: L
+  line_column: id
+  text_column: t
+
+arcs:
+  02_01_madre_onnipresente:
+    keywords: [madre, maestra, travestita, onnipresente, Hannah, genio, Albert Einstein]
+    lines: [1, 31]
+  02_02_padre_costipato:
+    keywords: [padre, costipazione, assicurazione, Boston Northeastern, Lindabury, premi, quartieri poveri]
+    lines: [32, 169]
+  02_03_regno_sophie:
+    keywords: [madre, cucina, pulizia, bando, coltello, cibo, rifiuto, punizione, Columbus]
+    lines: [170, 332]
+  02_04_febbre_masturbazione:
+    keywords: [masturbazione, bagno, reggiseno, eiaculazione, lampadina, fegato, calzini, Lenore Lapidus]
+    lines: [333, 543]
+  02_05_ricordi_nostalgia:
+    keywords: [nostalgia, ricordi, luce, neve, Bradley Beach, pelliccia, lago, pino]
+    lines: [544, 656]
+  02_06_conflitto_cibo:
+    keywords: [patatine, Melvin Weiner, poliomielite, colpa, sussurro, Spielvogel, sofferenza ebraica]
+    lines: [657, 801]
+  02_07_corpo_rivolta:
+    keywords: [testicolo, scroto, genitali, bagno turco, sangue mestruale, Kotex, cosina]
+    lines: [802, 934]
+  02_08_regole_kosher:
+    keywords: [Kotex, calze, guaina, costume da bagno, zio Nate, kasher, repressione, matzoh]
+    lines: [935, 1151]
+  02_09_heshie_hymie:
+    keywords: [Heshie, Hymie, Alice Dembosky, shikse, giavellotto, Squeeze, guerra, morte]
+    lines: [1152, 1311]
+  02_10_rivolta_religiosa:
+    keywords: [Rosh Hashanah, Dio, ateo, isterectomia, cancro, benigno, rabbino Warshaw, baseball, Seabees]
+    lines: [1312, 1602]
+  02_11_aragosta_autobus:
+    keywords: [aragosta, autobus, kasher, comunista, Dorothy, neri, Anne McCaffery, shikse, tabù]
+    lines: [1603, 1931]
+  02_12_nimkin_coscienza:
+    keywords: [Ronald Nimkin, suicidio, biglietto, Hannah, Doyle, mah-jongg, imitazioni, infanzia]
+    lines: [1932, 2284]
+  02_13_scapolo_genitori:
+    keywords: [scapolo, matrimonio, Monkey, Atene, Vice Commissario, genitori, taxi, cappello, costipazione]
+    lines: [2285, 2706]
+  02_14_coscienza_repressione:
+    keywords: [Nimkin, morso, madre, coscienza, repressione, burlesque, Empire, fegato, confessione]
+    lines: [2707, 2972]
+  02_15_roma_prostituta:
+    keywords: [Roma, Lina, prostituta, ménage à trois, Monkey, Via Veneto, pillole, Atene, balcone]
+    lines: [2973, 3264]
+  02_16_shikse_lago:
+    keywords: [shikse, pattinaggio, Irvington, naso, America, Eddie Fisher, Monkey, incontro, Lexington]
+    lines: [3265, 3631]
+  02_17_bubbles_quartiere:
+    keywords: [Bubbles, Girardi, Mandel, Smolka, preservativo, sifilide, occhio, calligrafia, Monkey]
+    lines: [3632, 4210]
+  02_18_monkey_amore:
+    keywords: [Monkey, Vermont, Yeats, becco indifferente, Gracie Mansion, sindaco, telefonate, libri, educazione]
+    lines: [4211, 4895]
+  02_19_pumpkin_fidanzate:
+    keywords: [Pumpkin, Kay Campbell, Iowa, Ringraziamento, Sally Maulsby, Pilgrim, softball, Newark, Lincoln]
+    lines: [4896, 5590]
+  02_20_israele_impotenza:
+    keywords: [Israele, Tel Aviv, impotenza, Naomi, Jewish Pumpkin, kibbutz, urlo, Spielvogel, cominciare]
+    lines: [5591, 6299]
+
+characters:
+  alex_portnoy:
+    arcs: [02_01_madre_onnipresente, 02_02_padre_costipato, 02_03_regno_sophie, 02_04_febbre_masturbazione, 02_05_ricordi_nostalgia, 02_06_conflitto_cibo, 02_07_corpo_rivolta, 02_08_regole_kosher, 02_09_heshie_hymie, 02_10_rivolta_religiosa, 02_11_aragosta_autobus, 02_12_nimkin_coscienza, 02_13_scapolo_genitori, 02_14_coscienza_repressione, 02_15_roma_prostituta, 02_16_shikse_lago, 02_17_bubbles_quartiere, 02_18_monkey_amore, 02_19_pumpkin_fidanzate, 02_20_israele_impotenza]
+  sophie_portnoy:
+    arcs: [02_01_madre_onnipresente, 02_03_regno_sophie, 02_04_febbre_masturbazione, 02_05_ricordi_nostalgia, 02_06_conflitto_cibo, 02_07_corpo_rivolta, 02_08_regole_kosher, 02_10_rivolta_religiosa, 02_11_aragosta_autobus, 02_12_nimkin_coscienza, 02_13_scapolo_genitori, 02_14_coscienza_repressione]
+  jack_portnoy:
+    arcs: [02_02_padre_costipato, 02_04_febbre_masturbazione, 02_05_ricordi_nostalgia, 02_06_conflitto_cibo, 02_07_corpo_rivolta, 02_08_regole_kosher, 02_10_rivolta_religiosa, 02_11_aragosta_autobus, 02_13_scapolo_genitori, 02_14_coscienza_repressione]
+  hannah:
+    arcs: [02_01_madre_onnipresente, 02_03_regno_sophie, 02_04_febbre_masturbazione, 02_10_rivolta_religiosa, 02_11_aragosta_autobus, 02_12_nimkin_coscienza]
+  the_monkey:
+    arcs: [02_13_scapolo_genitori, 02_15_roma_prostituta, 02_16_shikse_lago, 02_17_bubbles_quartiere, 02_18_monkey_amore, 02_20_israele_impotenza]
+  the_pumpkin:
+    arcs: [02_19_pumpkin_fidanzate, 02_20_israele_impotenza]
+  naomi:
+    arcs: [02_20_israele_impotenza]
+  heshie:
+    arcs: [02_09_heshie_hymie, 02_10_rivolta_religiosa]
+  zio_hymie:
+    arcs: [02_08_regole_kosher, 02_09_heshie_hymie]
+  zia_clara:
+    arcs: [02_09_heshie_hymie, 02_16_shikse_lago]
+  alice_dembosky:
+    arcs: [02_09_heshie_hymie]
+  bubbles_girardi:
+    arcs: [02_17_bubbles_quartiere]
+  sarah_maulsby:
+    arcs: [02_19_pumpkin_fidanzate]
+  ronald_nimkin:
+    arcs: [02_12_nimkin_coscienza, 02_14_coscienza_repressione]
+  dr_spielvogel:
+    arcs: [02_06_conflitto_cibo, 02_13_scapolo_genitori, 02_20_israele_impotenza]
+  rabbino_warshaw:
+    arcs: [02_09_heshie_hymie, 02_10_rivolta_religiosa, 02_18_monkey_amore]
+  lina:
+    arcs: [02_15_roma_prostituta]
+  mandel:
+    arcs: [02_17_bubbles_quartiere]
+  smolka:
+    arcs: [02_17_bubbles_quartiere]
+

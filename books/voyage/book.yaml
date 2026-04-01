@@ -1,0 +1,84 @@
+title: Voyage au bout de la nuit
+author: Louis-Ferdinand Céline
+year: 1932
+language: fr
+
+source_text:
+  file: data/voyage-fr.csv
+  format: csv
+  line_prefix: FR
+  line_column: line_id
+  text_column: text
+  filter_column: chunk_type
+  filter_value: main_text
+
+arcs:
+  02_01_incipit:
+    keywords: [incipit, place clichy, ganate, arruolamento, galera, roi misère, preghiera]
+    lines: [77, 230]
+  02_02_guerra_fronte:
+    keywords: [fronte, colonnello, obus, pallottole, fiandre, trincea]
+    lines: [230, 1050]
+  02_03_guerra_notte:
+    keywords: [erranza, notte fiandre, noirceur]
+    lines: [1050, 1510]
+  02_04_guerra_robinson:
+    keywords: [robinson guerra, diserzione, primo robinson, capitano morente]
+    lines: [1510, 1770]
+  02_05_lola_paris:
+    keywords: [lola, beignet, opéra-comique, stand des nations, duval, convalescenza]
+    lines: [1770, 2500]
+  02_06_musyne_retrovie:
+    keywords: [musyne, olympia, princhard, retrovie]
+    lines: [2500, 3300]
+  02_07_bestombes_teatro:
+    keywords: [bestombes, elettroterapia, branledore, teatro, poeta]
+    lines: [3300, 4500]
+  02_08_nave_africa:
+    keywords: [africa, nave, amiral bragueton, colonia, pordurière, foresta, tropici, bambo, piroga]
+    lines: [4500, 7400]
+  02_09_america_newyork:
+    keywords: [new york, america, quarantina, manhattan, grattacieli, ellis island]
+    lines: [7400, 8500]
+  02_10_detroit_molly:
+    keywords: [detroit, ford, fabbrica, molly, catena di montaggio]
+    lines: [8500, 9600]
+  02_11_rancy_medicina:
+    keywords: [rancy, medicina, bébert, pazient, ambulatorio, medico dei poveri]
+    lines: [9600, 11500]
+  02_12_henrouille:
+    keywords: [henrouille, bomba, robinson cieco, protiste, vecchia, nuora]
+    lines: [11500, 14600]
+  02_13_toulouse:
+    keywords: [toulouse, cripta, mummie, morte della vecchia]
+    lines: [14600, 15500]
+  02_14_vigny_baryton:
+    keywords: [vigny, baryton, parapine, manicomio, asilo]
+    lines: [15500, 18800]
+  02_15_sophie_finale:
+    keywords: [sophie, madelon, finale, morte robinson, rimorchiatore, senna, taxi, batignolles]
+    lines: [18800, 20500]
+
+characters:
+  bardamu:
+    arcs: [02_01_incipit, 02_02_guerra_fronte, 02_03_guerra_notte, 02_04_guerra_robinson, 02_05_lola_paris, 02_06_musyne_retrovie, 02_07_bestombes_teatro, 02_08_nave_africa, 02_09_america_newyork, 02_10_detroit_molly, 02_11_rancy_medicina, 02_12_henrouille, 02_13_toulouse, 02_14_vigny_baryton, 02_15_sophie_finale]
+  ganate:
+    arcs: [02_01_incipit]
+  colonnello:
+    arcs: [02_02_guerra_fronte]
+  robinson:
+    arcs: [02_04_guerra_robinson, 02_11_rancy_medicina, 02_12_henrouille, 02_15_sophie_finale]
+  lola:
+    arcs: [02_05_lola_paris, 02_09_america_newyork]
+  musyne:
+    arcs: [02_06_musyne_retrovie]
+  molly:
+    arcs: [02_10_detroit_molly]
+  bébert:
+    arcs: [02_11_rancy_medicina]
+  baryton:
+    arcs: [02_14_vigny_baryton]
+  sophie:
+    arcs: [02_15_sophie_finale]
+  madelon:
+    arcs: [02_13_toulouse, 02_14_vigny_baryton, 02_15_sophie_finale]
