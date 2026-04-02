@@ -6,9 +6,30 @@ Config-driven via book.yaml — no hardcoded routing.
 """
 
 import re
+from dataclasses import dataclass, field
 
 import yaml
 from pathlib import Path
+
+
+@dataclass
+class RouteResult:
+    """Result of routing a query — novel arcs + matched essay slugs."""
+    arcs: list[str] = field(default_factory=list)
+    essays: list[str] = field(default_factory=list)
+
+    # Backward compatibility: iterating/indexing yields arcs
+    def __iter__(self):
+        return iter(self.arcs)
+
+    def __getitem__(self, idx):
+        return self.arcs[idx]
+
+    def __len__(self):
+        return len(self.arcs)
+
+    def __contains__(self, item):
+        return item in self.arcs
 
 
 def load_book_config(book_dir: Path) -> dict:
@@ -32,8 +53,15 @@ def load_book_config(book_dir: Path) -> dict:
     return config
 
 
-def route_query(query: str, config: dict) -> list[str]:
-    """Route a query to relevant tier_2 arc files using config from book.yaml."""
+def route_query(query: str, config: dict, *, essays: dict | None = None) -> RouteResult:
+    """Route a query to relevant tier_2 arc files and essay slugs.
+
+    Args:
+        query:  The user's question.
+        config: Parsed book.yaml.
+        essays: Optional dict from _index.yaml["essays"]. If provided,
+                author, work, themes and characters are matched against the query.
+    """
     query_lower = query.lower()
     matched_arcs = []
 
@@ -53,14 +81,41 @@ def route_query(query: str, config: dict) -> list[str]:
             if lo <= line_num <= hi and arc_id not in matched_arcs:
                 matched_arcs.append(arc_id)
 
-    # Character routing
+    # Character routing (novel characters)
     for char_name, char_config in config.get("characters", {}).items():
         if char_name in query_lower:
             for arc_id in char_config["arcs"]:
                 if arc_id not in matched_arcs:
                     matched_arcs.append(arc_id)
 
-    return matched_arcs[:4]
+    # Essay routing via author, work title, themes, and characters
+    matched_essays = []
+    if essays:
+        for slug, info in essays.items():
+            if slug in matched_essays:
+                continue
+            # Check author and work title first (most common query pattern)
+            author = info.get("author", "")
+            work = info.get("work", "")
+            if author and author.lower() in query_lower:
+                matched_essays.append(slug)
+                continue
+            if work and work.lower() in query_lower:
+                matched_essays.append(slug)
+                continue
+            # Then themes
+            for theme in info.get("themes", []):
+                if theme.lower() in query_lower:
+                    matched_essays.append(slug)
+                    break
+            else:
+                # Then characters/figures discussed in the essay
+                for char in info.get("characters", []):
+                    if char.lower() in query_lower:
+                        matched_essays.append(slug)
+                        break
+
+    return RouteResult(arcs=matched_arcs[:4], essays=matched_essays[:3])
 
 
 def load_tier1(book_dir: Path) -> str:
@@ -144,8 +199,8 @@ def build_context(query: str, book_dir: Path) -> tuple[str, str]:
 
     system_prompt_cached includes tier_1 + essay headers (small, stable,
     benefits from Anthropic prompt caching).
-    dynamic_context includes matched tier_2 arcs (varies per query,
-    injected in user message).
+    dynamic_context includes matched tier_2 arcs + detailed sections for
+    matched essays (varies per query, injected in user message).
     """
     config = load_book_config(book_dir)
     system_prompt = load_tier1(book_dir)
@@ -155,14 +210,23 @@ def build_context(query: str, book_dir: Path) -> tuple[str, str]:
     if commentary_header:
         system_prompt += f"\n\n---\n\n<!-- ESSAYS -->\n{commentary_header}"
 
-    arc_ids = route_query(query, config)
+    tier3_data = _load_tier3_index(book_dir)
+    essays_dict = tier3_data.get("essays", {})
+
+    result = route_query(query, config, essays=essays_dict)
     dynamic_parts = []
 
     # Load matched tier_2 arcs
-    for arc_id in arc_ids:
+    for arc_id in result.arcs:
         content = load_tier2_file(book_dir, arc_id)
         if content:
             dynamic_parts.append(f"<!-- ARC: {arc_id} -->\n{content}")
+
+    # Detailed sections only for matched essays (per-query cost)
+    for slug in result.essays:
+        detail = load_tier3(book_dir, detailed=True, slug=slug)
+        if detail:
+            dynamic_parts.append(f"<!-- ESSAY-DETAIL: {slug} -->\n{detail}")
 
     dynamic_context = "\n\n---\n\n".join(dynamic_parts) if dynamic_parts else ""
     return system_prompt, dynamic_context

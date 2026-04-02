@@ -1,7 +1,7 @@
 # tests/test_loader.py
 from lib.loader import (
     load_book_config, route_query, load_tier1, load_tier2_file, load_tier3,
-    build_context, append_to_qa_cache,
+    build_context, append_to_qa_cache, _load_tier3_index,
 )
 
 
@@ -36,40 +36,97 @@ def test_load_book_config_source_text(book_dir):
 
 def test_route_query_keyword(book_dir):
     config = load_book_config(book_dir)
-    arcs = route_query("tell me about the beginning", config)
-    assert "02_01_test_arc" in arcs
+    result = route_query("tell me about the beginning", config)
+    assert "02_01_test_arc" in result.arcs
 
 
 def test_route_query_character(book_dir):
     config = load_book_config(book_dir)
-    arcs = route_query("what happens to hero?", config)
-    assert "02_01_test_arc" in arcs
-    assert "02_02_test_arc_two" in arcs
+    result = route_query("what happens to hero?", config)
+    assert "02_01_test_arc" in result.arcs
+    assert "02_02_test_arc_two" in result.arcs
 
 
 def test_route_query_line_ref(book_dir):
     config = load_book_config(book_dir)
-    arcs = route_query("explain L2", config)
-    assert "02_01_test_arc" in arcs
+    result = route_query("explain L2", config)
+    assert "02_01_test_arc" in result.arcs
 
 
 def test_route_query_sc_ref_ignored(book_dir):
     """SC refs are scene IDs, not line numbers — should not route."""
     config = load_book_config(book_dir)
-    arcs = route_query("what is SC_00002?", config)
-    assert arcs == []
+    result = route_query("what is SC_00002?", config)
+    assert result.arcs == []
 
 
 def test_route_query_no_match(book_dir):
     config = load_book_config(book_dir)
-    arcs = route_query("completely unrelated query", config)
-    assert arcs == []
+    result = route_query("completely unrelated query", config)
+    assert result.arcs == []
 
 
 def test_route_query_cap_at_four(book_dir):
     config = load_book_config(book_dir)
-    arcs = route_query("test beginning second ending hero sidekick", config)
-    assert len(arcs) <= 4
+    result = route_query("test beginning second ending hero sidekick", config)
+    assert len(result.arcs) <= 4
+
+
+def test_route_query_backward_compatible(book_dir):
+    """RouteResult is backward-compatible: iterating yields arc IDs."""
+    config = load_book_config(book_dir)
+    result = route_query("tell me about the beginning", config)
+    assert "02_01_test_arc" in list(result)
+
+
+def test_route_query_returns_essay_matches(book_dir):
+    """route_query returns essay slugs when themes match."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("tell me about darkness", config, essays=tier3.get("essays", {}))
+    assert result.essays == ["test_commentary"]
+
+
+def test_route_query_essay_character_match(book_dir):
+    """route_query returns essay slugs when essay characters match."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("what does Céline say?", config, essays=tier3.get("essays", {}))
+    assert "test_commentary" in result.essays
+
+
+def test_route_query_essay_author_match(book_dir):
+    """route_query returns essay slugs when author name matches."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("what does Test Critic argue?", config, essays=tier3.get("essays", {}))
+    assert "test_commentary" in result.essays
+
+
+def test_route_query_essay_work_match(book_dir):
+    """route_query returns essay slugs when work title matches."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("in Test Study, chapter 3 says", config, essays=tier3.get("essays", {}))
+    assert "test_commentary" in result.essays
+
+
+def test_route_query_no_essay_match(book_dir):
+    """Unrelated query returns no essay matches."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("completely unrelated query", config, essays=tier3.get("essays", {}))
+    assert result.essays == []
+
+
+def test_build_context_includes_detailed_for_matched_essay(book_dir):
+    """When an essay matches by theme, build_context includes detailed sections in dynamic."""
+    system, dynamic = build_context("analysis of darkness", book_dir)
+    # Header is in cached system prompt
+    assert "Test Critic" in system
+    # Matched essay detail is in dynamic context
+    assert "Chapter on Style" in dynamic
+    assert "ESSAY-DETAIL: test_commentary" in dynamic
 
 
 def test_load_tier1(book_dir):
