@@ -39,7 +39,8 @@ Route queries using arc keywords and line ranges defined in `book.yaml`.
 
 ### Tier 3 — Critical essays
 Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
-Essay summaries are loaded automatically. Use `cite_essay` to retrieve detailed analysis.
+Essay headers (author, stance, themes) are always loaded in the cached system prompt.
+Use `cite_essay <slug> --toc` to see full chapter details, then `cite_essay <slug> <arc_id>` for analysis.
 
 ### Original text — `data/voyage-fr.jsonl`
 The complete original text. Each line has an integer `id` and text.
@@ -57,7 +58,7 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - **Cite essay**: `python -m lib.cite_essay . <slug> <arc_id>`
   Loads the analytical summary for a specific arc of a critical essay.
   Use `--toc` to see all arcs: `python -m lib.cite_essay . <slug> --toc`
-  Use `--raw <start> <end>` for exact quotes: `python -m lib.cite_essay . <slug> 100 200 --raw`
+  Use `--raw` for exact quotes: `python -m lib.cite_essay . <slug> --raw 100 200`
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences

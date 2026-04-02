@@ -100,7 +100,7 @@ def generate(book_dir: Path) -> str:
             "- **Cite essay**: `python -m lib.cite_essay . <slug> <arc_id>`\n"
             "  Loads the analytical summary for a specific arc of a critical essay.\n"
             "  Use `--toc` to see all arcs: `python -m lib.cite_essay . <slug> --toc`\n"
-            "  Use `--raw <start> <end>` for exact quotes: `python -m lib.cite_essay . <slug> 100 200 --raw`"
+            "  Use `--raw` for exact quotes: `python -m lib.cite_essay . <slug> --raw 100 200`"
         )
     else:
         cite_essay_doc = ""
@@ -158,7 +158,8 @@ Route queries using arc keywords and line ranges defined in `book.yaml`.
 
 ### Tier 3 — Critical essays
 Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
-Essay summaries are loaded automatically. Use `cite_essay` to retrieve detailed analysis.
+Essay headers (author, stance, themes) are always loaded in the cached system prompt.
+Use `cite_essay <slug> --toc` to see full chapter details, then `cite_essay <slug> <arc_id>` for analysis.
 
 ### Original text — `{src.get('file', 'data/source.jsonl')}`
 The complete original text. Each line has an integer `id` and text.

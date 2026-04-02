@@ -62,3 +62,18 @@ def test_generate_no_bilingual_without_translations(book_dir):
     """Books without translations should NOT mention --lang."""
     result = generate(book_dir)
     assert "--lang" not in result
+
+
+def test_generate_cite_essay_raw_order(book_dir):
+    """--raw must precede its START END args in the example."""
+    result = generate(book_dir)
+    # The correct order: --raw 100 200 (flag before args)
+    assert "--raw 100 200" in result
+    # The wrong order must NOT appear
+    assert "100 200 --raw" not in result
+
+
+def test_generate_essay_headers_cached(book_dir):
+    """Tier_3 section mentions headers are always loaded."""
+    result = generate(book_dir)
+    assert "headers" in result.lower() or "always loaded" in result.lower()
