@@ -33,7 +33,10 @@ def load_toc(essay_dir: Path) -> str:
 
 
 def load_raw_lines(essay_dir: Path, start: int, end: int) -> str:
-    """Load raw lines from the essay's filtered JSONL by ID range."""
+    """Load raw lines from the essay's filtered JSONL by ID range.
+
+    Assumes IDs are monotonically increasing — breaks early after end.
+    """
     jsonl_files = list(essay_dir.glob("*-filtered.jsonl"))
     if not jsonl_files:
         return ""
@@ -43,7 +46,9 @@ def load_raw_lines(essay_dir: Path, start: int, end: int) -> str:
         for raw in f:
             record = json.loads(raw)
             line_id = int(record["id"])
-            if start <= line_id <= end:
+            if line_id > end:
+                break
+            if line_id >= start:
                 lines.append(f"[{record['id']}] {record['t']}")
 
     return "\n".join(lines)

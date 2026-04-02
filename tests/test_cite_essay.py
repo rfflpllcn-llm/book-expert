@@ -61,3 +61,19 @@ def test_load_raw_lines(essay_dir):
 def test_load_raw_lines_empty_range(essay_dir):
     result = load_raw_lines(essay_dir, 100, 200)
     assert result == ""
+
+
+def test_load_raw_lines_mid_range(essay_dir):
+    """Lines in the middle of the file are correctly loaded."""
+    result = load_raw_lines(essay_dir, 10, 15)
+    assert "Line 10 text." in result
+    assert "Line 15 text." in result
+    assert "Line 9 text." not in result
+    assert "Line 16 text." not in result
+
+
+def test_load_raw_lines_single(essay_dir):
+    """Single-line range works."""
+    result = load_raw_lines(essay_dir, 1, 1)
+    assert "Line 1 text." in result
+    assert "Line 2 text." not in result
