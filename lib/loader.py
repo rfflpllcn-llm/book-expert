@@ -89,41 +89,71 @@ def _load_tier3_index(book_dir: Path) -> dict:
     return yaml.safe_load(index_path.read_text(encoding="utf-8")) or {}
 
 
-def load_tier3(book_dir: Path, **_kwargs) -> str:
-    """Load essay summaries from _index.yaml for system prompt injection.
+def load_tier3(book_dir: Path, *, detailed: bool = False, slug: str | None = None) -> str:
+    """Load essay summaries from _index.yaml.
 
-    Returns formatted chapter-level summaries for all essays.
-    Ignores arc_ids/query — the LLM does its own routing.
+    Args:
+        detailed: If False (default), emit compact header per essay
+                  (author/work/year/stance/summary/themes/characters).
+                  Arc IDs are omitted — they are machine-oriented and
+                  numerous (19 for Godard).
+                  If True, include full section summaries and arc IDs.
+        slug:     If set, only emit that essay. Returns "" if not found.
     """
     data = _load_tier3_index(book_dir)
     essays = data.get("essays", {})
     if not essays:
         return ""
 
+    if slug and slug not in essays:
+        return ""
+
+    items = {slug: essays[slug]} if slug else essays
+
     parts = []
-    for slug, info in essays.items():
+    for essay_slug, info in items.items():
         lines = [
-            f"## {info.get('author', 'Unknown')} — *{info.get('work', slug)}* ({info.get('year', '?')})",
+            f"## {info.get('author', 'Unknown')} — *{info.get('work', essay_slug)}* ({info.get('year', '?')})",
             f"**Stance**: {info.get('stance', 'N/A')}",
             "",
             info.get("summary", ""),
-            "",
-            "**Sections:**",
         ]
-        for sec in info.get("sections", []):
-            lines.append(f"- **{sec.get('title', 'Untitled')}**: {sec.get('summary', '')}")
+        themes = info.get("themes", [])
+        if themes:
+            lines.append(f"\n**Themes**: {', '.join(themes)}")
+        characters = info.get("characters", [])
+        if characters:
+            lines.append(f"**Characters/Figures**: {', '.join(characters)}")
+
+        if detailed:
+            arcs = info.get("arcs", [])
+            if arcs:
+                lines.append(f"**Arcs**: {', '.join(arcs)}")
+            lines.append("\n**Sections:**")
+            for sec in info.get("sections", []):
+                lines.append(f"- **{sec.get('title', 'Untitled')}**: {sec.get('summary', '')}")
+
         parts.append("\n".join(lines))
 
     return "\n\n---\n\n".join(parts)
 
 
 def build_context(query: str, book_dir: Path) -> tuple[str, str]:
-    """
-    Build full context for a query.
+    """Build full context for a query.
     Returns: (system_prompt_cached, dynamic_context)
+
+    system_prompt_cached includes tier_1 + essay headers (small, stable,
+    benefits from Anthropic prompt caching).
+    dynamic_context includes matched tier_2 arcs (varies per query,
+    injected in user message).
     """
     config = load_book_config(book_dir)
     system_prompt = load_tier1(book_dir)
+
+    # Essay headers go in cached system prompt (small fixed cost)
+    commentary_header = load_tier3(book_dir)
+    if commentary_header:
+        system_prompt += f"\n\n---\n\n<!-- ESSAYS -->\n{commentary_header}"
 
     arc_ids = route_query(query, config)
     dynamic_parts = []
@@ -133,11 +163,6 @@ def build_context(query: str, book_dir: Path) -> tuple[str, str]:
         content = load_tier2_file(book_dir, arc_id)
         if content:
             dynamic_parts.append(f"<!-- ARC: {arc_id} -->\n{content}")
-
-    # Load tier_3 essay summaries (always — small fixed cost, LLM routes)
-    commentary = load_tier3(book_dir)
-    if commentary:
-        dynamic_parts.append(f"<!-- ESSAYS -->\n{commentary}")
 
     dynamic_context = "\n\n---\n\n".join(dynamic_parts) if dynamic_parts else ""
     return system_prompt, dynamic_context

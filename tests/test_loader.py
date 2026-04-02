@@ -90,11 +90,35 @@ def test_load_tier2_file_missing(book_dir):
     assert content == ""
 
 
-def test_load_tier3_arc_match(book_dir):
+def test_load_tier3_header_only(book_dir):
+    """Default mode returns header info but NOT section summaries."""
     result = load_tier3(book_dir)
     assert "Test Critic" in result
     assert "Test Study" in result
+    assert "structuralist" in result
+    # Section detail should NOT be present in header-only mode
+    assert "Chapter on Style" not in result
+
+
+def test_load_tier3_detailed(book_dir):
+    """Detailed mode returns full section summaries."""
+    result = load_tier3(book_dir, detailed=True)
+    assert "Test Critic" in result
     assert "Chapter on Style" in result
+    assert "Analyzes core stylistic techniques" in result
+
+
+def test_load_tier3_detailed_single_essay(book_dir):
+    """Detailed mode for a specific essay slug."""
+    result = load_tier3(book_dir, detailed=True, slug="test_commentary")
+    assert "Test Critic" in result
+    assert "Chapter on Style" in result
+
+
+def test_load_tier3_detailed_unknown_slug(book_dir):
+    """Detailed mode with unknown slug returns empty."""
+    result = load_tier3(book_dir, detailed=True, slug="nonexistent")
+    assert result == ""
 
 
 def test_load_tier3_missing_index(book_dir):
@@ -111,20 +135,30 @@ def test_build_context_with_match(book_dir):
     assert "Arc 1" in dynamic  # matched tier_2 loaded
 
 
+def test_build_context_caches_essay_headers(book_dir):
+    """build_context puts header-only essay summaries in system_cached, not dynamic."""
+    system, dynamic = build_context("tell me about style", book_dir)
+    # Headers are in the cached system prompt
+    assert "Test Critic" in system
+    assert "Test Study" in system
+    # Section detail is NOT in either (no essay matched by routing)
+    assert "Chapter on Style" not in system
+    assert "Chapter on Style" not in dynamic
+
+
 def test_build_context_no_match(book_dir):
-    """No arc match, but essay summaries are still included."""
+    """No arc match; essay headers are in system prompt (cached)."""
     system, dynamic = build_context("completely unrelated", book_dir)
-    assert "Index" in system
-    # No tier_2 arcs matched, but essays are always present
-    assert "ARC:" not in dynamic
-    assert "Test Critic" in dynamic
+    assert "Index" in system  # tier_1 loaded
+    assert "Test Critic" in system  # essay headers in cached prompt
+    assert "ARC:" not in dynamic  # no tier_2 arcs matched
 
 
 def test_build_context_with_commentary(book_dir):
-    """Essay summaries are always included in dynamic context."""
+    """Essay headers are in system prompt, not dynamic context."""
     system, dynamic = build_context("tell me about the beginning", book_dir)
-    assert "Test Critic" in dynamic
-    assert "Test Study" in dynamic
+    assert "Test Critic" in system
+    assert "Test Study" in system
 
 
 def test_append_to_qa_cache(book_dir):
