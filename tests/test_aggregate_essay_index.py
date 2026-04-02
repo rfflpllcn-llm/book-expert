@@ -74,6 +74,31 @@ def test_aggregate_no_essays(tmp_path):
     assert data["essays"] == {}
 
 
+def test_aggregate_ignores_non_descriptor_yaml(tmp_path):
+    """Only <dirname>.yaml is loaded; other YAML files are ignored."""
+    bd = tmp_path / "book"
+    bd.mkdir()
+    edir = bd / "data" / "essays" / "test_essay"
+    edir.mkdir(parents=True)
+    (bd / "knowledge" / "tier_3").mkdir(parents=True)
+
+    # Main descriptor
+    essay_yaml = {"essays": {"test_essay": {"author": "Real Author", "work": "W", "year": 1, "summary": "S.", "stance": "s", "arcs": [], "themes": [], "characters": [], "sections": []}}}
+    with open(edir / "test_essay.yaml", "w") as f:
+        yaml.safe_dump(essay_yaml, f, allow_unicode=True, sort_keys=False)
+
+    # Stray YAML that should NOT be ingested
+    stray_yaml = {"essays": {"stray": {"author": "Stray Author", "work": "X", "year": 2, "summary": "Bad.", "stance": "x", "arcs": [], "themes": [], "characters": [], "sections": []}}}
+    with open(edir / "config.yaml", "w") as f:
+        yaml.safe_dump(stray_yaml, f, allow_unicode=True, sort_keys=False)
+
+    aggregate(bd)
+
+    data = yaml.safe_load((bd / "knowledge" / "tier_3" / "_index.yaml").read_text())
+    assert "test_essay" in data["essays"]
+    assert "stray" not in data["essays"]
+
+
 def test_aggregate_idempotent(tmp_path):
     """Running twice produces same result."""
     bd = tmp_path / "book"

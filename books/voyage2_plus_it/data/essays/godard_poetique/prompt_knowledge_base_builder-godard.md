@@ -1,41 +1,3 @@
-# Prompt: Build a Literary Knowledge Base from Extracted Chunks
-
-> **How to use**
-> 1. Open a new Claude conversation (Opus recommended for quality; Sonnet works but may need more passes).
-> 2. Attach your two input files: the line-by-line CSV and the extracted_chunks JSON.
-> 3. Paste the prompt below, replacing every `[PLACEHOLDER]` with your values.
-> 4. For large books (2000+ chunks), split the work:
->    - **Conversation 1**: files `00` through `04` + the first half of `02_*` arc files
->    - **Conversation 2**: remaining `02_*` arc files + files `05`, `06`, `08`
->    - Re-attach the CSV and JSON each time.
-
----
-
-## INPUT FILE SPECIFICATIONS
-
-The prompt assumes two files with exactly this structure:
-
-### File 1 — Full text CSV
-| Column       | Description |
-|--------------|-------------|
-| `id`          | Sequential integer, one per line of text |
-| `t`       | The actual text of that line |
-
-### File 2 — Extracted chunks JSON
-An array of objects, each representing one analytical "scene" spanning multiple lines:
-```json
-{
-  "sc_id": "00019",
-  "chunk_ids": "77-83",
-  "embedding_summary": "Analytical summary of the scene..."
-}
-```
-
----
-
-## THE PROMPT
-
-````markdown
 You are building a structured knowledge base for the novel **[BOOK TITLE]** by **[AUTHOR]**.
 
 I'm attaching two files:
@@ -266,21 +228,20 @@ Process the files in this order:
 11. Generate `06_context.md`.
 12. Generate `08_qa_cache.md` (empty template).
 13. Present all files.
-````
 
 ---
 
 ## PLACEHOLDER REFERENCE
 
-| Placeholder | Example (Voyage au bout de la nuit)   | Description                                |
-|-------------|---------------------------------------|--------------------------------------------|
-| `[BOOK TITLE]` | Portnoy's complaint                   | Full title of the novel                    |
-| `[AUTHOR]` | Philip Roth                           | Author name                                |
-| `[YEAR]` | 1969                                  | Publication year                           |
-| `[BOOK_FILENAME]` | portnoy_s_complaint_en-filtered.jsonl | Name of your jsonl file                    |
-| `[N_CHUNKS]` | 207                                   | Total objects in the JSON array            |
-| `[SUMMARY_LANGUAGE]` | English                               | Language of the embedding_summary fields   |
-| `[OUTPUT_LANGUAGE]` | Italian                               | Language for all knowledge base notes      |
+| Placeholder | Example (Voyage au bout de la nuit) | Description                                |
+|-------------|-------------------------------------|--------------------------------------------|
+| `[BOOK TITLE]` | Poétique de Céline                  | Full title of the novel                    |
+| `[AUTHOR]` | Henri Godard                        | Author name                                |
+| `[YEAR]` | 1985                                | Publication year                           |
+| `[BOOK_FILENAME]` | godard-filtered.jsonl               | Name of your jsonl file                    |
+| `[N_CHUNKS]` | 332                                 | Total objects in the JSON array            |
+| `[SUMMARY_LANGUAGE]` | Italian                             | Language of the embedding_summary fields   |
+| `[OUTPUT_LANGUAGE]` | Italian                             | Language for all knowledge base notes      |
 
 ---
 

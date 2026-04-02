@@ -19,11 +19,12 @@ def aggregate(book_dir: Path) -> None:
         for essay_subdir in sorted(essays_dir.iterdir()):
             if not essay_subdir.is_dir():
                 continue
-            yaml_files = list(essay_subdir.glob("*.yaml"))
-            for yf in yaml_files:
-                data = yaml.safe_load(yf.read_text(encoding="utf-8")) or {}
-                for slug, info in data.get("essays", {}).items():
-                    merged["essays"][slug] = info
+            descriptor = essay_subdir / f"{essay_subdir.name}.yaml"
+            if not descriptor.exists():
+                continue
+            data = yaml.safe_load(descriptor.read_text(encoding="utf-8")) or {}
+            for slug, info in data.get("essays", {}).items():
+                merged["essays"][slug] = info
 
     output = book_dir / "knowledge" / "tier_3" / "_index.yaml"
     output.parent.mkdir(parents=True, exist_ok=True)
