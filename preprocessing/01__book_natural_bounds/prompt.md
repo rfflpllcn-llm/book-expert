@@ -1,7 +1,7 @@
 You are given two files:
 
-1. **A PDF book** (e.g. `portnoy_s_complaint_en.pdf`)
-2. **A JSONL file** (e.g. `portnoy_s_complaint_en-filtered.jsonl`) where each line is a JSON object with an `"id"` (string) and a `"t"` (text content) field, representing sequential lines of the book.
+1. **A PDF book** (e.g. `journeys_to_the_extreme.pdf`)
+2. **A JSONL file** (e.g. `journeys_to_the_extreme-filtered.jsonl`) where each line is a JSON object with an `"id"` (string) and a `"t"` (text content) field, representing sequential lines of the book.
 
 **Task:**
 

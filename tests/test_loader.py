@@ -119,6 +119,16 @@ def test_route_query_no_essay_match(book_dir):
     assert result.essays == []
 
 
+def test_route_query_essay_only_is_truthy(book_dir):
+    """RouteResult is truthy when only essays match (no arcs)."""
+    config = load_book_config(book_dir)
+    tier3 = _load_tier3_index(book_dir)
+    result = route_query("tell me about darkness", config, essays=tier3.get("essays", {}))
+    assert result.arcs == []
+    assert result.essays == ["test_commentary"]
+    assert result  # must be truthy even with no arcs
+
+
 def test_build_context_includes_detailed_for_matched_essay(book_dir):
     """When an essay matches by theme, build_context includes detailed sections in dynamic."""
     system, dynamic = build_context("analysis of darkness", book_dir)

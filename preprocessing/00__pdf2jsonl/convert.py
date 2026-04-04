@@ -23,6 +23,9 @@ INVISIBLE_CHARS = re.compile(
 def clean_text(text):
     """Strip invisible characters, normalize whitespace, and trim."""
     text = text.replace('\u00a0', ' ')           # NBSP → normal space
+    text = text.replace('\u2002', ' ')           # EN SPACE → normal space
+    text = text.replace('\u2003', ' ')           # EM SPACE → normal space
+    text = text.replace('\u2009', ' ')           # THIN SPACE → normal space
     text = INVISIBLE_CHARS.sub('', text)          # remove all invisible chars
     text = re.sub(r' {2,}', ' ', text).strip()    # collapse multiple spaces
     return text

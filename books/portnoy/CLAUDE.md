@@ -11,7 +11,7 @@ narrative arcs, detailed character profiles, thematic analysis, and style notes.
 2. **Read tier_1 files**: always read the relevant files from `knowledge/tier_1/` for context
 3. **Route to tier_2 if needed**: read `book.yaml` for arc keywords and line ranges, then load the matching `knowledge/tier_2/02_*.md` file
 4. **Cite the original text**: use cite tool to find and quote relevant passages (see "Tools" below)
-5. **Check commentaries** (if user asks about criticism): read `knowledge/tier_3/_index.md`
+5. **Check commentaries** (if user asks about criticism): read `knowledge/tier_3/_index.yaml`
 6. **Answer the question** using the knowledge files, original text, and any commentaries
 7. **Save to cache**: after answering, ALWAYS do two steps:
 
@@ -37,10 +37,10 @@ Located in `knowledge/tier_1/`:
 Located in `knowledge/tier_2/`. Arc files containing scene summaries.
 Route queries using arc keywords and line ranges defined in `book.yaml`.
 
-### Tier 3 — Critical commentaries
-Located in `knowledge/tier_3/`. Secondary/critical sources.
-Read `knowledge/tier_3/_index.md` for routing metadata (which arcs/themes each commentary covers).
-Load a commentary when its arcs or themes match the query.
+### Tier 3 — Critical essays
+Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
+Essay headers (author, stance, themes) are always loaded in the cached system prompt.
+Use `cite_essay <slug> --toc` to see full chapter details, then `cite_essay <slug> <arc_id>` for analysis.
 
 ### Original text — `data/portnoy_s_complaint_en-filtered.jsonl`
 The complete original text. Each line has an integer `id` and text.
@@ -54,15 +54,16 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 
 - **Cite original text**: `python -m lib.cite . <start_line> <end_line>`
   Example: `python -m lib.cite . 77 80`
+
 - **Save Q&A to cache**: `python -m lib.save_qa . "question" "summary" "10, 25" --link answers/YYYY-MM-DD_<slug>.md`
 
 ## Response preferences
 
-- **Language**: Answer in italiano unless the user writes in another language, in which case match theirs.
-- **Tone**: Use a formal academic tone with precise literary terminology.
+- **Language**: Answer in english unless the user writes in another language, in which case match theirs.
+- **Tone**: Channel an inspired professor: passionate, erudite, with vivid examples and personal asides.
 - **Citation density**: Every substantive answer MUST include at least one original passage from the text.
 - **Interpretation stance**: Present balanced interpretations without favoring any single critical school.
-- **Answer length**: Provide detailed, thorough answers with full analysis and multiple examples.
+- **Answer length**: Provide moderate-length answers: 4-6 paragraphs.
 
 ## Behavior rules
 
@@ -91,8 +92,8 @@ Read `book.yaml` at query time for:
 - **Arc routing**: `arcs` section maps arc IDs to keywords and line ranges
 - **Character routing**: `characters` section maps names to their arcs
 
-Read `knowledge/tier_3/_index.md` for:
-- **Commentary routing**: which arcs/themes each commentary covers
+Read `knowledge/tier_3/_index.yaml` for:
+- **Essay routing**: essay summaries with chapter-level descriptions
 
 ## Commands
 

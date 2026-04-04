@@ -33,7 +33,43 @@ Remove `__pycache__/` if copied:
 rm -rf /home/rp/git/rfflpllcn-llm/book-expert/bertalign/__pycache__
 ```
 
-**Step 2: Add dependencies to pyproject.toml**
+**Step 2: Patch bertalign to skip `clean_text()` when `is_split=True`**
+
+bertalign's `__init__` runs `clean_text()` unconditionally, which drops empty/whitespace-only lines and shifts bead indices. When `is_split=True` the caller controls the input, so `clean_text()` must be skipped to preserve the 1:1 mapping between bead indices and input lines.
+
+In `bertalign/aligner.py`, replace lines 31–38:
+
+```python
+        src = clean_text(src)
+        tgt = clean_text(tgt)
+        src_lang = detect_lang(src)
+        tgt_lang = detect_lang(tgt)
+
+        if is_split:
+            src_sents = src.splitlines()
+            tgt_sents = tgt.splitlines()
+```
+
+with:
+
+```python
+        if is_split:
+            src_lang = detect_lang(src)
+            tgt_lang = detect_lang(tgt)
+            src_sents = src.splitlines()
+            tgt_sents = tgt.splitlines()
+        else:
+            src = clean_text(src)
+            tgt = clean_text(tgt)
+            src_lang = detect_lang(src)
+            tgt_lang = detect_lang(tgt)
+            src_sents = split_sents(src, src_lang)
+            tgt_sents = split_sents(tgt, tgt_lang)
+```
+
+This way `clean_text()` only runs when bertalign is responsible for sentence splitting (`is_split=False`). When `is_split=True`, the input is used as-is.
+
+**Step 3: Add dependencies to pyproject.toml**
 
 In `pyproject.toml`, add to `dependencies`:
 
@@ -58,7 +94,7 @@ Also add `bertalign` to `[tool.setuptools.packages.find]`:
 include = ["lib*", "bertalign*"]
 ```
 
-**Step 3: Install and regenerate lock file**
+**Step 4: Install and regenerate lock file**
 
 ```bash
 cd /home/rp/git/rfflpllcn-llm/book-expert
@@ -69,11 +105,11 @@ python -c "from bertalign import Bertalign; print('OK')"
 
 Expected: `OK` (model downloads on first run). `uv.lock` is updated with the new dependencies.
 
-**Step 4: Commit**
+**Step 5: Commit**
 
 ```bash
 git add bertalign/ pyproject.toml uv.lock
-git commit -m "feat: add bertalign package and alignment dependencies"
+git commit -m "feat: add bertalign package, patch is_split to skip clean_text"
 ```
 
 ---
@@ -183,6 +219,30 @@ def test_write_alignment(alignment_data):
     assert len(lines) == 2
     assert json.loads(lines[0]) == records[0]
     assert json.loads(lines[1]) == records[1]
+
+
+def test_run_alignment_rejects_empty_texts(tmp_path):
+    """Empty t values would break bead-to-ID mapping — must be caught."""
+    from preprocessing.alignment.align import run_alignment
+
+    fr_lines = [
+        {"id": "1", "t": "First sentence."},
+        {"id": "2", "t": ""},  # empty — should trigger ValueError
+        {"id": "3", "t": "Third sentence."},
+    ]
+    it_lines = [
+        {"id": 1, "t": "Prima frase."},
+        {"id": 2, "t": "Seconda frase."},
+    ]
+    fr_path = tmp_path / "fr.jsonl"
+    it_path = tmp_path / "it.jsonl"
+    out_path = tmp_path / "alignment.jsonl"
+
+    fr_path.write_text("\n".join(json.dumps(r) for r in fr_lines) + "\n")
+    it_path.write_text("\n".join(json.dumps(r) for r in it_lines) + "\n")
+
+    with pytest.raises(ValueError, match="Empty text lines"):
+        run_alignment(fr_path, it_path, out_path)
 ```
 
 ### Step 2: Run tests to verify they fail
@@ -270,6 +330,18 @@ def run_alignment(
 
     src_ids, src_texts = load_jsonl(src_path)
     tgt_ids, tgt_texts = load_jsonl(tgt_path)
+
+    # Pre-flight: empty texts would silently break index mapping even with
+    # the is_split patch, since bertalign embeds each line and empty strings
+    # produce degenerate embeddings.
+    empty_src = [i for i, t in enumerate(src_texts) if not t.strip()]
+    empty_tgt = [i for i, t in enumerate(tgt_texts) if not t.strip()]
+    if empty_src or empty_tgt:
+        raise ValueError(
+            f"Empty text lines break alignment index mapping. "
+            f"src has {len(empty_src)} empty lines (first: {empty_src[:5]}), "
+            f"tgt has {len(empty_tgt)} empty lines (first: {empty_tgt[:5]})"
+        )
 
     src_blob = "\n".join(src_texts)
     tgt_blob = "\n".join(tgt_texts)

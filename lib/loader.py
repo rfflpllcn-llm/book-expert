@@ -25,6 +25,9 @@ class RouteResult:
     def __getitem__(self, idx):
         return self.arcs[idx]
 
+    def __bool__(self):
+        return bool(self.arcs) or bool(self.essays)
+
     def __len__(self):
         return len(self.arcs)
 
@@ -88,13 +91,14 @@ def route_query(query: str, config: dict, *, essays: dict | None = None) -> Rout
                 if arc_id not in matched_arcs:
                     matched_arcs.append(arc_id)
 
-    # Essay routing via author, work title, themes, and characters
+    # Essay routing: exact substring matching for author, work, themes,
+    # characters.  Fuzzy/semantic matching is delegated to the LLM which
+    # already has essay headers in the cached system prompt.
     matched_essays = []
     if essays:
         for slug, info in essays.items():
             if slug in matched_essays:
                 continue
-            # Check author and work title first (most common query pattern)
             author = info.get("author", "")
             work = info.get("work", "")
             if author and author.lower() in query_lower:
@@ -103,13 +107,11 @@ def route_query(query: str, config: dict, *, essays: dict | None = None) -> Rout
             if work and work.lower() in query_lower:
                 matched_essays.append(slug)
                 continue
-            # Then themes
             for theme in info.get("themes", []):
                 if theme.lower() in query_lower:
                     matched_essays.append(slug)
                     break
             else:
-                # Then characters/figures discussed in the essay
                 for char in info.get("characters", []):
                     if char.lower() in query_lower:
                         matched_essays.append(slug)

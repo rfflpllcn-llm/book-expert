@@ -58,7 +58,7 @@ python -m preprocessing.02a__alignment.align \
 5. Map bead indices directly to JSONL line IDs (index 0 → first JSONL entry's `id`, etc.)
 6. Write output JSONL
 
-**Why `is_split=True`:** bertalign's `clean_text()` normalizes whitespace and drops blank lines, and `split_sents()` returns only sentence strings with no offsets. Using `is_split=False` would destroy the mapping back to source line IDs. With `is_split=True`, bead indices correspond 1:1 to input lines — the same approach pdfalign-aligner uses in production.
+**Why `is_split=True`:** bertalign's `split_sents()` returns only sentence strings with no offsets. Using `is_split=False` would destroy the mapping back to source line IDs. With `is_split=True`, bead indices correspond to input lines — but only if `clean_text()` does not drop any lines. Since `clean_text()` runs unconditionally (even when `is_split=True`) and strips empty/whitespace-only lines, we **patch bertalign** to skip `clean_text()` when `is_split=True`. This guarantees bead indices map 1:1 to input lines. As a second safety net, `run_alignment()` asserts that no input `t` values are empty before calling bertalign.
 
 **Default bertalign parameters** (from pdfalign-aligner config.yaml):
 - `max_align`: 3

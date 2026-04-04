@@ -1,4 +1,4 @@
-You are building a structured knowledge base for the novel **[BOOK TITLE]** by **[AUTHOR]**.
+You are building a structured knowledge base for the essay **[BOOK TITLE]** by **[AUTHOR]**.
 
 I'm attaching two files:
 
@@ -233,15 +233,16 @@ Process the files in this order:
 
 ## PLACEHOLDER REFERENCE
 
-| Placeholder | Example (Voyage au bout de la nuit) | Description                                |
-|-------------|-------------------------------------|--------------------------------------------|
-| `[BOOK TITLE]` | Poétique de Céline                  | Full title of the novel                    |
-| `[AUTHOR]` | Henri Godard                        | Author name                                |
-| `[YEAR]` | 1985                                | Publication year                           |
-| `[BOOK_FILENAME]` | godard-filtered.jsonl               | Name of your jsonl file                    |
-| `[N_CHUNKS]` | 332                                 | Total objects in the JSON array            |
-| `[SUMMARY_LANGUAGE]` | Italian                             | Language of the embedding_summary fields   |
-| `[OUTPUT_LANGUAGE]` | Italian                             | Language for all knowledge base notes      |
+| Placeholder | Example (Voyage au bout de la nuit)             | Description                                |
+|-------------|-------------------------------------------------|--------------------------------------------|
+| `[BOOK TITLE]` | Louis-Ferdinand Céline: Journeys to the Extreme | Full title of the novel                    |
+| `[AUTHOR]` | Damian Catani                                   | Author name                                |
+| `[YEAR]` | 2021                                            | Publication year                           |
+| `[BOOK_FILENAME]` | journeys_to_the_extreme-filtered.jsonl          | Name of your jsonl file                    |
+| `[CHUNKS_FILENAME]` | journeys_to_the_extreme_chunks-all.json         | Name of your jsonl file                    |
+| `[N_CHUNKS]` |                                                 | Total objects in the JSON array            |
+| `[SUMMARY_LANGUAGE]` | Italian                                         | Language of the embedding_summary fields   |
+| `[OUTPUT_LANGUAGE]` | Italian                                         | Language for all knowledge base notes      |
 
 ---
 

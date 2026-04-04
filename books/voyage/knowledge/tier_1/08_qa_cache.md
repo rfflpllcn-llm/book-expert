@@ -56,3 +56,24 @@ Claude dovrebbe consultarlo prima di ri-derivare una risposta dai file delle sce
 **Risposta**: Godard porta sette tipi di prove: la gradazione popolare/argot nel lessico del denaro e del lavoro; i falsi argotismi inventati da Céline (démise, foutrissure, pétasse); le deformazioni dell'argot reale attestate nel Vocabulaire della Pléiade; le correzioni manoscritte che vanno verso il letterario; la diluizione sistematica dell'argot nel contesto; e il confronto con Queneau, che rivela come il tratto più personale di Céline sia il ritmo, non il lessico.
 **Risposta completa**: answers/2026-04-02_esempi-godard-argot.md
 **Data**: 2026-04-02
+
+
+## Q: Spiega il ruolo di Barthes secondo Godard in Céline
+**SC di riferimento**: 413, 543, 5350, 6068
+**Risposta**: Godard fonda il suo saggio Poétique de Céline (1985) sulle tre categorie barthesiane di lingua, stile e écriture (dal Degré zéro de l'écriture). La categoria più operativa è l'écriture come 'opzione tra morali del linguaggio': Godard la usa per mostrare la contraddizione tra l'ideologia reazionaria di Céline e la sua écriture di libertà, che scuote l'ordine stabilito attraverso la lingua popolare. Barthes gli permette di dimostrare che lo stile in Céline non è ornamento ma atto politico.
+**Risposta completa**: answers/2026-04-02_barthes-secondo-godard.md
+**Data**: 2026-04-02
+
+
+## Q: Come arriva Bardamu negli Stati Uniti?
+**SC di riferimento**: 7090, 7329, 7410, 7544
+**Risposta**: Bardamu brucia la capanna nella boscaglia africana e fugge nella foresta. Attraversa la colonia spagnola del Rio del Rio, arriva a San Tapeta dove viene venduto, mentre è malato, all'equipaggio della galera Infanta Combitta. Attraversa l'Atlantico come forzato, la galera viene messa in quarantena vicino a New York. Fugge una sera al calar della notte e si salva dichiarando di saper contare le pulci: viene assunto alla stazione di quarantena e da lì finisce a Manhattan.
+**Risposta completa**: answers/2026-04-02_arrivo-bardamu-stati-uniti.md
+**Data**: 2026-04-02
+
+
+## Q: Sono citati nella biografia scrittori amati da Céline?
+**SC di riferimento**: 10508, 10529, 1210, 5069
+**Risposta**: Catani (Journeys to the Extreme) documenta le preferenze letterarie di Céline: ammira Shakespeare, Molière, Rabelais, Cervantes, Barbusse, Rimbaud e Plinio il Vecchio per la capacità di catturare l'emozione viscerale nata dalla sofferenza. Proust è lodato con riserve (sofferenza autentica ma stile ornato). Rifiuta Gide, Sartre e Baudelaire. Tra le influenze: Offenbach, Bruegel e Bosch.
+**Risposta completa**: answers/2026-04-04_scrittori-amati-celine.md
+**Data**: 2026-04-04
