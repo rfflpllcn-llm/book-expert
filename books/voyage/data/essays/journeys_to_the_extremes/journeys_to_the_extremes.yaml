@@ -1,0 +1,387 @@
+# ============================================================
+# BOOK.YAML — Journeys to the Extreme
+# ============================================================
+
+# ── TOP-LEVEL METADATA ──
+title: "Louis-Ferdinand Céline: Journeys to the Extreme"
+author: "Damian Catani"
+year: 2021
+language: en
+
+# ── SOURCE TEXT REFERENCE ──
+source_text:
+  file: journeys_to_the_extreme-filtered.jsonl
+  format: jsonl
+  line_prefix: "EN"
+  line_column: "id"
+  text_column: "t"
+
+# ── CHUNKS REFERENCE ──
+chunks:
+  file: journeys_to_the_extreme_chunks-all.json
+  format: json
+  total: 816
+  sc_range: [3, 1457]
+  fields:
+    id: sc_id
+    lines: chunk_ids
+    summary: embedding_summary
+    summary_language: it
+
+# ── NARRATIVE ARCS ──
+arcs:
+  02_01_introduzione_viaggi_all_estremo:
+    keywords: ["introduzione", "Elizabeth Craig", "Olanda", "shock", "viaggi estremo", "poetica", "argot", "tabù"]
+    lines: [3, 96]
+    chunks: 8
+    sc_range: [3, 14]
+  02_02_quale_c_line_biografia_psiche_e_approcci:
+    keywords: ["biografia", "psiche", "paranoia", "mitomania", "trauma", "PTSD", "Bardamu", "follia", "tinnito"]
+    lines: [97, 392]
+    chunks: 24
+    sc_range: [15, 52]
+  02_03_metodo_contesto_letterario_e_cancel_cult:
+    keywords: ["metodo critico", "cancel culture", "ricezione", "Philip Roth", "traduzioni", "angloamericana", "letteratura comparata"]
+    lines: [393, 756]
+    chunks: 26
+    sc_range: [55, 98]
+  02_04_origini_courbevoie_famiglia_e_belle_poqu:
+    keywords: ["Courbevoie", "nascita", "infanzia", "famiglia", "Fernand", "Marguerite", "Belle Époque", "passage", "Esposizione 1900"]
+    lines: [758, 1167]
+    chunks: 28
+    sc_range: [100, 150]
+  02_05_formazione_adolescenza_viaggi_e_apprendi:
+    keywords: ["adolescenza", "Germania", "Inghilterra", "apprendistati", "Nora Merrywin", "Rabelais", "Manica", "educazione"]
+    lines: [1168, 1629]
+    chunks: 26
+    sc_range: [153, 200]
+  02_06_nizza_servizio_militare_e_morte_della_no:
+    keywords: ["Nizza", "Lacloche", "servizio militare", "Rambouillet", "nonna Caroline", "morte", "gioielleria"]
+    lines: [1632, 2244]
+    chunks: 34
+    sc_range: [203, 274]
+  02_07_la_grande_guerra_fronte_ferita_e_convale:
+    keywords: ["Grande Guerra", "fronte", "ferita", "Poelkapelle", "colonnello", "Bataille Frontières", "convalescenza", "trauma bellico"]
+    lines: [2248, 2788]
+    chunks: 59
+    sc_range: [277, 363]
+  02_08_guerra_e_retrovie_eroismo_sfruttamento_e:
+    keywords: ["retrovie", "eroismo", "Bestombes", "Branledore", "Lola", "Comédie-Française", "convalescenza Parigi"]
+    lines: [2789, 3027]
+    chunks: 28
+    sc_range: [366, 403]
+  02_09_londra_suzanne_nebout_e_partenza_per_l_a:
+    keywords: ["Londra", "passaporti", "Suzanne Nebout", "Soho", "matrimonio", "Geoffroy", "Africa partenza"]
+    lines: [3030, 3243]
+    chunks: 20
+    sc_range: [406, 435]
+  02_10_africa_coloniale_camerun_c_tiers_e_brous:
+    keywords: ["Africa", "Camerun", "colonialismo", "côtiers", "broussards", "Fort-Gono", "Alcide", "tropici"]
+    lines: [3244, 3438]
+    chunks: 23
+    sc_range: [436, 467]
+  02_11_ritorno_e_reinvenzione_graffigny_e_court:
+    keywords: ["Graffigny", "Courtial", "brevetti", "Eureka", "falansterio", "suicidio", "utopia", "invenzioni"]
+    lines: [3443, 3752]
+    chunks: 32
+    sc_range: [471, 516]
+  02_12_carriera_medica_e_societ_delle_nazioni:
+    keywords: ["medicina", "Società Nazioni", "Rajchman", "Rennes", "Semmelweis", "Ford", "America", "Craig", "divorzio"]
+    lines: [3755, 4374]
+    chunks: 56
+    sc_range: [519, 606]
+  02_13_lo_studio_medico_a_clichy_e_l_episodio_d:
+    keywords: ["Clichy", "banlieue", "Bébert", "studio medico", "pazienti poveri", "Rancy", "Montaigne"]
+    lines: [4377, 4558]
+    chunks: 14
+    sc_range: [609, 630]
+  02_14_la_consacrazione_genesi_e_pubblicazione_:
+    keywords: ["Voyage genesi", "Denoël", "manoscritto", "Craig musa", "Montmartre", "Zola discorso", "promozione"]
+    lines: [4560, 4877]
+    chunks: 25
+    sc_range: [632, 675]
+  02_15_lo_scandalo_goncourt_e_le_nuove_frequent:
+    keywords: ["Goncourt", "Renaudot", "Dabit", "Faure", "amicizie letterarie", "traduzione Marks", "Hollywood"]
+    lines: [4878, 5208]
+    chunks: 26
+    sc_range: [678, 717]
+  02_16_mort_cr_dit_e_la_svolta_stilistica:
+    keywords: ["Mort à crédit", "trois points", "argot", "émotion parlée", "Denoël apologia", "ricezione", "stile"]
+    lines: [5211, 5733]
+    chunks: 41
+    sc_range: [720, 786]
+  02_17_la_svolta_antisemita_russia_pamphlet_e_r:
+    keywords: ["antisemitismo", "Russia", "Mea culpa", "Bagatelles", "École cadavres", "pamphlet", "razzismo", "Montandon"]
+    lines: [5734, 6326]
+    chunks: 41
+    sc_range: [787, 857]
+  02_18_l_occupazione_collaborazione_dissidenza_:
+    keywords: ["Occupazione", "Chella", "esodo", "Beaux draps", "Vichy", "nazisti", "Epting", "Montmartre artisti"]
+    lines: [6329, 6993]
+    chunks: 32
+    sc_range: [860, 923]
+  02_19_guignol_s_band_londra_onirica_e_manifest:
+    keywords: ["Guignol's Band", "Londra onirica", "prologo manifesto", "Mille-Pattes", "Shakespeare", "Tweet-Tweet Club"]
+    lines: [6996, 7437]
+    chunks: 12
+    sc_range: [926, 959]
+  02_20_la_fuga_baden_baden_e_i_primi_giorni_in_:
+    keywords: ["Baden-Baden", "fuga", "Germania", "hotel", "pulsione morte", "Nord", "Epting lettera"]
+    lines: [7438, 7555]
+    chunks: 5
+    sc_range: [960, 971]
+  02_21_esilio_prigione_e_f_erie_pour_une_autre_:
+    keywords: ["esilio", "Copenhagen", "prigione", "diari", "Féerie", "stile carcerario", "rumore", "alchimia"]
+    lines: [7558, 8105]
+    chunks: 15
+    sc_range: [975, 1015]
+  02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_:
+    keywords: ["Gallimard", "Entretiens", "D'un château l'autre", "Sigmaringen", "Pétain", "Bichelonne", "cronique"]
+    lines: [8108, 8717]
+    chunks: 16
+    sc_range: [1018, 1059]
+  02_23_nord_kr_nzlin_fame_e_umanit_in_guerra:
+    keywords: ["Nord romanzo", "Kränzlin", "fame", "Frau Kretzer", "Pretorius", "prostitute", "civili", "universalismo"]
+    lines: [8718, 9099]
+    chunks: 38
+    sc_range: [1060, 1119]
+  02_24_rigodon_treni_morte_e_terra_promessa:
+    keywords: ["Rigodon", "treni", "morte", "Hannover", "cadaveri", "Danimarca", "ultimo romanzo", "terra promessa"]
+    lines: [9100, 9337]
+    chunks: 22
+    sc_range: [1120, 1151]
+  02_25_gli_ultimi_anni_dell_esilio_e_il_process:
+    keywords: ["processo", "Articolo 75", "Mikkelsen", "Tixier", "amnistia", "Klarskovgaard", "Paraz", "Monnier"]
+    lines: [9338, 9675]
+    chunks: 23
+    sc_range: [1152, 1199]
+  02_26_meudon_gli_ultimi_dieci_anni:
+    keywords: ["Meudon", "recluso", "Arletty", "Aymé", "Sartre", "Nimier", "Ginsberg", "Burroughs", "Pléiade"]
+    lines: [9677, 9968]
+    chunks: 23
+    sc_range: [1201, 1242]
+  02_27_morte_eredit_e_guerre_culturali:
+    keywords: ["morte 1961", "guerre culturali", "2011 celebrazioni", "Bourdieu film", "Hindus", "aste", "stile vs politica"]
+    lines: [9971, 10507]
+    chunks: 37
+    sc_range: [1245, 1306]
+  02_28_lo_stile_come_riappropriazione_estetica_:
+    keywords: ["emozione parlata", "metrò metafora", "modernità", "Normance", "alchimia stilistica", "Kaplan", "prospettiva americana"]
+    lines: [10508, 10794]
+    chunks: 21
+    sc_range: [1309, 1343]
+  02_29_hindus_cinema_teatro_fumetto_e_l_epilogo:
+    keywords: ["Hindus film", "cinema", "teatro", "Tardi fumetto", "ripubblicazione pamphlet", "Gallimard 2018", "epilogo", "Semmelweis COVID"]
+    lines: [10797, 11846]
+    chunks: 61
+    sc_range: [1346, 1457]
+
+# ── CHARACTERS ──
+characters:
+  cline:
+    role: "Scrittore, medico, polemista — soggetto del saggio"
+    presences: 555
+    arcs: [02_01_introduzione_viaggi_all_estremo, 02_02_quale_c_line_biografia_psiche_e_approcci, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_07_la_grande_guerra_fronte_ferita_e_convale, 02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_09_londra_suzanne_nebout_e_partenza_per_l_a, 02_10_africa_coloniale_camerun_c_tiers_e_brous, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_12_carriera_medica_e_societ_delle_nazioni, 02_13_lo_studio_medico_a_clichy_e_l_episodio_d, 02_14_la_consacrazione_genesi_e_pubblicazione_, 02_15_lo_scandalo_goncourt_e_le_nuove_frequent, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_18_l_occupazione_collaborazione_dissidenza_, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_20_la_fuga_baden_baden_e_i_primi_giorni_in_, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_24_rigodon_treni_morte_e_terra_promessa, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali, 02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  bardamu:
+    role: "Alter ego satirico, narratore del Voyage"
+    presences: 89
+    arcs: [02_02_quale_c_line_biografia_psiche_e_approcci, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_07_la_grande_guerra_fronte_ferita_e_convale, 02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_09_londra_suzanne_nebout_e_partenza_per_l_a, 02_10_africa_coloniale_camerun_c_tiers_e_brous, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_12_carriera_medica_e_societ_delle_nazioni, 02_13_lo_studio_medico_a_clichy_e_l_episodio_d, 02_14_la_consacrazione_genesi_e_pubblicazione_, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  lucette:
+    role: "Ballerina, moglie di Céline dal 1943"
+    presences: 39
+    arcs: [02_03_metodo_contesto_letterario_e_cancel_cult, 02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_18_l_occupazione_collaborazione_dissidenza_, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_20_la_fuga_baden_baden_e_i_primi_giorni_in_, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_24_rigodon_treni_morte_e_terra_promessa, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  destouches:
+    role: "Padre di Céline, impiegato frustrato"
+    presences: 26
+    arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_11_ritorno_e_reinvenzione_graffigny_e_court]
+  gallimard:
+    role: "Casa editrice di Céline post-esilio"
+    presences: 21
+    arcs: [02_02_quale_c_line_biografia_psiche_e_approcci, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_15_lo_scandalo_goncourt_e_le_nuove_frequent, 02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  pereires:
+    role: "Personaggio di Mort à crédit, inventore tragico"
+    presences: 21
+    arcs: [02_06_nizza_servizio_militare_e_morte_della_no, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_20_la_fuga_baden_baden_e_i_primi_giorni_in_, 02_24_rigodon_treni_morte_e_terra_promessa, 02_28_lo_stile_come_riappropriazione_estetica_]
+  craig:
+    role: "Ballerina americana, musa e compagna 1926-1932"
+    presences: 20
+    arcs: [02_01_introduzione_viaggi_all_estremo, 02_12_carriera_medica_e_societ_delle_nazioni, 02_14_la_consacrazione_genesi_e_pubblicazione_, 02_15_lo_scandalo_goncourt_e_le_nuove_frequent, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  hindus:
+    role: "Critico letterario ebraico-americano"
+    presences: 18
+    arcs: [02_02_quale_c_line_biografia_psiche_e_approcci, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_27_morte_eredit_e_guerre_culturali, 02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  follet:
+    role: "Prima moglie di Céline, figlia del direttore di medicina"
+    presences: 16
+    arcs: [02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_12_carriera_medica_e_societ_delle_nazioni, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali]
+  caroline:
+    role: "Nonna materna, figura chiave dell'infanzia"
+    presences: 15
+    arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_26_meudon_gli_ultimi_dieci_anni, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  denol:
+    role: "Primo editore di Céline, scopritore del Voyage"
+    presences: 13
+    arcs: [02_03_metodo_contesto_letterario_e_cancel_cult, 02_14_la_consacrazione_genesi_e_pubblicazione_, 02_15_lo_scandalo_goncourt_e_le_nuove_frequent, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_21_esilio_prigione_e_f_erie_pour_une_autre_]
+  sartre:
+    role: "Filosofo, nemico intellettuale di Céline"
+    presences: 12
+    arcs: [02_02_quale_c_line_biografia_psiche_e_approcci, 02_18_l_occupazione_collaborazione_dissidenza_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali, 02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  semmelweis:
+    role: "Medico ungherese, soggetto della tesi di Céline"
+    presences: 12
+    arcs: [02_05_formazione_adolescenza_viaggi_e_apprendi, 02_12_carriera_medica_e_societ_delle_nazioni, 02_14_la_consacrazione_genesi_e_pubblicazione_, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  graffigny:
+    role: "Inventore eccentrico, ispirazione per Courtial"
+    presences: 11
+    arcs: [02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_12_carriera_medica_e_societ_delle_nazioni]
+  arletty:
+    role: "Attrice, amica intima a Meudon"
+    presences: 10
+    arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_18_l_occupazione_collaborazione_dissidenza_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  bbert:
+    role: "Bambino malato nel Voyage"
+    presences: 9
+    arcs: [02_13_lo_studio_medico_a_clichy_e_l_episodio_d, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_20_la_fuga_baden_baden_e_i_primi_giorni_in_, 02_24_rigodon_treni_morte_e_terra_promessa, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  guillou:
+    role: "Madre di Céline, mercante di merletti"
+    presences: 8
+    arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no]
+  douard:
+    role: "Zio materno, figura silenziosa e affettuosa"
+    presences: 8
+    arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  nebout:
+    role: "Prima moglie di Céline, sposata a Londra 1916"
+    presences: 8
+    arcs: [02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_09_londra_suzanne_nebout_e_partenza_per_l_a, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  molly:
+    role: "Personaggio del Voyage, ispirata a Suzanne"
+    presences: 8
+    arcs: [02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_10_africa_coloniale_camerun_c_tiers_e_brous, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  paul:
+    role: "Pittore, amico di Montmartre"
+    presences: 8
+    arcs: [02_14_la_consacrazione_genesi_e_pubblicazione_, 02_18_l_occupazione_collaborazione_dissidenza_, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_27_morte_eredit_e_guerre_culturali]
+  epting:
+    role: "Direttore Istituto Tedesco durante l'Occupazione"
+    presences: 8
+    arcs: [02_18_l_occupazione_collaborazione_dissidenza_, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_20_la_fuga_baden_baden_e_i_primi_giorni_in_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_27_morte_eredit_e_guerre_culturali]
+  roth:
+    role: "Scrittore americano influenzato da Céline"
+    presences: 7
+    arcs: [02_02_quale_c_line_biografia_psiche_e_approcci, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  faure:
+    role: "Storico dell'arte, mentore intellettuale"
+    presences: 7
+    arcs: [02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_15_lo_scandalo_goncourt_e_le_nuove_frequent, 02_17_la_svolta_antisemita_russia_pamphlet_e_r]
+  colette:
+    role: "Figlia di Céline ed Édith Follet"
+    presences: 7
+    arcs: [02_12_carriera_medica_e_societ_delle_nazioni, 02_19_guignol_s_band_londra_onirica_e_manifest, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali]
+  rajchman:
+    role: "Dirigente alla Società delle Nazioni, figura paterna"
+    presences: 7
+    arcs: [02_12_carriera_medica_e_societ_delle_nazioni]
+  lola:
+    role: "Personaggio del Voyage, fidanzata americana di Bardamu"
+    presences: 6
+    arcs: [02_03_metodo_contesto_letterario_e_cancel_cult, 02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_16_mort_cr_dit_e_la_svolta_stilistica]
+  mikkelsen:
+    role: "Avvocato danese di Céline durante l'esilio"
+    presences: 6
+    arcs: [02_07_la_grande_guerra_fronte_ferita_e_convale, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process]
+  ford:
+    role: "Industriale, visitato durante missione SDN"
+    presences: 6
+    arcs: [02_12_carriera_medica_e_societ_delle_nazioni, 02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  vigan:
+    role: "Attore, compagno di fuga verso la Germania"
+    presences: 6
+    arcs: [02_18_l_occupazione_collaborazione_dissidenza_, 02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_24_rigodon_treni_morte_e_terra_promessa]
+  nimier:
+    role: "Scrittore e critico, protettore editoriale"
+    presences: 6
+    arcs: [02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali]
+  merrywin:
+    role: "Personaggio di Mort à crédit"
+    presences: 5
+    arcs: [02_06_nizza_servizio_militare_e_morte_della_no, 02_16_mort_cr_dit_e_la_svolta_stilistica]
+  milon:
+    role: "Compagno d'armi e amico"
+    presences: 5
+    arcs: [02_07_la_grande_guerra_fronte_ferita_e_convale, 02_09_londra_suzanne_nebout_e_partenza_per_l_a, 02_12_carriera_medica_e_societ_delle_nazioni]
+  alcide:
+    role: "Personaggio del Voyage, altruista raro"
+    presences: 5
+    arcs: [02_10_africa_coloniale_camerun_c_tiers_e_brous, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  gunn:
+    role: "Professore americano, mentore alla Società delle Nazioni"
+    presences: 5
+    arcs: [02_12_carriera_medica_e_societ_delle_nazioni]
+  aym:
+    role: "Scrittore, amico a Meudon"
+    presences: 5
+    arcs: [02_18_l_occupazione_collaborazione_dissidenza_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni, 02_27_morte_eredit_e_guerre_culturali]
+  monnier:
+    role: "Illustratore, sostenitore durante l'esilio"
+    presences: 5
+    arcs: [02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_26_meudon_gli_ultimi_dieci_anni]
+
+# ── THEMES ──
+themes:
+  - name: "Guerra e trauma"
+    count: 128
+    top_arcs: [02_07_la_grande_guerra_fronte_ferita_e_convale, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_02_quale_c_line_biografia_psiche_e_approcci, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  - name: "Antisemitismo e pamphlet"
+    count: 121
+    top_arcs: [02_17_la_svolta_antisemita_russia_pamphlet_e_r, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_18_l_occupazione_collaborazione_dissidenza_, 02_27_morte_eredit_e_guerre_culturali, 02_25_gli_ultimi_anni_dell_esilio_e_il_process]
+  - name: "Stile e innovazione letteraria"
+    count: 115
+    top_arcs: [02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_27_morte_eredit_e_guerre_culturali, 02_06_nizza_servizio_militare_e_morte_della_no, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_21_esilio_prigione_e_f_erie_pour_une_autre_]
+  - name: "Famiglia e infanzia"
+    count: 107
+    top_arcs: [02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_06_nizza_servizio_militare_e_morte_della_no, 02_11_ritorno_e_reinvenzione_graffigny_e_court, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra]
+  - name: "Medicina e malattia"
+    count: 94
+    top_arcs: [02_12_carriera_medica_e_societ_delle_nazioni, 02_07_la_grande_guerra_fronte_ferita_e_convale, 02_18_l_occupazione_collaborazione_dissidenza_, 02_03_metodo_contesto_letterario_e_cancel_cult, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo]
+  - name: "Morte e nichilismo"
+    count: 82
+    top_arcs: [02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_24_rigodon_treni_morte_e_terra_promessa, 02_07_la_grande_guerra_fronte_ferita_e_convale, 02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_11_ritorno_e_reinvenzione_graffigny_e_court]
+  - name: "Esilio e persecuzione"
+    count: 70
+    top_arcs: [02_25_gli_ultimi_anni_dell_esilio_e_il_process, 02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_21_esilio_prigione_e_f_erie_pour_une_autre_, 02_26_meudon_gli_ultimi_dieci_anni, 02_19_guignol_s_band_londra_onirica_e_manifest]
+  - name: "Amore e relazioni"
+    count: 67
+    top_arcs: [02_12_carriera_medica_e_societ_delle_nazioni, 02_06_nizza_servizio_militare_e_morte_della_no, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_08_guerra_e_retrovie_eroismo_sfruttamento_e, 02_04_origini_courbevoie_famiglia_e_belle_poqu]
+  - name: "Satira e umorismo"
+    count: 62
+    top_arcs: [02_06_nizza_servizio_militare_e_morte_della_no, 02_22_il_ritorno_a_gallimard_e_d_un_ch_teau_l_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_05_formazione_adolescenza_viaggi_e_apprendi]
+  - name: "Classe sociale e povertà"
+    count: 61
+    top_arcs: [02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_12_carriera_medica_e_societ_delle_nazioni, 02_06_nizza_servizio_militare_e_morte_della_no, 02_04_origini_courbevoie_famiglia_e_belle_poqu, 02_05_formazione_adolescenza_viaggi_e_apprendi]
+  - name: "Guerre culturali e ricezione"
+    count: 54
+    top_arcs: [02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_27_morte_eredit_e_guerre_culturali, 02_02_quale_c_line_biografia_psiche_e_approcci, 02_26_meudon_gli_ultimi_dieci_anni, 02_28_lo_stile_come_riappropriazione_estetica_]
+  - name: "Modernità e progresso"
+    count: 54
+    top_arcs: [02_28_lo_stile_come_riappropriazione_estetica_, 02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_16_mort_cr_dit_e_la_svolta_stilistica, 02_12_carriera_medica_e_societ_delle_nazioni, 02_05_formazione_adolescenza_viaggi_e_apprendi]
+  - name: "Colonialismo e Africa"
+    count: 36
+    top_arcs: [02_09_londra_suzanne_nebout_e_partenza_per_l_a, 02_10_africa_coloniale_camerun_c_tiers_e_brous, 02_23_nord_kr_nzlin_fame_e_umanit_in_guerra, 02_12_carriera_medica_e_societ_delle_nazioni, 02_04_origini_courbevoie_famiglia_e_belle_poqu]
+  - name: "Cultura popolare e spettacolo"
+    count: 27
+    top_arcs: [02_29_hindus_cinema_teatro_fumetto_e_l_epilogo, 02_05_formazione_adolescenza_viaggi_e_apprendi, 02_28_lo_stile_come_riappropriazione_estetica_, 02_06_nizza_servizio_militare_e_morte_della_no, 02_19_guignol_s_band_londra_onirica_e_manifest]
+
+# ── KNOWLEDGE BASE MANIFEST ──
+knowledge_base:
+  language: it
+  files:
+    - 00_index.md
+    - 01_synopsis.md
+    - 03_characters.md
+    - 04_themes.md
+    - 05_style.md
+    - 06_context.md
+    - 08_qa_cache.md
+  total_files: 36
+  total_size_kb: 412

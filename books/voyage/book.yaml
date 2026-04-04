@@ -4,81 +4,293 @@ year: 1932
 language: fr
 
 source_text:
-  file: data/voyage-fr.csv
-  format: csv
+  file: data/voyage-fr.jsonl
+  format: jsonl
   line_prefix: FR
-  line_column: line_id
-  text_column: text
-  filter_column: chunk_type
-  filter_value: main_text
+  line_column: id
+  text_column: t
+
+translations:
+  it:
+    file: data/voyage-it.jsonl
+    format: jsonl
+    line_prefix: IT
+    line_column: id
+    text_column: t
+    alignment: data/alignment-fr-it.jsonl
+
+chunks:
+  file: data/extracted_chunks.json
+  format: json
+  total: 2630
+  sc_range: [19, 3628]
+  fields:
+    id: sc_id
+    lines: chunk_ids
+    summary: embedding_summary
+    summary_language: it
 
 arcs:
-  02_01_incipit:
-    keywords: [incipit, place clichy, ganate, arruolamento, galera, roi misère, preghiera]
-    lines: [77, 230]
-  02_02_guerra_fronte:
-    keywords: [fronte, colonnello, obus, pallottole, fiandre, trincea]
-    lines: [230, 1050]
-  02_03_guerra_notte:
-    keywords: [erranza, notte fiandre, noirceur]
-    lines: [1050, 1510]
-  02_04_guerra_robinson:
-    keywords: [robinson guerra, diserzione, primo robinson, capitano morente]
-    lines: [1510, 1770]
-  02_05_lola_paris:
-    keywords: [lola, beignet, opéra-comique, stand des nations, duval, convalescenza]
-    lines: [1770, 2500]
-  02_06_musyne_retrovie:
-    keywords: [musyne, olympia, princhard, retrovie]
-    lines: [2500, 3300]
-  02_07_bestombes_teatro:
-    keywords: [bestombes, elettroterapia, branledore, teatro, poeta]
-    lines: [3300, 4500]
-  02_08_nave_africa:
-    keywords: [africa, nave, amiral bragueton, colonia, pordurière, foresta, tropici, bambo, piroga]
-    lines: [4500, 7400]
-  02_09_america_newyork:
-    keywords: [new york, america, quarantina, manhattan, grattacieli, ellis island]
-    lines: [7400, 8500]
-  02_10_detroit_molly:
-    keywords: [detroit, ford, fabbrica, molly, catena di montaggio]
-    lines: [8500, 9600]
-  02_11_rancy_medicina:
-    keywords: [rancy, medicina, bébert, pazient, ambulatorio, medico dei poveri]
-    lines: [9600, 11500]
-  02_12_henrouille:
-    keywords: [henrouille, bomba, robinson cieco, protiste, vecchia, nuora]
-    lines: [11500, 14600]
-  02_13_toulouse:
-    keywords: [toulouse, cripta, mummie, morte della vecchia]
-    lines: [14600, 15500]
-  02_14_vigny_baryton:
-    keywords: [vigny, baryton, parapine, manicomio, asilo]
-    lines: [15500, 18800]
-  02_15_sophie_finale:
-    keywords: [sophie, madelon, finale, morte robinson, rimorchiatore, senna, taxi, batignolles]
-    lines: [18800, 20500]
+  02_01_place_clichy_arruolamento:
+    keywords: [incipit, place clichy, ganate, arruolamento, reggimento, galera, roi misère]
+    lines: [77, 282]
+    chunks: 30
+    sc_range: [19, 59]
+  02_02_guerra_fronte_terrore:
+    keywords: [fronte, colonnello, obus, pallottole, fiandre, trincea, marcia notturna, bombardamento, ferimento]
+    lines: [283, 1673]
+    chunks: 190
+    sc_range: [60, 325]
+    split:
+      - file: 02_02a_guerra_fronte_terrore_inizio.md
+        chunks: 95
+      - file: 02_02b_guerra_fronte_terrore_fine.md
+        chunks: 95
+  02_03_parigi_lola_musyne:
+    keywords: [lola, musyne, convalescenza, parigi, patriottismo, beignet, princhard, retrovia, argentino]
+    lines: [1674, 3137]
+    chunks: 200
+    sc_range: [326, 602]
+    split:
+      - file: 02_03a_parigi_lola_musyne_inizio.md
+        chunks: 100
+      - file: 02_03b_parigi_lola_musyne_fine.md
+        chunks: 100
+  02_04_ospedale_bestombes:
+    keywords: [bestombes, elettroterapia, branledore, ospedale, voireuse, famiglia soldato, congedo]
+    lines: [3138, 4265]
+    chunks: 130
+    sc_range: [603, 785]
+    split:
+      - file: 02_04a_ospedale_bestombes_inizio.md
+        chunks: 65
+      - file: 02_04b_ospedale_bestombes_fine.md
+        chunks: 65
+  02_05_traversata_africa:
+    keywords: [nave, amiral bragueton, traversata, tropici, capro espiatorio, fort-gono, colonia]
+    lines: [4266, 5176]
+    chunks: 120
+    sc_range: [786, 948]
+  02_06_africa_coloniale:
+    keywords: [africa, foresta, compagnie pordurière, caucciù, alcide, grappa, febbre, malaria, piroga, galera]
+    lines: [5177, 7383]
+    chunks: 290
+    sc_range: [949, 1345]
+    split:
+      - file: 02_06a_africa_coloniale_inizio.md
+        chunks: 96
+      - file: 02_06b_africa_coloniale_centro.md
+        chunks: 96
+      - file: 02_06c_africa_coloniale_fine.md
+        chunks: 98
+  02_07_galera_new_york:
+    keywords: [new york, america, quarantena, manhattan, grattacieli, galera, lola new york, cinema]
+    lines: [7384, 8723]
+    chunks: 180
+    sc_range: [1346, 1591]
+    split:
+      - file: 02_07a_galera_new_york_inizio.md
+        chunks: 90
+      - file: 02_07b_galera_new_york_fine.md
+        chunks: 90
+  02_08_detroit_ford_molly:
+    keywords: [detroit, ford, fabbrica, molly, catena di montaggio, operai, bordello, partenza]
+    lines: [8724, 9650]
+    chunks: 130
+    sc_range: [1592, 1761]
+    split:
+      - file: 02_08a_detroit_ford_molly_inizio.md
+        chunks: 65
+      - file: 02_08b_detroit_ford_molly_fine.md
+        chunks: 65
+  02_09_rancy_medico_poveri:
+    keywords: [rancy, medicina, bébert, paziente, ambulatorio, medico dei poveri, banlieue, henrouille primo]
+    lines: [9651, 12034]
+    chunks: 290
+    sc_range: [1762, 2163]
+    split:
+      - file: 02_09a_rancy_medico_poveri_inizio.md
+        chunks: 96
+      - file: 02_09b_rancy_medico_poveri_centro.md
+        chunks: 96
+      - file: 02_09c_rancy_medico_poveri_fine.md
+        chunks: 98
+  02_10_complotto_henrouille:
+    keywords: [henrouille, bomba, robinson cieco, protiste, vecchia, nuora, esplosione, accecamento, bébert morte]
+    lines: [12035, 13887]
+    chunks: 240
+    sc_range: [2164, 2479]
+    split:
+      - file: 02_10a_complotto_henrouille_inizio.md
+        chunks: 120
+      - file: 02_10b_complotto_henrouille_fine.md
+        chunks: 120
+  02_11_tolosa_cripta_mummie:
+    keywords: [tolosa, cripta, mummie, morte della vecchia, tarapout, madelon, tania, pomone]
+    lines: [13890, 16192]
+    chunks: 300
+    sc_range: [2482, 2902]
+    split:
+      - file: 02_11a_tolosa_cripta_mummie_inizio.md
+        chunks: 100
+      - file: 02_11b_tolosa_cripta_mummie_centro.md
+        chunks: 100
+      - file: 02_11c_tolosa_cripta_mummie_fine.md
+        chunks: 100
+  02_12_clinica_baryton:
+    keywords: [vigny, baryton, parapine, clinica, manicomio, asilo, inglese, fuga baryton]
+    lines: [16193, 18095]
+    chunks: 230
+    sc_range: [2903, 3221]
+    split:
+      - file: 02_12a_clinica_baryton_inizio.md
+        chunks: 115
+      - file: 02_12b_clinica_baryton_fine.md
+        chunks: 115
+  02_13_robinson_madelon_fine:
+    keywords: [sophie, madelon, finale, morte robinson, rimorchiatore, senna, taxi, batignolles, sparo]
+    lines: [18096, 20423]
+    chunks: 300
+    sc_range: [3222, 3628]
+    split:
+      - file: 02_13a_robinson_madelon_fine_inizio.md
+        chunks: 100
+      - file: 02_13b_robinson_madelon_fine_centro.md
+        chunks: 100
+      - file: 02_13c_robinson_madelon_fine_fine.md
+        chunks: 100
 
 characters:
   bardamu:
-    arcs: [02_01_incipit, 02_02_guerra_fronte, 02_03_guerra_notte, 02_04_guerra_robinson, 02_05_lola_paris, 02_06_musyne_retrovie, 02_07_bestombes_teatro, 02_08_nave_africa, 02_09_america_newyork, 02_10_detroit_molly, 02_11_rancy_medicina, 02_12_henrouille, 02_13_toulouse, 02_14_vigny_baryton, 02_15_sophie_finale]
-  ganate:
-    arcs: [02_01_incipit]
-  colonnello:
-    arcs: [02_02_guerra_fronte]
+    role: narratore e protagonista
+    presences: 1524
+    arcs: [02_01_place_clichy_arruolamento, 02_02_guerra_fronte_terrore, 02_03_parigi_lola_musyne, 02_04_ospedale_bestombes, 02_05_traversata_africa, 02_06_africa_coloniale, 02_07_galera_new_york, 02_08_detroit_ford_molly, 02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie, 02_12_clinica_baryton, 02_13_robinson_madelon_fine]
   robinson:
-    arcs: [02_04_guerra_robinson, 02_11_rancy_medicina, 02_12_henrouille, 02_15_sophie_finale]
-  lola:
-    arcs: [02_05_lola_paris, 02_09_america_newyork]
-  musyne:
-    arcs: [02_06_musyne_retrovie]
-  molly:
-    arcs: [02_10_detroit_molly]
-  bébert:
-    arcs: [02_11_rancy_medicina]
-  baryton:
-    arcs: [02_14_vigny_baryton]
-  sophie:
-    arcs: [02_15_sophie_finale]
+    role: alter ego di Bardamu
+    presences: 443
+    arcs: [02_02_guerra_fronte_terrore, 02_06_africa_coloniale, 02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie, 02_12_clinica_baryton, 02_13_robinson_madelon_fine]
   madelon:
-    arcs: [02_13_toulouse, 02_14_vigny_baryton, 02_15_sophie_finale]
+    role: fidanzata di Robinson
+    presences: 202
+    arcs: [02_11_tolosa_cripta_mummie, 02_12_clinica_baryton, 02_13_robinson_madelon_fine]
+  henrouille:
+    role: famiglia della banlieue (vecchia, nuora, figlio)
+    presences: 134
+    arcs: [02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie, 02_13_robinson_madelon_fine]
+  lola:
+    role: americana, primo amore parigino
+    presences: 126
+    arcs: [02_03_parigi_lola_musyne, 02_07_galera_new_york, 02_08_detroit_ford_molly]
+  baryton:
+    role: direttore della clinica psichiatrica
+    presences: 123
+    arcs: [02_12_clinica_baryton, 02_13_robinson_madelon_fine]
+  parapine:
+    role: ricercatore fallito, collaboratore alla clinica
+    presences: 87
+    arcs: [02_09_rancy_medico_poveri, 02_11_tolosa_cripta_mummie, 02_12_clinica_baryton, 02_13_robinson_madelon_fine]
+  bébert:
+    role: bambino malato di Rancy
+    presences: 63
+    arcs: [02_09_rancy_medico_poveri, 02_10_complotto_henrouille]
+  molly:
+    role: prostituta americana, unico amore autentico
+    presences: 43
+    arcs: [02_08_detroit_ford_molly]
+  sophie:
+    role: infermiera alla clinica
+    presences: 41
+    arcs: [02_13_robinson_madelon_fine]
+  musyne:
+    role: violinista, amante opportunista
+    presences: 40
+    arcs: [02_03_parigi_lola_musyne, 02_04_ospedale_bestombes]
+  alcide:
+    role: impiegato coloniale, figura sacrificale
+    presences: 40
+    arcs: [02_06_africa_coloniale]
+  grappa:
+    role: funzionario coloniale
+    presences: 34
+    arcs: [02_05_traversata_africa, 02_06_africa_coloniale]
+  protiste:
+    role: abbé affarista
+    presences: 30
+    arcs: [02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie, 02_12_clinica_baryton]
+  voireuse:
+    role: compagno d'ospedale
+    presences: 22
+    arcs: [02_04_ospedale_bestombes, 02_05_traversata_africa]
+  bestombes:
+    role: professore e medico militare
+    presences: 19
+    arcs: [02_04_ospedale_bestombes]
+  mandamour:
+    role: addetto alla clinica
+    presences: 17
+    arcs: [02_13_robinson_madelon_fine]
+  princhard:
+    role: intellettuale disilluso
+    presences: 15
+    arcs: [02_03_parigi_lola_musyne]
+  ganate:
+    role: compagno di studi, innesco dell'arruolamento
+    presences: 5
+    arcs: [02_01_place_clichy_arruolamento]
+
+themes:
+  - name: Malattia e corpo
+    count: 388
+    top_arcs: [02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_12_clinica_baryton, 02_06_africa_coloniale, 02_11_tolosa_cripta_mummie]
+  - name: Guerra e violenza
+    count: 320
+    top_arcs: [02_02_guerra_fronte_terrore, 02_03_parigi_lola_musyne, 02_04_ospedale_bestombes, 02_06_africa_coloniale, 02_05_traversata_africa]
+  - name: Colonialismo e razzismo
+    count: 304
+    top_arcs: [02_06_africa_coloniale, 02_05_traversata_africa, 02_02_guerra_fronte_terrore, 02_07_galera_new_york, 02_11_tolosa_cripta_mummie]
+  - name: Solitudine e alienazione
+    count: 275
+    top_arcs: [02_09_rancy_medico_poveri, 02_13_robinson_madelon_fine, 02_06_africa_coloniale, 02_11_tolosa_cripta_mummie, 02_10_complotto_henrouille]
+  - name: Morte e mortalità
+    count: 224
+    top_arcs: [02_02_guerra_fronte_terrore, 02_13_robinson_madelon_fine, 02_09_rancy_medico_poveri, 02_11_tolosa_cripta_mummie, 02_03_parigi_lola_musyne]
+  - name: Miseria e povertà
+    count: 209
+    top_arcs: [02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_06_africa_coloniale, 02_11_tolosa_cripta_mummie, 02_07_galera_new_york]
+  - name: Viaggio e fuga
+    count: 193
+    top_arcs: [02_05_traversata_africa, 02_12_clinica_baryton, 02_06_africa_coloniale, 02_02_guerra_fronte_terrore, 02_09_rancy_medico_poveri]
+  - name: Denaro e materialismo
+    count: 181
+    top_arcs: [02_06_africa_coloniale, 02_09_rancy_medico_poveri, 02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie, 02_04_ospedale_bestombes]
+  - name: Lavoro e sfruttamento
+    count: 168
+    top_arcs: [02_08_detroit_ford_molly, 02_09_rancy_medico_poveri, 02_06_africa_coloniale, 02_10_complotto_henrouille, 02_11_tolosa_cripta_mummie]
+  - name: Notte e oscurità
+    count: 160
+    top_arcs: [02_02_guerra_fronte_terrore, 02_09_rancy_medico_poveri, 02_11_tolosa_cripta_mummie, 02_06_africa_coloniale, 02_10_complotto_henrouille]
+  - name: Sessualità e relazioni
+    count: 154
+    top_arcs: [02_11_tolosa_cripta_mummie, 02_09_rancy_medico_poveri, 02_08_detroit_ford_molly, 02_03_parigi_lola_musyne, 02_07_galera_new_york]
+  - name: Paura e angoscia
+    count: 91
+    top_arcs: [02_09_rancy_medico_poveri, 02_02_guerra_fronte_terrore, 02_03_parigi_lola_musyne, 02_07_galera_new_york, 02_11_tolosa_cripta_mummie]
+  - name: Follia e delirio
+    count: 72
+    top_arcs: [02_12_clinica_baryton, 02_03_parigi_lola_musyne, 02_07_galera_new_york, 02_09_rancy_medico_poveri, 02_04_ospedale_bestombes]
+  - name: Ipocrisia e menzogna
+    count: 41
+    top_arcs: [02_11_tolosa_cripta_mummie, 02_03_parigi_lola_musyne, 02_09_rancy_medico_poveri, 02_07_galera_new_york, 02_10_complotto_henrouille]
+
+knowledge_base:
+  language: it
+  files:
+    - 00_index.md
+    - 01_synopsis.md
+    - 03_characters.md
+    - 04_themes.md
+    - 05_style.md
+    - 06_context.md
+    - 08_qa_cache.md
+  total_files: 35
+  total_size_kb: 746

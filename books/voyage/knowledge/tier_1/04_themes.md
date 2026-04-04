@@ -1,255 +1,233 @@
-# Temi — Voyage au bout de la nuit
+# Analisi tematica — Voyage au bout de la nuit
 
-## Guerra e morte
+## Malattia e corpo
 
-La guerra è il trauma fondante. Bardamu la definisce come «ciò che non si capisce». La morte non è eroica ma grottesca. Il romanzo si apre e si chiude con la morte (il fronte / Robinson assassinato).
+La malattia permea l'intero romanzo come metafora e come realtà concreta. Il corpo è il campo di battaglia dove si combattono tutte le guerre: la febbre malarica in Africa, la tifoide di Bébert, la cecità di Robinson, il deterioramento fisico di Bardamu a Rancy. La professione medica, lungi dall'offrire redenzione, espone Bardamu alla sofferenza inesorabile dei corpi altrui.
 
-**Passaggi pertinenti**: 322 su 2630
+**Passaggi rilevanti**: 388 su 2630
 
-**Distribuzione per arco**: La guerra — Al fronte nel (40), Parigi — Lola e la conval (39), L'affare Henrouille — Rob (37), Vigny-sur-Seine — L'asilo (31), L'ospedale — Bestombes, l (27)
+**Distribuzione per arco**: Arco 9 – Rancy (74), Arco 10 – Complotto (51), Arco 12 – Clinica (47), Arco 6 – Africa (46), Arco 11 – Tolosa (40)
 
 **Esempi chiave**:
 
-- **00036** (L162): Il narratore riferisce che la guerra si avvicinava senza che se ne rendessero conto. Stanco e turbato dalla discussione e dal comportamento del cameri...
-  - *Figurativo*: 
-- **00053** (L241): Due tedeschi sparano da lontano sulla strada. Il colonnello forse ne conosce la ragione, ma Bardamu non capisce perché i tedeschi gli sparino, dato ch...
-  - *Figurativo*: 
-- **00210** (L1082): Il capitano Ortolan era quasi invisibile in tempo di pace, ma in guerra si distingue per uno zelo infaticabile e una ricerca ossessiva di azioni eroic...
-  - *Figurativo*: 
-- **00295** (L1534): Robinson spiega di non aver mai voluto uccidere nessuno e di detestare la violenza anche in tempo di pace. Descrive la sua vita civile: ha provato a l...
-  - *Figurativo*: 
-- **00351** (L1801): Bardamu diffida degli slanci del cuore, preferendo quelli del corpo. La guerra gli ha insegnato a diffidare dei sentimenti....
-  - *Figurativo*: 
+- **SC 1056** (L5704): Bardamu ossessionato dall'idea dell'ospedale come unico armistizio possibile, rifugio dal mondo.
+- **SC 2016** (L11193): La zia di Bébert crolla fisicamente mentre il nipote peggiora, incarnando la disperazione di chi non può curare.
+- **SC 2346** (L13101): Bardamu visita Robinson cieco due volte al giorno; il corpo ferito diventa prigione.
+- **SC 2697** (L15072): Bardamu tenta di far bere una tisana a un morente, interrogandosi sul senso della cura.
 
 ---
 
-## Paura e fuga
+## Guerra e violenza
 
-La paura è l'unica risposta lucida. Bardamu si chiede se sia «l'unico codardo al mondo». La fuga è il motore narrativo: dal fronte, dall'Africa, dall'America, da Rancy, da ogni legame.
+La guerra non è solo il soggetto dei primi archi: è la matrice di tutto il romanzo. Ogni forma di violenza successiva — coloniale, economica, domestica — viene letta da Bardamu come prolungamento della guerra. Il fronte è il luogo dove cade ogni illusione: il patriottismo si rivela retorica assassina, il coraggio è incoscienza, la disciplina è sottomissione alla morte.
 
-**Passaggi pertinenti**: 154 su 2630
+**Passaggi rilevanti**: 320 su 2630
 
-**Distribuzione per arco**: L'affare Henrouille — Rob (19), La nave e l'Africa coloni (18), Vigny-sur-Seine — L'asilo (16), Rancy — La medicina dei p (15), La guerra — Al fronte nel (14)
+**Distribuzione per arco**: Arco 2 – Guerra (80), Arco 3 – Parigi (70), Arco 4 – Ospedale (36), Arco 6 – Africa (29), Arco 5 – Traversata (18)
 
 **Esempi chiave**:
 
-- **00027** (L117): Bardamu definisce la 'razza francese' come un ammasso di miserabili fuggiti da tutto il mondo, inseguiti da fame, peste, malattie e freddo, fermatisi ...
-  - *Figurativo*: 
-- **00052** (L232): Bardamu racconta l'addestramento a cavallo poi dismesso, e si ritrova con il colonnello esposto in mezzo alla strada mentre l'attendente è fuggito con...
-  - *Figurativo*: 
-- **00217** (L1124): Il narratore riflette sulla difficoltà di raggiungere l'essenziale anche in guerra, usando l'immagine dei gatti che si gettano nell'acqua per sfuggire...
-  - *Figurativo*: 
-- **00293** (L1516): Robinson racconta di aver approfittato del caos per disertare, presentandosi per nome. Nel bosco incontra il suo capitano morente, ferito gravemente, ...
-  - *Figurativo*: 
-- **00353** (L1818): Bardamu ha poche possibilità di sfuggire alla guerra perché non ha le relazioni necessarie. Conosce solo poveri, cioè persone che......
-  - *Figurativo*: 
+- **SC 69** (L331): La paura diventa panico: Bardamu comprende che la guerra potrebbe non finire mai.
+- **SC 132** (L656): Il sangue forma pozze nell'erba; accanto si macella un maiale — equiparazione tra uomini e bestie.
+- **SC 522** (L2667): Tirata contro i pacifisti: chi rifiuta la guerra deve essere torturato affinché la Patria sia amata.
+- **SC 715** (L3832): Bestombes trasforma le cure in spettacolo mediatico, la sofferenza dei soldati in capitale simbolico.
 
 ---
 
-## Follia e assurdità
+## Colonialismo e razzismo
 
-Il mondo è un manicomio — letteralmente (Vigny) e figurativamente. Il confine tra lucidità e follia è il tema di Baryton e dell'asilo. La crisi al ristorante Duval. I «folli eroici» del fronte.
+L'Africa coloniale è il secondo grande inferno del romanzo, dopo il fronte. Céline descrive lo sfruttamento con una precisione brutale: i neri ridotti a forza lavoro, i bianchi corrotti dal potere e dal caldo, le compagnie commerciali che succhiano risorse. Ma il colonialismo è anche metafora universale: ovunque ci sono colonizzatori e colonizzati.
 
-**Passaggi pertinenti**: 77 su 2630
+**Passaggi rilevanti**: 304 su 2630
 
-**Distribuzione per arco**: Vigny-sur-Seine — L'asilo (29), Parigi — Lola e la conval (9), Rancy — La medicina dei p (8), L'America — New York (6), L'affare Henrouille — Rob (5)
+**Distribuzione per arco**: Arco 6 – Africa (134), Arco 5 – Traversata (38), Arco 2 – Guerra (24), Arco 7 – New York (20), Arco 11 – Tolosa (18)
 
 **Esempi chiave**:
 
-- **00072** (L337): Bardamu si chiede se sia l'unico codardo tra milioni di folli eroici armati che distruggono tutto, più rabbiosi dei cani, e conclude di essersi imbarc...
-  - *Figurativo*: 
-- **00223** (L1156): La tortura del reggimento continua di notte nel villaggio buio, dove i soldati trasportano sacchi pesantissimi, insultati e minacciati, senza speranza...
-  - *Figurativo*: 
-- **00352** (L1805): Lola ha un cuore tenero e un corpo piacevole; Bardamu la accetta così com'è. Ma la guerra sta tra loro: una follia che spinge metà dell'umanità a mand...
-  - *Figurativo*: 
-- **00507** (L2580): Un personaggio esorta un giovane interlocutore a riconoscere il segno rivelatore delle ipocrisie sociali: quando i potenti si commuovono per la sorte ...
-  - *Figurativo*: 
-- **00644** (L3363): Bardamu riflette sulle parole dell'oratore dagli occhi splendidi, trovandovi paradossalmente motivo per non voler morire. A differenza dei compagni, p...
-  - *Figurativo*: 
+- **SC 935** (L5115): Il direttore scherza che in colonia sembra sempre domenica — ironia sulla vacuità del potere bianco.
+- **SC 1042** (L5646): Bardamu riflette sui neri colonizzati: lentezza, gesti lunghi, adattamento a un sistema di oppressione.
+- **SC 1152** (L6222): Grappa amministra la giustizia con brutalità arbitraria; l'uomo protesta per aver seppellito sua madre.
+- **SC 1179** (L6370): Alcide rivela il sacrificio silenzioso per la nipote — unica eccezione morale nel sistema coloniale.
 
 ---
 
-## Corpo e malattia
+## Solitudine e alienazione
 
-Bardamu privilegia il corpo sull'anima: «L'anima è la vanità del corpo sano.» La febbre in Africa, le malattie veneree dei coloni, la medicina dei poveri a Rancy. Il corpo come unica verità.
+Bardamu è fondamentalmente solo. In mezzo alla folla, in guerra, nell'amore, nel lavoro — la solitudine è la condizione permanente. Questa alienazione non è un accidente ma una struttura: gli esseri umani sono separati gli uni dagli altri da un abisso di incomprensione e di indifferenza.
 
-**Passaggi pertinenti**: 307 su 2630
+**Passaggi rilevanti**: 275 su 2630
 
-**Distribuzione per arco**: La nave e l'Africa coloni (64), L'affare Henrouille — Rob (50), Vigny-sur-Seine — L'asilo (35), Rancy — La medicina dei p (33), L'ospedale — Bestombes, l (23)
+**Distribuzione per arco**: Arco 9 – Rancy (33), Arco 13 – Fine (33), Arco 6 – Africa (31), Arco 11 – Tolosa (26), Arco 10 – Complotto (24)
 
 **Esempi chiave**:
 
-- **00027** (L117): Bardamu definisce la 'razza francese' come un ammasso di miserabili fuggiti da tutto il mondo, inseguiti da fame, peste, malattie e freddo, fermatisi ...
-  - *Figurativo*: 
-- **00073** (L351): Bardamu riflette sull'essere vergine dell'Orrore come del piacere, chiedendosi come avrebbe potuto prevedere tale orrore partendo da Place Clichy, sen...
-  - *Figurativo*: 
-- **00221** (L1137): Le notti vengono anch'esse invase dalla guerra: i soldati devono lavorare per mangiare e trovare sonno mentre arrivano i convogli di rifornimento con ...
-  - *Figurativo*: 
-- **00293** (L1516): Robinson racconta di aver approfittato del caos per disertare, presentandosi per nome. Nel bosco incontra il suo capitano morente, ferito gravemente, ...
-  - *Figurativo*: 
-- **00351** (L1801): Bardamu diffida degli slanci del cuore, preferendo quelli del corpo. La guerra gli ha insegnato a diffidare dei sentimenti....
-  - *Figurativo*: 
+- **SC 51** (L224): Bardamu comprende troppo tardi che è una trappola: i civili li hanno abbandonati.
+- **SC 1536** (L8414): Dalla posizione in alto, Bardamu grida alla folla tutto quello che vuole; nessuno ascolta.
+- **SC 2456** (L13724): La notte e la paura svuotano l'individuo, separandolo dalla gente normale.
+- **SC 3615** (L20346): Sophie stringe Bardamu dopo la morte di Robinson, ma lui non riesce a sentire la tenerezza.
 
 ---
 
-## Menzogna e ipocrisia
+## Morte e mortalità
 
-Parigi invasa dalla menzogna. La propaganda patriottica. I civili che ereditano dai morti. La «gloria» come truffa. L'ipocrisia della famiglia Henrouille.
+La morte attraversa il romanzo come un basso continuo. Non è mai eroica, mai sublime: è stupida, arbitraria, fisiologica. Dai soldati sventrati al fronte a Bébert morto di tifo, dalla vecchia Henrouille precipitata a Robinson assassinato — la morte è l'unica certezza, e Céline la descrive senza mai concederle dignità.
 
-**Passaggi pertinenti**: 180 su 2630
+**Passaggi rilevanti**: 224 su 2630
 
-**Distribuzione per arco**: La nave e l'Africa coloni (28), L'affare Henrouille — Rob (21), Vigny-sur-Seine — L'asilo (20), Detroit — Ford e Molly (16), L'ospedale — Bestombes, l (15)
+**Distribuzione per arco**: Arco 2 – Guerra (38), Arco 13 – Fine (32), Arco 9 – Rancy (31), Arco 11 – Tolosa (29), Arco 3 – Parigi (24)
 
 **Esempi chiave**:
 
-- **00020** (L84): Ganate osserva che le strade sono vuote per il caldo e riflette ironicamente sui parigini: si atteggiano a gente indaffarata ma in realtà passeggiano ...
-  - *Figurativo*: 
-- **00058** (L268): I sentimenti di Bardamu verso i tedeschi non sono cambiati: vorrebbe capire la loro brutalità ma soprattutto desidera andarsene, perché tutto gli appa...
-  - *Figurativo*: 
-- **00207** (L1065): Il tenente de Sainte-Engence accoglie con modestia i complimenti dei camerati. Rassicurato dalla conferma di Ortolan, fa girare la sua cavalla al pass...
-  - *Figurativo*: 
-- **00322** (L1651): I valori patriottici e morali invocati dal sindaco si dissolvono di fronte alla paura e all'egoismo dei soldati, oltre che alla pura e semplice verità...
-  - *Figurativo*: 
-- **00351** (L1801): Bardamu diffida degli slanci del cuore, preferendo quelli del corpo. La guerra gli ha insegnato a diffidare dei sentimenti....
-  - *Figurativo*: 
+- **SC 68** (L325): Bardamu conclude che il colonnello è un mostro incapace di concepire la propria morte.
+- **SC 2793** (L15607): Madelon spiega che i morti hanno atteso più di cinquecento anni per raggiungere il loro stato.
+- **SC 3312** (L18609): A Ognissanti un paziente urla dalla finestra che non vuole morire — scandalo nella clinica.
+- **SC 3589** (L20209): Bardamu segue il corteo funebre per assicurarsi che Robinson sia davvero morto.
+
+---
+
+## Miseria e povertà
+
+La povertà non è un tema tra gli altri: è la condizione stessa dei personaggi. Bardamu è povero dall'inizio alla fine. I suoi pazienti a Rancy non pagano perché non possono. La miseria è strutturale, ereditaria, ineludibile — e Céline la descrive con una precisione quasi clinica che rifiuta ogni sentimentalismo.
+
+**Passaggi rilevanti**: 209 su 2630
+
+**Distribuzione per arco**: Arco 9 – Rancy (36), Arco 10 – Complotto (31), Arco 6 – Africa (27), Arco 11 – Tolosa (27), Arco 7 – New York (19)
+
+**Esempi chiave**:
+
+- **SC 603** (L3138): Per il povero esistono due modi di morire: per indifferenza in pace o per passione omicida in guerra.
+- **SC 1592** (L8724): La miseria è gigantesca e usa il volto dei poveri come uno straccio.
+- **SC 1941** (L10720): Bardamu descrive il proprio deterioramento fisico dovuto alle privazioni alimentari.
+- **SC 2414** (L13474): Inutile promettere la guarigione ai malati poveri — essere sani significa solo poter lavorare.
+
+---
+
+## Viaggio e fuga
+
+Il viaggio non è scoperta ma fuga. Bardamu non va verso qualcosa: fugge da qualcosa. Dalla guerra, dall'Africa, da New York, da Rancy — ogni partenza è una diserzione, mai un nuovo inizio. La struttura stessa del romanzo (fronte → Parigi → Africa → America → Parigi) è una spirale di fughe che riportano sempre al punto di partenza.
+
+**Passaggi rilevanti**: 193 su 2630
+
+**Distribuzione per arco**: Arco 5 – Traversata (31), Arco 12 – Clinica (22), Arco 6 – Africa (21), Arco 2 – Guerra (18), Arco 9 – Rancy (17)
+
+**Esempi chiave**:
+
+- **SC 798** (L4326): Bardamu viene congedato e decide di partire per l'Africa — fuga dal fronte verso un altro inferno.
+- **SC 2482** (L13890): Bardamu intende sparire da Rancy senza lasciare tracce — tacere e fuggire come unica risposta.
+- **SC 3128** (L17558): Baryton teme di non avere abbastanza tempo per completare il suo percorso di fuga.
+- **SC 1736** (L9506): Bardamu riconosce di avere un'inclinazione per tutto ciò che lo allontana.
+
+---
+
+## Denaro e materialismo
+
+Il denaro è il motore segreto di quasi tutte le relazioni nel romanzo. Lola è avara, Musyne cerca protettori ricchi, la nuora Henrouille vuole ereditare, l'abbé Protiste traffica, la Compagnie Pordurière sfrutta. Anche l'amore di Molly ha una dimensione economica: lei mantiene Bardamu. Il denaro non compra la felicità, ma la sua assenza garantisce la miseria.
+
+**Passaggi rilevanti**: 181 su 2630
+
+**Distribuzione per arco**: Arco 6 – Africa (33), Arco 9 – Rancy (30), Arco 10 – Complotto (27), Arco 11 – Tolosa (19), Arco 4 – Ospedale (16)
+
+**Esempi chiave**:
+
+- **SC 786** (L4266): Voireuse e Bardamu ridono della sfortuna di Robinson — i duecento franchi persi pesano più della morte.
+- **SC 1670** (L9159): Bardamu paga tariffe ridotte al bordello con piccoli favori dalla Francia.
+- **SC 1801** (L9874): I pazienti non pagano; Bardamu constata l'inutilità economica della sua professione.
+- **SC 2709** (L15134): La moglie insiste sul valore della dentiera in oro — il corpo morto diventa merce.
+
+---
+
+## Lavoro e sfruttamento
+
+Il lavoro è sempre alienante. Alla Ford, Bardamu è ridotto a ingranaggio. In Africa, i neri sono schiavizzati. A Rancy, la professione medica è un mestiere ingrato. Alla clinica, anche la follia ha un prezzo. Céline mostra il lavoro come la continuazione della guerra con altri mezzi: sfruttamento del corpo per il profitto altrui.
+
+**Passaggi rilevanti**: 168 su 2630
+
+**Distribuzione per arco**: Arco 8 – Detroit (27), Arco 9 – Rancy (25), Arco 6 – Africa (20), Arco 10 – Complotto (16), Arco 11 – Tolosa (13)
+
+**Esempi chiave**:
+
+- **SC 1642** (L9015): La Ford assume chiunque — il corpo è l'unico capitale dell'operaio.
+- **SC 40** (L182): I padroni fanno salire i lavoratori sul ponte e annunciano la guerra — metafora della galera.
+- **SC 988** (L5371): L'impiegato della Compagnie Pordurière è completamente consumato dal lavoro coloniale.
+- **SC 2980** (L16639): Bardamu organizza la clinica dove Parapine gestisce il cinema per alienati — il lavoro come routine dell'assurdo.
 
 ---
 
 ## Notte e oscurità
 
-Il titolo è programmatico. La notte è letterale (erranza nelle Fiandre, Fête des Batignolles) e metaforica (il «bout de la nuit» della condizione umana). L'alba finale non è redenzione.
+La notte del titolo è al contempo letterale e metaforica. Le scene notturne sono innumerevoli: marce al fronte, notti in Africa, gite notturne a Parigi, l'assassinio di Robinson nel taxi. La notte è l'elemento naturale di Bardamu — il momento dove le apparenze cadono e la vérité emerge, brutale.
 
-**Passaggi pertinenti**: 138 su 2630
+**Passaggi rilevanti**: 160 su 2630
 
-**Distribuzione per arco**: L'affare Henrouille — Rob (29), La nave e l'Africa coloni (22), La guerra — Al fronte nel (15), Vigny-sur-Seine — L'asilo (12), Rancy — La medicina dei p (10)
-
-**Esempi chiave**:
-
-- **00121** (L596): Bardamu immagina cosa sarebbe accaduto se i gendarmi lo avessero sorpreso a vagabondare con le spalle al nemico: un processo sommario in una scuola vu...
-  - *Figurativo*: 
-- **00216** (L1119): La notte, inizialmente temuta, diventa desiderabile perché offre protezione relativa dal fuoco nemico rispetto al giorno....
-  - *Figurativo*: 
-- **00302** (L1568): Robinson esorta a sbrigarsi perché la notte è il momento giusto per fuggire, mentre di giorno tutti lavorano per la galera e anche la guerra diventa u...
-  - *Figurativo*: 
-- **00524** (L2688): Bardamu riflette sul carattere di Princhard, giudicandolo futile e confuso dal suo stesso sapere. Ricorda la sera della sua partenza e descrive il pae...
-  - *Figurativo*: 
-- **00734** (L3951): Bardamu se ne va bruscamente e con risentimento. Ricapitola le donne perdute: Lola rubata dagli aviatori, Musyne dagli argentini, l'attrice dall'inver...
-  - *Figurativo*: 
-
----
-
-## Denaro e povertà
-
-La miseria è il vero antagonista. I pazienti che non pagano. Bardamu che conta i centesimi. Robinson che accetta lavori sporchi per denaro. La galera dell'incipit: i padroni sul ponte, il popolo nella stiva.
-
-**Passaggi pertinenti**: 216 su 2630
-
-**Distribuzione per arco**: L'affare Henrouille — Rob (40), La nave e l'Africa coloni (34), Rancy — La medicina dei p (33), Detroit — Ford e Molly (19), L'ospedale — Bestombes, l (18)
+**Distribuzione per arco**: Arco 2 – Guerra (29), Arco 9 – Rancy (20), Arco 11 – Tolosa (20), Arco 6 – Africa (19), Arco 10 – Complotto (15)
 
 **Esempi chiave**:
 
-- **00027** (L117): Bardamu definisce la 'razza francese' come un ammasso di miserabili fuggiti da tutto il mondo, inseguiti da fame, peste, malattie e freddo, fermatisi ...
-  - *Figurativo*: 
-- **00114** (L559): Bardamu prosegue la fantasia del ritorno eroico: nei ristoranti si verrebbe serviti gratis, si pagherebbe con bandierine francesi, la cassiera darebbe...
-  - *Figurativo*: 
-- **00269** (L1392): Bardamu ottiene finalmente una bottiglia di vino bianco pagandola cinque franchi. La madre ordina alla sorella di andare a prenderla dalla cantina nas...
-  - *Figurativo*: 
-- **00353** (L1818): Bardamu ha poche possibilità di sfuggire alla guerra perché non ha le relazioni necessarie. Conosce solo poveri, cioè persone che......
-  - *Figurativo*: 
-- **00500** (L2536): Princhard dimostra che nella storia il piccolo furto di cibo attira sempre infamia e punizioni severe, perché l'autore è povero e il suo gesto costitu...
-  - *Figurativo*: 
+- **SC 148** (L743): L'oscurità è così densa che non si vede il proprio braccio — ma contiene il nemico.
+- **SC 2849** (L15901): La sera la vecchia casa sprofonda nel suo decadimento secolare.
+- **SC 3521** (L19813): Nel taxi, a ogni cambio di marcia, Madelon riprende le accuse — la notte come teatro della violenza.
+- **SC 3628** (L20419): Il rimorchiatore fischia nell'alba — la notte finisce, ma solo letteralmente.
 
 ---
 
-## Amore e sessualità
+## Sessualità e relazioni
 
-L'amore come impossibilità: Lola (privilegio), Musyne (tradimento), Molly (unico vero amore, abbandonato), Madelon (passione distruttiva), Sophie (transitorietà). «L'infinito alla portata dei barboncini.»
+Le relazioni sessuali nel romanzo sono quasi sempre transazionali, fallimentari o grottesche. Lola offre il suo corpo ma non la comprensione; Musyne lo tradisce; il bordello è l'unica relazione onesta perché dichiara il suo prezzo. Solo Molly offre un amore autentico — ed è una prostituta. La sessualità è ovunque ma l'intimità da nessuna parte.
 
-**Passaggi pertinenti**: 277 su 2630
+**Passaggi rilevanti**: 154 su 2630
 
-**Distribuzione per arco**: L'affare Henrouille — Rob (50), Vigny-sur-Seine — L'asilo (41), La nave e l'Africa coloni (30), Il finale — Sophie, la mo (28), Detroit — Ford e Molly (25)
+**Distribuzione per arco**: Arco 11 – Tolosa (23), Arco 9 – Rancy (19), Arco 8 – Detroit (16), Arco 3 – Parigi (15), Arco 7 – New York (15)
 
 **Esempi chiave**:
 
-- **00030** (L138): Dialogo tra Bardamu e Arthur sull'amore. Bardamu rifiuta l'amore con una battuta cinica, Arthur lo accusa di essere anarchico....
-  - *Figurativo*: 
-- **00058** (L268): I sentimenti di Bardamu verso i tedeschi non sono cambiati: vorrebbe capire la loro brutalità ma soprattutto desidera andarsene, perché tutto gli appa...
-  - *Figurativo*: 
-- **00210** (L1082): Il capitano Ortolan era quasi invisibile in tempo di pace, ma in guerra si distingue per uno zelo infaticabile e una ricerca ossessiva di azioni eroic...
-  - *Figurativo*: 
-- **00324** (L1662): Bardamu constata che contro tutti questi potenti lui e Robinson oppongono solo il desiderio di non morire e non bruciare, desiderio inesprimibile in g...
-  - *Figurativo*: 
-- **00367** (L1880): Da quel giorno Lola sviluppa un'ossessione per l'ingrassare che le toglie ogni piacere. Bardamu paragona la paura di Lola per i beignets alla propria ...
-  - *Figurativo*: 
+- **SC 2594** (L14521): I clienti dell'agenzia cercano donne sottomesse e ammirative — l'amore insoddisfatto come merce.
+- **SC 3287** (L18452): Madelon tocca la protuberanza di Robinson e si commuove — la sessualità legata alla ferita.
+- **SC 3395** (L19131): Parapine subisce il fascino di Sophie; Bardamu la guarda dormire — il desiderio come voyeurismo.
 
 ---
 
-## Colonialismo
+## Paura e angoscia
 
-L'Africa come specchio dell'orrore europeo. La Compagnie Pordurière. Lo sfruttamento, la malattia, il calore come forma di tortura. I coloni più malati dei colonizzati.
+La paura è il sentimento fondamentale di Bardamu, quello che lo definisce. Non è una debolezza ma una lucidità: chi ha paura vede le cose come sono. La paura al fronte si trasforma in angoscia esistenziale permanente che colora tutto il resto del romanzo.
 
-**Passaggi pertinenti**: 133 su 2630
+**Passaggi rilevanti**: 91 su 2630
 
-**Distribuzione per arco**: La nave e l'Africa coloni (100), Vigny-sur-Seine — L'asilo (9), L'ospedale — Bestombes, l (8), Parigi — Musyne, Princhar (6), L'America — New York (4)
+**Distribuzione per arco**: Arco 9 – Rancy (16), Arco 2 – Guerra (10), Arco 3 – Parigi (9), Arco 7 – New York (9), Arco 11 – Tolosa (9)
 
 **Esempi chiave**:
 
-- **00250** (L1304): Il narratore descrive il paesaggio notturno: la strada, le case dai muri bianchi di luna, simili a blocchi di ghiaccio irregolari nel silenzio....
-  - *Figurativo*: 
-- **00402** (L2042): Bardamu osserva che Lola attraversava la sua angoscia con la mentalità del Petit Journal, fatta di pompon, fanfare, la Lorena e guanti bianchi....
-  - *Figurativo*: 
-- **00507** (L2580): Un personaggio esorta un giovane interlocutore a riconoscere il segno rivelatore delle ipocrisie sociali: quando i potenti si commuovono per la sorte ...
-  - *Figurativo*: 
-- **00798** (L4326): Bardamu viene congedato dall'esercito a causa di una ferita alla testa e decide di partire per l'Africa, imbarcandosi su una nave della Compagnie des ...
-  - *Figurativo*: 
-- **00835** (L4529): Il narratore enumera le malattie che divorano i coloniali: il sole che spacca i reni, i pidocchi, l'eczema, la luce che brucia la retina. Si chiede a ...
-  - *Figurativo*: 
+- **SC 83** (L408): Gli uomini sono l'unica fonte di paura legittima.
+- **SC 1259** (L6872): Bardamu chiama Robinson al buio con il cuore in gola, temendo un attacco.
+- **SC 2456** (L13724): La notte e la paura svuotano l'individuo.
 
 ---
 
-## Modernità e alienazione
+## Follia e delirio
 
-La catena di montaggio di Ford. New York verticale e oppressiva. Il rumore delle macchine che non cessa mai. La città moderna come disumanizzazione.
+La follia non è l'eccezione ma la regola. La guerra è follia collettiva. L'Africa è delirio febbrile. La clinica di Baryton è un manicomio dove i medici sono più instabili dei pazienti. Baryton stesso finisce per fuggire la propria ragione. Robinson rifiuta la realtà fino alla morte.
 
-**Passaggi pertinenti**: 84 su 2630
+**Passaggi rilevanti**: 72 su 2630
 
-**Distribuzione per arco**: Detroit — Ford e Molly (18), L'America — New York (9), La nave e l'Africa coloni (8), L'affare Henrouille — Rob (7), Vigny-sur-Seine — L'asilo (7)
+**Distribuzione per arco**: Arco 12 – Clinica (28), Arco 3 – Parigi (10), Arco 7 – New York (7), Arco 9 – Rancy (6), Arco 4 – Ospedale (5)
 
 **Esempi chiave**:
 
-- **00067** (L320): Il narratore descrive il rumore delle foglie misto ai colpi sparati da soldati nemici invisibili che mancano continuamente il bersaglio ma circondano ...
-  - *Figurativo*: 
-- **00222** (L1147): Dietro i convogli camminano ritardatari e prigionieri incatenati ai gendarmi, alcuni condannati a morte, che mangiano la stessa razione degli altri in...
-  - *Figurativo*: 
-- **00295** (L1534): Robinson spiega di non aver mai voluto uccidere nessuno e di detestare la violenza anche in tempo di pace. Descrive la sua vita civile: ha provato a l...
-  - *Figurativo*: 
-- **00379** (L1939): Bardamu conclude che i tedeschi potrebbero arrivare, massacrare, saccheggiare, incendiare tutto - l'hotel, Lola, le Tuileries, i Ministeri, il Louvre,...
-  - *Figurativo*: 
-- **00547** (L2819): Descrizione geografica dei quartieri ricchi di Parigi come una fetta di torta urbana che va dal Louvre fino agli alberi tra il Pont d'Auteuil e la Por...
-  - *Figurativo*: 
+- **SC 72** (L337): Bardamu si chiede se sia l'unico codardo tra milioni di folli eroici armati.
+- **SC 2980** (L16639): Parapine gestisce il cinema per alienati — arte e follia si confondono.
+- **SC 3128** (L17558): Baryton teme di non avere abbastanza tempo per il suo percorso — la crisi del sano.
 
 ---
 
-## Medicina e sofferenza
+## Ipocrisia e menzogna
 
-La medicina come vocazione impossibile: curare i poveri è inutile perché «essere sani significa solo poter lavorare». La morte di Bébert. L'asilo di Baryton. Bestombes e l'elettroterapia come tortura patriottica.
+L'ipocrisia è il collante sociale. Il patriottismo della retrovia è ipocrita, la compassione delle dame dell'ospedale è ipocrita, la religione dell'abbé Protiste è ipocrita. Bardamu è l'unico che dice la verità — e per questo viene ovunque rifiutato.
 
-**Passaggi pertinenti**: 303 su 2630
+**Passaggi rilevanti**: 41 su 2630
 
-**Distribuzione per arco**: Vigny-sur-Seine — L'asilo (68), L'affare Henrouille — Rob (64), Rancy — La medicina dei p (54), La nave e l'Africa coloni (32), L'ospedale — Bestombes, l (18)
+**Distribuzione per arco**: Arco 11 – Tolosa (7), Arco 3 – Parigi (6), Arco 9 – Rancy (6), Arco 7 – New York (5), Arco 10 – Complotto (5)
 
 **Esempi chiave**:
 
-- **00027** (L117): Bardamu definisce la 'razza francese' come un ammasso di miserabili fuggiti da tutto il mondo, inseguiti da fame, peste, malattie e freddo, fermatisi ...
-  - *Figurativo*: 
-- **00122** (L605): Bardamu immagina il colonnello come spettacolo da music-hall: il suo coraggio sotto le pallottole avrebbe riempito l'Alhambra e oscurato Fragson. Conc...
-  - *Figurativo*: 
-- **00207** (L1065): Il tenente de Sainte-Engence accoglie con modestia i complimenti dei camerati. Rassicurato dalla conferma di Ortolan, fa girare la sua cavalla al pass...
-  - *Figurativo*: 
-- **00311** (L1603): I due soldati commentano con ammirazione ambigua la cattura del reggimento. Osservano le case chiuse con le persiane abbassate e i giardini curati....
-  - *Figurativo*: 
-- **00360** (L1854): Tutto procedeva bene e la guerra sembrava vinta, quando un giorno a pranzo Bardamu trova Lola sconvolta, incapace di toccare cibo. Teme sia accaduta u...
-  - *Figurativo*: 
-
----
-
+- **SC 393** (L2007): Durante la guerra, mentire e fare l'amore erano le uniche attività permesse.
+- **SC 715** (L3832): Bestombes trasforma la sofferenza in spettacolo mediatico.
+- **SC 352** (L1805): Lola ha un cuore tenero ma la guerra è tra loro come una follia che separa.

@@ -1,0 +1,162 @@
+[
+  {
+    "section": 1,
+    "title": "Introduction",
+    "start_id": "1",
+    "end_id": "784",
+    "sub_parts": null
+  },
+  {
+    "section": 2,
+    "title": "A Petit-bourgeois Childhood",
+    "start_id": "785",
+    "end_id": "2245",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "Family origins, passage Choiseul, and the shaping of a petit-bourgeois education",
+        "start_id": "785",
+        "end_id": "1636"
+      },
+      {
+        "part": 2,
+        "label": "Apprenticeships, England, and the turbulent adolescent years",
+        "start_id": "1637",
+        "end_id": "2245"
+      }
+    ]
+  },
+  {
+    "section": 3,
+    "title": "War and Colonialism",
+    "start_id": "2246",
+    "end_id": "3438",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "The Great War, battlefield injury, and wartime disillusionment",
+        "start_id": "2246",
+        "end_id": "2847"
+      },
+      {
+        "part": 2,
+        "label": "London, marriage to Suzanne Nebout, and the African adventure",
+        "start_id": "2848",
+        "end_id": "3438"
+      }
+    ]
+  },
+  {
+    "section": 4,
+    "title": "Inventor and Doctor",
+    "start_id": "3439",
+    "end_id": "4586",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "Medical studies, marriage to Édith, and the Semmelweis thesis",
+        "start_id": "3439",
+        "end_id": "3980"
+      },
+      {
+        "part": 2,
+        "label": "League of Nations career and globe-trotting public health missions",
+        "start_id": "3981",
+        "end_id": "4586"
+      }
+    ]
+  },
+  {
+    "section": 5,
+    "title": "Novelist and Pamphleteer",
+    "start_id": "4587",
+    "end_id": "5962",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "The making of Journey to the End of the Night and literary celebrity",
+        "start_id": "4587",
+        "end_id": "5413"
+      },
+      {
+        "part": 2,
+        "label": "Hollywood, turbulent love affairs, Death on Credit, and the drift toward pamphleteering",
+        "start_id": "5414",
+        "end_id": "5962"
+      }
+    ]
+  },
+  {
+    "section": 6,
+    "title": "Antisemite and Fascist Sympathizer",
+    "start_id": "5963",
+    "end_id": "7555",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "Antisemitic ideology, the pamphlets, and the outbreak of World War II",
+        "start_id": "5963",
+        "end_id": "6532"
+      },
+      {
+        "part": 2,
+        "label": "Life under the Occupation, collaborationist entanglements, and Guignol's Band",
+        "start_id": "6533",
+        "end_id": "7555"
+      }
+    ]
+  },
+  {
+    "section": 7,
+    "title": "Prison and Exile",
+    "start_id": "7556",
+    "end_id": "9703",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "Imprisonment in Denmark and Fable for Another Time",
+        "start_id": "7556",
+        "end_id": "8243"
+      },
+      {
+        "part": 2,
+        "label": "Castle to Castle and the Sigmaringen chronicle",
+        "start_id": "8244",
+        "end_id": "8701"
+      },
+      {
+        "part": 3,
+        "label": "North, Rigadoon, and the harrowing journey through wartime Germany",
+        "start_id": "8702",
+        "end_id": "9703"
+      }
+    ]
+  },
+  {
+    "section": 8,
+    "title": "Death, Legacy and the Céline Culture Wars",
+    "start_id": "9704",
+    "end_id": "11377",
+    "sub_parts": [
+      {
+        "part": 1,
+        "label": "Return to Meudon, final years, death, and the contested legacy",
+        "start_id": "9704",
+        "end_id": "10122"
+      },
+      {
+        "part": 2,
+        "label": "The Céline Culture Wars and the debate over style, politics, and literary genius",
+        "start_id": "10123",
+        "end_id": "11377"
+      }
+    ]
+  },
+  {
+    "section": 9,
+    "title": "Epilogue",
+    "start_id": "11378",
+    "end_id": "11846",
+    "sub_parts": null
+  }
+]
