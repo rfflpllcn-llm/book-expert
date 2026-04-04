@@ -9,11 +9,15 @@ narrative arcs, detailed character profiles, thematic analysis, and style notes.
 
 1. **Check cache first**: read `knowledge/tier_1/08_qa_cache.md` — if the answer is there, use it directly
 2. **Read tier_1 files**: always read the relevant files from `knowledge/tier_1/` for context
-3. **Route to tier_2 if needed**: read `book.yaml` for arc keywords and line ranges, then load the matching `knowledge/tier_2/02_*.md` file
+3. **Route to sources (LLM routing)**: evaluate the metadata available in the system prompt — arc keywords and line ranges from `book.yaml`, essay headers from `knowledge/tier_3/_index.yaml` (author, stance, themes, sections) — and decide which tier_2 arcs and tier_3 essays are relevant to the query. Guidelines:
+   - For **biographical queries** (where/when did the author live, life events, career, relationships): prefer essays with `biographical-*` stance
+   - For **stylistic/linguistic queries** (language, argot, oralité, style): prefer essays with `stylistic-*` stance
+   - For **plot/scene queries**: prefer tier_2 arcs of the novel
+   - For **critical/interpretive queries**: load both novel arcs and relevant essay sections
+   - Load sources using CLI tools: `load_arc` for tier_2, `cite_essay` for tier_3
 4. **Cite the original text**: use cite tool to find and quote relevant passages (see "Tools" below)
-5. **Check commentaries** (if user asks about criticism): review essay summaries in tier_3, call `cite_essay` for relevant arcs
-6. **Answer the question** using the knowledge files, original text, and any commentaries
-7. **Save to cache**: after answering, ALWAYS do two steps:
+5. **Answer the question** using the knowledge files, original text, and any commentaries
+6. **Save to cache**: after answering, ALWAYS do two steps:
 
    **Step A** — Use the **Write** tool to save your COMPLETE answer to:
    `knowledge/answers/YYYY-MM-DD_<slug>.md`
@@ -35,7 +39,7 @@ Located in `knowledge/tier_1/`:
 
 ### Tier 2 — Loaded on demand
 Located in `knowledge/tier_2/`. Arc files containing scene summaries.
-Route queries using arc keywords and line ranges defined in `book.yaml`.
+Load with `python -m lib.load_arc . <arc_id>`. Arc IDs and metadata are in `book.yaml`.
 
 ### Tier 3 — Critical essays
 Located in `knowledge/tier_3/`. Routing metadata in `_index.yaml`.
@@ -52,6 +56,9 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 
 ## Tools
 
+- **Load arc (tier_2)**: `python -m lib.load_arc . <arc_id>`
+  Example: `python -m lib.load_arc . 02_05_traversata_africa`
+  Loads a novel arc summary from `knowledge/tier_2/`. Handles split arcs automatically.
 - **Cite text (bilingual)**: `python -m lib.cite . <start_line> <end_line> --lang it`
   Example: `python -m lib.cite . 77 80 --lang it`
   Always use `--lang it`. The tool gracefully handles missing translations.
@@ -94,15 +101,6 @@ Referenced from `08_qa_cache.md` via `**Risposta completa**:` field.
 - ALWAYS use `--lang it` when citing, so both original and translation are shown.
 - The alignment is approximate (sentence-level); minor boundary mismatches are normal.
 
-
-## Dynamic routing
-
-Read `book.yaml` at query time for:
-- **Arc routing**: `arcs` section maps arc IDs to keywords and line ranges
-- **Character routing**: `characters` section maps names to their arcs
-
-Read `knowledge/tier_3/_index.yaml` for:
-- **Essay routing**: essay summaries with chapter-level descriptions
 
 ## Commands
 
